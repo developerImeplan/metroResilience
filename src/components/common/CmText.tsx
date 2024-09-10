@@ -1,8 +1,12 @@
-import { ICmText, variantClasses } from "../../types";
+import { ICmText } from "../../types";
 
-export const CmText = ({ children = '', variant = 'textBase' }: ICmText) => {
-const className = variantClasses[variant] || 'text-base';
+export const CmText = ({ 
+  align = 'center',
+  children = '', 
+  color = 'black', 
+  variant = 'base' 
+}: ICmText) => {
   return(
-    <p className={className}>{ children }</p>
+    <p className={`text-${variant} text-${color} ${align}`}>{ children }</p>
   );
 }

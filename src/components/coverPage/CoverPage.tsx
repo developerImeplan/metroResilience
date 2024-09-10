@@ -1,4 +1,4 @@
-import { CoverVideo, CmLogo, CmText } from '../';
+import { CoverVideo, CmLogo, CmText, CmPartnersLogos } from '../';
 
 export const CoverPage = () => {
   return (
@@ -9,8 +9,21 @@ export const CoverPage = () => {
           <div className="mt-20">
             <CmLogo />
           </div>
-          <CmText variant='text6Xl'>
-            La clave para el futuro de nuestas ciudades
+          <div>
+            <CmText variant='6xl' color='white'>
+              La clave
+            </CmText>
+            <CmText variant='6xl' color='white'>
+              para el futuro de
+            </CmText>
+            <CmText variant='6xl' color='white'>
+              nuestas ciudades
+            </CmText>
+          </div>
+          <CmPartnersLogos />
+          <CmText color='white'>
+            Este sitio se ha elaborado con la asistencia financiera de la Unión Europea. El contenido es responsabilidad exclusiva del 
+            Imeplan, y bajo ninguna circunstancia debe considerarse como un reflejo de la posición de la Unión Europea.
           </CmText>
         </div>
       </div>

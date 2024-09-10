@@ -1,37 +1,20 @@
 // types.ts
 export interface ICmText {
+  align?: 'center';
   children?: React.ReactNode;
-  variant?: keyof ITextVariants;
-}
-
-interface ITextVariants {
-  textXs: 'text-xs';
-  textSm: 'text-sm';
-  textBase: 'text-base';
-  textLg: 'text-lg';
-  textXl: 'text-xl';
-  text2Xl: 'text-2xl';
-  text3Xl: 'text-3xl';
-  text4Xl: 'text-4xl';
-  text5Xl: 'text-5xl';
-  text6Xl: 'text-6xl';
-  text7Xl: 'text-7xl';
-  text8Xl: 'text-8xl';
-  text9Xl: 'text-9xl';
-}
-
-export const variantClasses: ITextVariants = {
-  textXs: 'text-xs',
-  textSm: 'text-sm',
-  textBase: 'text-base',
-  textLg: 'text-lg',
-  textXl: 'text-xl',
-  text2Xl: 'text-2xl',
-  text3Xl: 'text-3xl',
-  text4Xl: 'text-4xl',
-  text5Xl: 'text-5xl',
-  text6Xl: 'text-6xl',
-  text7Xl: 'text-7xl',
-  text8Xl: 'text-8xl',
-  text9Xl: 'text-9xl',
+  color?: 'white' | 'black';
+  variant?: 
+    'xs' | 
+    'sm' | 
+    'base' |
+    'lg' |
+    'xl' |
+    '2xl' |
+    '3xl' |
+    '4xl' |
+    '5xl' |
+    '6xl' | 
+    '7xl' |
+    '8xl' |
+    '9xl'
 };
