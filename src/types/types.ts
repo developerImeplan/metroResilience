@@ -1,5 +1,7 @@
 // types.ts
-export interface ICmText {
+
+// region ICmText
+export interface CmTextProps {
   align?: 'center';
   children?: React.ReactNode;
   color?: 'white' | 'black';
@@ -18,3 +20,8 @@ export interface ICmText {
     '8xl' |
     '9xl'
 };
+
+// region CoverTitle
+export interface CoverTitleTextProps {
+  text: string;
+}

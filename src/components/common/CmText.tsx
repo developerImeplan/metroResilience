@@ -1,12 +1,12 @@
-import { ICmText } from "../../types";
+import { CmTextProps } from "../../types";
 
 export const CmText = ({ 
   align = 'center',
   children = '', 
   color = 'black', 
   variant = 'base' 
-}: ICmText) => {
+}: CmTextProps) => {
   return(
-    <p className={`text-${variant} text-${color} ${align}`}>{ children }</p>
+    <p className={`font-montserrat text-${variant} text-${color} ${align}`}>{ children }</p>
   );
 }

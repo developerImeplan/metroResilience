@@ -1,4 +1,4 @@
-import { CoverVideo, CmLogo, CmText, CmPartnersLogos } from '../';
+import { CoverVideo, CmLogo, CmText, CmPartnersLogos, CoverTitle } from '../';
 
 export const CoverPage = () => {
   return (
@@ -9,17 +9,7 @@ export const CoverPage = () => {
           <div className="mt-20">
             <CmLogo />
           </div>
-          <div>
-            <CmText variant='6xl' color='white'>
-              La clave
-            </CmText>
-            <CmText variant='6xl' color='white'>
-              para el futuro de
-            </CmText>
-            <CmText variant='6xl' color='white'>
-              nuestas ciudades
-            </CmText>
-          </div>
+          <CoverTitle />
           <CmPartnersLogos />
           <CmText color='white'>
             Este sitio se ha elaborado con la asistencia financiera de la Unión Europea. El contenido es responsabilidad exclusiva del 
