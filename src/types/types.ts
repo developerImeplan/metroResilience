@@ -1,5 +1,8 @@
 // types.ts
 
+// region General
+export type Sizing = '1' | '2' | '3' | '4' | '5' | '10' | '0';
+
 // region ICmText
 export interface CmTextProps {
   align?: 'center' | 'start';
@@ -47,4 +50,26 @@ export interface CoverPartnerProps {
   title?: string;
   src: string;
   url: string;
+}
+
+// region CoverDropdown
+
+export interface CoverDropdownProps {
+  content?: React.ReactNode[];
+  padding?: Sizing;
+  paddingR?: Sizing;
+  paddingL?: Sizing;
+  margin?: Sizing;
+  marginR?: Sizing;
+  marginL?: Sizing;
+  title: string;
+  width?: '1/2' | 'full';
+}
+
+export interface CoverDropdownHeaderProps {
+  title: string;
+}
+
+export interface CoverDropdownItemProps {
+  children: React.ReactNode
 }
