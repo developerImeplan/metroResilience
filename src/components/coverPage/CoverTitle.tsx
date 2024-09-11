@@ -1,11 +1,10 @@
 import { COVER_TITLE_TEXTS } from "../../constants";
 import { CoverTitleTextProps } from "../../types";
-import { CmText } from "../common";
 
 const CoverTitleText: React.FC<CoverTitleTextProps> = ({ text }) => (
-  <CmText variant='6xl' color='white'>
+  <p className="font-bold sm:text-6xl text-4xl text-white">
     { text }
-  </CmText>
+  </p>
 ) 
 
 export const CoverTitle = () => {
