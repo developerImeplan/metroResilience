@@ -46,4 +46,5 @@ export interface CmImageProps {
 export interface CoverPartnerProps {
   title?: string;
   src: string;
+  url: string;
 }

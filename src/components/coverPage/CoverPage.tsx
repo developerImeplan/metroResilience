@@ -42,6 +42,7 @@ export const CoverPage = () => {
                   key={index}
                   title={c.title}
                   src={c.src}
+                  url={c.url}
                 />
               ))
             }
