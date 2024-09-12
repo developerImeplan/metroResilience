@@ -75,3 +75,13 @@ export interface CoverDropdownHeaderProps {
 export interface CoverDropdownItemProps {
   children: React.ReactNode
 }
+
+// region CmSubtitle
+export interface CmSubtitleProps {
+  text: string;
+}
+
+// region CoverMenuItem
+export interface CoverMenuItemProps {
+  text: string;
+}

@@ -1,5 +1,6 @@
-import { CoverVideo, CmLogo, CmPartnersLogos, CoverTitle, CoverPartner, CoverDropdown } from '../';
+import { CoverVideo, CmLogo, CmPartnersLogos, CoverTitle, CoverPartner, CoverDropdown, CmSelectToDisplayLabel, CoverMenu } from '../';
 import { COVER_PARTNERS } from '../../constants';
+import { CmSubtitle } from '../common/CmSubtitle';
 import { COVER_DROPDOWNS } from './CoverDropdowns';
 
 export const CoverPage = () => {
@@ -51,7 +52,8 @@ export const CoverPage = () => {
         </div>
       </section>
       <section className="container mx-auto px-4 pb-20">
-        <div className="bg-customMain flex justify-center rounded-2xl p-5">
+        <CmSelectToDisplayLabel />
+        <div className="bg-customMain flex justify-center rounded-2xl p-5 mt-5">
           <p className="sm:text-5xl text-2xl text-center font-bold text-white">¡Conoce más sobre Metrópoli Resiliente!</p>
         </div>
         <div className="flex flex-col">
@@ -66,6 +68,13 @@ export const CoverPage = () => {
             <CoverDropdown { ...COVER_DROPDOWNS[3] } />
           </div>
         </div>
+      </section>
+      <section className="container mx-auto px-4 pb-20">
+        <div className="flex justify-center">
+          <CmSubtitle text="La acción cuenta con tres componentes" />
+        </div>
+        <CmSelectToDisplayLabel />
+        <CoverMenu />
       </section>
     </>
   );
