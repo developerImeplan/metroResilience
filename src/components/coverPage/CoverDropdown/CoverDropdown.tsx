@@ -5,6 +5,7 @@ import { CoverDropdownContent } from "./CoverDropdownContent";
 
 export const CoverDropdown = ({ 
   content,
+  extraStyles = '',
   width = 'full', 
   padding = '0',
   paddingR = '0',
@@ -12,26 +13,31 @@ export const CoverDropdown = ({
   margin = '0',
   marginR = '0',
   marginL = '0',
+  specialContent = false,
   title
 }: CoverDropdownProps) => {
   return(
     <div className={`
       flex 
       flex-col 
-      w-${width} 
+      sm:w-${width} 
+      w-100
       p-${padding}
       pr-${paddingR}
       pl-${paddingL}
       m-${margin}
-      mr-${marginR}
-      ml-${marginL}
+      sm:mr-${marginR}
+      sm:ml-${marginL}
+      ${extraStyles}
     `}>
       <CoverDropdownHeader title={title} />
-      <div>
-        <CoverDropdownContent>
-          { content }
-        </CoverDropdownContent>
-      </div>
+      {
+        (specialContent) ? content : (
+          <CoverDropdownContent>
+            { content }
+          </CoverDropdownContent>
+        )
+      }
     </div>
   );
 }

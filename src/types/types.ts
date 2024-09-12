@@ -55,13 +55,15 @@ export interface CoverPartnerProps {
 // region CoverDropdown
 
 export interface CoverDropdownProps {
-  content?: React.ReactNode[];
+  content?: React.ReactNode;
+  extraStyles?: string;
   padding?: Sizing;
   paddingR?: Sizing;
   paddingL?: Sizing;
   margin?: Sizing;
   marginR?: Sizing;
   marginL?: Sizing;
+  specialContent?: boolean;
   title: string;
   width?: '1/2' | 'full';
 }

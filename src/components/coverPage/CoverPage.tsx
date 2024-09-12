@@ -1,5 +1,6 @@
 import { CoverVideo, CmLogo, CmPartnersLogos, CoverTitle, CoverPartner, CoverDropdown } from '../';
 import { COVER_PARTNERS } from '../../constants';
+import { COVER_DROPDOWNS } from './CoverDropdowns';
 
 export const CoverPage = () => {
   return (
@@ -51,30 +52,18 @@ export const CoverPage = () => {
       </section>
       <section className="container mx-auto px-4 pb-20">
         <div className="bg-customMain flex justify-center rounded-2xl p-5">
-          <p className="text-5xl font-bold text-white">¡Conoce más sobre Metrópoli Resiliente!</p>
+          <p className="sm:text-5xl text-2xl text-center font-bold text-white">¡Conoce más sobre Metrópoli Resiliente!</p>
         </div>
         <div className="flex flex-col">
-          <div className="mt-5 flex w-100">
-            <CoverDropdown
-              content={[
-                <span>
-                  <span className="font-bold">Buscamos impulsar la resiliencia territorial y comunitaria</span>, desarrollando mejores prácticas para el manejo de residuos sólidos y la gobernanza metropolitana, para responder, adaptarnos y superar desafíos urbanos actuales o futuros.
-                </span>
-              ]}
-              title='Visión'
-              width='1/2' 
-              marginR='4' 
-            />
-            <CoverDropdown 
-              content={[
-                <span>
-                  <span className="font-bold">Buscamos impulsar la resiliencia territorial y comunitaria</span>, desarrollando mejores prácticas para el manejo de residuos sólidos y la gobernanza metropolitana, para responder, adaptarnos y superar desafíos urbanos actuales o futuros.
-                </span>
-              ]}
-              title='Beneficios'
-              width='1/2' 
-              marginL='4' 
-            />
+          <div className="mt-5 flex sm:flex-row flex-col w-100">
+            <CoverDropdown { ...COVER_DROPDOWNS[0] } />
+            <CoverDropdown { ...COVER_DROPDOWNS[1] } />
+          </div>
+          <div className="mt-5">
+            <CoverDropdown { ...COVER_DROPDOWNS[2] } />
+          </div>
+          <div className="mt-5">
+            <CoverDropdown { ...COVER_DROPDOWNS[3] } />
           </div>
         </div>
       </section>
