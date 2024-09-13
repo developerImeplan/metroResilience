@@ -1,3 +1,4 @@
+export * from './CmBoldText';
 export * from './cmCoverVideo/CmCoverVideo';
 export * from './CmImage';
 export * from './CmLogo';

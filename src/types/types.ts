@@ -2,26 +2,26 @@
 
 // region General
 export type Sizing = '1' | '2' | '3' | '4' | '5' | '10' | '0' | '1/3';
+export type FontSizes = 'xs' | 
+  'sm' | 
+  'base' |
+  'lg' |
+  'xl' |
+  '2xl' |
+  '3xl' |
+  '4xl' |
+  '5xl' |
+  '6xl' | 
+  '7xl' |
+  '8xl' |
+  '9xl';
 
 // region ICmText
 export interface CmTextProps {
   align?: 'center' | 'start';
   children?: React.ReactNode;
   color?: 'white' | 'black';
-  variant?: 
-    'xs' | 
-    'sm' | 
-    'base' |
-    'lg' |
-    'xl' |
-    '2xl' |
-    '3xl' |
-    '4xl' |
-    '5xl' |
-    '6xl' | 
-    '7xl' |
-    '8xl' |
-    '9xl';
+  variant?: FontSizes;
   fontWeight?: 
     'thin' | 
     'light' | 
@@ -107,4 +107,12 @@ export interface CmCoverVideoProps {
 export interface CmCoverVideoFooterProps {
   image: string;
   title: string;
+}
+
+// region CmBoldText
+export interface CmBoldTextProps {
+  color?: string;
+  children: string;
+  size?: FontSizes;
+  className?: string;
 }

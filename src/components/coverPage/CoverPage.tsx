@@ -1,4 +1,4 @@
-import { CmPartnersLogos, CoverTitle, CoverPartner, CoverDropdown, CmSelectToDisplayLabel, CoverMenu, CmCoverVideo } from '../';
+import { CmPartnersLogos, CoverTitle, CoverPartner, CoverDropdown, CmSelectToDisplayLabel, CoverMenu, CmCoverVideo, CmBoldText } from '../';
 import { COVER_PARTNERS, VIDEOS } from '../../constants';
 import { CmSubtitle } from '../common/CmSubtitle';
 import { COVER_DROPDOWNS } from './CoverDropdowns';
@@ -24,10 +24,10 @@ export const CoverPage = () => {
             <p className="text-customMain sm:text-5xl text-3xl font-bold">¿Qué es?</p>
           </div>
           <p className="text-customMain sm:text-4xl text:2xl sm:leading-10 leading-6 text-center font-thin">
-            <span className="font-bold">Metro Resilience Guadalajara (MRG) o  Metrópoli Resiliente, por su adaptación al español, reúne esfuerzos comunitarios, locales e internacionales</span>, para fortalecer la gobernanza con el fin de responder, adaptar y prosperar ante los desafíos urbanos en las Áreas Metropolitanas de Guadalajara y Barcelona.
+            <CmBoldText>Metro Resilience Guadalajara (MRG) o  Metrópoli Resiliente, por su adaptación al español, reúne esfuerzos comunitarios, locales e internacionales</CmBoldText>, para fortalecer la gobernanza con el fin de responder, adaptar y prosperar ante los desafíos urbanos en las Áreas Metropolitanas de Guadalajara y Barcelona.
           </p>
           <p className="text-customMain sm:text-2xl text:xl sm:leading-8 leading-5 text-center font-thin my-10">
-            <span className="font-bold">Es una acción de cooperación internacional con duración de 3 años, la cual es posible gracias al financiamiento de la Unión Europea y el programa</span> <span className="italic">Asociación para ciudades sostenibles.</span>
+            <CmBoldText>Es una acción de cooperación internacional con duración de 3 años, la cual es posible gracias al financiamiento de la Unión Europea y el programa</CmBoldText> <span className="italic">Asociación para ciudades sostenibles.</span>
           </p>
           <div className="flex justify-center items-end">
             {
