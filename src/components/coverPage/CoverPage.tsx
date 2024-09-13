@@ -1,4 +1,4 @@
-import { CmLogo, CmPartnersLogos, CoverTitle, CoverPartner, CoverDropdown, CmSelectToDisplayLabel, CoverMenu, CmCoverVideo } from '../';
+import { CmPartnersLogos, CoverTitle, CoverPartner, CoverDropdown, CmSelectToDisplayLabel, CoverMenu, CmCoverVideo } from '../';
 import { COVER_PARTNERS, VIDEOS } from '../../constants';
 import { CmSubtitle } from '../common/CmSubtitle';
 import { COVER_DROPDOWNS } from './CoverDropdowns';
@@ -6,11 +6,8 @@ import { COVER_DROPDOWNS } from './CoverDropdowns';
 export const CoverPage = () => {
   return (
     <>
-      <CmCoverVideo video={VIDEOS.coverVideo}>
-        <div className="sm:mt-10 mt-5">
-          <CmLogo />
-        </div>
-        <div>
+      <CmCoverVideo showFooter={false} video={VIDEOS.coverVideo}>
+        <div className="sm:mt-20 mt-40">
           <CoverTitle />
           <CmPartnersLogos />
           <div className="sm:px-20 px-5">
