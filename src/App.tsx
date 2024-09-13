@@ -1,9 +1,9 @@
-import { CoverPage } from "./components"
+import { AppRouter } from "./router"
 
 export const App = () => {
   return(
     <div>
-      <CoverPage />
+      <AppRouter />
     </div>
   )
 }
