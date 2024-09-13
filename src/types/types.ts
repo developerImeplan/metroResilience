@@ -1,7 +1,7 @@
 // types.ts
 
 // region General
-export type Sizing = '1' | '2' | '3' | '4' | '5' | '10' | '0';
+export type Sizing = '1' | '2' | '3' | '4' | '5' | '10' | '0' | '1/3';
 
 // region ICmText
 export interface CmTextProps {
@@ -84,4 +84,11 @@ export interface CmSubtitleProps {
 // region CoverMenuItem
 export interface CoverMenuItemProps {
   text: string;
+}
+
+export interface CoverMenuSectionProps {
+  title: string;
+  items: CoverMenuItemProps[];
+  margins?: boolean;
+  width?: Sizing;
 }

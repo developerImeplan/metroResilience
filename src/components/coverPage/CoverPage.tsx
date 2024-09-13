@@ -75,6 +75,9 @@ export const CoverPage = () => {
         </div>
         <CmSelectToDisplayLabel />
         <CoverMenu />
+        <div className="flex justify-center mt-10">
+          <CmSubtitle text="¡Conoce cada uno de ellos!" />
+        </div>
       </section>
     </>
   );

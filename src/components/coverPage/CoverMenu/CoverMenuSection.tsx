@@ -1,16 +1,35 @@
-import { IoIosArrowUp } from "react-icons/io";
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
 import { CoverMenuItem } from "./CoverMenuItem";
+import { CoverMenuSectionProps } from "../../../types";
 
-export const CoverMenuSection = () => {
+import { useState } from "react";
+
+export const CoverMenuSection = ({ 
+  title, 
+  items,
+  margins = false,
+}: CoverMenuSectionProps) => {
+
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+
   return(
-    <div className="flex flex-col">
-      <div className="cursor-pointer flex justify-center items-center p-5 my-5">
-        <p className="text-customMain text-3xl font-semibold mr-2">Estrategia de resiliencia</p>
-        <IoIosArrowUp />
+    <div className={`flex flex-col w-full ${margins ? 'mx-5' : ''}`}>
+      <div 
+        onClick={() => setIsOpen(c => !c)}
+        className="cursor-pointer flex justify-center items-center p-5 h-[85px] my-3"
+      >
+        <p className="text-customMain text-3xl font-semibold mr-2">{ title }</p>
+        { isOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}
       </div>
       <div>
-        <CoverMenuItem text="¿Qué es?" />
+        {
+          isOpen && (
+            items.map(i => (
+              <CoverMenuItem {...i} />
+            ))
+          )
+        }   
       </div>
     </div>
   );
