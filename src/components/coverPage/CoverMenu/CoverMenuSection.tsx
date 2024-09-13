@@ -19,7 +19,7 @@ export const CoverMenuSection = ({
         onClick={() => setIsOpen(c => !c)}
         className="cursor-pointer flex justify-center items-center p-5 h-[85px] my-3"
       >
-        <p className="text-customMain text-3xl font-semibold mr-2">{ title }</p>
+        <p className="text-customMain sm:text-3xl text-xl font-semibold mr-2">{ title }</p>
         { isOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}
       </div>
       <div>
