@@ -1,4 +1,5 @@
 import { CoverPartnerProps } from "../types";
+import sampleVideo from '../assets/sample_video.mp4';
 
 import amb from '../assets/amb.png';
 import imeplan from '../assets/imeplan.png';
@@ -23,3 +24,7 @@ export const COVER_PARTNERS: CoverPartnerProps[] = [
     url: 'https://www.imeplan.mx/ '
   },
 ];
+
+export const VIDEOS = { 
+  coverVideo: sampleVideo 
+}

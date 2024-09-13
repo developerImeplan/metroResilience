@@ -1,3 +1,4 @@
+export * from './CmCoverVideo';
 export * from './CmImage';
 export * from './CmLogo';
 export * from './CmSelectToDisplayLabel';

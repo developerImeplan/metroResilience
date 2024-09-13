@@ -92,3 +92,13 @@ export interface CoverMenuSectionProps {
   margins?: boolean;
   width?: Sizing;
 }
+
+// region CmCoverVideo
+export interface CmVideoProps {
+  url: string;
+};
+
+export interface CmCoverVideoProps {
+  video: string;
+  children: React.ReactNode;
+}

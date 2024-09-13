@@ -1,31 +1,26 @@
-import { CoverVideo, CmLogo, CmPartnersLogos, CoverTitle, CoverPartner, CoverDropdown, CmSelectToDisplayLabel, CoverMenu } from '../';
-import { COVER_PARTNERS } from '../../constants';
+import { CmLogo, CmPartnersLogos, CoverTitle, CoverPartner, CoverDropdown, CmSelectToDisplayLabel, CoverMenu, CmCoverVideo } from '../';
+import { COVER_PARTNERS, VIDEOS } from '../../constants';
 import { CmSubtitle } from '../common/CmSubtitle';
 import { COVER_DROPDOWNS } from './CoverDropdowns';
 
 export const CoverPage = () => {
   return (
     <>
-      <section className="relative h-screen overflow-hidden">
-        <CoverVideo />
-        <div className="relative z-10 w-full">
-          <div className="container h-screen flex flex-col justify-between mx-auto px-4">
-            <div className="sm:mt-20 mt-5">
-              <CmLogo />
-            </div>
-            <div className="pb-10">
-              <CoverTitle />
-              <CmPartnersLogos />
-              <div className="sm:px-20 px-5">
-                <p className="text-center text-white font-thin sm:text-lg text-sm">
-                  Este sitio se ha elaborado con la asistencia financiera de la Unión Europea. El contenido es responsabilidad exclusiva del 
-                  Imeplan, y bajo ninguna circunstancia debe considerarse como un reflejo de la posición de la Unión Europea.
-                </p>
-              </div>
-            </div>
+      <CmCoverVideo video={VIDEOS.coverVideo}>
+        <div className="sm:mt-10 mt-5">
+          <CmLogo />
+        </div>
+        <div>
+          <CoverTitle />
+          <CmPartnersLogos />
+          <div className="sm:px-20 px-5">
+            <p className="text-center text-white font-thin sm:text-lg text-sm">
+              Este sitio se ha elaborado con la asistencia financiera de la Unión Europea. El contenido es responsabilidad exclusiva del 
+              Imeplan, y bajo ninguna circunstancia debe considerarse como un reflejo de la posición de la Unión Europea.
+            </p>
           </div>
         </div>
-      </section>
+      </CmCoverVideo>
       <section className="relative overflow-hidden py-10">
         <div className="container mx-auto px-4">
           <div className="flex justify-center mb-10">
