@@ -101,7 +101,7 @@ export interface CmVideoProps {
 export interface CmCoverVideoProps {
   showFooter?: boolean;
   video: string;
-  children: React.ReactNode;
+  children?: React.ReactNode;
 }
 
 export interface CmCoverVideoFooterProps {
