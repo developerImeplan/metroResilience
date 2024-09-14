@@ -11,6 +11,7 @@ export default {
       },
       colors: {
         customMain: '#434779',
+        customPurple: '#444878',
         customGray: '#f9f9f9',
         customGrayDarker: '#595959',
         customGrayBg: '#eeeeee',

@@ -125,3 +125,15 @@ export interface ERInfoItemProps {
   children: ReactNode | ReactNode[];
   margins?: boolean;
 }
+
+// region CmBanner
+export interface CmBannerProps {
+  text: string;
+}
+
+// region ERCountItem
+export interface ERCountItemProps {
+  number: string;
+  title: string;
+  marginRight?: boolean;
+}

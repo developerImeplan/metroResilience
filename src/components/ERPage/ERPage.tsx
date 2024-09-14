@@ -1,9 +1,12 @@
 import { VIDEOS } from "../../constants";
-import { CmBoldText, CmCoverVideo, CmImage } from "../common";
+import { CmBanner, CmBoldText, CmCoverVideo, CmImage } from "../common";
 
 import disasters from "../../assets/disasters.png";
+import responderLogos from "../../assets/responder_logos.png";
 import { ERInfoItem } from "./ERInfoItem";
 import { ERP_INFO_ITEMS } from "./ERInfoItems";
+import { ERCountItems } from "./ERCountItems";
+import { ERCountItem } from "./ERCountItem";
 
 export const ERPage = () => {
   return(
@@ -31,6 +34,27 @@ export const ERPage = () => {
               <ERInfoItem key={index} {...i} />
             ))
           }
+        </div>
+        <div className="py-10">
+          <CmBanner text="Responder" />
+          <div className="flex sm:flex-row flex-col sm:items-center py-10">
+            <span className="sm:text-3xl font-thin pr-20 sm:w-1/2 w-full">
+              A lo largo de estos años, <CmBoldText color="customMain">la metrópoli se ha preparado a través de sus instrumentos de planeación y gestión, para responder ante diferentes impactos y tensiones</CmBoldText> que vulneran al territorio.
+            </span>
+            <div className="bg-customPurple ml-3 sm:w-1/2 w-full p-20 flex justify-center rounded-3xl">
+              <CmImage src={responderLogos} className="w-full" />
+            </div>
+          </div>
+          <p className="sm:text-3xl font-thin text-center">
+            <CmBoldText color="customBlueLighter">Sumando la participación de 2 mil personas</CmBoldText> de la sociedad civil, academia y sector público, y bajo la colaboración del actor internacional líder en la materia, Resilient Cities Network <CmBoldText color="customBlueLighter">se generó un Diagnóstico de Resiliencia</CmBoldText>  a través de: 
+          </p>
+          <div className="flex justify-center sm:flex-row flex-col p-10">
+            {
+              ERCountItems.map(i => (
+                <ERCountItem {...i} />
+              ))
+            }
+          </div>
         </div>
       </section>
     </>
