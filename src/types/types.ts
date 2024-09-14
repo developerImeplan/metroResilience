@@ -1,5 +1,7 @@
 // types.ts
 
+import { ReactNode } from "react";
+
 // region General
 export type Sizing = '1' | '2' | '3' | '4' | '5' | '10' | '0' | '1/3';
 export type FontSizes = 'xs' | 
@@ -19,7 +21,7 @@ export type FontSizes = 'xs' |
 // region ICmText
 export interface CmTextProps {
   align?: 'center' | 'start';
-  children?: React.ReactNode;
+  children?: ReactNode;
   color?: 'white' | 'black';
   variant?: FontSizes;
   fontWeight?: 
@@ -55,7 +57,7 @@ export interface CoverPartnerProps {
 // region CoverDropdown
 
 export interface CoverDropdownProps {
-  content?: React.ReactNode;
+  content?: ReactNode;
   extraStyles?: string;
   padding?: Sizing;
   paddingR?: Sizing;
@@ -73,7 +75,7 @@ export interface CoverDropdownHeaderProps {
 }
 
 export interface CoverDropdownItemProps {
-  children: React.ReactNode
+  children: ReactNode
 }
 
 // region CmSubtitle
@@ -101,7 +103,7 @@ export interface CmVideoProps {
 export interface CmCoverVideoProps {
   showFooter?: boolean;
   video: string;
-  children?: React.ReactNode;
+  children?: ReactNode;
 }
 
 export interface CmCoverVideoFooterProps {
@@ -115,4 +117,11 @@ export interface CmBoldTextProps {
   children: string;
   size?: FontSizes;
   className?: string;
+}
+
+// region ERInfoItem
+export interface ERInfoItemProps {
+  title: string;
+  children: ReactNode | ReactNode[];
+  margins?: boolean;
 }
