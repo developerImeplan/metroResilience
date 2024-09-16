@@ -1,5 +1,5 @@
-import { VIDEOS } from "../../constants";
-import { CmBanner, CmBoldText, CmCoverVideo, CmImage } from "../common";
+import { ER_IMAGES_CARROUSEL, VIDEOS } from "../../constants";
+import { CmBanner, CmBoldText, CmCoverVideo, CmImage, CmImageCarousel } from "../common";
 
 import disasters from "../../assets/disasters.png";
 import responderLogos from "../../assets/responder_logos.png";
@@ -56,6 +56,9 @@ export const ERPage = () => {
             }
           </div>
         </div>
+      </section>
+      <section>
+        <CmImageCarousel images={ER_IMAGES_CARROUSEL} />
       </section>
     </>
   );

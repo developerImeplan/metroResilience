@@ -137,3 +137,8 @@ export interface ERCountItemProps {
   title: string;
   marginRight?: boolean;
 }
+
+// region CmImageCarrousel
+export interface CmImageCarouselProps {
+  images: string[];
+} 

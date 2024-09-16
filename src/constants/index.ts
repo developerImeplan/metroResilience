@@ -28,3 +28,9 @@ export const COVER_PARTNERS: CoverPartnerProps[] = [
 export const VIDEOS = { 
   coverVideo: sampleVideo 
 }
+
+export const ER_IMAGES_CARROUSEL = [
+  "https://via.placeholder.com/800x400?text=Slide+1",
+  "https://via.placeholder.com/800x400?text=Slide+2",
+  "https://via.placeholder.com/800x400?text=Slide+3",
+];
