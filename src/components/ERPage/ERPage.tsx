@@ -29,7 +29,7 @@ export const ERPage = () => {
           </span>
         </div>
       </section>
-      <section className="container mx-auto px-4 pb-5">
+      <section className="container mx-auto px-4 sm:pb-5 pb-0">
         <div className="flex sm:flex-row flex-col">
           {
             ERP_INFO_ITEMS.map((i, index) => (
@@ -61,24 +61,24 @@ export const ERPage = () => {
       </section>
       <section className="container mx-auto px-4">
         <CmImageCarousel images={ER_IMAGES_CARROUSEL} />
-        <div className="flex flex-col items-center text-xl mt-10 mb-5 p-5 bg-customGrayBg font-thin">
+        <div className="flex flex-col items-center text-xl mt-10 mb-5 p-5 bg-customGrayBg font-thin text-center">
           <p>Consulta las fotografías de estas actividades en</p>
           <a 
-            className="text-customBlueLighter underline"
+            className="text-customBlueLighter underline sm:text-xl text-xs"
             href="https://www.flickr.com/photos/158129946@N05/albums"
           >https://www.flickr.com/photos/158129946@N05/albums
           </a>
         </div>
-        <div className="flex">
+        <div className="flex sm:flex-row flex-col">
           <div>
             <p className="text-2xl text-customBlueLighter font-bold text-center mb-5">A partir de estos ejercicios fueron identificados</p>
-            <div className="flex">
+            <div className="flex sm:flex-row flex-col">
               { ER_COUNTS_AND_DESCRIPTIONS.map(i => (
                 <ERCountAndDescription {...i} />
               )) }
             </div>
           </div>
-          <div className="sm:ml-5 w-1/2">
+          <div className="sm:ml-5 ml-0 sm:w-1/2 w-full sm:mt-0 mt-5">
             <img src={pic1} />
           </div>
         </div>
