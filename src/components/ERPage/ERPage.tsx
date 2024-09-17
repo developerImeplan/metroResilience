@@ -10,6 +10,8 @@ import { ERCountItem } from "./ERCountItem";
 import { ERCountAndDescription } from "./ERCountAndDescription";
 import pic1 from "../../assets/ER_pic1.png";
 import pic2 from "../../assets/ER_pic2.png";
+import pic3 from "../../assets/ER_pic3.png";
+import pic4 from "../../assets/ER_pic4.png";
 import desafios from "../../assets/er_desafios.png";
 
 export const ERPage = () => {
@@ -95,6 +97,24 @@ export const ERPage = () => {
             </p>
             <CmImage className="p-5" src={desafios} />
           </div>
+        </div>
+        <div className="flex sm:flex-row flex-col items-center sm:mt-10">
+          <div className="flex flex-col font-thin text-customGrayDarker sm:text-2xl text-xl sm:mb-0 mb-5">
+            <div className="flex justify-center mb-5">
+              <p className="sm:text-3xl text-xl text-customBlueLighter font-bold text-center">y dos importantes alcances:</p>
+            </div>
+            <span className="mb-5">
+              - <CmBoldText>Las ciudades se apoyan en una compleja red</CmBoldText> de personas, instituciones, infraestructura e información.
+            </span>
+            <span>
+            - <CmBoldText>Su resiliencia depende de fortalecer las capacidades de los sistemas</CmBoldText> individuales para fortalecer la ciudad en general.
+            </span>
+          </div>
+          <CmImage src={pic3} />
+        </div>
+        <div className="flex flex-col items-center mt-10">
+          <span className="sm:text-3xl text-xl font-thin mb-5">En suma, la <CmBoldText color="customBlueLighter">Estrategia de Resiliencia</CmBoldText> se integra por</span>
+          <CmImage src={pic4} />
         </div>
       </section>
     </>
