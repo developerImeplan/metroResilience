@@ -9,6 +9,8 @@ import { ERCountItems } from "./ERCountItems";
 import { ERCountItem } from "./ERCountItem";
 import { ERCountAndDescription } from "./ERCountAndDescription";
 import pic1 from "../../assets/ER_pic1.png";
+import pic2 from "../../assets/ER_pic2.png";
+import desafios from "../../assets/er_desafios.png";
 
 export const ERPage = () => {
   return(
@@ -80,6 +82,18 @@ export const ERPage = () => {
           </div>
           <div className="sm:ml-5 ml-0 sm:w-1/2 w-full sm:mt-0 mt-5">
             <img src={pic1} />
+          </div>
+        </div>
+      </section>
+      <section className="container mx-auto px-4 mt-10">
+        <CmBanner text="Adaptarse" />
+        <div className="mt-5 w-full flex sm:flex-row flex-col sm:justify-between">
+          <CmImage src={pic2} className="sm:w-1/3 w-full sm:mr-5 mr-0" />
+          <div className="flex flex-col justify-between sm:w-2/3 w-full">
+            <p className="text-center font-bold sm:text-3xl text-customMain">Con estos resultados, se trabajó bajo
+            cuatro principales desafíos metropolitanos
+            </p>
+            <CmImage className="p-5" src={desafios} />
           </div>
         </div>
       </section>
