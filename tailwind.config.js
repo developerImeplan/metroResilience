@@ -16,6 +16,7 @@ export default {
         customGrayDarker: '#595959',
         customGrayBg: '#eeeeee',
         customBlueLighter: '#81bdcd',
+        customTurquoiseBlue: '#30849c',
       },
     },
   },

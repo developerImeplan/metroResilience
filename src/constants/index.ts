@@ -1,4 +1,4 @@
-import { CoverPartnerProps } from "../types";
+import { CoverPartnerProps, ERCountAndDescriptionProps } from "../types";
 import sampleVideo from '../assets/sample_video.mp4';
 
 import amb from '../assets/amb.png';
@@ -29,8 +29,27 @@ export const VIDEOS = {
   coverVideo: sampleVideo 
 }
 
-export const ER_IMAGES_CARROUSEL = [
+export const ER_IMAGES_CARROUSEL: string[] = [
   "https://via.placeholder.com/800x400?text=Slide+1",
   "https://via.placeholder.com/800x400?text=Slide+2",
   "https://via.placeholder.com/800x400?text=Slide+3",
 ];
+
+export const ER_COUNTS_AND_DESCRIPTIONS: ERCountAndDescriptionProps[] = [
+  {
+    number: '157',
+    title: 'impactos agudos',
+    description: 'Eventos repentinos y bruscos, de origen natural o humano, que amenazan o afectan a la metrópoli.',
+    examples: 'Ejemplo: Incendios y sequías.',
+    bgColor: 'customBlueLighter',
+    mr: '5'
+  },
+  {
+    number: '198',
+    title: 'tensiones crónicas',
+    description: 'Situaciones o condiciones que debilitan la estructura de la ciudad de forma diaria o cíclica.',
+    examples: 'Ejemplo: asentamientos irregulares y movilidad.',
+    bgColor: 'customTurquoiseBlue',
+    ml: '5'
+  },
+]

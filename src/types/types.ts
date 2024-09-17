@@ -142,3 +142,14 @@ export interface ERCountItemProps {
 export interface CmImageCarouselProps {
   images: string[];
 } 
+
+// region ERCoundAndDescription
+export interface ERCountAndDescriptionProps {
+  bgColor: string;
+  number: string;
+  title: string;
+  description: string;
+  examples: string;
+  mr?: string;
+  ml?: string;
+}

@@ -1,4 +1,4 @@
-import { ER_IMAGES_CARROUSEL, VIDEOS } from "../../constants";
+import { ER_COUNTS_AND_DESCRIPTIONS, ER_IMAGES_CARROUSEL, VIDEOS } from "../../constants";
 import { CmBanner, CmBoldText, CmCoverVideo, CmImage, CmImageCarousel } from "../common";
 
 import disasters from "../../assets/disasters.png";
@@ -7,6 +7,8 @@ import { ERInfoItem } from "./ERInfoItem";
 import { ERP_INFO_ITEMS } from "./ERInfoItems";
 import { ERCountItems } from "./ERCountItems";
 import { ERCountItem } from "./ERCountItem";
+import { ERCountAndDescription } from "./ERCountAndDescription";
+import pic1 from "../../assets/ER_pic1.png";
 
 export const ERPage = () => {
   return(
@@ -57,8 +59,29 @@ export const ERPage = () => {
           </div>
         </div>
       </section>
-      <section>
+      <section className="container mx-auto px-4">
         <CmImageCarousel images={ER_IMAGES_CARROUSEL} />
+        <div className="flex flex-col items-center text-xl mt-10 mb-5 p-5 bg-customGrayBg font-thin">
+          <p>Consulta las fotografías de estas actividades en</p>
+          <a 
+            className="text-customBlueLighter underline"
+            href="https://www.flickr.com/photos/158129946@N05/albums"
+          >https://www.flickr.com/photos/158129946@N05/albums
+          </a>
+        </div>
+        <div className="flex">
+          <div>
+            <p className="text-2xl text-customBlueLighter font-bold text-center mb-5">A partir de estos ejercicios fueron identificados</p>
+            <div className="flex">
+              { ER_COUNTS_AND_DESCRIPTIONS.map(i => (
+                <ERCountAndDescription {...i} />
+              )) }
+            </div>
+          </div>
+          <div className="sm:ml-5 w-1/2">
+            <img src={pic1} />
+          </div>
+        </div>
       </section>
     </>
   );
