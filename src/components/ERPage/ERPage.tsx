@@ -13,6 +13,8 @@ import pic2 from "../../assets/ER_pic2.png";
 import pic3 from "../../assets/ER_pic3.png";
 import pic4 from "../../assets/ER_pic4.png";
 import desafios from "../../assets/er_desafios.png";
+import { ER_PROSPERAR_ICONS_DESC } from "./ERProsperarIconDescs";
+import { ERProsperarIconDesc } from "./ERProsperarIconDesc";
 
 export const ERPage = () => {
   return(
@@ -115,6 +117,21 @@ export const ERPage = () => {
         <div className="flex flex-col items-center mt-10">
           <span className="sm:text-3xl text-xl font-thin mb-5">En suma, la <CmBoldText color="customBlueLighter">Estrategia de Resiliencia</CmBoldText> se integra por</span>
           <CmImage src={pic4} />
+        </div>
+      </section>
+      <section className="container mx-auto px-4 mt-10">
+        <CmBanner text="Prosperar" />
+        <div className="py-10 w-full flex justify-center">
+          <span className="sm:text-3xl text-center font-thin">
+            <CmBoldText className="text-customBlueLighter">La Estrategia es un legado comunitario</CmBoldText> que marca un precedente a escala nacional e internacional.
+          </span>
+        </div>
+        <div className="flex sm:flex-row flex-col">
+            {
+              ER_PROSPERAR_ICONS_DESC.map((i, index) => (
+                <ERProsperarIconDesc key={index} {...i} />
+              ))
+            }
         </div>
       </section>
     </>

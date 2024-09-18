@@ -153,3 +153,10 @@ export interface ERCountAndDescriptionProps {
   mr?: string;
   ml?: string;
 }
+
+// region ERProsperarIconDesc
+export interface ERProsperarIconDescProps {
+  icon: string;
+  children: ReactNode;
+  margins?: boolean;
+}
