@@ -15,6 +15,8 @@ import pic4 from "../../assets/ER_pic4.png";
 import desafios from "../../assets/er_desafios.png";
 import { ER_PROSPERAR_ICONS_DESC } from "./ERProsperarIconDescs";
 import { ERProsperarIconDesc } from "./ERProsperarIconDesc";
+import { ERQuoteSection } from "./ERQuoteSection";
+import { ERQuotes } from "./ERQuotes";
 
 export const ERPage = () => {
   return(
@@ -144,6 +146,14 @@ export const ERPage = () => {
             className="sm:w-1/4 w-full sm:ml-5 ml-0 sm:mt-0 mt-5 sm:h-auto h-full"
             src="https://drive.google.com/file/d/1a2sb0s43OlT7pbvLFyZM8woIufqtFs4g/preview" 
           />
+        </div>
+      </section>
+      <section className="container mx-auto px-4 mt-10">
+        <div className="flex flex-col items-center">
+          <p className="text-3xl font-bold text-customMain mb-5">En la voz de nuestra comunidad</p>
+          <div className="flex sm:flex-row flex-col">
+            {ERQuotes.map((i, index) => <ERQuoteSection key={index} {...i} />)}
+          </div>
         </div>
       </section>
     </>

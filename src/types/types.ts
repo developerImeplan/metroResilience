@@ -160,3 +160,10 @@ export interface ERProsperarIconDescProps {
   children: ReactNode;
   margins?: boolean;
 }
+
+// region ErQuoteSection 
+export interface ErQuoteSection {
+  img: string;
+  title: string;
+  text: string;
+}
