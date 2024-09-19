@@ -2,8 +2,6 @@ import { CmCoverVideoProps } from "../../../types";
 import { CmLogo, CmVideo } from "../";
 import { CmCoverVideoFooter } from "./CmCoverVideoFooter";
 
-import partnersLogos from "../../../assets/partners.png";
-
 export const CmCoverVideo = ({ showFooter = true, video, children }: CmCoverVideoProps) => {
   return(
     <section className="relative h-screen overflow-hidden">
@@ -18,7 +16,7 @@ export const CmCoverVideo = ({ showFooter = true, video, children }: CmCoverVide
         {
           showFooter ? (
             <CmCoverVideoFooter 
-              image={partnersLogos}
+              image="https://placehold.co/600x80"
               title="Estrategia de Resiliencia Metropolitana"
             />
           ) : null

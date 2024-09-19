@@ -11,7 +11,7 @@ export const CoverMenuSection = ({
   margins = false,
 }: CoverMenuSectionProps) => {
 
-  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [isOpen, setIsOpen] = useState<boolean>(true);
 
   return(
     <div className={`flex flex-col w-full ${margins ? 'mx-5' : ''}`}>
