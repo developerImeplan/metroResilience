@@ -1,11 +1,12 @@
 import { GiSoundWaves } from "react-icons/gi";
-import { ErQuoteSection } from "../../types";
+import { CmQuoteProps } from "../../types";
 
-export const ERQuoteSection = ({
+export const CmQuote = ({
+  color,
   img,
   title,
   text
-}: ErQuoteSection) => {
+}: CmQuoteProps) => {
   return (
     <div className="flex flex-col items-center text-center p-4 sm:w-1/3 w-full">
       <div className="relative w-[250px] h-[250px] rounded-full overflow-hidden">
@@ -20,13 +21,13 @@ export const ERQuoteSection = ({
           </div>
         </div>
       </div>
-      <div className="mt-4 p-10 border rounded-lg border-blue-300">
-        <p className="text-xl font-semibold text-customBlueLighter">
+      <div className={`flex-grow flex justify-center items-center mt-4 p-10 border rounded-3xl border-${color} min-h-[150px]`}>
+        <p className={`text-xl font-semibold text-${color}`}>
           { text }
         </p>
       </div>
-      <div className="mt-2 text-gray-500">
-        { title }
+      <div className="mt-2 w-full py-3 text-gray-500 bg-customGrayBg">
+        <p className="font-bold">{ title }</p>
       </div>
     </div>
   );

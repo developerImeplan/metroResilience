@@ -161,8 +161,9 @@ export interface ERProsperarIconDescProps {
   margins?: boolean;
 }
 
-// region ErQuoteSection 
-export interface ErQuoteSection {
+// region CmQuote
+export interface CmQuoteProps {
+  color: 'customBlueLighter';
   img: string;
   title: string;
   text: string;

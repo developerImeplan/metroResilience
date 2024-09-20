@@ -1,5 +1,5 @@
 import { ER_COUNTS_AND_DESCRIPTIONS, ER_IMAGES_CARROUSEL, VIDEOS } from "../../constants";
-import { CmBanner, CmBoldText, CmCoverVideo, CmImage, CmImageCarousel } from "../common";
+import { CmBanner, CmBoldText, CmCoverVideo, CmImage, CmImageCarousel, CmQuote } from "../common";
 
 import disasters from "../../assets/disasters.png";
 import responderLogos from "../../assets/responder_logos.png";
@@ -15,7 +15,6 @@ import pic4 from "../../assets/ER_pic4.png";
 import desafios from "../../assets/er_desafios.png";
 import { ER_PROSPERAR_ICONS_DESC } from "./ERProsperarIconDescs";
 import { ERProsperarIconDesc } from "./ERProsperarIconDesc";
-import { ERQuoteSection } from "./ERQuoteSection";
 import { ERQuotes } from "./ERQuotes";
 
 export const ERPage = () => {
@@ -152,7 +151,7 @@ export const ERPage = () => {
         <div className="flex flex-col items-center">
           <p className="text-3xl font-bold text-customMain mb-5">En la voz de nuestra comunidad</p>
           <div className="flex sm:flex-row flex-col">
-            {ERQuotes.map((i, index) => <ERQuoteSection key={index} {...i} />)}
+            {ERQuotes.map((i, index) => <CmQuote key={index} {...i} />)}
           </div>
         </div>
       </section>
