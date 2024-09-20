@@ -168,3 +168,11 @@ export interface CmQuoteProps {
   title: string;
   text: string;
 }
+
+// region ERDowload
+export interface ERDowloadProps {
+  img: string;
+  title: string;
+  doc: string;
+  marginR?: boolean;
+}

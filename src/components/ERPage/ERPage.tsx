@@ -16,6 +16,8 @@ import desafios from "../../assets/er_desafios.png";
 import { ER_PROSPERAR_ICONS_DESC } from "./ERProsperarIconDescs";
 import { ERProsperarIconDesc } from "./ERProsperarIconDesc";
 import { ERQuotes } from "./ERQuotes";
+import { ERDowloads } from "./ERDowloads";
+import { ERDowload } from "./ERDowload";
 
 export const ERPage = () => {
   return(
@@ -149,9 +151,18 @@ export const ERPage = () => {
       </section>
       <section className="container mx-auto px-4 mt-10">
         <div className="flex flex-col items-center">
-          <p className="text-3xl font-bold text-customMain mb-5">En la voz de nuestra comunidad</p>
+          <p className="text-3xl font-bold text-customMain mb-5 text-center">En la voz de nuestra comunidad</p>
           <div className="flex sm:flex-row flex-col">
             {ERQuotes.map((i, index) => <CmQuote key={index} {...i} />)}
+          </div>
+        </div>
+        <div className="mt-3">
+          <CmBanner text="Documentos de descarga" />
+          <div className="flex justify-center py-10">
+            <p className="sm:text-3xl text-xl text-center font-thin">¡Conoce la Estrategia y súmate a la acción!</p>
+          </div>
+          <div className="flex sm:flex-row flex-col sm:justify-between">
+            { ERDowloads.map(i => (<ERDowload {...i} />)) }
           </div>
         </div>
       </section>

@@ -22,7 +22,7 @@ export const CmQuote = ({
         </div>
       </div>
       <div className={`flex-grow flex justify-center items-center mt-4 p-10 border rounded-3xl border-${color} min-h-[150px]`}>
-        <p className={`text-xl font-semibold text-${color}`}>
+        <p className={`sm:text-xl text-lg font-semibold text-${color}`}>
           { text }
         </p>
       </div>
