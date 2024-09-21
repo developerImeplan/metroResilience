@@ -1,5 +1,6 @@
 import { ER_COUNTS_AND_DESCRIPTIONS, ER_IMAGES_CARROUSEL, VIDEOS } from "../../constants";
 import { CmBanner, CmBoldText, CmCoverVideo, CmImage, CmImageCarousel, CmQuote } from "../common";
+import { BsChevronDoubleDown } from "react-icons/bs";
 
 import disasters from "../../assets/disasters.png";
 import responderLogos from "../../assets/responder_logos.png";
@@ -18,6 +19,7 @@ import { ERProsperarIconDesc } from "./ERProsperarIconDesc";
 import { ERQuotes } from "./ERQuotes";
 import { ERDowloads } from "./ERDowloads";
 import { ERDowload } from "./ERDowload";
+import { ERDropdownSaberMas } from "./ERDropdownSaberMas";
 
 export const ERPage = () => {
   return(
@@ -164,6 +166,16 @@ export const ERPage = () => {
           <div className="flex sm:flex-row flex-col sm:justify-between">
             { ERDowloads.map(i => (<ERDowload {...i} />)) }
           </div>
+        </div>
+      </section>
+      <section className="container mx-auto px-4 mt-10">
+        <div className="flex justify-center items-center bg-customBlueLighter w-full p-5 rounded-2xl">
+          <p className="sm:text-2xl text-lg font-bold text-white text-center">¡Quiero saber más sobre la Estrategia de Resiliencia!</p>
+        </div>
+        <ERDropdownSaberMas />
+        <div className="flex flex-col items-center py-10 w-full">
+          <p className="sm:text-3xl text-xl text-center text-customBlueLighter font-bold">Sigue bajando y descubre más sobre Metrópoli Resiliente</p>
+          <BsChevronDoubleDown className="mt-2 text-5xl" />
         </div>
       </section>
     </>

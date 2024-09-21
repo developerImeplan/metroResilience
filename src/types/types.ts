@@ -176,3 +176,16 @@ export interface ERDowloadProps {
   doc: string;
   marginR?: boolean;
 }
+
+// region CmDropdown
+export interface CmDropdownProps {
+  titleComponent: ReactNode,
+  children: ReactNode,
+}
+
+// region ERDropdownSaberMas 
+export interface ERDropdownSaberMasProps {
+  title: string;
+  children: ReactNode | ReactNode[];
+  margins?: boolean;
+}
