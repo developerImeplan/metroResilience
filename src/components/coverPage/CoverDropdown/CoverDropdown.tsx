@@ -1,6 +1,7 @@
 import { CoverDropdownProps } from "../../../types";
 import { CoverDropdownHeader } from "./CoverDropdownHeader";
 import { CoverDropdownContent } from "./CoverDropdownContent";
+import { useState } from "react";
 
 
 export const CoverDropdown = ({ 
@@ -16,6 +17,9 @@ export const CoverDropdown = ({
   specialContent = false,
   title
 }: CoverDropdownProps) => {
+
+  const [show, setShow] = useState(true);
+
   return(
     <div className={`
       flex 
@@ -30,13 +34,18 @@ export const CoverDropdown = ({
       sm:ml-${marginL}
       ${extraStyles}
     `}>
-      <CoverDropdownHeader title={title} />
+      <CoverDropdownHeader 
+        title={title} 
+        onClick={() => setShow(p => !p)}
+      />
       {
-        (specialContent) ? content : (
-          <CoverDropdownContent>
-            { content }
-          </CoverDropdownContent>
-        )
+        (show) ? (
+          (specialContent) ? content : (
+            <CoverDropdownContent>
+              { content }
+            </CoverDropdownContent>
+          )
+        ) : null
       }
     </div>
   );

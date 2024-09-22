@@ -72,6 +72,7 @@ export interface CoverDropdownProps {
 
 export interface CoverDropdownHeaderProps {
   title: string;
+  onClick: () => void;
 }
 
 export interface CoverDropdownItemProps {
