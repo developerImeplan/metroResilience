@@ -87,6 +87,7 @@ export interface CmSubtitleProps {
 // region CoverMenuItem
 export interface CoverMenuItemProps {
   text: string;
+  link: string;
 }
 
 export interface CoverMenuSectionProps {

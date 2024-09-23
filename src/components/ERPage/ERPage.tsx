@@ -20,12 +20,25 @@ import { ERQuotes } from "./ERQuotes";
 import { ERDowloads } from "./ERDowloads";
 import { ERDowload } from "./ERDowload";
 import { ERDropdownSaberMas } from "./ERDropdownSaberMas";
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 export const ERPage = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.getElementById(location.hash.substring(1));
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [location]);
+
   return(
     <>
       <CmCoverVideo video={VIDEOS.coverVideo} />
-      <section className="container mx-auto px-4 pt-10 sm:pb-10 pb-0">
+      <section id="que-es" className="container mx-auto px-4 pt-10 sm:pb-10 pb-0">
         <div className="flex flex-col items-center">
           <p className="text-customMain sm:text-4xl text-xl font-bold">¿Qué es?</p>
           <span className="p-5 font-thin sm:text-2xl text-lg text-center">
@@ -40,7 +53,7 @@ export const ERPage = () => {
           </span>
         </div>
       </section>
-      <section className="container mx-auto px-4 sm:pb-5 pb-0">
+      <section id="vision-objetivo" className="container mx-auto px-4 sm:pb-5 pb-0">
         <div className="flex sm:flex-row flex-col">
           {
             ERP_INFO_ITEMS.map((i, index) => (
@@ -70,7 +83,7 @@ export const ERPage = () => {
           </div>
         </div>
       </section>
-      <section className="container mx-auto px-4">
+      <section id="responder" className="container mx-auto px-4">
         <CmImageCarousel images={ER_IMAGES_CARROUSEL} />
         <div className="flex flex-col items-center text-xl mt-10 mb-5 p-5 bg-customGrayBg font-thin text-center">
           <p>Consulta las fotografías de estas actividades en</p>
@@ -94,7 +107,7 @@ export const ERPage = () => {
           </div>
         </div>
       </section>
-      <section className="container mx-auto px-4 mt-10">
+      <section id="adaptarse" className="container mx-auto px-4 mt-10">
         <CmBanner text="Adaptarse" />
         <div className="mt-5 w-full flex sm:flex-row flex-col sm:justify-between">
           <CmImage src={pic2} className="sm:w-1/3 w-full sm:mr-5 mr-0" />
@@ -124,7 +137,7 @@ export const ERPage = () => {
           <CmImage src={pic4} />
         </div>
       </section>
-      <section className="container mx-auto px-4 mt-10">
+      <section id="prosperar" className="container mx-auto px-4 mt-10">
         <CmBanner text="Prosperar" />
         <div className="py-10 w-full flex justify-center">
           <span className="sm:text-3xl text-center font-thin">
@@ -158,7 +171,7 @@ export const ERPage = () => {
             {ERQuotes.map((i, index) => <CmQuote key={index} {...i} />)}
           </div>
         </div>
-        <div className="mt-3">
+        <div id="descargas" className="mt-3">
           <CmBanner text="Documentos de descarga" />
           <div className="flex justify-center py-10">
             <p className="sm:text-3xl text-xl text-center font-thin">¡Conoce la Estrategia y súmate a la acción!</p>
