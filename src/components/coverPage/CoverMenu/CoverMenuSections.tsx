@@ -33,7 +33,7 @@ export const COVER_MENU_SECTIONS = [
     items: [
       {
         text: "¿Qué son?", 
-        link: ''
+        link: '/puntos-verdes#que-son'
       },
       {
         text: "Visión, objetivo y beneficios", 

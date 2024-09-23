@@ -37,7 +37,10 @@ export const ERPage = () => {
 
   return(
     <>
-      <CmCoverVideo video={VIDEOS.coverVideo} />
+      <CmCoverVideo 
+        video={VIDEOS.coverVideo} 
+        title="Estrategia de Resiliencia Metropolitana"
+      />
       <section id="que-es" className="container mx-auto px-4 pt-10 sm:pb-10 pb-0">
         <div className="flex flex-col items-center">
           <p className="text-customMain sm:text-4xl text-xl font-bold">¿Qué es?</p>
