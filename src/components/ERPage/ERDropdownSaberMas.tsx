@@ -1,5 +1,5 @@
 import { CmBoldText, CmDropdown } from "../common";
-import { ERDropdownSaberMasProps } from "../../types";
+import { DropdownItemProps } from "../../types";
 
 export const ERDropdownSaberMas = () => {
   return(
@@ -11,7 +11,7 @@ export const ERDropdownSaberMas = () => {
   );
 }
 
-const DropdownItem = ({ title, children, margins }: ERDropdownSaberMasProps) => {
+const DropdownItem = ({ title, children, margins }: DropdownItemProps) => {
   return (
     <div className={`mt-5 sm:w-1/3 w-full ${margins ? 'sm:mx-3 mx-0' : ''}`}>
       <CmDropdown
@@ -31,7 +31,7 @@ const DropdownItem = ({ title, children, margins }: ERDropdownSaberMasProps) => 
   )
 }
 
-const ERDropdownSaberMasItems: ERDropdownSaberMasProps[] = [
+const ERDropdownSaberMasItems: DropdownItemProps[] = [
   {
     title: '¿Por qué es importante pensar en la resiliencia?',
     children: (

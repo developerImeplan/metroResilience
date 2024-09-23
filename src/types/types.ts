@@ -186,8 +186,8 @@ export interface CmDropdownProps {
   children: ReactNode,
 }
 
-// region ERDropdownSaberMas 
-export interface ERDropdownSaberMasProps {
+// region DropdownItem
+export interface DropdownItemProps {
   title: string;
   children: ReactNode | ReactNode[];
   margins?: boolean;
