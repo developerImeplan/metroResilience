@@ -13,7 +13,7 @@ export const PVQueSonDropdown = () => {
 
 const DropdownItem = ({ title, children, margins }: DropdownItemProps) => {
   return (
-    <div className={`mt-5 sm:w-1/3 w-full ${margins ? 'sm:mx-3 mx-0' : ''}`}>
+    <div id="vision-objetivos" className={`mt-5 sm:w-1/3 w-full ${margins ? 'sm:mx-3 mx-0' : ''}`}>
       <CmDropdown
         titleComponent={
           <div className="p-5 border-2 border-customGrayBg rounded-2xl hover:bg-customGreen hover:border-customGreen group">
