@@ -166,7 +166,7 @@ export interface ERProsperarIconDescProps {
 
 // region CmQuote
 export interface CmQuoteProps {
-  color: 'customBlueLighter';
+  color?: 'customBlueLighter' | 'customGreen';
   img: string;
   title: string;
   text: string;

@@ -2,9 +2,13 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 import { VIDEOS } from "../../constants";
-import { CmBanner, CmBoldText, CmCoverVideo, CmImage } from "../common";
+import { CmBanner, CmBoldText, CmCoverVideo, CmImage, CmQuote, CmVideo } from "../common";
 import { PVQueSonDropdown } from "./PVQueSonDropdown";
 import { PV_MODELOS_IMGS } from "./PVModelosImgs";
+import { PV_MODELOS_QUOTES } from "./PVModelosQuotes";
+
+import mapaPV from "../../assets/mapa_pvs.png";
+import renderPV from "../../assets/pv_render.png";
 
 export const PVPage = () => {
   const location = useLocation();
@@ -69,6 +73,31 @@ export const PVPage = () => {
           </div>
           <div className="flex justify-center mt-3">
             <CmImage src="https://placehold.co/600x80" />
+          </div>
+        </div>
+        <div className="flex sm:flex-row flex-col">
+          {PV_MODELOS_QUOTES.map((i, index) => <CmQuote key={index} {...i} color="customGreen" />)}
+        </div>
+        <CmBanner text="Ubicación" />
+        <div className="sm:mt-10 mt-5 font-thin sm:text-2xl flex justify-center">
+          <span className="text-center">
+            <CmBoldText color="customGreen">El primer módulo está en el Bosque Urbano Tlaquepaque</CmBoldText><br /> y su existencia fortalece el trabajo realizado por el Colectivo Vecinal BUT.
+          </span>
+        </div>
+        <CmVideo url={VIDEOS.coverVideo} />
+        <div className="flex sm:flex-row flex-col mt-3">
+          <div className="sm:w-1/2 sm:mr-3 mr-0">
+            <CmImage src={mapaPV} />
+          </div>
+          <div className="sm:w-1/2 flex flex-col sm:ml-3 ml-0 sm:text-xl text-justify font-thin">
+            <CmImage 
+              src={renderPV} 
+              className="w-full"
+            />
+            <div className="mt-5">
+              <CmBoldText color="customGreen">Cada municipio del AMG tendrá un Punto Verde Metropolitano que podrás visitar, usar y conocer.</CmBoldText>
+              <p className="sm:mt-10 mt-5">En cada uno de ellos, se realizarán talleres sobre reparación de artículos y su correcta disposición, además de actividades para concientizar sobre el consumo.</p>
+            </div>
           </div>
         </div>
       </section>
