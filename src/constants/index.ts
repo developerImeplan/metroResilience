@@ -52,4 +52,9 @@ export const ER_COUNTS_AND_DESCRIPTIONS: ERCountAndDescriptionProps[] = [
     bgColor: 'customTurquoiseBlue',
     ml: '5'
   },
-]
+];
+
+export const MENU_PREFIXES: Record<string, string> = {
+  ER: '/estrategia-de-resiliencia',
+  PV: '/puntos-verdes',
+};

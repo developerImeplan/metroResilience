@@ -1,30 +1,32 @@
+import { MENU_PREFIXES } from "../../../constants";
+
 export const COVER_MENU_SECTIONS = [
   {
     title: "Estrategia de Resiliencia",
     items: [
       {
         text: "¿Qué es?", 
-        link: '/estrategia-de-resiliencia#que-es'
+        link: `${MENU_PREFIXES.ER}#que-es`
       },
       {
         text: "Visión, objetivo y beneficios", 
-        link: '/estrategia-de-resiliencia#vision-objetivo'
+        link: `${MENU_PREFIXES.ER}#vision-objetivo`
       },
       {
         text: "Responder", 
-        link: '/estrategia-de-resiliencia#responder'
+        link: `${MENU_PREFIXES.ER}#responder`
       },
       {
         text: "Adaptarse", 
-        link: '/estrategia-de-resiliencia#adaptarse'
+        link: `${MENU_PREFIXES.ER}#adaptarse`
       },
       {
         text: "Prosperar", 
-        link: '/estrategia-de-resiliencia#prosperar'
+        link: `${MENU_PREFIXES.ER}#prosperar`
       },
       {
         text: "Documentos de descarga", 
-        link: '/estrategia-de-resiliencia#descargas'
+        link: `${MENU_PREFIXES.ER}#descargas`
       },
     ]
   },
@@ -33,15 +35,15 @@ export const COVER_MENU_SECTIONS = [
     items: [
       {
         text: "¿Qué son?", 
-        link: '/puntos-verdes#que-son'
+        link: `${MENU_PREFIXES.PV}#que-son`
       },
       {
         text: "Visión, objetivo y beneficios", 
-        link: ''
+        link: `${MENU_PREFIXES.PV}#vision-objetivos`
       },
       {
         text: "Comunidad", 
-        link: ''
+        link: `${MENU_PREFIXES.PV}#comunidad`
       },
       {
         text: "Ubicación", 
