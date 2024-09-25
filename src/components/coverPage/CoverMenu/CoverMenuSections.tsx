@@ -47,11 +47,11 @@ export const COVER_MENU_SECTIONS = [
       },
       {
         text: "Ubicación", 
-        link: ''
+        link: `${MENU_PREFIXES.PV}#ubicacion`
       },
       {
         text: "Diseño y características", 
-        link: ''
+        link: `${MENU_PREFIXES.PV}#disenio-caracteristicas`
       },
     ],
     margins: true,

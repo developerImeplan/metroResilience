@@ -9,6 +9,9 @@ import { PV_MODELOS_QUOTES } from "./PVModelosQuotes";
 
 import mapaPV from "../../assets/mapa_pvs.png";
 import renderPV from "../../assets/pv_render.png";
+import { PVInfoIcons } from "./PVInfoIcons";
+import { PVDropdown } from "./PVDropdown";
+import { BsChevronDoubleDown } from "react-icons/bs";
 
 export const PVPage = () => {
   const location = useLocation();
@@ -78,6 +81,8 @@ export const PVPage = () => {
         <div className="flex sm:flex-row flex-col">
           {PV_MODELOS_QUOTES.map((i, index) => <CmQuote key={index} {...i} color="customGreen" />)}
         </div>
+      </section>
+      <section id="ubicacion" className="container mx-auto px-4 sm:pb-10 pb-0">
         <CmBanner text="Ubicación" />
         <div className="sm:mt-10 mt-5 font-thin sm:text-2xl flex justify-center">
           <span className="text-center">
@@ -98,6 +103,26 @@ export const PVPage = () => {
               <CmBoldText color="customGreen">Cada municipio del AMG tendrá un Punto Verde Metropolitano que podrás visitar, usar y conocer.</CmBoldText>
               <p className="sm:mt-10 mt-5">En cada uno de ellos, se realizarán talleres sobre reparación de artículos y su correcta disposición, además de actividades para concientizar sobre el consumo.</p>
             </div>
+          </div>
+        </div>
+      </section>
+      <section id="disenio-caracteristicas" className="container mx-auto px-4 sm:pb-10 pb-0">
+        <CmBanner text="Diseño y características" />
+        <div className="flex flex-col">
+          <span className="font-thin text-center sm:text-2xl text-xl my-5">
+            <CmBoldText color="customGreen">Los Puntos Verdes Metropolitanos son espacios vecinales,</CmBoldText><br/>
+            por eso su diseño y habilitación integra criterios como:
+          </span>
+          <PVInfoIcons />
+        </div>
+        <div className="flex flex-col">
+          <div className="w-full bg-customGreen p-5 rounded-2xl text-center">
+            <CmBoldText className="sm:text-3xl text-xl text-white">¡Quiero saber más sobre los Puntos Verdes Metropolitanos!</CmBoldText>
+          </div>
+          <PVDropdown />
+          <CmBoldText color="customGreen" className="text-center sm:text-3xl text-xl mt-10">Sigue bajando y descubre más sobre Metro Resilience Guadalajara</CmBoldText>
+          <div className="w-full flex justify-center">
+            <BsChevronDoubleDown className="mt-2 text-5xl" />
           </div>
         </div>
       </section>

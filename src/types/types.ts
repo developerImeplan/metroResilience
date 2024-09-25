@@ -192,3 +192,10 @@ export interface DropdownItemProps {
   children: ReactNode | ReactNode[];
   margins?: boolean;
 }
+
+//region PVInfoIcons
+export interface PVInfoIconsProps {
+  icon: string;
+  text: string;
+  margins?: boolean;
+}

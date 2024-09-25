@@ -3,7 +3,7 @@ import { CmImage } from "../CmImage";
 
 export const CmCoverVideoFooter = ({ image, title }: CmCoverVideoFooterProps) => {
   return (
-    <div className="flex sm:flex-row flex-col sm:justify-end items-center">
+    <div className="flex sm:flex-row flex-col sm:justify-end items-center z-50">
       <div>
         <CmImage 
           src={image} 
