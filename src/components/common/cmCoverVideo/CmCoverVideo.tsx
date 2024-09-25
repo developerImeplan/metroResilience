@@ -14,7 +14,7 @@ export const CmCoverVideo = ({ showFooter = true, video, children, title }: CmCo
           { children }
         </div>
         {
-          showFooter ? (
+          showFooter && title ? (
             <CmCoverVideoFooter 
               image="https://placehold.co/600x80"
               title={title}

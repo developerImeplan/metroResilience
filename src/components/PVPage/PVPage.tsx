@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 import { VIDEOS } from "../../constants";
-import { CmBanner, CmBoldText, CmCoverVideo, CmImage, CmQuote, CmVideo } from "../common";
+import { CmBanner, CmBoldText, CmCoverVideo, CmImage, CmQuote } from "../common";
 import { PVQueSonDropdown } from "./PVQueSonDropdown";
 import { PV_MODELOS_IMGS } from "./PVModelosImgs";
 import { PV_MODELOS_QUOTES } from "./PVModelosQuotes";
@@ -89,7 +89,12 @@ export const PVPage = () => {
             <CmBoldText color="customGreen">El primer módulo está en el Bosque Urbano Tlaquepaque</CmBoldText><br /> y su existencia fortalece el trabajo realizado por el Colectivo Vecinal BUT.
           </span>
         </div>
-        <CmVideo url={VIDEOS.coverVideo} />
+        <div className="flex justify-center">
+          <video className="my-3 sm:w-3/4 w-full" controls>
+            <source src={VIDEOS.coverVideo} type="video/mp4" />
+              Your browser does not support the video tag.
+          </video>
+        </div>
         <div className="flex sm:flex-row flex-col mt-3">
           <div className="sm:w-1/2 sm:mr-3 mr-0">
             <CmImage src={mapaPV} />
