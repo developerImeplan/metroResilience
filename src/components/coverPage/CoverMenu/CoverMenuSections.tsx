@@ -61,27 +61,27 @@ export const COVER_MENU_SECTIONS = [
     items: [
       {
         text: "¿Qué es?", 
-        link: ''
+        link: `${MENU_PREFIXES.GP}#que-es`
       },
       {
         text: "Visión, objetivo y beneficios", 
-        link: ''
+        link: `${MENU_PREFIXES.GP}#vision-objetivo`
       },
       {
         text: "Construcción de la Guía", 
-        link: ''
+        link: `${MENU_PREFIXES.GP}#construccion`
       },
       {
         text: "Aprendizajes", 
-        link: ''
+        link: `${MENU_PREFIXES.GP}#aprendizajes`
       },
       {
         text: "Congreso Internacional de Resiliencia Metropolitana", 
-        link: ''
+        link: `${MENU_PREFIXES.GP}#congreso-internacional`
       },
       {
         text: "Entrevistas con actores internacionales", 
-        link: ''
+        link: `${MENU_PREFIXES.GP}#entrevistas`
       },
     ]
   },

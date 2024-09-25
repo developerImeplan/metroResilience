@@ -57,4 +57,5 @@ export const ER_COUNTS_AND_DESCRIPTIONS: ERCountAndDescriptionProps[] = [
 export const MENU_PREFIXES: Record<string, string> = {
   ER: '/estrategia-de-resiliencia',
   PV: '/puntos-verdes',
+  GP: '/guia-politica'
 };
