@@ -1,9 +1,14 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { VIDEOS } from "../../constants";
-import { CmBanner, CmBoldText, CmCoverVideo } from "../common";
+import { CmBanner, CmBoldText, CmCoverVideo, CmImage } from "../common";
 import { GPQueSeraDropdown } from "./GPQueSeraDropdown";
 import { GPConstruccionImages } from "./GPConstruccionImages";
+
+import iconGobernanza from "../../assets/icon-gobernenza.png";
+import iconResiliencia from "../../assets/icon-resilencia.png";
+import iconAccion from "../../assets/icon-accion.png";
+import iconInspiracion from "../../assets/icon-inspiracion.png";
 
 export const GPPage = () => {
   const location = useLocation();
@@ -49,6 +54,31 @@ export const GPPage = () => {
               </span>
             </div>
             <GPConstruccionImages />
+          </div>
+          <div className="flex flex-col items-center font-thin">
+            <CmBoldText color="customPurpleGP" className="sm:mt-10 text-center sm:text-3xl text-xl">
+              Por ello, la Guía considera cuatro elementos clave:
+            </CmBoldText>
+            <div className="w-full flex sm:flex-row flex-col sm:justify-around mt-10">
+              <div className="flex flex-col items-center">
+                <CmImage src={iconGobernanza} className="h-[100px] mb-3" />
+                <p className="text-center sm:text-2xl text-xl">Gobernanza metropolitana</p>
+              </div>
+              <div className="flex flex-col items-center">
+                <CmImage src={iconResiliencia} className="h-[100px] mb-3" />
+                <p className="text-center sm:text-2xl text-xl">Resiliencia Urbana</p>
+              </div>
+            </div>
+            <div className="w-full flex sm:flex-row flex-col sm:justify-around mt-10">
+              <div className="flex flex-row items-center">
+                <CmImage src={iconAccion} className="h-[100px] mr-5" />
+                <p className="text-center sm:text-2xl text-xl">Acción Internacional</p>
+              </div>
+              <div className="flex flex-row items-center">
+                <CmImage src={iconInspiracion} className="h-[100px] mr-5" />
+                <p className="text-center sm:text-2xl text-xl">Inspiración y Replicabilidad</p>
+              </div>
+            </div>
           </div>
         </section>
         <section id="aprendizajes"></section>
