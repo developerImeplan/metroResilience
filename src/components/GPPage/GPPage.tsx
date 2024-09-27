@@ -9,6 +9,7 @@ import iconGobernanza from "../../assets/icon-gobernenza.png";
 import iconResiliencia from "../../assets/icon-resilencia.png";
 import iconAccion from "../../assets/icon-accion.png";
 import iconInspiracion from "../../assets/icon-inspiracion.png";
+import { GPAprendizajesDropdown } from "./GPAprendizajesDropdown";
 
 export const GPPage = () => {
   const location = useLocation();
@@ -81,7 +82,22 @@ export const GPPage = () => {
             </div>
           </div>
         </section>
-        <section id="aprendizajes"></section>
+        <section id="aprendizajes" className="mt-10">
+          <CmBanner text="Aprendizajes" />
+          <p className="sm:text-3xl text-2xl text-center font-semibold text-customGrayDarker sm:my-10 my-5">
+            Con el fin de integrar diferentes perspectivas,<br /> la Guía contempla:
+          </p>
+          <GPAprendizajesDropdown />
+          <div className="sm:mt-5 flex flex-col items-center">
+            <CmBoldText color="customGrayDarker" className="sm:text-3xl text-2xl text-center sm:mt-10 mt-5">
+              Echa un vistazo a lo que se vivió durante el Congreso
+            </CmBoldText>
+            <video className="sm:mt-10 mt-5 sm:w-3/4 w-full" controls>
+              <source src={VIDEOS.coverVideo} type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+          </div>
+        </section>
         <section id="congreso-internacional"></section>
         <section id="entrevistas"></section>
       </div>
