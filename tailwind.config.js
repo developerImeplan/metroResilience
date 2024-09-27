@@ -18,7 +18,8 @@ export default {
         customBlueLighter: '#81bdcd',
         customTurquoiseBlue: '#30849c',
         customGreen: '#48b47c',
-        customPurpleGP: '#987bb7'
+        customPurpleGP: '#987bb7',
+        customPurpleDarker: '#2f3359'
       },
     },
   },

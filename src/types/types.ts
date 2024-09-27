@@ -166,7 +166,7 @@ export interface ERProsperarIconDescProps {
 
 // region CmQuote
 export interface CmQuoteProps {
-  color?: 'customBlueLighter' | 'customGreen';
+  color?: 'customBlueLighter' | 'customGreen' | 'customPurpleGP';
   img: string;
   title: string;
   text: string;
@@ -198,4 +198,11 @@ export interface PVInfoIconsProps {
   icon: string;
   text: string;
   margins?: boolean;
+}
+
+//region GPCongresoCounts
+export interface GPCongresoCountsProps {
+  color: 'customPurpleGP' | 'customPurple' | 'customPurpleDarker',
+  title: string;
+  subtitle: string;
 }

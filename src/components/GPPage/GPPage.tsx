@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { VIDEOS } from "../../constants";
-import { CmBanner, CmBoldText, CmCoverVideo, CmImage } from "../common";
+import { CmBanner, CmBoldText, CmCoverVideo, CmImage, CmQuote } from "../common";
 import { GPQueSeraDropdown } from "./GPQueSeraDropdown";
 import { GPConstruccionImages } from "./GPConstruccionImages";
 
@@ -10,6 +10,8 @@ import iconResiliencia from "../../assets/icon-resilencia.png";
 import iconAccion from "../../assets/icon-accion.png";
 import iconInspiracion from "../../assets/icon-inspiracion.png";
 import { GPAprendizajesDropdown } from "./GPAprendizajesDropdown";
+import { GPCongresoCounts } from "./GPCongresoCounts";
+import { GP_QUOTES } from "./GPQuotes";
 
 export const GPPage = () => {
   const location = useLocation();
@@ -98,7 +100,23 @@ export const GPPage = () => {
             </video>
           </div>
         </section>
-        <section id="congreso-internacional"></section>
+        <section id="congreso-internacional" className="mt-10 mb-5 font-thin sm:text-2xl text-lg">
+          <CmBanner text="Congreso Internacional de Resiliencia Metropolitana" />
+          <div className="text-justify mt-5">
+            Durante los tres días del Congreso, <CmBoldText color="customPurpleGP">personas expertas de diferentes lugares del mundo conversaron sobre sus principales retos y cómo la resiliencia urbana incide en la mejora de nuestras metrópolis.</CmBoldText> <br />
+            <br />
+            <CmBoldText color="customPurpleGP">Lo anterior en torno a 8 temáticas centrales:</CmBoldText> Resiliencia Metropolitana, Acción Climática, Ordenamiento Territorial y Gestión de Riesgos, Resiliencia Hídrica, Economía Circular, Movilidad, Gobernanza Energética y Vivienda; <CmBoldText color="customPurpleGP">y 2 ejes transversales:</CmBoldText> Gobernanza Metropolitana e Igualdad Sustantiva. <br />
+            <br />
+            Se tuvo participación local, nacional e internacional del sector público, privado, academia, sociedad civil y la ciudadanía en general. <CmBoldText color="customPurpleGP">Reconociendo la importancia de la acción colectiva hacia un mundo resiliente.</CmBoldText>
+          </div>
+          <GPCongresoCounts />
+          <div className="flex justify-center my-5">
+            <CmBoldText color="customPurpleGP" className="sm:text-3xl text-2xl">En voz de algunas de las personas invitadas</CmBoldText>
+          </div>
+          <div className="flex sm:flex-row flex-col">
+            {GP_QUOTES.map((i, index) => <CmQuote key={index} {...i} color="customPurpleGP" />)}
+          </div>
+        </section>
         <section id="entrevistas"></section>
       </div>
     </>
