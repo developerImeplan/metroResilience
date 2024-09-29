@@ -117,7 +117,15 @@ export const GPPage = () => {
             {GP_QUOTES.map((i, index) => <CmQuote key={index} {...i} color="customPurpleGP" />)}
           </div>
         </section>
-        <section id="entrevistas"></section>
+        <section id="entrevistas">
+          <CmBanner text="Entrevistas con actores internacionales" />
+          <p className="py-10 sm:text-xl text-lg font-thin text-justify">
+            Durante el Congreso, conocimos de primera mano las diversas perspectivas sobre la resiliencia urbana en otras metrópolis del mundo. 
+          </p>
+          <div className="w-full flex justify-center">
+            <CmBoldText color="customPurpleGP text-center sm:text-2xl text-xl">Un poco de lo que nos compartieron:</CmBoldText>
+          </div>
+        </section>
       </div>
     </>
   );
