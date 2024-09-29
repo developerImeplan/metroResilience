@@ -9,6 +9,11 @@ import iconGobernanza from "../../assets/icon-gobernenza.png";
 import iconResiliencia from "../../assets/icon-resilencia.png";
 import iconAccion from "../../assets/icon-accion.png";
 import iconInspiracion from "../../assets/icon-inspiracion.png";
+import iconEntrevistas from "../../assets/icon_entrevistas.png";
+import entrevistaQuote from "../../assets/entrevista_quote.png";
+import entrevistas1 from "../../assets/entrevistas1.png";
+import entrevistas2 from "../../assets/entrevistas2.png";
+import entrevistas3 from "../../assets/entrevistas3.png";
 import { GPAprendizajesDropdown } from "./GPAprendizajesDropdown";
 import { GPCongresoCounts } from "./GPCongresoCounts";
 import { GP_QUOTES } from "./GPQuotes";
@@ -124,6 +129,21 @@ export const GPPage = () => {
           </p>
           <div className="w-full flex justify-center">
             <CmBoldText color="customPurpleGP text-center sm:text-2xl text-xl">Un poco de lo que nos compartieron:</CmBoldText>
+          </div>
+          <div className="flex justify-center">
+            <video className="my-3 sm:w-3/4 w-full" controls>
+              <source src={VIDEOS.coverVideo} type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+          </div>
+          <div className="flex sm:flex-row flex-col sm:justify-between sm:items-end items-center w-full my-5">
+            <CmImage src={iconEntrevistas} className="sm:h-[120px] sm:w-auto w-1/2" />
+            <CmImage src={entrevistaQuote} className="sm:h-[90px]" />
+          </div>
+          <div className="flex sm:flex-row flex-col sm:space-x-5 sm:space-y-0 space-y-3 py-5">
+            <CmImage src={entrevistas3} className="sm:w-1/3" />
+            <CmImage src={entrevistas2} className="sm:w-1/3" />
+            <CmImage src={entrevistas1} className="sm:w-1/3"/>
           </div>
         </section>
       </div>
