@@ -194,6 +194,7 @@ export const ERPage = () => {
           <BsChevronDoubleDown className="mt-2 text-5xl" />
         </div>
       </section>
-    </>
+      <div className="h-0 bg-customTurquoiseBlue"></div>
+    </> 
   );
 }
