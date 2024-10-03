@@ -147,6 +147,8 @@ export const GPPage = () => {
           </div>
         </section>
       </div>
+      <div className="h-0 bg-customPurpleDarker"></div>
+      <div className="h-0 bg-customPurpleGP"></div>
     </>
   );
 }
