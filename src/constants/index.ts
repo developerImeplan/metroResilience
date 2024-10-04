@@ -1,5 +1,6 @@
+import { assets } from '../assets';
+
 import { CoverPartnerProps, ERCountAndDescriptionProps } from "../types";
-import sampleVideo from '../assets/sample_video.mp4';
 
 import amb from '../assets/amb.png';
 import imeplan from '../assets/imeplan.png';
@@ -9,6 +10,12 @@ export const COVER_TITLE_TEXTS: string[] = [
   'La clave',
   'para el futuro de',
   'nuestas ciudades'
+];
+
+export const CM_PARTNERS_LOGOS: string[] = [
+  assets.financeEU,
+  assets.ambW,
+  assets.imeplanW
 ];
 
 export const COVER_PARTNERS: CoverPartnerProps[] = [
@@ -26,7 +33,7 @@ export const COVER_PARTNERS: CoverPartnerProps[] = [
 ];
 
 export const VIDEOS = { 
-  coverVideo: sampleVideo 
+  coverVideo: assets.videoCover 
 }
 
 export const ER_IMAGES_CARROUSEL: string[] = [

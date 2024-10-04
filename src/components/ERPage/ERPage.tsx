@@ -1,27 +1,31 @@
-import { ER_COUNTS_AND_DESCRIPTIONS, ER_IMAGES_CARROUSEL, VIDEOS } from "../../constants";
-import { CmBanner, CmBoldText, CmCoverVideo, CmImage, CmImageCarousel, CmQuote } from "../common";
+import { useEffect } from "react";
+
+import { useLocation } from "react-router-dom";
 import { BsChevronDoubleDown } from "react-icons/bs";
 
-import disasters from "../../assets/disasters.png";
-import responderLogos from "../../assets/responder_logos.png";
+// import { assets } from "../../assets";
+import { ER_COUNTS_AND_DESCRIPTIONS, ER_IMAGES_CARROUSEL, VIDEOS } from "../../constants";
+import { CmBanner, CmBoldText, CmCoverVideo, CmImage, CmImageCarousel, CmQuote } from "../common";
+
 import { ERInfoItem } from "./ERInfoItem";
 import { ERP_INFO_ITEMS } from "./ERInfoItems";
 import { ERCountItems } from "./ERCountItems";
 import { ERCountItem } from "./ERCountItem";
 import { ERCountAndDescription } from "./ERCountAndDescription";
-import pic1 from "../../assets/ER_pic1.png";
-import pic2 from "../../assets/ER_pic2.png";
-import pic3 from "../../assets/ER_pic3.png";
-import pic4 from "../../assets/ER_pic4.png";
-import desafios from "../../assets/er_desafios.png";
 import { ER_PROSPERAR_ICONS_DESC } from "./ERProsperarIconDescs";
 import { ERProsperarIconDesc } from "./ERProsperarIconDesc";
 import { ERQuotes } from "./ERQuotes";
 import { ERDowloads } from "./ERDowloads";
 import { ERDowload } from "./ERDowload";
 import { ERDropdownSaberMas } from "./ERDropdownSaberMas";
-import { useLocation } from "react-router-dom";
-import { useEffect } from "react";
+
+import disasters from "../../assets/disasters.png";
+import responderLogos from "../../assets/responder_logos.png";
+import pic1 from "../../assets/ER_pic1.png";
+import pic2 from "../../assets/ER_pic2.png";
+import pic3 from "../../assets/ER_pic3.png";
+import pic4 from "../../assets/ER_pic4.png";
+import desafios from "../../assets/er_desafios.png";
 
 export const ERPage = () => {
   const location = useLocation();
@@ -37,7 +41,12 @@ export const ERPage = () => {
 
   return(
     <>
-      <CmCoverVideo 
+      <CmCoverVideo
+        footerContent={
+          <div>
+            hola
+          </div>
+        }
         video={VIDEOS.coverVideo} 
         title="Estrategia de Resiliencia Metropolitana"
       />

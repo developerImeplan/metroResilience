@@ -7,7 +7,7 @@ export const CoverPage = () => {
   return (
     <>
       <CmCoverVideo showFooter={false} video={VIDEOS.coverVideo}>
-        <div className="sm:mt-20 mt-40">
+        <div className="sm:pt-20 pt-40">
           <CoverTitle />
           <CmPartnersLogos />
           <div className="sm:px-20 px-5">
