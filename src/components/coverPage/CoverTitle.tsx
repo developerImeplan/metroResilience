@@ -9,7 +9,7 @@ const CoverTitleText: React.FC<CoverTitleTextProps> = ({ text }) => (
 
 export const CoverTitle = () => {
   return(
-    <div>
+    <div className="mt-20">
       {
         COVER_TITLE_TEXTS.map((text, index) => (
           <CoverTitleText

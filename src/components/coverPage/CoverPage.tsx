@@ -1,4 +1,4 @@
-import { CmPartnersLogos, CoverTitle, CoverPartner, CoverDropdown, CmSelectToDisplayLabel, CoverMenu, CmCoverVideo, CmBoldText } from '../';
+import { CmPartnersLogos, CoverTitle, CoverPartner, CoverDropdown, CmSelectToDisplayLabel, CoverMenu, CmCoverVideo, CmBoldText, CoverReturnIcon } from '../';
 import { COVER_PARTNERS, VIDEOS } from '../../constants';
 import { CmSubtitle } from '../common/CmSubtitle';
 import { COVER_DROPDOWNS } from './CoverDropdowns';
@@ -10,7 +10,7 @@ export const CoverPage = () => {
         <div className="sm:pt-20 pt-40">
           <CoverTitle />
           <CmPartnersLogos />
-          <div className="sm:px-20 px-5">
+          <div className="sm:px-20 px-5 mt-20">
             <p className="text-center text-white font-thin sm:text-lg text-sm">
               Este sitio se ha elaborado con la asistencia financiera de la Unión Europea. El contenido es responsabilidad exclusiva del 
               Imeplan, y bajo ninguna circunstancia debe considerarse como un reflejo de la posición de la Unión Europea.
@@ -20,8 +20,10 @@ export const CoverPage = () => {
       </CmCoverVideo>
       <section className="relative overflow-hidden py-10">
         <div className="container mx-auto px-4">
-          <div className="flex justify-center mb-10">
-            <p className="text-customMain sm:text-5xl text-3xl font-bold">¿Qué es?</p>
+          <div className="flex justify-center items-center mb-10">
+            <CoverReturnIcon />
+            <p className="text-customMain sm:text-5xl text-3xl font-bold mx-2">¿Qué es?</p>
+            <CoverReturnIcon />
           </div>
           <p className="text-customMain sm:text-4xl text:2xl sm:leading-10 leading-6 text-center font-thin">
             <CmBoldText>Metro Resilience Guadalajara (MRG) o  Metrópoli Resiliente, por su adaptación al español, reúne esfuerzos comunitarios, locales e internacionales</CmBoldText>, para fortalecer la gobernanza con el fin de responder, adaptar y prosperar ante los desafíos urbanos en las Áreas Metropolitanas de Guadalajara y Barcelona.
