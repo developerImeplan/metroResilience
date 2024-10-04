@@ -3,8 +3,8 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { BsChevronDoubleDown } from "react-icons/bs";
 
-// import { assets } from "../../assets";
-import { ER_COUNTS_AND_DESCRIPTIONS, ER_IMAGES_CARROUSEL, VIDEOS } from "../../constants";
+import { assets } from "../../assets";
+import { ER_COUNTS_AND_DESCRIPTIONS, ER_COVER_LOGOS, ER_IMAGES_CARROUSEL } from "../../constants";
 import { CmBanner, CmBoldText, CmCoverVideo, CmImage, CmImageCarousel, CmQuote } from "../common";
 
 import { ERInfoItem } from "./ERInfoItem";
@@ -43,11 +43,11 @@ export const ERPage = () => {
     <>
       <CmCoverVideo
         footerContent={
-          <div>
-            hola
+          <div className="flex justify-end">
+            { ER_COVER_LOGOS.map(i => (<CmImage src={i} className="sm:w-1/4 w-1/3 sm:h-[60px] h-[30px] sm:ml-20 sm:mr-5 mx-3" />)) }
           </div>
         }
-        video={VIDEOS.coverVideo} 
+        img={assets.erm}
         title="Estrategia de Resiliencia Metropolitana"
       />
       <section id="que-es" className="container mx-auto px-4 pt-10 sm:pb-10 pb-0">

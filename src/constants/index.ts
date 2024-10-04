@@ -2,10 +2,6 @@ import { assets } from '../assets';
 
 import { CoverPartnerProps, ERCountAndDescriptionProps } from "../types";
 
-import amb from '../assets/amb.png';
-import imeplan from '../assets/imeplan.png';
-import ue from '../assets/ue.png';
-
 export const COVER_TITLE_TEXTS: string[] = [
   'La clave',
   'para el futuro de',
@@ -35,6 +31,12 @@ export const COVER_PARTNERS: CoverPartnerProps[] = [
 export const VIDEOS = { 
   coverVideo: assets.videoCover 
 }
+
+export const ER_COVER_LOGOS: string[] = [
+  assets.ambW,
+  assets.imeplanW,
+  assets.resilientCity,
+];
 
 export const ER_IMAGES_CARROUSEL: string[] = [
   "https://via.placeholder.com/800x400?text=Slide+1",
