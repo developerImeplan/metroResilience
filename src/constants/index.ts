@@ -19,15 +19,15 @@ export const CM_PARTNERS_LOGOS: string[] = [
 ];
 
 export const COVER_PARTNERS: CoverPartnerProps[] = [
-  { src: ue, url: 'https://european-union.europa.eu/index_es ' },
+  { src: assets.financeEUColor, url: 'https://european-union.europa.eu/index_es ' },
   {
     title: 'Representando al AMB',
-    src: amb,
+    src: assets.ambC,
     url: 'https://www.amb.cat/s/home.html'
   },
   {
     title: 'Representando al AMG',
-    src: imeplan,
+    src: assets.imeplanC,
     url: 'https://www.imeplan.mx/ '
   },
 ];
