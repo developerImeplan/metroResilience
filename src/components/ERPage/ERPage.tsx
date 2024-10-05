@@ -14,6 +14,7 @@ import { ERCountAndDescription } from "./ERCountAndDescription";
 import { ER_PROSPERAR_ICONS_DESC } from "./ERProsperarIconDescs";
 import { ERQuotes } from "./ERQuotes";
 import { 
+  ERAdaptarseIconsText,
   ERCountItems,
   ERDowload,
   ERDowloads,
@@ -23,11 +24,8 @@ import {
 } from "./";
 
 import responderLogos from "../../assets/responder_logos.png";
-import pic1 from "../../assets/ER_pic1.png";
-import pic2 from "../../assets/ER_pic2.png";
 import pic3 from "../../assets/ER_pic3.png";
 import pic4 from "../../assets/ER_pic4.png";
-import desafios from "../../assets/er_desafios.png";
 
 export const ERPage = () => {
   const location = useLocation();
@@ -120,19 +118,19 @@ export const ERPage = () => {
             </div>
           </div>
           <div className="sm:ml-5 ml-0 sm:w-1/2 w-full sm:mt-0 mt-5">
-            <img src={pic1} />
+            <CmImage src={assets.erLibro} className="w-full h-full object-cover" />
           </div>
         </div>
       </section>
       <section id="adaptarse" className="container mx-auto px-4 mt-10">
-        <CmBanner text="Adaptarse" />
+        <CmBanner text="Adaptarse" icon={assets.erLogo} />
         <div className="mt-5 w-full flex sm:flex-row flex-col sm:justify-between">
-          <CmImage src={pic2} className="sm:w-1/3 w-full sm:mr-5 mr-0" />
+          <CmImage src={assets.erLibro2} className="sm:w-1/3 w-full sm:mr-5 mr-0" />
           <div className="flex flex-col justify-between sm:w-2/3 w-full">
             <p className="text-center font-bold sm:text-3xl text-customMain">Con estos resultados, se trabajó bajo
             cuatro principales desafíos metropolitanos
             </p>
-            <CmImage className="p-5" src={desafios} />
+            <ERAdaptarseIconsText />
           </div>
         </div>
         <div className="flex sm:flex-row flex-col items-center sm:mt-10">
@@ -147,7 +145,7 @@ export const ERPage = () => {
             - <CmBoldText>Su resiliencia depende de fortalecer las capacidades de los sistemas</CmBoldText> individuales para fortalecer la ciudad en general.
             </span>
           </div>
-          <CmImage src={pic3} />
+          <CmImage src={assets.erTaller} className="sm:w-1/3" />
         </div>
         <div className="flex flex-col items-center mt-10">
           <span className="sm:text-3xl text-xl font-thin mb-5">En suma, la <CmBoldText color="customBlueLighter">Estrategia de Resiliencia</CmBoldText> se integra por</span>

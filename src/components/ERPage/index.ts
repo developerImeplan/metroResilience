@@ -1,3 +1,4 @@
+export * from './ERAdaptarseIconsText';
 export * from './ERCountItems';
 export * from './ERDowload';
 export * from './ERDowloads';

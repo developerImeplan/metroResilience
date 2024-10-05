@@ -174,6 +174,12 @@ export interface ERProsperarIconDescProps {
   margins?: boolean;
 }
 
+// region ERAdaptarseIconsText
+export interface ERAdaptarseIconsTextProps {
+  icon: string;
+  text: string;
+}
+
 // region CmQuote
 export interface CmQuoteProps {
   color?: 'customBlueLighter' | 'customGreen' | 'customPurpleGP';

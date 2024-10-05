@@ -1,5 +1,9 @@
 import ambC from "../assets/imgs/amb_color.png";
 import ambW from "../assets/imgs/amb_white.png";
+import adaptarseIcon1 from "../assets/imgs/adaptarseIcon1.png";
+import adaptarseIcon2 from "../assets/imgs/adaptarseIcon2.png";
+import adaptarseIcon3 from "../assets/imgs/adaptarseIcon3.png";
+import adaptarseIcon4 from "../assets/imgs/adaptarseIcon4.png";
 import carrusel1 from "../assets/imgs/carrusel1.jpg";
 import carrusel2 from "../assets/imgs/carrusel2.jpg";
 import carrusel3 from "../assets/imgs/carrusel3.jpg";
@@ -12,6 +16,9 @@ import carrusel9 from "../assets/imgs/carrusel9.jpg";
 import carrusel10 from "../assets/imgs/carrusel10.jpg";
 import carrusel11 from "../assets/imgs/carrusel11.jpg";
 import erLogo from "../assets/imgs/er_logo.png";
+import erLibro from "../assets/imgs/er_libro.jpg";
+import erLibro2 from "../assets/imgs/er_libro2.jpg";
+import erTaller from "../assets/imgs/er_taller.jpg";
 import erm from "../assets/imgs/erm.png";
 import financeEU from "../assets/imgs/financeEU.png";
 import financeEUColor from "../assets/imgs/financeEU_color.png";
@@ -28,6 +35,10 @@ import resilientCity from "../assets/imgs/resilient_city_network.png";
 import videoCover from "../assets/video_inicio-metropoli_resiliente.mp4";
 
 export const assets = {
+  adaptarseIcon1,
+  adaptarseIcon2,
+  adaptarseIcon3,
+  adaptarseIcon4,
   ambC,
   ambW,
   carrusel1,
@@ -43,6 +54,9 @@ export const assets = {
   carrusel11,
   erm,
   erLogo,
+  erLibro,
+  erLibro2,
+  erTaller,
   financeEU,
   financeEUColor,
   gpLogo,

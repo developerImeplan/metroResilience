@@ -1,6 +1,6 @@
 import { assets } from '../assets';
 
-import { CoverPartnerProps, ERCountAndDescriptionProps, ERQueEsIconProps } from "../types";
+import { CoverPartnerProps, ERAdaptarseIconsTextProps, ERCountAndDescriptionProps, ERQueEsIconProps } from "../types";
 
 export const COVER_TITLE_TEXTS: string[] = [
   'La clave',
@@ -61,6 +61,25 @@ export const ER_IMAGES_CARROUSEL: string[] = [
   assets.carrusel9,
   assets.carrusel10,
   assets.carrusel11,
+];
+
+export const ER_ADAPTARSE_ICONS_TEXT: ERAdaptarseIconsTextProps[] = [
+  {
+    icon: assets.adaptarseIcon1,
+    text: "Complejidad del territorio metropolitano"
+  },
+  {
+    icon: assets.adaptarseIcon2,
+    text: "Gestión integral de la movilidad"
+  },
+  {
+    icon: assets.adaptarseIcon3,
+    text: "Gestión de los servicios públicos"
+  },
+  {
+    icon: assets.adaptarseIcon4,
+    text: "Gestión de los recursos hídricos"
+  },
 ];
 
 export const ER_COUNTS_AND_DESCRIPTIONS: ERCountAndDescriptionProps[] = [
