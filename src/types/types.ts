@@ -134,6 +134,7 @@ export interface ERInfoItemProps {
 
 // region CmBanner
 export interface CmBannerProps {
+  icon?: string;
   text: string;
 }
 

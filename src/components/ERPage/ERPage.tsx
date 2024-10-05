@@ -54,7 +54,11 @@ export const ERPage = () => {
       />
       <section id="que-es" className="container mx-auto px-4 pt-10 sm:pb-10 pb-0">
         <div className="flex flex-col items-center">
-          <p className="text-customMain sm:text-4xl text-xl font-bold">¿Qué es?</p>
+          <div className="flex sm:space-x-4 space-x-2">
+            <CmImage src={assets.erLogo} className="sm:h-[40px] h-[30px]" />
+            <p className="text-customMain sm:text-4xl text-2xl font-bold">¿Qué es?</p>
+            <CmImage src={assets.erLogo} className="sm:h-[40px] h-[30px]" />
+          </div>
           <span className="p-5 font-thin sm:text-2xl text-lg text-center">
             <CmBoldText color="customBlueLighter">La Estrategia reúne conocimientos técnicos, comunitarios y académicos</CmBoldText> donde se identifican los principales impactos agudos y tensiones crónicas que afectan a las personas que habitan el Área Metropolitana de Guadalajara (AMG), como:
           </span>
@@ -75,7 +79,7 @@ export const ERPage = () => {
           }
         </div>
         <div className="py-10">
-          <CmBanner text="Responder" />
+          <CmBanner text="Responder" icon={assets.erLogo} />
           <div className="flex sm:flex-row flex-col sm:items-center  justify-center py-10">
             <span className="sm:text-3xl font-thin sm:pr-20 pr-0 sm:w-1/2 w-full sm:text-start text-center">
               A lo largo de estos años, <CmBoldText color="customMain">la metrópoli se ha preparado a través de sus instrumentos de planeación y gestión, para responder ante diferentes impactos y tensiones</CmBoldText> que vulneran al territorio.

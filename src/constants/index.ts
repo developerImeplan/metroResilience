@@ -50,9 +50,17 @@ export const ER_QUE_ES_ICONS: ERQueEsIconProps[] = [
 ]
 
 export const ER_IMAGES_CARROUSEL: string[] = [
-  "https://via.placeholder.com/800x400?text=Slide+1",
-  "https://via.placeholder.com/800x400?text=Slide+2",
-  "https://via.placeholder.com/800x400?text=Slide+3",
+  assets.carrusel1,
+  assets.carrusel2,
+  assets.carrusel3,
+  assets.carrusel4,
+  assets.carrusel5,
+  assets.carrusel6,
+  assets.carrusel7,
+  assets.carrusel8,
+  assets.carrusel9,
+  assets.carrusel10,
+  assets.carrusel11,
 ];
 
 export const ER_COUNTS_AND_DESCRIPTIONS: ERCountAndDescriptionProps[] = [
