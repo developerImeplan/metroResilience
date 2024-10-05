@@ -1,6 +1,6 @@
 import { assets } from '../assets';
 
-import { CoverPartnerProps, ERCountAndDescriptionProps } from "../types";
+import { CoverPartnerProps, ERCountAndDescriptionProps, ERQueEsIconProps } from "../types";
 
 export const COVER_TITLE_TEXTS: string[] = [
   'La clave',
@@ -37,6 +37,17 @@ export const ER_COVER_LOGOS: string[] = [
   assets.imeplanW,
   assets.resilientCity,
 ];
+
+export const ER_QUE_ES_ICONS: ERQueEsIconProps[] = [
+  {
+    icon: assets.inundaciones,
+    title: "Inundaciones, sequías o incendios"
+  },
+  {
+    icon: assets.movilidad,
+    title: "Asentamientos irregulares o movilidad deficiente"
+  },
+]
 
 export const ER_IMAGES_CARROUSEL: string[] = [
   "https://via.placeholder.com/800x400?text=Slide+1",

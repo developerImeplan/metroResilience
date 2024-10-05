@@ -4,22 +4,24 @@ import { useLocation } from "react-router-dom";
 import { BsChevronDoubleDown } from "react-icons/bs";
 
 import { assets } from "../../assets";
-import { ER_COUNTS_AND_DESCRIPTIONS, ER_COVER_LOGOS, ER_IMAGES_CARROUSEL } from "../../constants";
+import { ER_COUNTS_AND_DESCRIPTIONS, ER_COVER_LOGOS, ER_IMAGES_CARROUSEL, ER_QUE_ES_ICONS } from "../../constants";
 import { CmBanner, CmBoldText, CmCoverVideo, CmImage, CmImageCarousel, CmQuote } from "../common";
 
 import { ERInfoItem } from "./ERInfoItem";
 import { ERP_INFO_ITEMS } from "./ERInfoItems";
-import { ERCountItems } from "./ERCountItems";
 import { ERCountItem } from "./ERCountItem";
 import { ERCountAndDescription } from "./ERCountAndDescription";
 import { ER_PROSPERAR_ICONS_DESC } from "./ERProsperarIconDescs";
-import { ERProsperarIconDesc } from "./ERProsperarIconDesc";
 import { ERQuotes } from "./ERQuotes";
-import { ERDowloads } from "./ERDowloads";
-import { ERDowload } from "./ERDowload";
-import { ERDropdownSaberMas } from "./ERDropdownSaberMas";
+import { 
+  ERCountItems,
+  ERDowload,
+  ERDowloads,
+  ERDropdownSaberMas,
+  ERProsperarIconDesc,
+  ERQueEsIcon
+} from "./";
 
-import disasters from "../../assets/disasters.png";
 import responderLogos from "../../assets/responder_logos.png";
 import pic1 from "../../assets/ER_pic1.png";
 import pic2 from "../../assets/ER_pic2.png";
@@ -56,10 +58,9 @@ export const ERPage = () => {
           <span className="p-5 font-thin sm:text-2xl text-lg text-center">
             <CmBoldText color="customBlueLighter">La Estrategia reúne conocimientos técnicos, comunitarios y académicos</CmBoldText> donde se identifican los principales impactos agudos y tensiones crónicas que afectan a las personas que habitan el Área Metropolitana de Guadalajara (AMG), como:
           </span>
-          <CmImage
-            src={disasters}
-            className="sm:w-1/2 w-full py-5"
-          />
+          <div className="flex justify-center w-full sm:space-x-40 sm:py-10">
+            { ER_QUE_ES_ICONS.map(i => (<ERQueEsIcon {...i} />))}
+          </div>
           <span className="p-5 font-thin sm:text-2xl text-lg text-center">
             El AMG desarrolló la ERM con el fin  de  anticipar y mitigar estos fenómenos, reforzando la corresponsabilidad comunitaria e institucionalizando la resiliencia. Para poder lograrlo, se han planteado <CmBoldText color="customBlueLighter">acciones para responder, adaptar y prosperar</CmBoldText> ante los desafíos urbanos.
           </span>

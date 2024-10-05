@@ -159,6 +159,12 @@ export interface ERCountAndDescriptionProps {
   ml?: string;
 }
 
+// region ERQueEsIcon
+export interface ERQueEsIconProps {
+  icon: string;
+  title: string;
+}
+
 // region ERProsperarIconDesc
 export interface ERProsperarIconDescProps {
   icon: string;

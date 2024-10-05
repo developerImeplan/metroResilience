@@ -5,3 +5,4 @@ export * from './ERDropdownSaberMas';
 export * from './ERPage';
 export * from './ERPage';
 export * from './ERProsperarIconDesc';
+export * from './ERQueEsIcon';

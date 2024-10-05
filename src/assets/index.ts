@@ -3,10 +3,12 @@ import ambW from "../assets/imgs/amb_white.png";
 import erm from "../assets/imgs/erm.png";
 import financeEU from "../assets/imgs/financeEU.png";
 import financeEUColor from "../assets/imgs/financeEU_color.png";
-import metroLg from "../assets/imgs/metro_logo.png";
 import iconReturn from "../assets/imgs/icon_return.png";
 import imeplanC from "../assets/imgs/imeplan_color.png";
 import imeplanW from "../assets/imgs/imeplan_white.png";
+import inundaciones from "../assets/imgs/inundaciones_icon.png";
+import metroLg from "../assets/imgs/metro_logo.png";
+import movilidad from "../assets/imgs/movilidad_icon.png";
 import resilientCity from "../assets/imgs/resilient_city_network.png";
 
 import presentacionER from "../assets/presentacion_erm.jpg";
@@ -18,10 +20,12 @@ export const assets = {
   erm,
   financeEU,
   financeEUColor,
-  metroLg,
   iconReturn,
   imeplanC,
   imeplanW,
+  inundaciones,
+  metroLg,
+  movilidad,
   resilientCity,
 
   presentacionER,
