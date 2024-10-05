@@ -180,6 +180,12 @@ export interface ERAdaptarseIconsTextProps {
   text: string;
 }
 
+// region ERPillProps 
+export interface ERPillProps {
+  bg: string;
+  text: string;
+}
+
 // region CmQuote
 export interface CmQuoteProps {
   color?: 'customBlueLighter' | 'customGreen' | 'customPurpleGP';

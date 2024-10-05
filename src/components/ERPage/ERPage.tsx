@@ -20,12 +20,11 @@ import {
   ERDowloads,
   ERDropdownSaberMas,
   ERProsperarIconDesc,
+  ERPills,
   ERQueEsIcon
 } from "./";
 
 import responderLogos from "../../assets/responder_logos.png";
-import pic3 from "../../assets/ER_pic3.png";
-import pic4 from "../../assets/ER_pic4.png";
 
 export const ERPage = () => {
   const location = useLocation();
@@ -149,7 +148,7 @@ export const ERPage = () => {
         </div>
         <div className="flex flex-col items-center mt-10">
           <span className="sm:text-3xl text-xl font-thin mb-5">En suma, la <CmBoldText color="customBlueLighter">Estrategia de Resiliencia</CmBoldText> se integra por</span>
-          <CmImage src={pic4} />
+          <ERPills />
         </div>
       </section>
       <section id="prosperar" className="container mx-auto px-4 mt-10">

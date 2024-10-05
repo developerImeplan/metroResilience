@@ -4,6 +4,10 @@ import adaptarseIcon1 from "../assets/imgs/adaptarseIcon1.png";
 import adaptarseIcon2 from "../assets/imgs/adaptarseIcon2.png";
 import adaptarseIcon3 from "../assets/imgs/adaptarseIcon3.png";
 import adaptarseIcon4 from "../assets/imgs/adaptarseIcon4.png";
+import adaptarsePill1 from "../assets/imgs/adaptarsePill1.png";
+import adaptarsePill2 from "../assets/imgs/adaptarsePill2.png";
+import adaptarsePill3 from "../assets/imgs/adaptarsePill3.png";
+import adaptarsePill4 from "../assets/imgs/adaptarsePill4.png";
 import carrusel1 from "../assets/imgs/carrusel1.jpg";
 import carrusel2 from "../assets/imgs/carrusel2.jpg";
 import carrusel3 from "../assets/imgs/carrusel3.jpg";
@@ -39,6 +43,10 @@ export const assets = {
   adaptarseIcon2,
   adaptarseIcon3,
   adaptarseIcon4,
+  adaptarsePill1,
+  adaptarsePill2,
+  adaptarsePill3,
+  adaptarsePill4,
   ambC,
   ambW,
   carrusel1,

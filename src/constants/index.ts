@@ -1,6 +1,6 @@
 import { assets } from '../assets';
 
-import { CoverPartnerProps, ERAdaptarseIconsTextProps, ERCountAndDescriptionProps, ERQueEsIconProps } from "../types";
+import { CoverPartnerProps, ERAdaptarseIconsTextProps, ERCountAndDescriptionProps, ERPillProps, ERQueEsIconProps } from "../types";
 
 export const COVER_TITLE_TEXTS: string[] = [
   'La clave',
@@ -98,6 +98,25 @@ export const ER_COUNTS_AND_DESCRIPTIONS: ERCountAndDescriptionProps[] = [
     examples: 'Ejemplo: asentamientos irregulares y movilidad.',
     bgColor: 'customTurquoiseBlue',
     ml: '5'
+  },
+];
+
+export const ER_PILLS: ERPillProps[] = [
+  {
+    bg:   assets.adaptarsePill1,
+    text: "4 pilares"
+  },
+  {
+    bg:   assets.adaptarsePill2,
+    text: "2 componentes sustantivos"
+  },
+  {
+    bg:   assets.adaptarsePill3,
+    text: "16 metas"
+  },
+  {
+    bg:   assets.adaptarsePill4,
+    text: "38 acciones"
   },
 ];
 
