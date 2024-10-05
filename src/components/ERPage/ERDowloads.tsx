@@ -1,9 +1,7 @@
+import { assets } from "../../assets";
 import { ERDowloadProps } from "../../types";
 
 import erGuia from "../../assets/er_guia.png";
-import erDocumentoCompleto from "../../assets/er_documento_completo.png";
-import erPresentacionEjecutiva from "../../assets/er_presentacion_ejecutiva.png";
-import erResumenEjecutivo from "../../assets/er_resumen_ejecutivo.png";
 
 export const ERDowloads: ERDowloadProps[] = [
   {
@@ -13,20 +11,20 @@ export const ERDowloads: ERDowloadProps[] = [
     marginR: true
   },
   {
-    img: erPresentacionEjecutiva,
+    img: assets.erPresentacionEjecutiva,
     title: 'Presentación ejecutiva',
-    doc: '',
+    doc: assets.erPresentacionEjecutivaPDF,
     marginR: true
   },
   {
-    img: erResumenEjecutivo,
+    img: assets.erResumenEjecutivo,
     title: 'Resumen ejecutivo',
-    doc: '',
+    doc: assets.erResumenEjecutivoPDF,
     marginR: true
   },
   {
-    img: erDocumentoCompleto,
+    img: assets.erDocumentoCompleto,
     title: 'Documento completo',
-    doc: '',
+    doc: assets.erDocCompletoPDF,
   },
 ];

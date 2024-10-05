@@ -13,6 +13,7 @@ export const ERDowload = ({
       <p className="text-center font-bold my-4 text-xl">{title}</p>
       <a 
         href={doc}
+        download
         className="px-20 py-5 bg-customBlueLighter rounded-xl font-bold text-white" 
       >
         Descarga

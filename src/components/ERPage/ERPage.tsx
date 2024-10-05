@@ -192,7 +192,7 @@ export const ERPage = () => {
           </div>
         </div>
         <div id="descargas" className="mt-3">
-          <CmBanner text="Documentos de descarga" />
+          <CmBanner text="Documentos de descarga" icon={assets.erLogo} />
           <div className="flex justify-center py-10">
             <p className="sm:text-3xl text-xl text-center font-thin">¡Conoce la Estrategia y súmate a la acción!</p>
           </div>

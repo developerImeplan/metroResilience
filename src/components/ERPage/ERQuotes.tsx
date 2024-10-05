@@ -1,3 +1,4 @@
+import { assets } from "../../assets";
 import { CmQuoteProps } from "../../types";
 
 import stockImg from "../../assets/stock.jpg";
@@ -17,7 +18,7 @@ export const ERQuotes: CmQuoteProps[] = [
   },
   {
     color: 'customBlueLighter',
-    img: stockImg,
+    img: assets.erQuote1,
     text: '“En el AMG se está buscando un repoblamiento de áreas centrales, pero prevalece la lógica comercial y no la vivienda social. Además, las rentas temporales elevan el costo de la vivienda y se desplaza a las familias de menos recursos”.',
     title: 'Representante de academia'
   },
