@@ -152,7 +152,7 @@ export const ERPage = () => {
         </div>
       </section>
       <section id="prosperar" className="container mx-auto px-4 mt-10">
-        <CmBanner text="Prosperar" />
+        <CmBanner text="Prosperar" icon={assets.erLogo} />
         <div className="py-10 w-full flex justify-center">
           <span className="sm:text-3xl text-center font-thin">
             <CmBoldText className="text-customBlueLighter">La Estrategia es un legado comunitario</CmBoldText> que marca un precedente a escala nacional e internacional.
@@ -166,15 +166,21 @@ export const ERPage = () => {
             }
         </div>
         <div className="mt-5 flex sm:flex-row flex-col w-full sm:h-[75vh] h-screen">
-          <iframe
-            allow="autoplay"
-            className="sm:w-3/4 w-full sm:h-auto h-full"
-            src="https://drive.google.com/file/d/1CT_tonWNwwZ4k9vJn5bAltZZX72F_ls0/preview"
+          <video
+            autoPlay
+            controls
+            muted
+            loop
+            src={assets.loopER}             
+            className="sm:w-3/4 w-full sm:h-auto h-full" 
           />
-          <iframe 
-            allow="autoplay" 
+          <video
+            autoPlay
+            controls
+            muted
+            loop
+            src={assets.resilienciaLLamando}             
             className="sm:w-1/4 w-full sm:ml-5 ml-0 sm:mt-0 mt-5 sm:h-auto h-full"
-            src="https://drive.google.com/file/d/1a2sb0s43OlT7pbvLFyZM8woIufqtFs4g/preview" 
           />
         </div>
       </section>

@@ -31,10 +31,12 @@ import iconReturn from "../assets/imgs/icon_return.png";
 import imeplanC from "../assets/imgs/imeplan_color.png";
 import imeplanW from "../assets/imgs/imeplan_white.png";
 import inundaciones from "../assets/imgs/inundaciones_icon.png";
+import loopER from "../assets/videos/loopER.mp4";
 import metroLg from "../assets/imgs/metro_logo.png";
 import movilidad from "../assets/imgs/movilidad_icon.png";
 import pvLogo from "../assets/imgs/pv_logo.png";
 import resilientCity from "../assets/imgs/resilient_city_network.png";
+import resilienciaLLamando from "../assets/videos/resiliencia_llamando.mp4";
 
 import videoCover from "../assets/video_inicio-metropoli_resiliente.mp4";
 
@@ -72,10 +74,12 @@ export const assets = {
   imeplanC,
   imeplanW,
   inundaciones,
+  loopER,
   metroLg,
   movilidad,
   pvLogo,
   resilientCity,
+  resilienciaLLamando,
 
   videoCover
 };
