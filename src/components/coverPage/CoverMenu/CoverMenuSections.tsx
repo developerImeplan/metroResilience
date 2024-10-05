@@ -1,7 +1,10 @@
+import { assets } from "../../../assets";
 import { MENU_PREFIXES } from "../../../constants";
+import { CoverMenuSectionProps } from "../../../types";
 
-export const COVER_MENU_SECTIONS = [
+export const COVER_MENU_SECTIONS: CoverMenuSectionProps[] = [
   {
+    icon: assets.erLogo,
     title: "Estrategia de Resiliencia",
     items: [
       {
@@ -31,6 +34,7 @@ export const COVER_MENU_SECTIONS = [
     ]
   },
   {
+    icon: assets.pvLogo,
     title: "Puntos verdes",
     items: [
       {
@@ -57,6 +61,7 @@ export const COVER_MENU_SECTIONS = [
     margins: true,
   },
   {
+    icon: assets.gpLogo,
     title: "Guía Política de Gobernanza",
     items: [
       {

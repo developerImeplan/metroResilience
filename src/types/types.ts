@@ -92,6 +92,7 @@ export interface CoverMenuItemProps {
 
 export interface CoverMenuSectionProps {
   title: string;
+  icon: string;
   items: CoverMenuItemProps[];
   margins?: boolean;
   width?: Sizing;
