@@ -1,11 +1,9 @@
 import { assets } from "../../assets";
 import { ERDowloadProps } from "../../types";
 
-import erGuia from "../../assets/er_guia.png";
-
 export const ERDowloads: ERDowloadProps[] = [
   {
-    img: erGuia,
+    img: assets.erGuia,
     title: 'Guía para leer la Estrategia',
     doc: '',
     marginR: true

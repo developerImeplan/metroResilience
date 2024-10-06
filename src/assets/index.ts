@@ -24,6 +24,7 @@ import entrevistas2 from "../assets/imgs/entrevistas2.jpg";
 import entrevistas3 from "../assets/imgs/entrevistas3.jpg";
 import erDocCompletoPDF from "../assets/docs/Estrategia de Resiliencia_Completa.pdf";
 import erDocumentoCompleto from "../assets/imgs/erDocumentoCompleto.png";
+import erGuia from "../assets/imgs/er_guia.png";
 import erLibro from "../assets/imgs/er_libro.jpg";
 import erLibro2 from "../assets/imgs/er_libro2.jpg";
 import erLogo from "../assets/imgs/er_logo.png";
@@ -80,8 +81,7 @@ import resilientCity from "../assets/imgs/resilient_city_network.png";
 import responderLogos from "../assets/imgs/responder_logos.png";
 import stock from "../assets/imgs/stock.jpg";
 import yolandaBichara from "../assets/imgs/yolanda_bichara.png";
-
-import videoCover from "../assets/video_inicio-metropoli_resiliente.mp4";
+import videoCover from "../assets/videos/video_inicio-metropoli_resiliente.mp4";
 
 export const assets = {
   adaptarseIcon1,
@@ -110,6 +110,7 @@ export const assets = {
   entrevistas3,
   erDocCompletoPDF,
   erDocumentoCompleto,
+  erGuia,
   erLibro,
   erLibro2,
   erLogo,
