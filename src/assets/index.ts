@@ -19,6 +19,9 @@ import carrusel6 from "../assets/imgs/carrusel6.jpg";
 import carrusel7 from "../assets/imgs/carrusel7.jpg";
 import carrusel8 from "../assets/imgs/carrusel8.jpg";
 import carrusel9 from "../assets/imgs/carrusel9.jpg";
+import entrevistas1 from "../assets/imgs/entrevistas1.jpg";
+import entrevistas2 from "../assets/imgs/entrevistas2.jpg";
+import entrevistas3 from "../assets/imgs/entrevistas3.jpg";
 import erDocCompletoPDF from "../assets/docs/Estrategia de Resiliencia_Completa.pdf";
 import erDocumentoCompleto from "../assets/imgs/erDocumentoCompleto.png";
 import erLibro from "../assets/imgs/er_libro.jpg";
@@ -33,7 +36,18 @@ import erResumenEjecutivoPDF from "../assets/docs/ERM_RESUMENEJECUTIVO_Imeplan.p
 import erTaller from "../assets/imgs/er_taller.jpg";
 import financeEU from "../assets/imgs/financeEU.png";
 import financeEUColor from "../assets/imgs/financeEU_color.png";
+import gpCongresoVideo from "../assets/videos/gpCongresoVideo.mp4";
+import gpConstruccion1 from "../assets/imgs/gpConstruccion1.jpg";
+import gpConstruccion2 from "../assets/imgs/gpConstruccion2.jpg";
+import gpConstruccion3 from "../assets/imgs/gpConstruccion3.jpg";
+import gpConstruccion4 from "../assets/imgs/gpConstruccion4.jpg";
+import gpCover from "../assets/imgs/gpCover.jpg";
 import gpLogo from "../assets/imgs/gp_logo.png";
+import iconAccion from "../assets/imgs/iconAccion.png";
+import iconEntrevistas from "../assets/imgs/iconEntrevistas.png";
+import iconGobernanza from "../assets/imgs/iconGobernanza.png";
+import iconInspiracion from "../assets/imgs/iconInspiracion.png";
+import iconResiliencia from "../assets/imgs/iconResiliencia.png";
 import iconReturn from "../assets/imgs/icon_return.png";
 import imeplanC from "../assets/imgs/imeplan_color.png";
 import imeplanW from "../assets/imgs/imeplan_white.png";
@@ -58,12 +72,14 @@ import pvInfoIcon2 from "../assets/imgs/pvInfoIcon2.png";
 import pvInfoIcon3 from "../assets/imgs/pvInfoIcon3.png";
 import pvLogo from "../assets/imgs/pv_logo.png";
 import pvModeloQuote2 from "../assets/imgs/pvModeloQuote2.jpg";
-import pvUbicacionVideo from "../assets/videos/pvUbicacionVideo.mp4";
 import pvUbicacion from "../assets/imgs/pvUbicacion.jpg";
+import pvUbicacionVideo from "../assets/videos/pvUbicacionVideo.mp4";
+import ramonTorra from "../assets/imgs/ramon-torra.png";
 import resilienciaLLamando from "../assets/videos/resiliencia_llamando.mp4";
 import resilientCity from "../assets/imgs/resilient_city_network.png";
 import responderLogos from "../assets/imgs/responder_logos.png";
 import stock from "../assets/imgs/stock.jpg";
+import yolandaBichara from "../assets/imgs/yolanda_bichara.png";
 
 import videoCover from "../assets/video_inicio-metropoli_resiliente.mp4";
 
@@ -89,6 +105,9 @@ export const assets = {
   carrusel7,
   carrusel8,
   carrusel9,
+  entrevistas1,
+  entrevistas2,
+  entrevistas3,
   erDocCompletoPDF,
   erDocumentoCompleto,
   erLibro,
@@ -103,7 +122,18 @@ export const assets = {
   erTaller,
   financeEU,
   financeEUColor,
+  gpCongresoVideo,
+  gpConstruccion1,
+  gpConstruccion2,
+  gpConstruccion3,
+  gpConstruccion4,
+  gpCover,
   gpLogo,
+  iconAccion,
+  iconEntrevistas,
+  iconGobernanza,
+  iconInspiracion,
+  iconResiliencia,
   iconReturn,
   imeplanC,
   imeplanW,
@@ -123,17 +153,18 @@ export const assets = {
   prosperarIcon2,
   prosperarIcon3,
   pvCover,
-  pvLogo,
-  pvModeloQuote2,
-  pvUbicacion,
   pvInfoIcon1,
   pvInfoIcon2,
   pvInfoIcon3,
+  pvLogo,
+  pvModeloQuote2,
+  pvUbicacion,
   pvUbicacionVideo,
+  ramonTorra,
   resilienciaLLamando,
   resilientCity,
   responderLogos,
   stock,
-
+  yolandaBichara,
   videoCover
 };

@@ -16,10 +16,14 @@ export default {
         customGrayDarker: '#595959',
         customGrayBg: '#eeeeee',
         customBlueLighter: '#81bdcd',
+        customSkyBlue: '#81bdcd',
         customTurquoiseBlue: '#30849c',
         customGreen: '#48b47c',
+        customGreenLighter: '#43b17b',
+        customPink: '#9263b3',
         customPurpleGP: '#987bb7',
-        customPurpleDarker: '#2f3359'
+        customPurpleDarker: '#2f3359',
+        customGreenBlue: '#134f5c'
       },
     },
   },

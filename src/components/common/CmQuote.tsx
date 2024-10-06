@@ -41,16 +41,20 @@ export const CmQuote = ({
           alt="imagen de fondo"
           className="object-cover w-full h-full"
         />
-        <div className="absolute inset-0 flex justify-center items-center bg-black bg-opacity-40">
-          <div 
-            className="bg-white p-10 rounded-full cursor-pointer"
-            onClick={handleAudioClick}
-          >
-            {
-              isPlaying ? <IoPauseOutline className="w-10 h-10" /> : <GiSoundWaves className="w-10 h-10" />
-            }
-          </div>
-        </div>
+        {
+          audio && (
+            <div className="absolute inset-0 flex justify-center items-center bg-black bg-opacity-40">
+              <div 
+                className="bg-white p-10 rounded-full cursor-pointer"
+                onClick={handleAudioClick}
+              >
+                {
+                  isPlaying ? <IoPauseOutline className="w-10 h-10" /> : <GiSoundWaves className="w-10 h-10" />
+                }
+              </div>
+            </div>
+          )
+        }
       </div>
       <div className={`flex-grow flex justify-center items-center mt-4 p-10 border rounded-3xl border-${color} min-h-[150px]`}>
         <p className={`${fontSize} font-semibold text-${color}`}>
