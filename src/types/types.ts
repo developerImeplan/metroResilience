@@ -190,7 +190,9 @@ export interface ERPillProps {
 
 // region CmQuote
 export interface CmQuoteProps {
+  audio?: string;
   color?: 'customBlueLighter' | 'customGreen' | 'customPurpleGP';
+  fontSize?: string;
   img: string;
   title: string;
   text: string;
