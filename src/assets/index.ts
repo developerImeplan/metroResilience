@@ -45,6 +45,9 @@ import modelosQuotesAudio2 from "../assets/audios/modelosQuotes2.mp3";
 import modelosQuotesAudio3 from "../assets/audios/modelosQuotes3.mp3";
 import movilidad from "../assets/imgs/movilidad_icon.png";
 import pvCover from "../assets/imgs/pv_cover.jpg";
+import pvInfoIcon1 from "../assets/imgs/pvInfoIcon1.png";
+import pvInfoIcon2 from "../assets/imgs/pvInfoIcon2.png";
+import pvInfoIcon3 from "../assets/imgs/pvInfoIcon3.png";
 import pvLogo from "../assets/imgs/pv_logo.png";
 import pvModeloQuote2 from "../assets/imgs/pvModeloQuote2.jpg";
 import pvUbicacionVideo from "../assets/videos/pvUbicacionVideo.mp4";
@@ -105,6 +108,9 @@ export const assets = {
   pvLogo,
   pvModeloQuote2,
   pvUbicacion,
+  pvInfoIcon1,
+  pvInfoIcon2,
+  pvInfoIcon3,
   pvUbicacionVideo,
   resilienciaLLamando,
   resilientCity,

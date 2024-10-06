@@ -1,8 +1,6 @@
+import { assets } from "../../assets";
 import { PVInfoIconsProps } from "../../types";
 
-import icon1 from "../../assets/pv_icon1.png";
-import icon2 from "../../assets/pv_icon2.png";
-import icon3 from "../../assets/pv_icon3.png";
 import { CmImage } from "../common";
 
 export const PVInfoIcons = () => {
@@ -26,16 +24,16 @@ const InfoIcon = ({ icon, text, margins }: PVInfoIconsProps) => {
 
 const INFO_ICONS: PVInfoIconsProps[] = [
   {
-    icon: icon1,
+    icon: assets.pvInfoIcon1,
     text: "Principios de integralidad, sostenibilidad, comunal y resiliencia"
   },
   {
-    icon: icon2,
+    icon: assets.pvInfoIcon2,
     text: "Prioriza la visibilidad, ventilación, iluminación natural y los elementos paisajísticos existentes",
     margins: false
   },
   {
-    icon: icon3,
+    icon: assets.pvInfoIcon3,
     text: "Ubicación estratégica cercana a equipamientos, zonas habitacionales o de servicio, garantizando su accesibilidad, consolidación y vigilancia"
   },
 ];

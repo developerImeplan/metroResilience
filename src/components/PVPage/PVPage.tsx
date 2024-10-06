@@ -8,7 +8,6 @@ import { PV_MODELOS_QUOTES } from "./PVModelosQuotes";
 
 import { assets } from "../../assets";
 import mapaPV from "../../assets/mapa_pvs.png";
-import renderPV from "../../assets/pv_render.png";
 import { PVInfoIcons } from "./PVInfoIcons";
 import { PVDropdown } from "./PVDropdown";
 import { BsChevronDoubleDown } from "react-icons/bs";
@@ -129,7 +128,7 @@ export const PVPage = () => {
         </div>
       </section>
       <section id="disenio-caracteristicas" className="container mx-auto px-4 sm:pb-10 pb-0">
-        <CmBanner text="Diseño y características" />
+        <CmBanner text="Diseño y características" icon={assets.pvLogo} />
         <div className="flex flex-col">
           <span className="font-thin text-center sm:text-2xl text-xl my-5">
             <CmBoldText color="customGreen">Los Puntos Verdes Metropolitanos son espacios vecinales,</CmBoldText><br/>
