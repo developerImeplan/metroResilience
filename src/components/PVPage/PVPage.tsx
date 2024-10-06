@@ -30,9 +30,9 @@ export const PVPage = () => {
     <>
       <CmCoverVideo
         footerContent={
-          <div className="flex w-1/3 space-x-20 mr-60">
-            <CmImage className="h-[60px]" src={assets.ambW} />
-            <CmImage className="h-[60px]" src={assets.imeplanW} />
+          <div className="flex sm:w-1/3 sm:space-x-20 space-x-5 sm:mr-60">
+            <CmImage className="sm:h-[60px] h-[40px]" src={assets.ambW} />
+            <CmImage className="sm:h-[60px] h-[40px]" src={assets.imeplanW} />
           </div>
         }
         img={assets.pvCover}
@@ -41,7 +41,9 @@ export const PVPage = () => {
       />
       <section id="que-son" className="container mx-auto px-4 pt-10 sm:pb-10 pb-0">
         <div className="w-full flex justify-center items-center">
-          <p className="sm:text-3xl text-lg text-center font-bold text-customMain">¿Qué son?</p>
+          <CmImage src={assets.pvLogo} className="h-[40px]" />
+          <p className="sm:text-3xl text-2xl text-center font-bold text-customMain px-2">¿Qué son?</p>
+          <CmImage src={assets.pvLogo} className="h-[40px]" />
         </div>
         <p className="text-center mt-5 sm:text-xl text-lg font-thin">
           <CmBoldText color="customGreen">Son espacios donde se reciben, recolectan y valorizan residuos</CmBoldText> en una dinámica de economía circular, propiciando la conexión entre comunidad, naturaleza y territorio. Basados en el modelo de gestión de residuos del AMB a través de su experiencia y apoyo técnico. 
@@ -58,7 +60,7 @@ export const PVPage = () => {
       </section>
       <section id="comunidad" className="container mx-auto px-4 sm:pb-10 pb-0">
       <div className="mt-10">
-          <CmBanner text="Modelos referentes" />
+          <CmBanner text="Modelos referentes" icon={assets.pvLogo} />
         </div>
         <div className="mt-5 sm:text-2xl text-lg font-thin">
           <CmBoldText className="text-customGreen">“Puntos Verdes de Barrio” del Área       Metropolitana de Barcelona (AMB).</CmBoldText>
@@ -82,8 +84,10 @@ export const PVPage = () => {
             />
           ))}
           </div>
-          <div className="flex justify-center mt-3">
-            <CmImage src="https://placehold.co/600x80" />
+          <div className="flex justify-center mt-3 w-full h-[80px] sm:space-x-10 space-x-3 py-5">
+            <CmImage src={assets.financeEUColor} className="sm:h-[40px] h-[25px]" />
+            <CmImage src={assets.ambC} className="sm:h-[40px] h-[25px]" />
+            <CmImage src={assets.imeplanC} className="sm:h-[40px] h-[25px]" />
           </div>
         </div>
         <div className="flex sm:flex-row flex-col">

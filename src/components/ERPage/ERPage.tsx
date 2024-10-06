@@ -47,6 +47,7 @@ export const ERPage = () => {
           </div>
         }
         img={assets.erm}
+        icon={assets.erLogo}
         title="Estrategia de Resiliencia Metropolitana"
       />
       <section id="que-es" className="container mx-auto px-4 pt-10 sm:pb-10 pb-0">
