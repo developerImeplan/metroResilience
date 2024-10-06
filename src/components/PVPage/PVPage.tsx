@@ -7,7 +7,7 @@ import { PV_MODELOS_IMGS } from "./PVModelosImgs";
 import { PV_MODELOS_QUOTES } from "./PVModelosQuotes";
 
 import { assets } from "../../assets";
-import mapaPV from "../../assets/mapa_pvs.png";
+
 import { PVInfoIcons } from "./PVInfoIcons";
 import { PVDropdown } from "./PVDropdown";
 import { BsChevronDoubleDown } from "react-icons/bs";
@@ -111,7 +111,7 @@ export const PVPage = () => {
         </div>
         <div className="flex sm:flex-row flex-col mt-3">
           <div className="sm:w-1/2 sm:mr-3 mr-0">
-            <CmImage src={mapaPV} />
+            <CmImage src={assets.mapaPvs} />
           </div>
           <div className="sm:w-1/2 flex flex-col sm:ml-3 ml-0 sm:text-xl text-justify font-thin">
             <div className="h-[200px]">

@@ -39,11 +39,19 @@ import imeplanC from "../assets/imgs/imeplan_color.png";
 import imeplanW from "../assets/imgs/imeplan_white.png";
 import inundaciones from "../assets/imgs/inundaciones_icon.png";
 import loopER from "../assets/videos/loopER.mp4";
+import mapaPvs from "../assets/imgs/mapa_pvs.png";
 import metroLg from "../assets/imgs/metro_logo.png";
+import modelos1 from "../assets/imgs/modelos_1.png";
+import modelos2 from "../assets/imgs/modelos_2.png";
+import modelos3 from "../assets/imgs/modelos_3.png";
+import modelos4 from "../assets/imgs/modelos_4.png";
 import modelosQuotesAudio1 from "../assets/audios/modelosQuotes1.ogg";
 import modelosQuotesAudio2 from "../assets/audios/modelosQuotes2.mp3";
 import modelosQuotesAudio3 from "../assets/audios/modelosQuotes3.mp3";
 import movilidad from "../assets/imgs/movilidad_icon.png";
+import prosperarIcon1 from "../assets/imgs/ER_prosperar_icon1.png";
+import prosperarIcon2 from "../assets/imgs/ER_prosperar_icon2.png";
+import prosperarIcon3 from "../assets/imgs/ER_prosperar_icon3.png";
 import pvCover from "../assets/imgs/pv_cover.jpg";
 import pvInfoIcon1 from "../assets/imgs/pvInfoIcon1.png";
 import pvInfoIcon2 from "../assets/imgs/pvInfoIcon2.png";
@@ -54,6 +62,8 @@ import pvUbicacionVideo from "../assets/videos/pvUbicacionVideo.mp4";
 import pvUbicacion from "../assets/imgs/pvUbicacion.jpg";
 import resilienciaLLamando from "../assets/videos/resiliencia_llamando.mp4";
 import resilientCity from "../assets/imgs/resilient_city_network.png";
+import responderLogos from "../assets/imgs/responder_logos.png";
+import stock from "../assets/imgs/stock.jpg";
 
 import videoCover from "../assets/video_inicio-metropoli_resiliente.mp4";
 
@@ -99,11 +109,19 @@ export const assets = {
   imeplanW,
   inundaciones,
   loopER,
+  mapaPvs,
   metroLg,
+  modelos1,
+  modelos2,
+  modelos3,
+  modelos4,
   modelosQuotesAudio1,
   modelosQuotesAudio2,
   modelosQuotesAudio3,
   movilidad,
+  prosperarIcon1,
+  prosperarIcon2,
+  prosperarIcon3,
   pvCover,
   pvLogo,
   pvModeloQuote2,
@@ -114,6 +132,8 @@ export const assets = {
   pvUbicacionVideo,
   resilienciaLLamando,
   resilientCity,
+  responderLogos,
+  stock,
 
   videoCover
 };

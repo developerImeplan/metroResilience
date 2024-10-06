@@ -24,8 +24,6 @@ import {
   ERQueEsIcon
 } from "./";
 
-import responderLogos from "../../assets/responder_logos.png";
-
 export const ERPage = () => {
   const location = useLocation();
 
@@ -83,7 +81,7 @@ export const ERPage = () => {
               A lo largo de estos años, <CmBoldText color="customMain">la metrópoli se ha preparado a través de sus instrumentos de planeación y gestión, para responder ante diferentes impactos y tensiones</CmBoldText> que vulneran al territorio.
             </span>
             <div className="bg-customPurple sm:ml-3 ml-0 sm:mt-0 mt-5 sm:w-1/2 w-full sm:p-20 p-10 flex justify-center rounded-3xl">
-              <CmImage src={responderLogos} className="w-full" />
+              <CmImage src={assets.responderLogos} className="w-full" />
             </div>
           </div>
           <p className="sm:text-3xl font-thin text-center">
