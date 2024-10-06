@@ -7,6 +7,7 @@ import { PVQueSonDropdown } from "./PVQueSonDropdown";
 import { PV_MODELOS_IMGS } from "./PVModelosImgs";
 import { PV_MODELOS_QUOTES } from "./PVModelosQuotes";
 
+import { assets } from "../../assets";
 import mapaPV from "../../assets/mapa_pvs.png";
 import renderPV from "../../assets/pv_render.png";
 import { PVInfoIcons } from "./PVInfoIcons";
@@ -27,8 +28,15 @@ export const PVPage = () => {
 
   return(
     <>
-      <CmCoverVideo 
-        video={VIDEOS.coverVideo} 
+      <CmCoverVideo
+        footerContent={
+          <div className="flex w-1/3 space-x-20 mr-60">
+            <CmImage className="h-[60px]" src={assets.ambW} />
+            <CmImage className="h-[60px]" src={assets.imeplanW} />
+          </div>
+        }
+        img={assets.pvCover}
+        icon={assets.pvLogo}
         title="Puntos Verdes Metropolitanos"
       />
       <section id="que-son" className="container mx-auto px-4 pt-10 sm:pb-10 pb-0">

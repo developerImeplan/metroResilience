@@ -107,6 +107,7 @@ export interface CmCoverVideoProps {
   showFooter?: boolean;
   video?: string;
   title?: string;
+  icon?: string;
   children?: ReactNode;
   footerContent?: ReactNode;
   img?: string;
@@ -114,6 +115,7 @@ export interface CmCoverVideoProps {
 
 export interface CmCoverVideoFooterProps {
   children: ReactNode;
+  icon: string;
   title: string;
 }
 

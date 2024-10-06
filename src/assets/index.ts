@@ -41,6 +41,7 @@ import inundaciones from "../assets/imgs/inundaciones_icon.png";
 import loopER from "../assets/videos/loopER.mp4";
 import metroLg from "../assets/imgs/metro_logo.png";
 import movilidad from "../assets/imgs/movilidad_icon.png";
+import pvCover from "../assets/imgs/pv_cover.jpg";
 import pvLogo from "../assets/imgs/pv_logo.png";
 import resilienciaLLamando from "../assets/videos/resiliencia_llamando.mp4";
 import resilientCity from "../assets/imgs/resilient_city_network.png";
@@ -91,6 +92,7 @@ export const assets = {
   loopER,
   metroLg,
   movilidad,
+  pvCover,
   pvLogo,
   resilienciaLLamando,
   resilientCity,
