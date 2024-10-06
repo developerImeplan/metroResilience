@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-import { VIDEOS } from "../../constants";
 import { CmBanner, CmBoldText, CmCoverVideo, CmImage, CmQuote } from "../common";
 import { PVQueSonDropdown } from "./PVQueSonDropdown";
 import { PV_MODELOS_IMGS } from "./PVModelosImgs";
@@ -95,27 +94,33 @@ export const PVPage = () => {
         </div>
       </section>
       <section id="ubicacion" className="container mx-auto px-4 sm:pb-10 pb-0">
-        <CmBanner text="Ubicación" />
+        <CmBanner text="Ubicación" icon={assets.pvLogo} />
         <div className="sm:mt-10 mt-5 font-thin sm:text-2xl flex justify-center">
           <span className="text-center">
             <CmBoldText color="customGreen">El primer módulo está en el Bosque Urbano Tlaquepaque</CmBoldText><br /> y su existencia fortalece el trabajo realizado por el Colectivo Vecinal BUT.
           </span>
         </div>
         <div className="flex justify-center">
-          <video className="my-3 sm:w-3/4 w-full" controls>
-            <source src={VIDEOS.coverVideo} type="video/mp4" />
-              Your browser does not support the video tag.
-          </video>
+          <video
+            autoPlay
+            controls
+            muted
+            loop
+            src={assets.pvUbicacionVideo}             
+            className="my-3 sm:w-3/4 w-full"
+          />
         </div>
         <div className="flex sm:flex-row flex-col mt-3">
           <div className="sm:w-1/2 sm:mr-3 mr-0">
             <CmImage src={mapaPV} />
           </div>
           <div className="sm:w-1/2 flex flex-col sm:ml-3 ml-0 sm:text-xl text-justify font-thin">
-            <CmImage 
-              src={renderPV} 
-              className="w-full"
-            />
+            <div className="h-[200px]">
+              <CmImage 
+                src={assets.pvUbicacion} 
+                className="w-full h-full object-cover"
+              />
+            </div>
             <div className="mt-5">
               <CmBoldText color="customGreen">Cada municipio del AMG tendrá un Punto Verde Metropolitano que podrás visitar, usar y conocer.</CmBoldText>
               <p className="sm:mt-10 mt-5">En cada uno de ellos, se realizarán talleres sobre reparación de artículos y su correcta disposición, además de actividades para concientizar sobre el consumo.</p>
