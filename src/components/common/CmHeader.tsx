@@ -7,8 +7,8 @@ import { CM_HEADER_ITEMS } from "../../constants";
 export const CmHeader = () => {
   return(
     <div className="w-full bg-customPurple py-3">
-      <div className="container mx-auto px-1 py-3 flex justify-between">
-        <CmImage src={assets.imeplanC} className="h-[50px]" />
+      <div className="container mx-auto px-1 py-3 flex sm:flex-row flex-col justify-between items-center">
+        <CmImage src={assets.imeplanC} className="sm:h-[50px] w-[150px]" />
         <div className="flex space-x-2">
           {CM_HEADER_ITEMS.map(i => <CmHeaderItem {...i} />)}
         </div>
@@ -23,9 +23,9 @@ const CmHeaderItem = ({
   logo
 }: CmHeaderProps) => {
   return (
-    <Link to={link} className="flex items-center w-[180px]">
-      <CmImage src={logo} className="h-[50px] mr-4" />
-      <p className="text-white sm:text-base font-thin text-start">{text}</p>
+    <Link to={link} className="flex items-center sm:w-[180px] w-1/3">
+      <CmImage src={logo} className="h-[50px] sm:mr-4 mr-2" />
+      <p className="text-white sm:text-base text-xs font-thin text-start sm:mt-0 mt-3">{text}</p>
     </Link>
   )
 }
