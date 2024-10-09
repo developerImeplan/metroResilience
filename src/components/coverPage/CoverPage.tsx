@@ -1,14 +1,35 @@
-import { CmPartnersLogos, CoverTitle, CoverPartner, CoverDropdown, CmSelectToDisplayLabel, CoverMenu, CmCoverVideo, CmBoldText, CoverReturnIcon, CmHeader } from '../';
-import { COVER_PARTNERS, VIDEOS } from '../../constants';
+import { CoverPartner, CoverDropdown, CmSelectToDisplayLabel, CoverMenu, CmBoldText, CoverReturnIcon, CmHeader, CmImage, CoverTitle, CmVideo } from '../';
+import { assets } from '../../assets';
+import { COVER_PARTNERS } from '../../constants';
 import { CmSubtitle } from '../common/CmSubtitle';
 import { COVER_DROPDOWNS } from './CoverDropdowns';
 
 export const CoverPage = () => {
   return (
     <>
-      <div className="h-screen">
+      <section className="min-h-screen">
         <CmHeader />
-      </div>
+        <div className="container mx-auto px-4">
+          <div className="flex sm:flex-row sm:items-center flex-col sm:mt-20 mt-10">
+            <CmImage src={assets.metroCLg} className="sm:h-[214px] h-[150px] sm:mb-0 mb-10" />
+            <CoverTitle />
+          </div>
+          <div className="flex justify-center">
+            <CmVideo   
+              autoplay={false}
+              muted={false}
+              url={assets.videoCover}   
+              className="my-3 sm:w-3/4 w-full py-10"
+            />
+          </div>
+          <div className="sm:px-20 px-5">
+            <p className="text-center font-thin sm:text-lg text-sm">
+              Este sitio se ha elaborado con la asistencia financiera de la Unión Europea. El contenido es responsabilidad exclusiva del 
+              Imeplan, y bajo ninguna circunstancia debe considerarse como un reflejo de la posición de la Unión Europea.
+            </p>
+          </div>
+        </div>
+      </section>
       <section className="relative overflow-hidden py-10">
         <div className="container mx-auto px-4">
           <div className="flex justify-center items-center mb-10">

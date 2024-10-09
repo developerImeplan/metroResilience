@@ -6,9 +6,9 @@ import { CM_HEADER_ITEMS } from "../../constants";
 
 export const CmHeader = () => {
   return(
-    <div className="w-full bg-customPurple py-3">
+    <div className="w-full bg-[#424777] py-3">
       <div className="container mx-auto px-1 py-3 flex sm:flex-row flex-col justify-between items-center">
-        <CmImage src={assets.imeplanC} className="sm:h-[50px] w-[150px]" />
+        <CmImage src={assets.imeplanW} className="sm:h-[40px] w-[150px]" />
         <div className="flex space-x-2">
           {CM_HEADER_ITEMS.map(i => <CmHeaderItem {...i} />)}
         </div>

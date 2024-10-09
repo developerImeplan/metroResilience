@@ -107,6 +107,9 @@ export interface CoverMenuSectionProps {
 
 // region CmCoverVideo
 export interface CmVideoProps {
+  autoplay?: boolean;
+  className?: string;
+  muted?: boolean;
   url: string;
 };
 

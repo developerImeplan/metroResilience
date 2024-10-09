@@ -56,6 +56,7 @@ import inundaciones from "../assets/imgs/inundaciones_icon.png";
 import loopER from "../assets/videos/loopER.mp4";
 import mapaPvs from "../assets/imgs/mapa_pvs.png";
 import metroLg from "../assets/imgs/metro_logo.png";
+import metroCLg from "../assets/imgs/metropoliCLogo.png";
 import modelos1 from "../assets/imgs/modelos_1.png";
 import modelos2 from "../assets/imgs/modelos_2.png";
 import modelos3 from "../assets/imgs/modelos_3.png";
@@ -142,6 +143,7 @@ export const assets = {
   loopER,
   mapaPvs,
   metroLg,
+  metroCLg,
   modelos1,
   modelos2,
   modelos3,
