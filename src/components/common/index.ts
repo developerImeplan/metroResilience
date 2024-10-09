@@ -1,5 +1,6 @@
 export * from './CmBoldText';
 export * from './CmDropdown';
+export * from './CmHeader';
 export * from './CmBanner';
 export * from './cmCoverVideo/CmCoverVideo';
 export * from './CmImage';

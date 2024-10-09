@@ -1,6 +1,6 @@
 import { assets } from '../assets';
 
-import { CoverPartnerProps, ERAdaptarseIconsTextProps, ERCountAndDescriptionProps, ERPillProps, ERQueEsIconProps } from "../types";
+import { CmHeaderProps, CoverPartnerProps, ERAdaptarseIconsTextProps, ERCountAndDescriptionProps, ERPillProps, ERQueEsIconProps } from "../types";
 
 export const COVER_TITLE_TEXTS: string[] = [
   'La clave',
@@ -12,6 +12,30 @@ export const CM_PARTNERS_LOGOS: string[] = [
   assets.financeEU,
   assets.ambW,
   assets.imeplanW
+];
+
+export const MENU_PREFIXES: Record<string, string> = {
+  ER: '/estrategia-de-resiliencia',
+  PV: '/puntos-verdes',
+  GP: '/guia-politica'
+};
+
+export const CM_HEADER_ITEMS: CmHeaderProps[] = [
+  {
+    link: MENU_PREFIXES.ER,
+    text: "Estrategia de resiliencia",
+    logo: assets.erLogo
+  },
+  {
+    link: MENU_PREFIXES.PV,
+    text: "Puntos Verdes",
+    logo: assets.pvLogo
+  },
+  {
+    link: MENU_PREFIXES.GP,
+    text: "Guía Política de Gobernanza",
+    logo: assets.gpLogo
+  },
 ];
 
 export const COVER_PARTNERS: CoverPartnerProps[] = [
@@ -119,9 +143,3 @@ export const ER_PILLS: ERPillProps[] = [
     text: "38 acciones"
   },
 ];
-
-export const MENU_PREFIXES: Record<string, string> = {
-  ER: '/estrategia-de-resiliencia',
-  PV: '/puntos-verdes',
-  GP: '/guia-politica'
-};

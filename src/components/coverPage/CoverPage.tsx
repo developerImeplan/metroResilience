@@ -1,4 +1,4 @@
-import { CmPartnersLogos, CoverTitle, CoverPartner, CoverDropdown, CmSelectToDisplayLabel, CoverMenu, CmCoverVideo, CmBoldText, CoverReturnIcon } from '../';
+import { CmPartnersLogos, CoverTitle, CoverPartner, CoverDropdown, CmSelectToDisplayLabel, CoverMenu, CmCoverVideo, CmBoldText, CoverReturnIcon, CmHeader } from '../';
 import { COVER_PARTNERS, VIDEOS } from '../../constants';
 import { CmSubtitle } from '../common/CmSubtitle';
 import { COVER_DROPDOWNS } from './CoverDropdowns';
@@ -6,18 +6,9 @@ import { COVER_DROPDOWNS } from './CoverDropdowns';
 export const CoverPage = () => {
   return (
     <>
-      <CmCoverVideo showFooter={false} video={VIDEOS.coverVideo}>
-        <div className="sm:pt-20 pt-40">
-          <CoverTitle />
-          <CmPartnersLogos />
-          <div className="sm:px-20 px-5 mt-20">
-            <p className="text-center text-white font-thin sm:text-lg text-sm">
-              Este sitio se ha elaborado con la asistencia financiera de la Unión Europea. El contenido es responsabilidad exclusiva del 
-              Imeplan, y bajo ninguna circunstancia debe considerarse como un reflejo de la posición de la Unión Europea.
-            </p>
-          </div>
-        </div>
-      </CmCoverVideo>
+      <div className="h-screen">
+        <CmHeader />
+      </div>
       <section className="relative overflow-hidden py-10">
         <div className="container mx-auto px-4">
           <div className="flex justify-center items-center mb-10">

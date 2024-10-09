@@ -39,6 +39,13 @@ export interface CoverTitleTextProps {
   text: string;
 }
 
+// CmHeaderProps
+export interface CmHeaderProps {
+  link: string;
+  logo: string;
+  text: string;
+}
+
 // region CmImage
 export interface CmImageProps {
   src: string;
