@@ -7,6 +7,7 @@ import { useState } from "react";
 export const CoverDropdown = ({ 
   content,
   extraStyles = '',
+  headerBg,
   width = 'full', 
   padding = '0',
   paddingR = '0',
@@ -18,7 +19,7 @@ export const CoverDropdown = ({
   title
 }: CoverDropdownProps) => {
 
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(false);
 
   return(
     <div className={`
@@ -33,8 +34,10 @@ export const CoverDropdown = ({
       sm:mr-${marginR}
       sm:ml-${marginL}
       ${extraStyles}
+      my-3
     `}>
       <CoverDropdownHeader 
+        bg={headerBg}
         title={title} 
         onClick={() => setShow(p => !p)}
       />

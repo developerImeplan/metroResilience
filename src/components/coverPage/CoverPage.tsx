@@ -1,4 +1,4 @@
-import { CoverPartner, CoverDropdown, CmSelectToDisplayLabel, CoverMenu, CmBoldText, CoverReturnIcon, CmHeader, CmImage, CoverTitle, CmVideo } from '../';
+import { CoverPartner, CoverDropdown, CmSelectToDisplayLabel, CoverMenu, CmBoldText, CmHeader, CmImage, CoverTitle, CmVideo, CmBanner } from '../';
 import { assets } from '../../assets';
 import { COVER_PARTNERS } from '../../constants';
 import { CmSubtitle } from '../common/CmSubtitle';
@@ -32,46 +32,35 @@ export const CoverPage = () => {
       </section>
       <section className="relative overflow-hidden py-10">
         <div className="container mx-auto px-4">
-          <div className="flex justify-center items-center mb-10">
-            <CoverReturnIcon />
-            <p className="text-customMain sm:text-5xl text-3xl font-bold mx-2">¿Qué es?</p>
-            <CoverReturnIcon />
+          <CmBanner text="¿Qué es?" color="customPinkN" icon={assets.iconReturn} />
+          <div className="text-customGrayDarker sm:text-2xl text:xl font-thin text-justify flex sm:space-x-10 sm:space-y-0 space-y-5 sm:mt-10 sm:flex-row flex-col">
+            <p>
+              <CmBoldText className="text-customGreenN">Metro Resilience Guadalajara (MRG) o  Metrópoli Resiliente,</CmBoldText> por su adaptación al español, reúne <CmBoldText color="customGreenN">esfuerzos comunitarios, locales e internacionales,</CmBoldText> para fortalecer la gobernanza con el fin de responder, adaptar y prosperar ante los desafíos urbanos en las Áreas Metropolitanas de Guadalajara y Barcelona.
+            </p>
+            <p>
+              <span className="text-customPinkN font-medium">Es una acción de cooperación internacional con duración de 3 años, la cual es posible gracias al financiamiento de la Unión Europea y el programa</span> <span className="italic">Asociación para ciudades sostenibles.</span>
+            </p>
           </div>
-          <p className="text-customMain sm:text-4xl text:2xl sm:leading-10 leading-6 text-center font-thin">
-            <CmBoldText>Metro Resilience Guadalajara (MRG) o  Metrópoli Resiliente, por su adaptación al español, reúne esfuerzos comunitarios, locales e internacionales</CmBoldText>, para fortalecer la gobernanza con el fin de responder, adaptar y prosperar ante los desafíos urbanos en las Áreas Metropolitanas de Guadalajara y Barcelona.
-          </p>
-          <p className="text-customMain sm:text-2xl text:xl sm:leading-8 leading-5 text-center font-thin my-10">
-            <CmBoldText>Es una acción de cooperación internacional con duración de 3 años, la cual es posible gracias al financiamiento de la Unión Europea y el programa</CmBoldText> <span className="italic">Asociación para ciudades sostenibles.</span>
-          </p>
-          <div className="flex justify-center items-end">
-            {
-              COVER_PARTNERS.map((c, index) => (
-                <CoverPartner
-                  key={index}
-                  title={c.title}
-                  src={c.src}
-                  url={c.url}
-                />
-              ))
-            }
+          <div className="flex justify-center">
+            <div className='flex sm:w-2/3 sm:space-x-10'>
+              {
+                COVER_PARTNERS.map((c, index) => (
+                  <CoverPartner
+                    key={index}
+                    src={c.src}
+                    url={c.url}
+                  />
+                ))
+              }
+            </div>
           </div>
         </div>
       </section>
-      <section className="container mx-auto px-4 pb-20">
-        <CmSelectToDisplayLabel />
-        <div className="bg-customMain flex justify-center rounded-2xl p-5 mt-5">
-          <p className="sm:text-5xl text-2xl text-center font-bold text-white">¡Conoce más sobre Metrópoli Resiliente!</p>
-        </div>
-        <div className="flex flex-col">
-          <div className="mt-5 flex sm:flex-row flex-col w-100">
-            <CoverDropdown { ...COVER_DROPDOWNS[0] } />
-            <CoverDropdown { ...COVER_DROPDOWNS[1] } />
-          </div>
-          <div className="mt-5">
-            <CoverDropdown { ...COVER_DROPDOWNS[2] } />
-          </div>
-          <div className="mt-5">
-            <CoverDropdown { ...COVER_DROPDOWNS[3] } />
+      <section className="bg-customGray">
+        <div className='container mx-auto py-20 px-4 pb-20 '>
+          <p className="sm:text-5xl text-2xl font-black text-customGreenN mb-10">Conoce más</p>
+          <div className="flex flex-col">
+            {COVER_DROPDOWNS.map(d => <CoverDropdown {...d} />)}
           </div>
         </div>
       </section>

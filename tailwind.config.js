@@ -19,8 +19,10 @@ export default {
         customSkyBlue: '#81bdcd',
         customTurquoiseBlue: '#30849c',
         customGreen: '#48b47c',
+        customGreenN: '#397b55',
         customGreenLighter: '#43b17b',
         customPink: '#9263b3',
+        customPinkN: '#987bb5',
         customPurpleGP: '#987bb7',
         customPurpleDarker: '#2f3359',
         customGreenBlue: '#134f5c'

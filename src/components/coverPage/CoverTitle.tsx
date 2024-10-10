@@ -2,7 +2,7 @@ import { COVER_TITLE_TEXTS } from "../../constants";
 import { CoverTitleTextProps } from "../../types";
 
 const CoverTitleText: React.FC<CoverTitleTextProps> = ({ text }) => (
-  <p className="font-bold sm:text-6xl text-4xl text-[#997bb5] sm:text-start text-center">
+  <p className="font-bold sm:text-6xl text-4xl text-customPinkN sm:text-start text-center">
     { text }
   </p>
 ) 

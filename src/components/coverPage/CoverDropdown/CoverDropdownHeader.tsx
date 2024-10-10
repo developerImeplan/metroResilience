@@ -1,15 +1,16 @@
 import { CoverDropdownHeaderProps } from "../../../types";
 
 export const CoverDropdownHeader = ({ 
+  bg = 'customGray',
   title, 
   onClick
 }: CoverDropdownHeaderProps) => {
   return(
     <div
       onClick={onClick} 
-      className="bg-customGray flex justify-center item-center p-5 rounded-2xl cursor-pointer"
+      className={`bg-${bg} flex justify-center item-center p-5 rounded-2xl cursor-pointer z-10`}
     >
-      <p className="text-customMain text-xl font-thin">{ title }</p>
+      <p className="text-white text-4xl font-black">{ title }</p>
     </div>
   );
 }

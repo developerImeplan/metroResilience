@@ -66,6 +66,7 @@ export interface CoverPartnerProps {
 export interface CoverDropdownProps {
   content?: ReactNode;
   extraStyles?: string;
+  headerBg?: string;
   padding?: Sizing;
   paddingR?: Sizing;
   paddingL?: Sizing;
@@ -78,6 +79,7 @@ export interface CoverDropdownProps {
 }
 
 export interface CoverDropdownHeaderProps {
+  bg?: string;
   title: string;
   onClick: () => void;
 }
@@ -146,6 +148,7 @@ export interface ERInfoItemProps {
 
 // region CmBanner
 export interface CmBannerProps {
+  color?: string;
   icon?: string;
   text: string;
 }
