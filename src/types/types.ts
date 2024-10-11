@@ -1,6 +1,7 @@
 // types.ts
 
 import { ReactNode } from "react";
+import { IconType } from "react-icons";
 
 // region General
 export type Sizing = '1' | '2' | '3' | '4' | '5' | '10' | '0' | '1/3';
@@ -244,4 +245,10 @@ export interface GPCongresoCountsProps {
   color: 'customPurpleGP' | 'customPurple' | 'customPurpleDarker',
   title: string;
   subtitle: string;
+}
+
+// region IconRedesProps
+export interface CmIconSNProps {
+  icon: IconType;
+  url: string;
 }

@@ -1,6 +1,9 @@
+import { SlSocialInstagram } from 'react-icons/sl';
 import { assets } from '../assets';
 
-import { CmHeaderProps, CoverPartnerProps, ERAdaptarseIconsTextProps, ERCountAndDescriptionProps, ERPillProps, ERQueEsIconProps } from "../types";
+import { CmHeaderProps, CmIconSNProps, CoverPartnerProps, ERAdaptarseIconsTextProps, ERCountAndDescriptionProps, ERPillProps, ERQueEsIconProps } from "../types";
+import { RiFacebookLine, RiTwitterXLine } from 'react-icons/ri';
+import { FaYoutube } from 'react-icons/fa';
 
 export const COVER_TITLE_TEXTS: string[] = [
   'La clave',
@@ -143,3 +146,22 @@ export const ER_PILLS: ERPillProps[] = [
     text: "38 acciones"
   },
 ];
+
+export const CM_ICONS_SN: CmIconSNProps[] = [
+  {
+    icon: RiFacebookLine,
+    url: ''
+  },
+  {
+    icon: RiTwitterXLine,
+    url: ''
+  },
+  {
+    icon: SlSocialInstagram,
+    url: ''
+  },
+  {
+    icon: FaYoutube,
+    url: ''
+  },
+]

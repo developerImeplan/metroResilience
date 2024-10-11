@@ -1,4 +1,4 @@
-import { CoverPartner, CoverDropdown, CoverMenu, CmBoldText, CmHeader, CmImage, CoverTitle, CmVideo, CmBanner } from '../';
+import { CoverPartner, CoverDropdown, CoverMenu, CmBoldText, CmHeader, CmImage, CoverTitle, CmVideo, CmBanner, CmFooter } from '../';
 import { assets } from '../../assets';
 import { COVER_PARTNERS } from '../../constants';
 import { COVER_DROPDOWNS } from './CoverDropdowns';
@@ -70,6 +70,7 @@ export const CoverPage = () => {
         </div>
         <CoverMenu />
       </section>
+      <CmFooter />
     </>
 
   );
