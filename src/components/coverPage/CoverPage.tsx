@@ -71,6 +71,7 @@ export const CoverPage = () => {
         <CoverMenu />
       </section>
       <CmFooter />
+      <div className='bg-[#89b4c6] bg-[#424778] bg-customPinkN bg-customGreenN text-[#89b4c6] text-[#424778]'></div>
     </>
 
   );
