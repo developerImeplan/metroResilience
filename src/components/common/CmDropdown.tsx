@@ -10,7 +10,7 @@ export const CmDropdown = ({
 
   return(
     <div className="flex flex-col h-full">
-      <div className="cursor-pointer" onClick={() => setShowContent(show => !show)}>
+      <div className="cursor-pointer z-10" onClick={() => setShowContent(show => !show)}>
         { titleComponent }
       </div>
       { showContent ? (

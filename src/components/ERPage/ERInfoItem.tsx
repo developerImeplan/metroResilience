@@ -10,13 +10,13 @@ export const ERInfoItem = ({
     <div className={`flex flex-col w-full sm:mt-0 mt-10 ${ margins ? 'sm:mx-5 mx-0' : '' }`}>
       <CmDropdown
         titleComponent={
-          <div className="flex justify-center py-5 border-2 rounded-2xl hover:bg-customBlueLighter group">
-            <p className="sm:text-3xl text-xl font-bold text-customBlueLighter group-hover:text-white">{ title }</p>
+          <div className="flex justify-center py-5 rounded-2xl bg-customBlueLighterN group">
+            <p className="sm:text-3xl text-xl font-bold text-white">{ title }</p>
           </div>
         }
       >
-        <div className="flex justify-center items-center mt-4 bg-customGrayBg p-10 border-2 rounded-2xl h-full">
-          <span className="font-thin sm:text-2xl text-lg text-center text-customGrayDarker">
+        <div className="flex justify-center mt-[-18px] bg-customGrayBg p-10 rounded-2xl h-full">
+          <span className="font-thin sm:text-2xl text-lg text-justify text-customGrayDarker">
             { children }
           </span>
         </div>

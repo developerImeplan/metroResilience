@@ -5,7 +5,7 @@ import { BsChevronDoubleDown } from "react-icons/bs";
 
 import { assets } from "../../assets";
 import { ER_COUNTS_AND_DESCRIPTIONS, ER_COVER_LOGOS, ER_IMAGES_CARROUSEL, ER_QUE_ES_ICONS } from "../../constants";
-import { CmBanner, CmBoldText, CmCoverVideo, CmImage, CmImageCarousel, CmQuote } from "../common";
+import { CmBanner, CmBoldText, CmCoverVideo, CmHeader, CmImage, CmImageCarousel, CmQuote } from "../common";
 
 import { ERInfoItem } from "./ERInfoItem";
 import { ERP_INFO_ITEMS } from "./ERInfoItems";
@@ -38,33 +38,30 @@ export const ERPage = () => {
 
   return(
     <>
+      <CmHeader />
       <CmCoverVideo
         footerContent={
           <div className="flex justify-end">
-            { ER_COVER_LOGOS.map(i => (<CmImage src={i} className="sm:w-1/4 w-1/3 sm:h-[60px] h-[30px] sm:ml-20 sm:mr-5 mx-3" />)) }
+            { ER_COVER_LOGOS.map(i => (<CmImage src={i} className="sm:h-[60px] h-[30px] mx-3" />)) }
           </div>
         }
         img={assets.erm}
         icon={assets.erLogo}
         title="Estrategia de Resiliencia Metropolitana"
       />
-      <section id="que-es" className="container mx-auto px-4 pt-10 sm:pb-10 pb-0">
-        <div className="flex flex-col items-center">
-          <div className="flex sm:space-x-4 space-x-2">
-            <CmImage src={assets.erLogo} className="sm:h-[40px] h-[30px]" />
-            <p className="text-customMain sm:text-4xl text-2xl font-bold">¿Qué es?</p>
-            <CmImage src={assets.erLogo} className="sm:h-[40px] h-[30px]" />
-          </div>
-          <span className="p-5 font-thin sm:text-2xl text-lg text-center">
+      <section id="que-es" className="container mx-auto px-4 sm:pb-10 pb-0">
+        <CmBanner text="¿Qué es?" color="customPurple" icon={assets.erLogo} />
+        <div className="flex sm:flex-row flex-col items-center">
+          <span className="font-thin sm:text-2xl text-lg text-justify sm:w-1/2 w-full">
             <CmBoldText color="customBlueLighter">La Estrategia reúne conocimientos técnicos, comunitarios y académicos</CmBoldText> donde se identifican los principales impactos agudos y tensiones crónicas que afectan a las personas que habitan el Área Metropolitana de Guadalajara (AMG), como:
           </span>
-          <div className="flex justify-center w-full sm:space-x-40 sm:py-10">
+          <div className="flex justify-center sm:space-x-10 sm:py-10 sm:w-1/2 w-full p-10">
             { ER_QUE_ES_ICONS.map(i => (<ERQueEsIcon {...i} />))}
           </div>
-          <span className="p-5 font-thin sm:text-2xl text-lg text-center">
-            El AMG desarrolló la ERM con el fin  de  anticipar y mitigar estos fenómenos, reforzando la corresponsabilidad comunitaria e institucionalizando la resiliencia. Para poder lograrlo, se han planteado <CmBoldText color="customBlueLighter">acciones para responder, adaptar y prosperar</CmBoldText> ante los desafíos urbanos.
-          </span>
         </div>
+        <p className="font-thin sm:text-2xl text-lg text-justify">
+          El AMG desarrolló la ERM con el fin  de  anticipar y mitigar estos fenómenos, reforzando la corresponsabilidad comunitaria e institucionalizando la resiliencia. Para poder lograrlo, se han planteado <CmBoldText color="customBlueLighter">acciones para Responder, Rdaptar y Prosperar</CmBoldText> ante los desafíos urbanos.
+        </p>
       </section>
       <section id="vision-objetivo" className="container mx-auto px-4 sm:pb-5 pb-0">
         <div className="flex sm:flex-row flex-col">
@@ -210,7 +207,7 @@ export const ERPage = () => {
           <BsChevronDoubleDown className="mt-2 text-5xl" />
         </div>
       </section>
-      <div className="h-0 bg-customTurquoiseBlue"></div>
+      <div className="h-0 bg-customTurquoiseBlue text-start text-end bg-customBlueLighterN text-customBlueLighterN"></div>
     </> 
   );
 }

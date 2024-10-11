@@ -181,6 +181,7 @@ export interface ERCountAndDescriptionProps {
 export interface ERQueEsIconProps {
   icon: string;
   title: string;
+  textSide: 'right' | 'left';
 }
 
 // region ERProsperarIconDesc

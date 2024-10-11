@@ -67,12 +67,14 @@ export const ER_COVER_LOGOS: string[] = [
 
 export const ER_QUE_ES_ICONS: ERQueEsIconProps[] = [
   {
-    icon: assets.inundaciones,
-    title: "Inundaciones, sequías o incendios"
+    icon: assets.movilidad,
+    title: "Asentamientos irregulares o movilidad deficiente",
+    textSide: 'left',
   },
   {
-    icon: assets.movilidad,
-    title: "Asentamientos irregulares o movilidad deficiente"
+    icon: assets.inundaciones,
+    title: "Inundaciones, sequías o incendios",
+    textSide: 'right',
   },
 ]
 
