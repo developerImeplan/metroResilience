@@ -1,7 +1,6 @@
-import { CoverPartner, CoverDropdown, CmSelectToDisplayLabel, CoverMenu, CmBoldText, CmHeader, CmImage, CoverTitle, CmVideo, CmBanner } from '../';
+import { CoverPartner, CoverDropdown, CoverMenu, CmBoldText, CmHeader, CmImage, CoverTitle, CmVideo, CmBanner } from '../';
 import { assets } from '../../assets';
 import { COVER_PARTNERS } from '../../constants';
-import { CmSubtitle } from '../common/CmSubtitle';
 import { COVER_DROPDOWNS } from './CoverDropdowns';
 
 export const CoverPage = () => {
@@ -64,16 +63,14 @@ export const CoverPage = () => {
           </div>
         </div>
       </section>
-      <section className="container mx-auto px-4 pb-20">
-        <div className="flex justify-center">
-          <CmSubtitle text="La acción cuenta con tres componentes" />
+      <section className="container mx-auto px-4 py-20">
+        <div className="flex flex-col items-center">
+          <p className="sm:text-5xl font-black text-customPurple">La acción cuenta con tres componentes</p>
+          <p className="sm:text-5xl font-semibold text-customPurple mt-5 mb-10">¡Conoce cada uno de ellos!</p>
         </div>
-        <CmSelectToDisplayLabel />
         <CoverMenu />
-        <div className="flex justify-center mt-10">
-          <CmSubtitle text="¡Conoce cada uno de ellos!" />
-        </div>
       </section>
     </>
+
   );
 };
