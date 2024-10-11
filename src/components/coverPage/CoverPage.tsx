@@ -57,7 +57,7 @@ export const CoverPage = () => {
       </section>
       <section className="bg-customGray">
         <div className='container mx-auto py-20 px-4 pb-20 '>
-          <p className="sm:text-5xl text-2xl font-black text-customGreenN mb-10">Conoce más</p>
+          <p className="sm:text-5xl text-4xl font-black text-customGreenN sm:mb-10 mb-5">Conoce más</p>
           <div className="flex flex-col">
             {COVER_DROPDOWNS.map(d => <CoverDropdown {...d} />)}
           </div>
@@ -65,8 +65,8 @@ export const CoverPage = () => {
       </section>
       <section className="container mx-auto px-4 py-20">
         <div className="flex flex-col items-center">
-          <p className="sm:text-5xl font-black text-customPurple">La acción cuenta con tres componentes</p>
-          <p className="sm:text-5xl font-semibold text-customPurple mt-5 mb-10">¡Conoce cada uno de ellos!</p>
+          <p className="sm:text-5xl text-3xl text-center font-black text-customPurple">La acción cuenta con tres componentes</p>
+          <p className="sm:text-5xl text-2xl text-center font-semibold text-customPurple mt-5 mb-10">¡Conoce cada uno de ellos!</p>
         </div>
         <CoverMenu />
       </section>
