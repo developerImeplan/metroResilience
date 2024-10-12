@@ -4,7 +4,7 @@ import { CmCoverVideoFooter } from "./CmCoverVideoFooter";
 
 export const CmCoverVideo = ({ showFooter = true, footerContent, video, children, title, img, icon }: CmCoverVideoProps) => {
   return(
-    <section className="relative h-screen overflow-hidden">
+    <section className="relative h-[calc(100vh-100px)] overflow-hidden">
       {
         video ? <CmVideo url={ video } /> : <CmImage src={img ?? ''} className="absolute top-0 z-10 left-0 w-full h-[calc(100vh-100px)] object-cover" />
       }

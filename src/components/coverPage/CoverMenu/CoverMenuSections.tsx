@@ -6,6 +6,7 @@ export const COVER_MENU_SECTIONS: CoverMenuSectionProps[] = [
   {
     icon: assets.erLogo,
     title: "Estrategia de Resiliencia",
+    mainUrl: MENU_PREFIXES.ER,
     items: [
       {
         text: "¿Qué es?", 
@@ -36,6 +37,7 @@ export const COVER_MENU_SECTIONS: CoverMenuSectionProps[] = [
   {
     icon: assets.pvLogo,
     title: "Puntos verdes",
+    mainUrl: MENU_PREFIXES.PV,
     items: [
       {
         text: "¿Qué son?", 
@@ -63,6 +65,7 @@ export const COVER_MENU_SECTIONS: CoverMenuSectionProps[] = [
   {
     icon: assets.gpLogo,
     title: "Guía Política de Gobernanza",
+    mainUrl: MENU_PREFIXES.GP,
     items: [
       {
         text: "¿Qué es?", 

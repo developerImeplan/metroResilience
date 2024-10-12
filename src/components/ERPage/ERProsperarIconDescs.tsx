@@ -8,7 +8,7 @@ export const ER_PROSPERAR_ICONS_DESC: ERProsperarIconDescProps[] = [
     icon: assets.prosperarIcon1,
     children: (
       <span>
-        <CmBoldText className="text-customBlueLighter">Es la primera a nivel mundial</CmBoldText> en ser publicada en bajo un contexto comunitario y post pandémico.
+        <CmBoldText className="text-customBlueLighter">Es la primera a nivel mundial</CmBoldText><br /> en ser publicada en bajo un contexto comunitario y post pandémico.
       </span>
     )
   },
@@ -16,7 +16,7 @@ export const ER_PROSPERAR_ICONS_DESC: ERProsperarIconDescProps[] = [
     icon: assets.prosperarIcon2,
     children: (
       <span>
-        <CmBoldText className="text-customBlueLighter">Es la primera en México</CmBoldText> en abordar la dimensión y contexto metropolitano.
+        <CmBoldText className="text-customBlueLighter">Es la primera en México</CmBoldText><br /> en abordar la dimensión y contexto metropolitano.
       </span>
     ),
     margins: true
@@ -25,7 +25,7 @@ export const ER_PROSPERAR_ICONS_DESC: ERProsperarIconDescProps[] = [
     icon: assets.prosperarIcon3,
     children: (
       <span>
-        <CmBoldText className="text-customBlueLighter">Es dinámica</CmBoldText> por su actualización continua, un compromiso permanente.
+        <CmBoldText className="text-customBlueLighter">Es dinámica</CmBoldText><br /> por su actualización continua, un compromiso permanente.
       </span>
     )
   },

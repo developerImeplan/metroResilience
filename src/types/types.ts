@@ -101,9 +101,11 @@ export interface CoverMenuItemProps {
 }
 
 export interface CoverMenuSectionProps {
+  complete?: boolean;
   title: string;
   icon: string;
   items: CoverMenuItemProps[];
+  mainUrl: string;
   margins?: boolean;
   width?: Sizing;
 }
@@ -145,6 +147,11 @@ export interface ERInfoItemProps {
   title: string;
   children: ReactNode | ReactNode[];
   margins?: boolean;
+}
+
+// region CoverMenu
+export interface CoverMenuProps {
+  complete?: boolean;
 }
 
 // region CmBanner

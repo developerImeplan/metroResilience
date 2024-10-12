@@ -1,11 +1,10 @@
 import { useEffect } from "react";
 
 import { useLocation } from "react-router-dom";
-import { BsChevronDoubleDown } from "react-icons/bs";
 
 import { assets } from "../../assets";
 import { ER_COUNTS_AND_DESCRIPTIONS, ER_COVER_LOGOS, ER_IMAGES_CARROUSEL, ER_QUE_ES_ICONS } from "../../constants";
-import { CmBanner, CmBoldText, CmCoverVideo, CmHeader, CmImage, CmImageCarousel, CmQuote } from "../common";
+import { CmBanner, CmBoldText, CmCoverVideo, CmFooter, CmHeader, CmImage, CmImageCarousel, CmQuote } from "../common";
 
 import { ERInfoItem } from "./ERInfoItem";
 import { ERP_INFO_ITEMS } from "./ERInfoItems";
@@ -23,6 +22,7 @@ import {
   ERPills,
   ERQueEsIcon
 } from "./";
+import { CoverMenu } from "../coverPage";
 
 export const ERPage = () => {
   const location = useLocation();
@@ -49,7 +49,7 @@ export const ERPage = () => {
         icon={assets.erLogo}
         title="Estrategia de Resiliencia Metropolitana"
       />
-      <section id="que-es" className="container mx-auto px-4 sm:pb-10 pb-0">
+      <section id="que-es" className="container mx-auto px-4 sm:pb-10 pb-0 pt-5">
         <CmBanner text="¿Qué es?" color="customPurple" icon={assets.erLogo} />
         <div className="flex sm:flex-row flex-col items-center">
           <span className="font-thin sm:text-2xl text-lg text-justify sm:w-1/2 w-full">
@@ -120,95 +120,111 @@ export const ERPage = () => {
         </div>
       </section>
       <section id="adaptarse" className="container mx-auto px-4 mt-10">
-        <CmBanner text="Adaptarse" icon={assets.erLogo} />
-        <div className="mt-5 w-full flex sm:flex-row flex-col sm:justify-between">
-          <CmImage src={assets.erLibro2} className="sm:w-1/3 w-full sm:mr-5 mr-0" />
-          <div className="flex flex-col justify-between sm:w-2/3 w-full">
-            <p className="text-center font-bold sm:text-3xl text-customMain">Con estos resultados, se trabajó bajo
-            cuatro principales desafíos metropolitanos
-            </p>
-            <ERAdaptarseIconsText />
-          </div>
+        <CmBanner color="customBlueLighter" text="Adaptarse" icon={assets.erLogo} />
+        <div className="flex flex-col sm:mb-10 mt-5 text-customPurple">
+          <CmBoldText className="sm:text-2xl">A partir de estos resultados, se trabajó bajo</CmBoldText>
+          <p className="sm:text-5xl font-black">4 Desafíos Metropolitanos principales</p>
+        </div>
+        <div className="sm:mt-5 w-full flex sm:flex-row flex-col sm:justify-between sm:items-center sm:space-x-20 sm:gap-0 gap-4">
+          <ERAdaptarseIconsText />
+          <CmImage src={assets.erLibro2} className="sm:w-1/3 w-full rounded-[50px]" />
         </div>
         <div className="flex sm:flex-row flex-col items-center sm:mt-10">
-          <div className="flex flex-col font-thin text-customGrayDarker sm:text-2xl text-xl sm:mb-0 mb-5">
-            <div className="flex justify-center mb-5">
-              <p className="sm:text-3xl text-xl text-customBlueLighter font-bold text-center">y dos importantes alcances:</p>
-            </div>
-            <span className="mb-5">
-              - <CmBoldText>Las ciudades se apoyan en una compleja red</CmBoldText> de personas, instituciones, infraestructura e información.
+          <div className="flex flex-col font-thin text-customGrayDarker sm:text-2xl text-xl sm:mb-0 mb-5 sm:w-2/3">
+            <p className="sm:text-5xl font-black text-customBlueLighter mb-10">2 Alcances importantes</p>
+            <span className="mb-10 flex space-x-5">
+              <CmImage src={assets.erLogo} className="h-[60px]" />
+              <span>
+                <CmBoldText color="customBlueLighter">Las ciudades se apoyan en una compleja red</CmBoldText> de personas, instituciones, infraestructura e información.
+              </span>
             </span>
-            <span>
-            - <CmBoldText>Su resiliencia depende de fortalecer las capacidades de los sistemas</CmBoldText> individuales para fortalecer la ciudad en general.
+            <span className="flex space-x-5">
+              <CmImage src={assets.erLogo} className="h-[60px]" />
+              <span>
+                <CmBoldText color="customBlueLighter">Su resiliencia depende de fortalecer las capacidades de los sistemas</CmBoldText> individuales para fortalecer la ciudad en general.
+              </span>
             </span>
           </div>
-          <CmImage src={assets.erTaller} className="sm:w-1/3" />
+          <CmImage src={assets.erTaller} className="sm:w-1/3 object-cover h-full rounded-[50px]" />
         </div>
-        <div className="flex flex-col items-center mt-10">
-          <span className="sm:text-3xl text-xl font-thin mb-5">En suma, la <CmBoldText color="customBlueLighter">Estrategia de Resiliencia</CmBoldText> se integra por</span>
+        <div className="flex flex items-center mt-10 pb-10">
+          <div className="w-1/3 text-customGrayDarker">
+            <span className="sm:text-4xl text-xl font-thin mb-5">
+              En suma,
+              <p className="text-customPinkN font-black">la  Estrategia</p>
+              <p className="text-customPinkN font-black">de Resiliencia</p>
+              Se integra por:
+            </span>
+          </div>
           <ERPills />
         </div>
       </section>
-      <section id="prosperar" className="container mx-auto px-4 mt-10">
-        <CmBanner text="Prosperar" icon={assets.erLogo} />
-        <div className="py-10 w-full flex justify-center">
-          <span className="sm:text-3xl text-center font-thin">
-            <CmBoldText className="text-customBlueLighter">La Estrategia es un legado comunitario</CmBoldText> que marca un precedente a escala nacional e internacional.
-          </span>
-        </div>
-        <div className="flex sm:flex-row flex-col">
-            {
-              ER_PROSPERAR_ICONS_DESC.map((i, index) => (
-                <ERProsperarIconDesc key={index} {...i} />
-              ))
-            }
-        </div>
-        <div className="mt-5 flex sm:flex-row flex-col w-full sm:h-[75vh] h-screen">
-          <video
-            autoPlay
-            controls
-            muted
-            loop
-            src={assets.loopER}             
-            className="sm:w-3/4 w-full sm:h-auto h-full" 
-          />
-          <video
-            autoPlay
-            controls
-            muted
-            loop
-            src={assets.resilienciaLLamando}             
-            className="sm:w-1/4 w-full sm:ml-5 ml-0 sm:mt-0 mt-5 sm:h-auto h-full"
-          />
-        </div>
-      </section>
-      <section className="container mx-auto px-4 mt-10">
-        <div className="flex flex-col items-center">
-          <p className="text-3xl font-bold text-customMain mb-5 text-center">En la voz de nuestra comunidad</p>
-          <div className="flex sm:flex-row flex-col">
+      <section id="prosperar" className="bg-customSectionBg">
+        <div className="container mx-auto px-4 mt-10 pt-10 pb-5">
+          <div className="flex h-full items-center">
+            <CmBanner color="customBlueLighter" text="Prosperar" icon={assets.erLogo} />
+            <div className="flex flex-col ml-10 text-xl">
+              <CmBoldText color="customBlueLighter">La Estrategia es un legado comunitario</CmBoldText>
+              <span>que marca un procedente a escala nacional e internacional.</span>
+            </div>
+          </div>
+          <div className="flex sm:flex-row flex-col mt-10">
+              {
+                ER_PROSPERAR_ICONS_DESC.map((i, index) => (
+                  <ERProsperarIconDesc key={index} {...i} />
+                ))
+              }
+          </div>
+          <div className="mt-5 flex sm:flex-row flex-col w-full sm:h-[75vh] h-screen">
+            <video
+              autoPlay
+              controls
+              muted
+              loop
+              src={assets.loopER}             
+              className="sm:w-3/4 w-full sm:h-auto h-full" 
+            />
+            <video
+              autoPlay
+              controls
+              muted
+              loop
+              src={assets.resilienciaLLamando}             
+              className="sm:w-1/4 w-full sm:ml-5 ml-0 sm:mt-0 mt-5 sm:h-auto h-full"
+            />
+          </div>
+          <div className="flex sm:flex-row flex-col mt-10">
             {ERQuotes.map((i, index) => <CmQuote key={index} {...i} />)}
           </div>
         </div>
+      </section>
+      <section className="container mx-auto px-4 mt-10 pb-20">
         <div id="descargas" className="mt-3">
-          <CmBanner text="Documentos de descarga" icon={assets.erLogo} />
-          <div className="flex justify-center py-10">
-            <p className="sm:text-3xl text-xl text-center font-thin">¡Conoce la Estrategia y súmate a la acción!</p>
+          <div className="flex flex-col pb-10">
+            <div className="flex justify-start items-center sm:space-x-5 space-x-3">
+              <p className={`sm:text-6xl text-5xl text-center font-black text-customPurple`}>Documentos de descarga</p>
+              <CmImage src={assets.erLogo} className="sm:h-[60px] h-[50px]" />
+            </div>
+            <p className="sm:text-3xl text-xl font-thin">¡Conoce la Estrategia y súmate a la acción!</p>
           </div>
           <div className="flex sm:flex-row flex-col sm:justify-between">
             { ERDowloads.map(i => (<ERDowload {...i} />)) }
           </div>
         </div>
       </section>
-      <section className="container mx-auto px-4 mt-10">
-        <div className="flex justify-center items-center bg-customBlueLighter w-full p-5 rounded-2xl">
-          <p className="sm:text-2xl text-lg font-bold text-white text-center">¡Quiero saber más sobre la Estrategia de Resiliencia!</p>
-        </div>
-        <ERDropdownSaberMas />
-        <div className="flex flex-col items-center py-10 w-full">
-          <p className="sm:text-3xl text-xl text-center text-customBlueLighter font-bold">Sigue bajando y descubre más sobre Metrópoli Resiliente</p>
-          <BsChevronDoubleDown className="mt-2 text-5xl" />
+      <section className="bg-customSectionBg py-20">
+        <div className="container mx-auto px-4">
+          <div className="flex justify-center items-center bg-[#5f93a5] w-full p-5 rounded-2xl mb-5">
+            <p className="sm:text-4xl text-lg font-black text-white text-center">¡Quiero saber más sobre la Estrategia de Resiliencia!</p>
+          </div>
+          <ERDropdownSaberMas />
         </div>
       </section>
+      <div className="container mx-auto px-4 py-10">
+        <CoverMenu complete={false} />
+      </div>
+      <CmFooter />
+
       <div className="h-0 bg-customTurquoiseBlue text-start text-end bg-customBlueLighterN text-customBlueLighterN bg-[#f7f7f7] bg-[#58a4c4] text-[#58a4c4] bg-[#5f93a5] text-[#5f93a5]"></div>
     </> 
   );

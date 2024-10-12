@@ -2,14 +2,14 @@ import { useState, useRef } from "react";
 import { GiSoundWaves } from "react-icons/gi";
 import { IoPauseOutline } from "react-icons/io5";
 import { CmQuoteProps } from "../../types";
+import { CmBoldText } from "./CmBoldText";
 
 export const CmQuote = ({
   audio,
-  color,
   img,
   fontSize = 'sm:text-xl text-lg',
   title,
-  text
+  text,
 }: CmQuoteProps) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
@@ -56,14 +56,18 @@ export const CmQuote = ({
           )
         }
       </div>
-      <div className={`flex-grow flex justify-center items-center mt-4 p-10 border rounded-3xl border-${color} min-h-[150px]`}>
-        <p className={`${fontSize} font-semibold text-${color}`}>
+      <div className="mt-5 w-2/3 py-3 text-gray-500">
+        <CmBoldText color="customBlueLighter" className="sm:text-2xl">{title}</CmBoldText>
+      </div>
+      <div className={`flex-grow flex justify-center rounded-3xl min-h-[150px]`}>
+        <p 
+          className={`${fontSize} line-clamp-4 overflow-hidden hover:overflow-auto hover:line-clamp-none transition-all`}
+          style={{ maxHeight: `${4 * 1.8}rem` }}
+        >
           {text}
         </p>
-      </div>
-      <div className="mt-2 w-full py-3 text-gray-500 bg-customGrayBg">
-        <p className="font-bold">{title}</p>
       </div>
     </div>
   );
 };
+
