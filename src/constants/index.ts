@@ -86,7 +86,7 @@ export const ER_IMAGES_CARROUSEL: string[] = [
   assets.carrusel5,
   assets.carrusel6,
   assets.carrusel7,
-  assets.carrusel8,
+  // assets.carrusel8,
   assets.carrusel9,
   assets.carrusel10,
   assets.carrusel11,
@@ -114,18 +114,18 @@ export const ER_ADAPTARSE_ICONS_TEXT: ERAdaptarseIconsTextProps[] = [
 export const ER_COUNTS_AND_DESCRIPTIONS: ERCountAndDescriptionProps[] = [
   {
     number: '157',
-    title: 'impactos agudos',
+    title: 'Impactos agudos',
     description: 'Eventos repentinos y bruscos, de origen natural o humano, que amenazan o afectan a la metrópoli.',
     examples: 'Ejemplo: Incendios y sequías.',
     bgColor: 'customBlueLighter',
     mr: '5'
   },
   {
-    number: '198',
-    title: 'tensiones crónicas',
+    number: '1987',
+    title: 'Tensiones crónicas',
     description: 'Situaciones o condiciones que debilitan la estructura de la ciudad de forma diaria o cíclica.',
     examples: 'Ejemplo: asentamientos irregulares y movilidad.',
-    bgColor: 'customTurquoiseBlue',
+    bgColor: '[#5f93a5]',
     ml: '5'
   },
 ];

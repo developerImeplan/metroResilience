@@ -55,7 +55,7 @@ export const ERPage = () => {
           <span className="font-thin sm:text-2xl text-lg text-justify sm:w-1/2 w-full">
             <CmBoldText color="customBlueLighter">La Estrategia reúne conocimientos técnicos, comunitarios y académicos</CmBoldText> donde se identifican los principales impactos agudos y tensiones crónicas que afectan a las personas que habitan el Área Metropolitana de Guadalajara (AMG), como:
           </span>
-          <div className="flex justify-center sm:space-x-10 sm:py-10 sm:w-1/2 w-full p-10">
+          <div className="flex justify-center sm:space-x-10 space-x-3 sm:py-10 sm:w-1/2 w-full sm:p-10 py-3">
             { ER_QUE_ES_ICONS.map(i => (<ERQueEsIcon {...i} />))}
           </div>
         </div>
@@ -63,57 +63,59 @@ export const ERPage = () => {
           El AMG desarrolló la ERM con el fin  de  anticipar y mitigar estos fenómenos, reforzando la corresponsabilidad comunitaria e institucionalizando la resiliencia. Para poder lograrlo, se han planteado <CmBoldText color="customBlueLighter">acciones para Responder, Rdaptar y Prosperar</CmBoldText> ante los desafíos urbanos.
         </p>
       </section>
-      <section id="vision-objetivo" className="container mx-auto px-4 sm:pb-5 pb-0">
+      <section id="vision-objetivo" className="container mx-auto px-4 pb-5">
         <div className="flex sm:flex-row flex-col">
           {
             ERP_INFO_ITEMS.map((i, index) => (
               <ERInfoItem key={index} {...i} />
             ))
           }
-        </div>
-        <div className="py-10">
-          <CmBanner text="Responder" icon={assets.erLogo} />
+        </div>            
+      </section>
+      <section id="responder" className="bg-customSectionBg pt-10 pb-20">
+        <div className="container mx-auto px-4">
+          <CmBanner color="customBlueLighter" text="Responder" icon={assets.erLogo} />
           <div className="flex sm:flex-row flex-col sm:items-center  justify-center py-10">
-            <span className="sm:text-3xl font-thin sm:pr-20 pr-0 sm:w-1/2 w-full sm:text-start text-center">
+            <span className="sm:text-2xl font-thin sm:pr-10 pr-0 sm:w-1/2 w-full text-justify">
               A lo largo de estos años, <CmBoldText color="customMain">la metrópoli se ha preparado a través de sus instrumentos de planeación y gestión, para responder ante diferentes impactos y tensiones</CmBoldText> que vulneran al territorio.
             </span>
-            <div className="bg-customPurple sm:ml-3 ml-0 sm:mt-0 mt-5 sm:w-1/2 w-full sm:p-20 p-10 flex justify-center rounded-3xl">
+            <div className="bg-customPurple sm:ml-3 ml-0 sm:mt-0 mt-5 sm:w-1/2 w-full sm:px-10 px-5 py-5 flex justify-center rounded-3xl">
               <CmImage src={assets.responderLogos} className="w-full" />
             </div>
           </div>
-          <p className="sm:text-3xl font-thin text-center">
-            <CmBoldText color="customBlueLighter">Sumando la participación de 2 mil personas</CmBoldText> de la sociedad civil, academia y sector público, y bajo la colaboración del actor internacional líder en la materia, Resilient Cities Network <CmBoldText color="customBlueLighter">se generó un Diagnóstico de Resiliencia</CmBoldText>  a través de: 
-          </p>
-          <div className="flex justify-center sm:flex-row flex-col sm:p-10 p-5">
-            {
-              ERCountItems.map(i => (
-                <ERCountItem {...i} />
-              ))
-            }
-          </div>
-        </div>
-      </section>
-      <section id="responder" className="container mx-auto px-4">
-        <CmImageCarousel images={ER_IMAGES_CARROUSEL} />
-        <div className="flex flex-col items-center text-xl mt-10 mb-5 p-5 bg-customGrayBg font-thin text-center">
-          <p>Consulta las fotografías de estas actividades en</p>
-          <a 
-            className="text-customBlueLighter underline sm:text-xl text-xs"
-            href="https://www.flickr.com/photos/158129946@N05/albums"
-          >https://www.flickr.com/photos/158129946@N05/albums
-          </a>
-        </div>
-        <div className="flex sm:flex-row flex-col">
-          <div>
-            <p className="text-2xl text-customBlueLighter font-bold text-center mb-5">A partir de estos ejercicios fueron identificados</p>
-            <div className="flex sm:flex-row flex-col">
-              { ER_COUNTS_AND_DESCRIPTIONS.map(i => (
-                <ERCountAndDescription {...i} />
-              )) }
+          <div className="flex sm:flex-row flex-col justify-center items-center sm:pb-20 pb-5">
+            <p className="sm:w-1/2 sm:text-2xl font-thin text-justify sm:pr-10">
+              <CmBoldText color="customBlueLighter" className="w-1/2">Sumando la participación de 2 mil personas</CmBoldText> de la sociedad civil, academia y sector público, y bajo la colaboración del actor internacional líder en la materia, Resilient Cities Network <CmBoldText color="customBlueLighter">se generó un Diagnóstico de Resiliencia</CmBoldText>  a través de: 
+            </p>
+            <div className="sm:w-1/2 w-full flex justify-center h-full sm:space-x-3 space-x-1 sm:mt-0 mt-5">
+              {
+                ERCountItems.map(i => (
+                  <ERCountItem {...i} />
+                ))
+              }
             </div>
           </div>
-          <div className="sm:ml-5 ml-0 sm:w-1/2 w-full sm:mt-0 mt-5">
-            <CmImage src={assets.erLibro} className="w-full h-full object-cover" />
+          <CmImageCarousel images={ER_IMAGES_CARROUSEL} />
+          <div className="flex flex-col items-center sm:text-xl mt-10 mb-5 p-5 pt-0 pb-10 font-thin text-center">
+            <p className="text-customGrayDarker">Consulta las fotografías de estas actividades en</p>
+            <a 
+              className="text-customBlueLighter underline sm:text-xl text-xs font-semibold"
+              href="https://www.flickr.com/photos/158129946@N05/albums"
+            >https://www.flickr.com/photos/158129946@N05/albums
+            </a>
+          </div>
+          <div className="flex sm:flex-row flex-col">
+            <div className="sm:w-2/3">
+              <p className="sm:text-3xl text-2xl text-customBlueLighter font-bold text-center mb-5">Gracias a estos ejericios, fueron identificados</p>
+              <div className="flex sm:flex-row flex-col sm:space-x-5">
+                { ER_COUNTS_AND_DESCRIPTIONS.map(i => (
+                  <ERCountAndDescription {...i} />
+                )) }
+              </div>
+            </div>
+            <div className="sm:ml-5 ml-0 sm:w-1/3 w-full sm:mt-0 mt-5">
+              <CmImage src={assets.erLibro} className="w-full h-full object-cover" />
+            </div>
           </div>
         </div>
       </section>
@@ -207,7 +209,7 @@ export const ERPage = () => {
           <BsChevronDoubleDown className="mt-2 text-5xl" />
         </div>
       </section>
-      <div className="h-0 bg-customTurquoiseBlue text-start text-end bg-customBlueLighterN text-customBlueLighterN"></div>
+      <div className="h-0 bg-customTurquoiseBlue text-start text-end bg-customBlueLighterN text-customBlueLighterN bg-[#f7f7f7] bg-[#58a4c4] text-[#58a4c4] bg-[#5f93a5] text-[#5f93a5]"></div>
     </> 
   );
 }

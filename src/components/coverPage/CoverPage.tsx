@@ -55,7 +55,7 @@ export const CoverPage = () => {
           </div>
         </div>
       </section>
-      <section className="bg-customGray">
+      <section className="bg-customSectionBg">
         <div className='container mx-auto py-20 px-4 pb-20 '>
           <p className="sm:text-5xl text-4xl font-black text-customGreenN sm:mb-10 mb-5">Conoce más</p>
           <div className="flex flex-col">

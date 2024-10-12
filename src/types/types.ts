@@ -156,6 +156,7 @@ export interface CmBannerProps {
 
 // region ERCountItem
 export interface ERCountItemProps {
+  color: string;
   number: string;
   title: string;
   marginRight?: boolean;
