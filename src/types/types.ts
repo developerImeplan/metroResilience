@@ -219,6 +219,8 @@ export interface CmQuoteProps {
   img: string;
   title: string;
   text: string;
+  largeTitle?: boolean;
+  maxLines?: number;
 }
 
 // region ERDowload

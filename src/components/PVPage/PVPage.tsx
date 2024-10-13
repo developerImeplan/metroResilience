@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-import { CmBanner, CmBoldText, CmCoverVideo, CmHeader, CmImage, CmQuote } from "../common";
+import { CmBanner, CmBoldText, CmCoverVideo, CmFooter, CmHeader, CmImage, CmQuote } from "../common";
 import { PVQueSonDropdown } from "./PVQueSonDropdown";
 import { PV_MODELOS_IMGS } from "./PVModelosImgs";
 import { PV_MODELOS_QUOTES } from "./PVModelosQuotes";
@@ -10,8 +10,8 @@ import { assets } from "../../assets";
 
 import { PVInfoIcons } from "./PVInfoIcons";
 import { PVDropdown } from "./PVDropdown";
-import { BsChevronDoubleDown } from "react-icons/bs";
 import { ER_COVER_LOGOS } from "../../constants";
+import { CoverMenu } from "../coverPage";
 
 export const PVPage = () => {
   const location = useLocation();
@@ -53,47 +53,53 @@ export const PVPage = () => {
           </span>
         </div>
       </section>
-      <section id="comunidad" className="container mx-auto px-4 sm:pb-10 pb-0">
-      <div className="mt-10">
-          <CmBanner text="Modelos referentes" icon={assets.pvLogo} />
-        </div>
-        <div className="mt-5 sm:text-2xl text-lg font-thin">
-          <CmBoldText className="text-customGreen">“Puntos Verdes de Barrio” del Área       Metropolitana de Barcelona (AMB).</CmBoldText>
-          <p className="text-justify">Se recuperan las buenas prácticas del modelo de gestión de residuos del AMB, particularmente sobre acopio de residuos, el cual se comprende de tres tipologías: Puntos Verdes de Zona, Puntos Verdes Móviles y Puntos Verdes de Barrio. Esta red abarca un total de 142 puntos estratégicamente distribuidos en diez distritos, y en conjunto logran revalorizar un promedio mensual de 120 mil toneladas de residuos. El enfoque replicado para el AMG, son los Puntos Verdes de Barrio, los cuales ofrecen a la ciudadanía actividades como reparaciones, intercambio de artículos y talleres abierto a la comunidad. 
-          </p>
-          <CmBoldText className="text-customGreen">Colectivo Vecinal Bosque Urbano Tlaquepaque.</CmBoldText>
-          <p className="text-justify">“Puntos Verdes de Barrio” del Área Metropolitana de Barcelona (AMB).
-            Se recuperan las buenas prácticas del modelo de gestión de residuos del AMB, particularmente sobre acopio de residuos, el cual se comprende de tres tipologías: Puntos Verdes de Zona, Puntos Verdes Móviles y Puntos Verdes de Barrio. Esta red abarca un total de 142 puntos estratégicamente distribuidos en diez distritos, y en conjunto logran revalorizar un promedio mensual de 120 mil toneladas de residuos. El enfoque replicado para el AMG, son los Puntos Verdes de Barrio, los cuales ofrecen a la ciudadanía actividades como reparaciones, intercambio de artículos y talleres abierto a la comunidad. 
-            Colectivo Vecinal Bosque Urbano Tlaquepaque.
-            Se toma como inspiración la acción ciudadana del colectivo, quienes autogestionan un centro de acopio comunitario de Residuos, el cual a lo largo de dos años de su implementación y operación, ha logrado un promedio anual de acopio y envío a reciclaje de al menos 5 toneladas. Promoviendo con estas acciones la conciencia ambiental y la participación ciudadana para la correcta separación de residuos en su colonia y visitantes del Bosque Urbano Tlaquepaque.
-          </p>
-          <div className="flex sm:flex-row flex-col">
-          {PV_MODELOS_IMGS.map((i, index) => (
-            <CmImage 
-              key={index}
-              src={i} 
-              className={`
-                sm:w-1/4 w-full mt-5 
-                ${index !== PV_MODELOS_IMGS.length - 1 ? 'sm:pr-4 pr-0' : ''}
-              `}
-            />
-          ))}
+      <section id="comunidad" className="bg-customSectionBg">
+        <div className="container mx-auto px-4 sm:pb-20 pb-0 pt-5">
+          <div className="mt-10">
+            <CmBanner text="Modelos referentes" icon={assets.pvLogo} color="customPinkN" />
           </div>
-          <div className="flex justify-center mt-3 w-full h-[80px] sm:space-x-10 space-x-3 py-5">
-            <CmImage src={assets.financeEUColor} className="sm:h-[40px] h-[25px]" />
-            <CmImage src={assets.ambC} className="sm:h-[40px] h-[25px]" />
-            <CmImage src={assets.imeplanC} className="sm:h-[40px] h-[25px]" />
+          <div className="flex sm:flex-row flex-col mt-5 sm:text-2xl text-lg font-thin text-justify sm:space-x-10">
+            <div className="sm:w-1/2 w-full space-y-10">
+              <CmBoldText className="text-customGreenN sm:text-4xl">“Puntos Verdes de Barrio” del Área       Metropolitana de Barcelona (AMB).</CmBoldText>
+              <p>Se recuperan las buenas prácticas del modelo de gestión de residuos del AMB, particularmente sobre acopio de residuos, el cual se comprende de tres tipologías: Puntos Verdes de Zona, Puntos Verdes Móviles y Puntos Verdes de Barrio. Esta red abarca un total de 142 puntos estratégicamente distribuidos en diez distritos, y en conjunto logran revalorizar un promedio mensual de 120 mil toneladas de residuos. El enfoque replicado para el AMG, son los Puntos Verdes de Barrio, los cuales ofrecen a la ciudadanía actividades como reparaciones, intercambio de artículos y talleres abierto a la comunidad. 
+              </p>
+            </div>
+            <div className="sm:w-1/2 w-full space-y-10">
+              <CmBoldText className="text-customGreenN sm:text-4xl">Colectivo Vecinal Bosque Urbano Tlaquepaque.</CmBoldText>
+              <p>
+                Se toma como inspiración la acción ciudadana del colectivo, quienes autogestionan un centro de acopio comunitario de Residuos, el cual a lo largo de dos años de su implementación y operación, ha logrado un promedio anual de acopio y envío a reciclaje de al menos 5 toneladas. Promoviendo con estas acciones la conciencia ambiental y la participación ciudadana para la correcta separación de residuos en su colonia y visitantes del Bosque Urbano Tlaquepaque.
+              </p>
+            </div>
           </div>
-        </div>
-        <div className="flex sm:flex-row flex-col">
-          {PV_MODELOS_QUOTES.map((i, index) => <CmQuote key={index} {...i} color="customGreen" />)}
+          <div>
+            <div className="flex sm:flex-row flex-col">
+            {PV_MODELOS_IMGS.map((i, index) => (
+              <CmImage 
+                key={index}
+                src={i} 
+                className={`
+                  sm:w-1/4 w-full mt-5 
+                  ${index !== PV_MODELOS_IMGS.length - 1 ? 'sm:pr-4 pr-0' : ''}
+                `}
+              />
+            ))}
+            </div>
+            <div className="flex justify-center mt-3 w-full h-[80px] sm:space-x-20 space-x-3 py-5">
+              <CmImage src={assets.financeEUColor} className="sm:h-[40px] h-[25px]" />
+              <CmImage src={assets.ambC} className="sm:h-[40px] h-[25px]" />
+              <CmImage src={assets.imeplanC} className="sm:h-[40px] h-[25px]" />
+            </div>
+          </div>
+          <div className="flex sm:flex-row flex-col mt-10">
+            {PV_MODELOS_QUOTES.map((i, index) => <CmQuote key={index} {...i} color="customGreen" maxLines={6} largeTitle />)}
+          </div>
         </div>
       </section>
-      <section id="ubicacion" className="container mx-auto px-4 sm:pb-10 pb-0">
-        <CmBanner text="Ubicación" icon={assets.pvLogo} />
-        <div className="sm:mt-10 mt-5 font-thin sm:text-2xl flex justify-center">
+      <section id="ubicacion" className="container mx-auto px-4 sm:pb-20 pb-0 pt-20">
+        <CmBanner text="Ubicación" icon={assets.pvLogo} color="customPinkN" />
+        <div className="sm:mt-10 mt-5 mb-5 font-thin sm:text-3xl flex justify-center">
           <span className="text-center">
-            <CmBoldText color="customGreen">El primer módulo está en el Bosque Urbano Tlaquepaque</CmBoldText><br /> y su existencia fortalece el trabajo realizado por el Colectivo Vecinal BUT.
+            <CmBoldText color="customGreenN">El primer módulo está en el Bosque Urbano Tlaquepaque</CmBoldText><br /> y su existencia fortalece el trabajo realizado por el Colectivo Vecinal BUT.
           </span>
         </div>
         <div className="flex justify-center">
@@ -103,48 +109,52 @@ export const PVPage = () => {
             muted
             loop
             src={assets.pvUbicacionVideo}             
-            className="my-3 sm:w-3/4 w-full"
+            className="mt-3 mb-10"
           />
         </div>
         <div className="flex sm:flex-row flex-col mt-3">
-          <div className="sm:w-1/2 sm:mr-3 mr-0">
-            <CmImage src={assets.mapaPvs} />
+          <div className="sm:w-2/3 sm:mr-3 mr-0">
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1sY66qNbNm4XrswXjGItrOjbQPgQ0KRQ&ehbc=2E312F&noprof=1" className="w-full h-full"></iframe>
           </div>
-          <div className="sm:w-1/2 flex flex-col sm:ml-3 ml-0 sm:text-xl text-justify font-thin">
+          <div className="sm:w-1/3 flex flex-col sm:ml-3 ml-0 sm:text-xl text-justify font-thin">
             <div className="h-[200px]">
               <CmImage 
                 src={assets.pvUbicacion} 
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="mt-5">
-              <CmBoldText color="customGreen">Cada municipio del AMG tendrá un Punto Verde Metropolitano que podrás visitar, usar y conocer.</CmBoldText>
-              <p className="sm:mt-10 mt-5">En cada uno de ellos, se realizarán talleres sobre reparación de artículos y su correcta disposición, además de actividades para concientizar sobre el consumo.</p>
+            <div className="mt-10">
+              <CmBoldText color="customGreenN" className="text-2xl">Cada municipio del AMG tendrá un Punto Verde Metropolitano que podrás visitar, usar y conocer.</CmBoldText>
+              <p className="mt-3">En cada uno de ellos, se realizarán talleres sobre reparación de artículos y su correcta disposición, además de actividades para concientizar sobre el consumo.</p>
             </div>
           </div>
         </div>
       </section>
-      <section id="disenio-caracteristicas" className="container mx-auto px-4 sm:pb-10 pb-0">
-        <CmBanner text="Diseño y características" icon={assets.pvLogo} />
-        <div className="flex flex-col">
-          <span className="font-thin text-center sm:text-2xl text-xl my-5">
-            <CmBoldText color="customGreen">Los Puntos Verdes Metropolitanos son espacios vecinales,</CmBoldText><br/>
-            por eso su diseño y habilitación integra criterios como:
-          </span>
-          <PVInfoIcons />
-        </div>
-        <div className="flex flex-col">
-          <div className="w-full bg-customGreen p-5 rounded-2xl text-center">
-            <CmBoldText className="sm:text-3xl text-xl text-white">¡Quiero saber más sobre los Puntos Verdes Metropolitanos!</CmBoldText>
+      <section id="disenio-caracteristicas" className="bg-customSectionBg">
+        <div className="container mx-auto px-4 sm:pb-10 pb-0 py-20">
+          <CmBanner text="Diseño y características" icon={assets.pvLogo} color="customPinkN" />
+          <div className="flex flex-col">
+            <span className="font-thin sm:text-2xl text-xl my-5">
+              <CmBoldText color="customGreenN">Los Puntos Verdes Metropolitanos son espacios vecinales,</CmBoldText><br/>
+              por eso su diseño y habilitación integra criterios como:
+            </span>
+            <PVInfoIcons />
           </div>
-          <PVDropdown />
-          <CmBoldText color="customGreen" className="text-center sm:text-3xl text-xl mt-10">Sigue bajando y descubre más sobre Metro Resilience Guadalajara</CmBoldText>
-          <div className="w-full flex justify-center">
-            <BsChevronDoubleDown className="mt-2 text-5xl" />
+          <div className="flex flex-col">
+            <div className="w-full bg-customGreenN p-5 rounded-2xl text-center">
+              <CmBoldText className="sm:text-3xl text-xl text-white">¡Quiero saber más sobre los Puntos Verdes Metropolitanos!</CmBoldText>
+            </div>
+            <PVDropdown />
           </div>
         </div>
-        <div className="text-customGreenN2"></div>
       </section>
+      <section>
+        <div className="container mx-auto px-4 py-10">
+          <CoverMenu complete={false} />
+        </div>
+      </section>
+      <CmFooter />
+      <div className="text-customGreenN2"></div>
     </>
   );
 }

@@ -10,6 +10,8 @@ export const CmQuote = ({
   fontSize = 'sm:text-xl text-lg',
   title,
   text,
+  maxLines = 4,
+  largeTitle = false,
 }: CmQuoteProps) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
@@ -56,13 +58,13 @@ export const CmQuote = ({
           )
         }
       </div>
-      <div className="mt-5 sm:w-2/3 py-3 text-gray-500">
+      <div className={`mt-5 ${largeTitle ? 'w-full' : 'sm:w-2/3' } py-3 text-gray-500`}>
         <CmBoldText color="customBlueLighter" className="sm:text-2xl text-xl">{title}</CmBoldText>
       </div>
       <div className={`flex-grow flex justify-center rounded-3xl min-h-[150px]`}>
         <p 
-          className={`${fontSize} line-clamp-4 overflow-hidden hover:overflow-auto hover:line-clamp-none transition-all`}
-          style={{ maxHeight: `${4 * 1.8}rem` }}
+          className={`${fontSize} line-clamp-${maxLines} overflow-hidden hover:overflow-auto hover:line-clamp-none transition-all text-justify`}
+          style={{ maxHeight: `${maxLines * 1.8}rem` }}
         >
           {text}
         </p>

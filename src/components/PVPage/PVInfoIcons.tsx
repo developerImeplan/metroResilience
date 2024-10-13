@@ -16,7 +16,7 @@ export const PVInfoIcons = () => {
 const InfoIcon = ({ icon, text, margins }: PVInfoIconsProps) => {
   return (
     <div className={`flex flex-col items-center ${margins ? 'sm:mx-3 mx-0' : ''} sm:p-10 p-5 sm:w-1/3 w-full`}>
-      <CmImage src={icon} className="w-[100px] h-[100px] mb-3" />
+      <CmImage src={icon} className="w-[100px] h-[100px] mb-5" />
       <p className="font-thin text-center sm:text-xl">{ text }</p>
     </div>
   )

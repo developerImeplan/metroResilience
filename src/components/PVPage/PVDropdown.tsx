@@ -16,13 +16,13 @@ const DropdownItem = ({ title, children, margins }: DropdownItemProps) => {
     <div className={`mt-5 sm:w-1/3 w-full ${margins ? 'sm:mx-3 mx-0' : ''}`}>
       <CmDropdown
         titleComponent={
-          <div className="p-5 border-2 border-customGreen rounded-2xl hover:bg-customGreen group">
-            <p className="sm:text-2xl text-lg font-bold text-customGreen text-center group-hover:text-white">{ title }</p>
+          <div className="p-5 bg-customPinkN rounded-2xl ">
+            <p className="sm:text-2xl text-lg font-bold text-white text-center">{ title }</p>
           </div>
         }
       >
-        <div className="flex justify-center items-center mt-4 bg-customGrayBg p-5 border-2 border-customGreen rounded-2xl h-full">
-          <span className="font-thin sm:text-2xl text-md text-center text-customGrayDarker">
+        <div className="flex justify-center mt-[-10px] bg-white p-5 rounded-2xl h-full">
+          <span className="font-thin sm:text-2xl text-md text-justify text-customGrayDarker">
             { children }
           </span>
         </div>
@@ -31,12 +31,14 @@ const DropdownItem = ({ title, children, margins }: DropdownItemProps) => {
   )
 }
 
+const boldTextColor = "customGreenN";
+
 const PV_DROPDOWN_ITEMS: DropdownItemProps[] = [
   {
     title: '¿Por qué es importante dejar de generar residuos?',
     children: (
       <span>
-        Por nuestra salud, del ecosistema y la calidad del aire. <CmBoldText>18% de las emisiones contaminantes en el AMG son generadas por residuos.</CmBoldText>
+        Por nuestra salud, del ecosistema y la calidad del aire. <CmBoldText color={boldTextColor}>18% de las emisiones contaminantes en el AMG son generadas por residuos.</CmBoldText>
       </span>
     )
   },
@@ -48,7 +50,7 @@ const PV_DROPDOWN_ITEMS: DropdownItemProps[] = [
           Valorizables como plástico, PET, papel, cartón, vidrio y metales que estén limpios y sin etiquetas.
         </span>
         <a
-          className="font-bold" 
+          className="font-bold text-customPinkN text-center"
           href="#"
         >Consulta la guía paso a paso</a>
       </span>
@@ -59,7 +61,7 @@ const PV_DROPDOWN_ITEMS: DropdownItemProps[] = [
     title: '¿Cómo nos benefician a nivel metropolitano?',
     children: (
       <span>
-        <CmBoldText>Ayudan a reducir la cantidad de residuos que llegan a los sitios de disposición final.</CmBoldText> Disminuir las emisiones de CO2eq, la contaminación de suelos y cuerpos de agua debido a la infiltración de lixiviados. Nos acerca a una visión de economía circular.
+        <CmBoldText color={boldTextColor}>Ayudan a reducir la cantidad de residuos que llegan a los sitios de disposición final.</CmBoldText> Disminuir las emisiones de CO2eq, la contaminación de suelos y cuerpos de agua debido a la infiltración de lixiviados. Nos acerca a una visión de economía circular.
       </span>
     )
   },
