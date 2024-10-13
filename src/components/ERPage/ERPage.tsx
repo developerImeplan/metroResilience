@@ -147,7 +147,7 @@ export const ERPage = () => {
           </div>
           <CmImage src={assets.erTaller} className="sm:w-1/3 object-cover h-full rounded-[50px]" />
         </div>
-        <div className="flex sm:flew-row flex-col items-center sm:mt-10 mt-5 pb-10">
+        <div className="flex sm:flex-row flex-col items-center sm:mt-10 mt-5 pb-10">
           <div className="sm:w-1/3 text-customGrayDarker sm:mb-0 mb-5">
             <span className="sm:text-4xl text-xl font-thin mb-5">
               En suma,
@@ -225,7 +225,7 @@ export const ERPage = () => {
       </div>
       <CmFooter />
 
-      <div className="h-0 bg-customTurquoiseBlue text-start text-end bg-customBlueLighterN text-customBlueLighterN bg-[#f7f7f7] bg-[#58a4c4] text-[#58a4c4] bg-[#5f93a5] text-[#5f93a5]"></div>
+      <div className="h-0 bg-customTurquoiseBlue text-start text-end bg-customBlueLighterN text-customBlueLighterN bg-[#f7f7f7] bg-[#58a4c4] text-[#58a4c4] bg-[#5f93a5] text-[#5f93a5] bg-customBlueLighter"></div>
     </> 
   );
 }
