@@ -22,6 +22,7 @@ export default {
         customTurquoiseBlue: '#30849c',
         customGreen: '#48b47c',
         customGreenN: '#397b55',
+        customGreenN2: '#387c55',
         customGreenLighter: '#43b17b',
         customPink: '#9263b3',
         customPinkN: '#987bb5',

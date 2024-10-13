@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-import { CmBanner, CmBoldText, CmCoverVideo, CmImage, CmQuote } from "../common";
+import { CmBanner, CmBoldText, CmCoverVideo, CmHeader, CmImage, CmQuote } from "../common";
 import { PVQueSonDropdown } from "./PVQueSonDropdown";
 import { PV_MODELOS_IMGS } from "./PVModelosImgs";
 import { PV_MODELOS_QUOTES } from "./PVModelosQuotes";
@@ -11,6 +11,7 @@ import { assets } from "../../assets";
 import { PVInfoIcons } from "./PVInfoIcons";
 import { PVDropdown } from "./PVDropdown";
 import { BsChevronDoubleDown } from "react-icons/bs";
+import { ER_COVER_LOGOS } from "../../constants";
 
 export const PVPage = () => {
   const location = useLocation();
@@ -26,33 +27,29 @@ export const PVPage = () => {
 
   return(
     <>
+      <CmHeader />
       <CmCoverVideo
         footerContent={
-          <div className="flex sm:w-1/3 sm:space-x-20 space-x-5 sm:mr-60">
-            <CmImage className="sm:h-[60px] h-[40px]" src={assets.ambW} />
-            <CmImage className="sm:h-[60px] h-[40px]" src={assets.imeplanW} />
+          <div className="flex justify-end mr-20">
+            { ER_COVER_LOGOS.map(i => (<CmImage src={i} className="sm:h-[60px] h-[30px] mx-3" />)) }
           </div>
         }
         img={assets.pvCover}
         icon={assets.pvLogo}
         title="Puntos Verdes Metropolitanos"
       />
-      <section id="que-son" className="container mx-auto px-4 pt-10 sm:pb-10 pb-0">
-        <div className="w-full flex justify-center items-center">
-          <CmImage src={assets.pvLogo} className="h-[40px]" />
-          <p className="sm:text-3xl text-2xl text-center font-bold text-customMain px-2">¿Qué son?</p>
-          <CmImage src={assets.pvLogo} className="h-[40px]" />
-        </div>
-        <p className="text-center mt-5 sm:text-xl text-lg font-thin">
-          <CmBoldText color="customGreen">Son espacios donde se reciben, recolectan y valorizan residuos</CmBoldText> en una dinámica de economía circular, propiciando la conexión entre comunidad, naturaleza y territorio. Basados en el modelo de gestión de residuos del AMB a través de su experiencia y apoyo técnico. 
+      <section id="que-son" className="container mx-auto px-4 pt-10 sm:pb-10 pb-0 mt-10">
+        <CmBanner text="¿Qué son?" color="customGreenN2" icon={assets.pvLogo} />
+        <p className="text-justify my-5 sm:text-xl text-lg font-thin">
+          <CmBoldText className="text-customPinkN">Son espacios donde se reciben, recolectan y valorizan residuos</CmBoldText> en una dinámica de economía circular, propiciando la conexión entre comunidad, naturaleza y territorio. Basados en el modelo de gestión de residuos del AMB a través de su experiencia y apoyo técnico. 
         </p>
         <PVQueSonDropdown />
-        <div className="flex justify-center sm:mt-5 mt-1">
-          <p className="font-thin italic sm:text-base text-sm">*(Plan de Acción Climática, PACmetro,  2023)</p>
+        <div className="flex justify-center">
+          <p className="font-thin sm:text-base text-sm">*(Plan de Acción Climática, PACmetro,  2023)</p>
         </div>
         <div className="flex justify-center sm:mt-10">
-          <span className="font-thin sm:text-2xl text-center">
-            <CmBoldText color="customGreen">En nuestra metrópoli</CmBoldText>, sabemos que existen iniciativas locales e internacionales con valiosos conocimientos, por lo que la colaboración es clave.
+          <span className="font-thin sm:text-2xl text-justify">
+            <CmBoldText color="customGreenN2">En nuestra metrópoli</CmBoldText>, sabemos que existen iniciativas locales e internacionales con valiosos conocimientos, por lo que la colaboración es clave.
           </span>
         </div>
       </section>
@@ -146,6 +143,7 @@ export const PVPage = () => {
             <BsChevronDoubleDown className="mt-2 text-5xl" />
           </div>
         </div>
+        <div className="text-customGreenN2"></div>
       </section>
     </>
   );
