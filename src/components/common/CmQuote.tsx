@@ -56,8 +56,8 @@ export const CmQuote = ({
           )
         }
       </div>
-      <div className="mt-5 w-2/3 py-3 text-gray-500">
-        <CmBoldText color="customBlueLighter" className="sm:text-2xl">{title}</CmBoldText>
+      <div className="mt-5 sm:w-2/3 py-3 text-gray-500">
+        <CmBoldText color="customBlueLighter" className="sm:text-2xl text-xl">{title}</CmBoldText>
       </div>
       <div className={`flex-grow flex justify-center rounded-3xl min-h-[150px]`}>
         <p 

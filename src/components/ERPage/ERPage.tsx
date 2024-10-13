@@ -122,8 +122,8 @@ export const ERPage = () => {
       <section id="adaptarse" className="container mx-auto px-4 mt-10">
         <CmBanner color="customBlueLighter" text="Adaptarse" icon={assets.erLogo} />
         <div className="flex flex-col sm:mb-10 mt-5 text-customPurple">
-          <CmBoldText className="sm:text-2xl">A partir de estos resultados, se trabajó bajo</CmBoldText>
-          <p className="sm:text-5xl font-black">4 Desafíos Metropolitanos principales</p>
+          <CmBoldText className="sm:text-2xl text-xl">A partir de estos resultados, se trabajó bajo</CmBoldText>
+          <p className="sm:text-5xl text-2xl font-black">4 Desafíos Metropolitanos principales</p>
         </div>
         <div className="sm:mt-5 w-full flex sm:flex-row flex-col sm:justify-between sm:items-center sm:space-x-20 sm:gap-0 gap-4">
           <ERAdaptarseIconsText />
@@ -131,7 +131,7 @@ export const ERPage = () => {
         </div>
         <div className="flex sm:flex-row flex-col items-center sm:mt-10">
           <div className="flex flex-col font-thin text-customGrayDarker sm:text-2xl text-xl sm:mb-0 mb-5 sm:w-2/3">
-            <p className="sm:text-5xl font-black text-customBlueLighter mb-10">2 Alcances importantes</p>
+            <p className="sm:text-5xl text-2xl font-black text-customBlueLighter mb-10 sm:mt-0 mt-10">2 Alcances importantes</p>
             <span className="mb-10 flex space-x-5">
               <CmImage src={assets.erLogo} className="h-[60px]" />
               <span>
@@ -147,8 +147,8 @@ export const ERPage = () => {
           </div>
           <CmImage src={assets.erTaller} className="sm:w-1/3 object-cover h-full rounded-[50px]" />
         </div>
-        <div className="flex flex items-center mt-10 pb-10">
-          <div className="w-1/3 text-customGrayDarker">
+        <div className="flex sm:flew-row flex-col items-center sm:mt-10 mt-5 pb-10">
+          <div className="sm:w-1/3 text-customGrayDarker sm:mb-0 mb-5">
             <span className="sm:text-4xl text-xl font-thin mb-5">
               En suma,
               <p className="text-customPinkN font-black">la  Estrategia</p>
@@ -161,7 +161,7 @@ export const ERPage = () => {
       </section>
       <section id="prosperar" className="bg-customSectionBg">
         <div className="container mx-auto px-4 mt-10 pt-10 pb-5">
-          <div className="flex h-full items-center">
+          <div className="flex sm:flex-row flex-col h-full items-center">
             <CmBanner color="customBlueLighter" text="Prosperar" icon={assets.erLogo} />
             <div className="flex flex-col ml-10 text-xl">
               <CmBoldText color="customBlueLighter">La Estrategia es un legado comunitario</CmBoldText>
@@ -193,7 +193,7 @@ export const ERPage = () => {
               className="sm:w-1/4 w-full sm:ml-5 ml-0 sm:mt-0 mt-5 sm:h-auto h-full"
             />
           </div>
-          <div className="flex sm:flex-row flex-col mt-10">
+          <div className="flex sm:flex-row flex-col mt-10 sm:pt-0 pt-40">
             {ERQuotes.map((i, index) => <CmQuote key={index} {...i} />)}
           </div>
         </div>
