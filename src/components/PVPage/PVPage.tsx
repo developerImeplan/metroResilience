@@ -30,7 +30,7 @@ export const PVPage = () => {
       <CmHeader />
       <CmCoverVideo
         footerContent={
-          <div className="flex justify-end mr-20">
+          <div className="flex sm:justify-end justify-center sm:mr-20">
             { ER_COVER_LOGOS.map(i => (<CmImage src={i} className="sm:h-[60px] h-[30px] mx-3" />)) }
           </div>
         }
@@ -38,7 +38,7 @@ export const PVPage = () => {
         icon={assets.pvLogo}
         title="Puntos Verdes Metropolitanos"
       />
-      <section id="que-son" className="container mx-auto px-4 pt-10 sm:pb-10 pb-0 mt-10">
+      <section id="que-son" className="container mx-auto px-4 sm:pt-10 sm:pb-10 pb-0 mt-10">
         <CmBanner text="¿Qué son?" color="customGreenN2" icon={assets.pvLogo} />
         <p className="text-justify my-5 sm:text-xl text-lg font-thin">
           <CmBoldText className="text-customPinkN">Son espacios donde se reciben, recolectan y valorizan residuos</CmBoldText> en una dinámica de economía circular, propiciando la conexión entre comunidad, naturaleza y territorio. Basados en el modelo de gestión de residuos del AMB a través de su experiencia y apoyo técnico. 
@@ -47,24 +47,24 @@ export const PVPage = () => {
         <div className="flex justify-center">
           <p className="font-thin sm:text-base text-sm">*(Plan de Acción Climática, PACmetro,  2023)</p>
         </div>
-        <div className="flex justify-center sm:mt-10">
+        <div className="flex justify-center sm:mt-10 my-5">
           <span className="font-thin sm:text-2xl text-justify">
             <CmBoldText color="customGreenN2">En nuestra metrópoli</CmBoldText>, sabemos que existen iniciativas locales e internacionales con valiosos conocimientos, por lo que la colaboración es clave.
           </span>
         </div>
       </section>
       <section id="comunidad" className="bg-customSectionBg">
-        <div className="container mx-auto px-4 sm:pb-20 pb-0 pt-5">
+        <div className="container mx-auto px-4 pb-20 pt-5">
           <div className="mt-10">
             <CmBanner text="Modelos referentes" icon={assets.pvLogo} color="customPinkN" />
           </div>
           <div className="flex sm:flex-row flex-col mt-5 sm:text-2xl text-lg font-thin text-justify sm:space-x-10">
-            <div className="sm:w-1/2 w-full space-y-10">
+            <div className="sm:w-1/2 w-full sm:space-y-10 space-y-5">
               <CmBoldText className="text-customGreenN sm:text-4xl">“Puntos Verdes de Barrio” del Área       Metropolitana de Barcelona (AMB).</CmBoldText>
               <p>Se recuperan las buenas prácticas del modelo de gestión de residuos del AMB, particularmente sobre acopio de residuos, el cual se comprende de tres tipologías: Puntos Verdes de Zona, Puntos Verdes Móviles y Puntos Verdes de Barrio. Esta red abarca un total de 142 puntos estratégicamente distribuidos en diez distritos, y en conjunto logran revalorizar un promedio mensual de 120 mil toneladas de residuos. El enfoque replicado para el AMG, son los Puntos Verdes de Barrio, los cuales ofrecen a la ciudadanía actividades como reparaciones, intercambio de artículos y talleres abierto a la comunidad. 
               </p>
             </div>
-            <div className="sm:w-1/2 w-full space-y-10">
+            <div className="sm:w-1/2 w-full sm:space-y-10 space-y-5 sm:mt-0 mt-10">
               <CmBoldText className="text-customGreenN sm:text-4xl">Colectivo Vecinal Bosque Urbano Tlaquepaque.</CmBoldText>
               <p>
                 Se toma como inspiración la acción ciudadana del colectivo, quienes autogestionan un centro de acopio comunitario de Residuos, el cual a lo largo de dos años de su implementación y operación, ha logrado un promedio anual de acopio y envío a reciclaje de al menos 5 toneladas. Promoviendo con estas acciones la conciencia ambiental y la participación ciudadana para la correcta separación de residuos en su colonia y visitantes del Bosque Urbano Tlaquepaque.
@@ -95,7 +95,7 @@ export const PVPage = () => {
           </div>
         </div>
       </section>
-      <section id="ubicacion" className="container mx-auto px-4 sm:pb-20 pb-0 pt-20">
+      <section id="ubicacion" className="container mx-auto px-4 pb-20 pt-20">
         <CmBanner text="Ubicación" icon={assets.pvLogo} color="customPinkN" />
         <div className="sm:mt-10 mt-5 mb-5 font-thin sm:text-3xl flex justify-center">
           <span className="text-center">
