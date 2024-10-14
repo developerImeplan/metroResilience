@@ -4,7 +4,7 @@ import { useLocation } from "react-router-dom";
 import { assets } from "../../assets";
 import { VIDEOS } from "../../constants";
 
-import { CmBanner, CmBoldText, CmCoverVideo, CmImage, CmQuote } from "../common";
+import { CmBanner, CmBoldText, CmCoverVideo, CmHeader, CmImage, CmQuote } from "../common";
 import { GPQueSeraDropdown } from "./GPQueSeraDropdown";
 import { GPConstruccionImages } from "./GPConstruccionImages";
 
@@ -26,9 +26,10 @@ export const GPPage = () => {
 
   return(
     <>
+      <CmHeader />
       <CmCoverVideo
         footerContent={
-          <div className="flex sm:w-1/3 sm:space-x-20 space-x-5 sm:mr-40 sm:ml-20">
+          <div className="flex sm:w-1/2 sm:space-x-20 space-x-5 sm:mr-40 sm:ml-20">
             <CmImage className="sm:h-[60px] h-[40px]" src={assets.ambW} />
             <CmImage className="sm:h-[60px] h-[40px]" src={assets.imeplanW} />
           </div>
@@ -39,17 +40,10 @@ export const GPPage = () => {
         title="Guía Política de Resiliencia y Gobernanza Metropolitanas"
       />
       <div className="container mx-auto px-4">
-        <section id="que-es" className="mt-10 mb-5">
-          <div className="flex flex-col items-center">
-            <div className="w-full flex justify-center">
-              <CmImage src={assets.gpLogo} className="h-[40px]" />
-              <CmBoldText 
-                color="customPurpleGP"
-                className="sm:text-4xl text-2xl mb-5 mx-2"
-              >¿Qué será?</CmBoldText>
-              <CmImage src={assets.gpLogo} className="h-[40px]" />
-            </div>
-            <span className="font-thin text-center sm:text-2xl text-xl">Una Guía que <CmBoldText color="customPurpleGP">recopilará las experiencias y lecciones aprendidas del AMG y el AMB durante el desarrollo de Metrópoli Resiliente.</CmBoldText> Esto con el fin de inspirar a otras metrópolis a replicar y adaptar acciones en materia de resiliencia urbana y gobernanza metropolitana.
+        <section id="que-es" className="mt-20 mb-5">
+          <CmBanner text="¿Qué será?" icon={assets.gpLogo} color="customPinkGP" />
+          <div className="flex flex-col items-center my-5">
+            <span className="font-thin text-justify sm:text-2xl text-xl">Una Guía que <CmBoldText className="text-customTurquoiseGP">recopilará las experiencias y lecciones aprendidas del AMG y el AMB durante el desarrollo de Metrópoli Resiliente.</CmBoldText> Esto con el fin de inspirar a otras metrópolis a replicar y adaptar acciones en materia de resiliencia urbana y gobernanza metropolitana.
             </span>
           </div>
         </section>
@@ -161,7 +155,7 @@ export const GPPage = () => {
         </section>
       </div>
       <div className="h-0 bg-customPurpleDarker"></div>
-      <div className="h-0 bg-customPurpleGP"></div>
+      <div className="h-0 bg-customPurpleGP text-customPinkGP"></div>
     </>
   );
 }
