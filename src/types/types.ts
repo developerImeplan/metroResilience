@@ -263,3 +263,9 @@ export interface CmIconSNProps {
   icon: IconType;
   url: string;
 }
+
+// region GpIconsProps
+export interface GpIconsProps {
+  icon: string;
+  text: string;
+}

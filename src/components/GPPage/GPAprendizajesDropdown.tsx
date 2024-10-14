@@ -18,12 +18,12 @@ const DropdownItem = ({ title, children, index }: DropdownItemProps & {
     <div className={`mt-5 sm:w-1/2 w-full ${index === 0 ? 'sm:mr-3 mr-0' : 'sm:ml-3 ml-0'}`}>
       <CmDropdown
         titleComponent={
-          <div className="p-5 border-2 border-customPurpleGP rounded-2xl hover:bg-customPurpleGP group h-[110px] flex items-center justify-center">
-            <p className="sm:text-2xl text-lg font-bold text-customPurpleGP text-center group-hover:text-white">{ title }</p>
+          <div className="p-5 rounded-2xl bg-customPurpleGP h-[110px] flex items-center justify-center">
+            <p className="sm:text-3xl text-xl font-bold text-center text-white">{ title }</p>
           </div>
         }
       >
-        <div className="flex justify-center items-center mt-4 bg-white p-5 border border-customPurpleGP rounded-2xl h-full">
+        <div className="flex justify-center items-center mt-[-14px] px-5 py-10 border bg-customGrayBg rounded-2xl h-full">
           <span className="font-thin sm:text-xl text-lg text-md text-justify text-customGrayDarker">
             { children }
           </span>

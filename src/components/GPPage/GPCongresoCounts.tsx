@@ -3,7 +3,7 @@ import { CmBoldText } from "../common";
 
 export const GPCongresoCounts = () => {
   return(
-    <div className="flex sm:flex-row flex-col justify-between mt-5 sm:space-x-5">
+    <div className="flex sm:flex-row flex-col justify-between sm:py-20 py-5 sm:space-x-5">
       {
         GP_CONGRESO_COUNTS.map(i => (
           <GPCongresoCountsItem {...i} />
