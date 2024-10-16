@@ -126,12 +126,14 @@ export interface CmCoverVideoProps {
   children?: ReactNode;
   footerContent?: ReactNode;
   img?: string;
+  width?: boolean;
 }
 
 export interface CmCoverVideoFooterProps {
   children: ReactNode;
   icon: string;
   title: string;
+  width?: boolean;
 }
 
 // region CmBoldText

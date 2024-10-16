@@ -2,7 +2,7 @@ import { CmCoverVideoProps } from "../../../types";
 import { CmImage, CmLogo, CmVideo } from "../";
 import { CmCoverVideoFooter } from "./CmCoverVideoFooter";
 
-export const CmCoverVideo = ({ showFooter = true, footerContent, video, children, title, img, icon }: CmCoverVideoProps) => {
+export const CmCoverVideo = ({ showFooter = true, footerContent, video, children, title, img, icon, width = true }: CmCoverVideoProps) => {
   return(
     <section className="relative h-[calc(100vh-100px)] overflow-hidden">
       {
@@ -17,7 +17,7 @@ export const CmCoverVideo = ({ showFooter = true, footerContent, video, children
         </div>
         {
           showFooter && title && icon ? (
-            <CmCoverVideoFooter title={title} icon={icon} children={footerContent} />
+            <CmCoverVideoFooter title={title} icon={icon} children={footerContent} width={width} />
           ) : null
         }
       </div>

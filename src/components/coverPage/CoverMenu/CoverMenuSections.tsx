@@ -60,7 +60,6 @@ export const COVER_MENU_SECTIONS: CoverMenuSectionProps[] = [
         link: `${MENU_PREFIXES.PV}#disenio-caracteristicas`
       },
     ],
-    margins: true,
   },
   {
     icon: assets.gpLogo,

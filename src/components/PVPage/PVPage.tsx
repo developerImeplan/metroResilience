@@ -1,6 +1,3 @@
-import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
-
 import { CmBanner, CmBoldText, CmCoverVideo, CmFooter, CmHeader, CmImage, CmQuote } from "../common";
 import { PVQueSonDropdown } from "./PVQueSonDropdown";
 import { PV_MODELOS_IMGS } from "./PVModelosImgs";
@@ -12,18 +9,10 @@ import { PVInfoIcons } from "./PVInfoIcons";
 import { PVDropdown } from "./PVDropdown";
 import { ER_COVER_LOGOS } from "../../constants";
 import { CoverMenu } from "../coverPage";
+import { useScroll } from "../../hooks/useScroll";
 
 export const PVPage = () => {
-  const location = useLocation();
-
-  useEffect(() => {
-    if (location.hash) {
-      const element = document.getElementById(location.hash.substring(1));
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
-    }
-  }, [location]);
+  useScroll();
 
   return(
     <>

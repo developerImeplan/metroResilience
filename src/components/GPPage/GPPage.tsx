@@ -1,6 +1,3 @@
-import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
-
 import { assets } from "../../assets";
 import { VIDEOS } from "../../constants";
 
@@ -13,18 +10,10 @@ import { GPCongresoCounts } from "./GPCongresoCounts";
 import { GP_QUOTES } from "./GPQuotes";
 import { GPIcons } from "./GPIcons";
 import { CoverMenu } from "../coverPage";
+import { useScroll } from "../../hooks/useScroll";
 
 export const GPPage = () => {
-  const location = useLocation();
-
-  useEffect(() => {
-    if (location.hash) {
-      const element = document.getElementById(location.hash.substring(1));
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
-    }
-  }, [location]);
+  useScroll();
 
   return(
     <>
@@ -93,7 +82,10 @@ export const GPPage = () => {
       </section>
       <section id="congreso-internacional" className="mt-10 mb-5 font-thin sm:text-2xl text-lg bg-customSectionBg py-20">
         <div className="container mx-auto px-4">
-          <CmBanner text="Congreso Internacional de Resiliencia Metropolitana" icon={assets.gpLogo} color="customPinkN" />
+          <div className="py-5 flex justify-start items-end sm:space-x-10 space-x-3">
+            <p className="sm:text-6xl text-start font-black text-customPinkN">Congreso Internacional<br/> de Resiliencia Metropolitana</p>
+            <CmImage src={assets.gpLogo} className="sm:h-[60px] h-[50px]" />
+          </div>
           <div className="text-justify mt-5">
             Durante los tres días del Congreso, <CmBoldText color="customTurquoiseGP">personas expertas</CmBoldText> de diferentes lugares del mundo conversaron sobre sus <CmBoldText color="customTurquoiseGP">principales retos y cómo la resiliencia urbana incide en la mejora</CmBoldText> de nuestras metrópolis. <br />
             <br />

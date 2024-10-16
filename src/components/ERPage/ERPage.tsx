@@ -1,7 +1,3 @@
-import { useEffect } from "react";
-
-import { useLocation } from "react-router-dom";
-
 import { assets } from "../../assets";
 import { ER_COUNTS_AND_DESCRIPTIONS, ER_COVER_LOGOS, ER_IMAGES_CARROUSEL, ER_QUE_ES_ICONS } from "../../constants";
 import { CmBanner, CmBoldText, CmCoverVideo, CmFooter, CmHeader, CmImage, CmImageCarousel, CmQuote } from "../common";
@@ -23,18 +19,10 @@ import {
   ERQueEsIcon
 } from "./";
 import { CoverMenu } from "../coverPage";
+import { useScroll } from "../../hooks/useScroll";
 
 export const ERPage = () => {
-  const location = useLocation();
-
-  useEffect(() => {
-    if (location.hash) {
-      const element = document.getElementById(location.hash.substring(1));
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
-    }
-  }, [location]);
+  useScroll();
 
   return(
     <>
@@ -48,6 +36,7 @@ export const ERPage = () => {
         img={assets.erm}
         icon={assets.erLogo}
         title="Estrategia de Resiliencia Metropolitana"
+        width={false}
       />
       <section id="que-es" className="container mx-auto px-4 sm:pb-10 pb-0 pt-5">
         <CmBanner text="¿Qué es?" color="customPurple" icon={assets.erLogo} />
@@ -147,7 +136,7 @@ export const ERPage = () => {
           </div>
           <CmImage src={assets.erTaller} className="sm:w-1/3 object-cover h-full rounded-[50px]" />
         </div>
-        <div className="flex sm:flex-row flex-col items-center sm:mt-10 mt-5 pb-10">
+        <div className="flex sm:flex-row flex-col sm:items-center sm:justify-between sm:mt-10 mt-5 pb-10">
           <div className="sm:w-1/3 text-customGrayDarker sm:mb-0 mb-5">
             <span className="sm:text-4xl text-xl font-thin mb-5">
               En suma,

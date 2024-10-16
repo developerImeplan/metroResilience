@@ -1,10 +1,10 @@
 import { CmCoverVideoFooterProps } from "../../../types";
 import { CmImage } from "../CmImage";
 
-export const CmCoverVideoFooter = ({ children, title, icon }: CmCoverVideoFooterProps) => {
+export const CmCoverVideoFooter = ({ children, title, icon, width = true }: CmCoverVideoFooterProps) => {
   return (
     <div className="flex sm:flex-row flex-col sm:justify-end items-center z-50">
-      <div className="w-2/3">
+      <div className={width ? 'w-2/3' : ''}>
         { children }
       </div>
       <div className="sm:mt-0 mt-5">
