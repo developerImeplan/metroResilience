@@ -13,14 +13,13 @@ export const CoverMenuSection = ({
   title, 
   items,
   mainUrl,
-  margins = false,
 }: CoverMenuSectionProps) => {
 
   const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState<boolean>(true);
 
   return(
-    <div className={`flex flex-col w-full ${margins ? 'mx-5' : ''}`}>
+    <div className="flex flex-col w-full">
       <div 
         onClick={complete ? () => setIsOpen(c => !c) : () => navigate(mainUrl)}
         className="cursor-pointer flex justify-center items-center p-5 h-[85px] my-3"
