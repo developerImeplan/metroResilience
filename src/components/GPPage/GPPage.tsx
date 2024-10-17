@@ -95,7 +95,7 @@ export const GPPage = () => {
           </div>
           <GPCongresoCounts />
           <div className="flex sm:flex-row flex-col">
-            {GP_QUOTES.map((i, index) => <CmQuote key={index} {...i} color="customPurpleGP" maxLines={5} largeTitle />)}
+            {GP_QUOTES.map((i, index) => <CmQuote key={index} {...i} color="customPurpleGP" maxLines={5} largeTitle minHeaderHeight={120} />)}
           </div>
         </div>
       </section>

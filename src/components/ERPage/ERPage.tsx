@@ -183,7 +183,7 @@ export const ERPage = () => {
             />
           </div>
           <div className="flex sm:flex-row flex-col mt-10 sm:pt-0 pt-40">
-            {ERQuotes.map((i, index) => <CmQuote key={index} {...i} />)}
+            {ERQuotes.map((i, index) => <CmQuote key={index} {...i} minHeaderHeight={80} />)}
           </div>
         </div>
       </section>

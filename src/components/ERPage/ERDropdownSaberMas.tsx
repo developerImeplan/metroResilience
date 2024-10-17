@@ -22,7 +22,7 @@ const DropdownItem = ({ title, children, margins }: DropdownItemProps) => {
         }
       >
         <div className="flex justify-center mt-[-15px] bg-white p-5 rounded-2xl h-full py-10">
-          <span className="font-thin sm:text-2xl text-md text-center text-customGrayDarker">
+          <span className="font-thin sm:text-2xl text-md text-justify text-customGrayDarker">
             { children }
           </span>
         </div>
@@ -45,10 +45,10 @@ const ERDropdownSaberMasItems: DropdownItemProps[] = [
     children: (
       <span className="flex flex-col">
         <span className="mb-5">
-          En forma de programa como <br /><CmBoldText className="text-[#5f93a5]">Nidos de Lluvia</CmBoldText><br /> o de proyecto comunitario como <br /><CmBoldText className="text-customGreenN">Puntos Verdes Metropolitanos.</CmBoldText>
+          En forma de programa como <CmBoldText className="text-[#5f93a5]">Nidos de Lluvia</CmBoldText> o de proyecto comunitario como <CmBoldText className="text-customGreenN">Puntos Verdes Metropolitanos.</CmBoldText>
         </span>
         <a
-          className="font-bold mt-10 text-[#5f93a5]" 
+          className="font-bold mt-10 text-[#5f93a5] text-center" 
           href="https://youtu.be/8Xg3mfdRJYk?si=5dbile9frvQHYPnl&t=180"
         >¡Quiero conocer un Nido de Lluvia!</a>
       </span>
@@ -60,11 +60,11 @@ const ERDropdownSaberMasItems: DropdownItemProps[] = [
     children: (
       <span className="flex flex-col">
         <span className="mb-5">
-          Participando en la <br /><CmBoldText className="text-[#9972af]">Escuela de Resiliencia</CmBoldText>,<br /> donde podrás aprender los principales conceptos e interpretar procesos de planeación para la resiliencia urbana.
+          Participando en la <CmBoldText className="text-[#9972af]">Escuela de Resiliencia</CmBoldText>, donde podrás aprender los principales conceptos e interpretar procesos de planeación para la resiliencia urbana.
         </span>
         <a 
           href="#"
-          className="font-bold text-[#5f93a5]"
+          className="font-bold text-[#5f93a5] text-center"
         >
           ¡Quiero inscribirme!
         </a>

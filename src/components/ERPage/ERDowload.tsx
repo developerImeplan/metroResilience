@@ -10,7 +10,7 @@ export const ERDowload = ({
 }: ERDowloadProps) => {
   return(
     <div className={`flex flex-col items-center sm:mb-0 mb-10 ${marginR ? 'sm:mr-10 mr-0' : ''}`}>
-      <CmImage src={img} className="h-full" />
+      <CmImage src={img} className="h-[350px]" />
       <a 
         href={doc}
         download

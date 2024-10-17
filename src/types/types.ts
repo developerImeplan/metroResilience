@@ -223,6 +223,7 @@ export interface CmQuoteProps {
   text: string;
   largeTitle?: boolean;
   maxLines?: number;
+  minHeaderHeight?: number;
 }
 
 // region ERDowload

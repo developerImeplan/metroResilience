@@ -26,6 +26,7 @@ export const PVPage = () => {
         img={assets.pvCover}
         icon={assets.pvLogo}
         title="Puntos Verdes Metropolitanos"
+        width={false}
       />
       <section id="que-son" className="container mx-auto px-4 sm:pt-10 sm:pb-10 pb-0 mt-10">
         <CmBanner text="¿Qué son?" color="customGreenN2" icon={assets.pvLogo} />
@@ -80,7 +81,7 @@ export const PVPage = () => {
             </div>
           </div>
           <div className="flex sm:flex-row flex-col mt-10">
-            {PV_MODELOS_QUOTES.map((i, index) => <CmQuote key={index} {...i} color="customGreen" maxLines={6} largeTitle />)}
+            {PV_MODELOS_QUOTES.map((i, index) => <CmQuote key={index} {...i} color="customGreen" maxLines={6} largeTitle minHeaderHeight={80} />)}
           </div>
         </div>
       </section>
