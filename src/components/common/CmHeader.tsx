@@ -6,7 +6,7 @@ import { CM_HEADER_ITEMS } from "../../constants";
 
 export const CmHeader = () => {
   return(
-    <div className="w-full bg-[#424777] py-3 sm:h-[100px]">
+    <div className="w-full bg-[#31365c] py-3 sm:h-[100px]">
       <div className="container mx-auto px-1 py-3 flex sm:flex-row flex-col justify-between items-center">
         <Link to="/">
           <CmImage src={assets.imeplanW} className="sm:h-[40px] w-[150px]" />
