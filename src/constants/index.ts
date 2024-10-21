@@ -133,19 +133,19 @@ export const ER_COUNTS_AND_DESCRIPTIONS: ERCountAndDescriptionProps[] = [
 export const ER_PILLS: ERPillProps[] = [
   {
     bg:   assets.adaptarsePill1,
-    text: "4 pilares"
+    text: ""
   },
   {
     bg:   assets.adaptarsePill2,
-    text: "2 componentes sustantivos"
+    text: ""
   },
   {
     bg:   assets.adaptarsePill3,
-    text: "16 metas"
+    text: ""
   },
   {
     bg:   assets.adaptarsePill4,
-    text: "38 acciones"
+    text: ""
   },
 ];
 

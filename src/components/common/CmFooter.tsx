@@ -5,16 +5,16 @@ import { CmImage } from "./CmImage";
 
 export const CmFooter = () => {
   return(
-    <div className="w-full bg-[#31365c] px-10 pt-10">
+    <div className="w-full bg-[#31365c] sm:px-10 pt-10">
       <div className="flex sm:flex-row flex-col sm:items-center sm:space-x-5">
-        <div className="space-y-4 w-2/3 border-r-2 border-white">
-          <div className="flex justify-center space-x-10">
+        <div className="space-y-4 sm:w-2/3 sm:border-r-2 border-white">
+          <div className="flex sm:flex-row flex-col sm:justify-center sm:space-x-10">
             <CmImage src={assets.financeEU} className="h-[50px] object-contain sm:mb-0 mb-5" />
             <CmImage src={assets.ambW} className="h-[50px] object-contain sm:mb-0 mb-5" />
             <CmImage src={assets.imeplanW} className="h-[50px] object-contain sm:mb-0 mb-5" />
           </div>
         </div>
-        <div className="flex justify-around w-1/3 pl-20">
+        <div className="flex justify-around sm:w-1/3 sm:pl-20">
           {CM_ICONS_SN.map(i => <CmIconSN {...i} />)}
         </div>
       </div>
