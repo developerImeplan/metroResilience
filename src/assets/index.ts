@@ -19,6 +19,9 @@ import carrusel6 from "../assets/imgs/carrusel6.jpg";
 import carrusel7 from "../assets/imgs/carrusel7.jpg";
 import carrusel8 from "../assets/imgs/carrusel8.jpg";
 import carrusel9 from "../assets/imgs/carrusel9.jpg";
+import congreso1 from "../assets/imgs/congresoCount1.png";
+import congreso2 from "../assets/imgs/congresoCount2.png";
+import congreso3 from "../assets/imgs/congresoCount3.png";
 import entrevistas1 from "../assets/imgs/entrevistas1.jpg";
 import entrevistas2 from "../assets/imgs/entrevistas2.jpg";
 import entrevistas3 from "../assets/imgs/entrevistas3.jpg";
@@ -44,6 +47,9 @@ import gpConstruccion3 from "../assets/imgs/gpConstruccion3.jpg";
 import gpConstruccion4 from "../assets/imgs/gpConstruccion4.jpg";
 import gpCover from "../assets/imgs/gpCover.jpg";
 import gpLogo from "../assets/imgs/gp_logo.png";
+import gpQuotes1 from "../assets/audios/gpQuotes1.mp3";
+import gpQuotes2 from "../assets/audios/gpQuotes2.mp3";
+import gpQuotes3 from "../assets/audios/gpQuotes3.mp3";
 import iconAccion from "../assets/imgs/iconAccion.png";
 import iconEntrevistas from "../assets/imgs/iconEntrevistas.png";
 import iconGobernanza from "../assets/imgs/iconGobernanza.png";
@@ -55,6 +61,7 @@ import imeplanW from "../assets/imgs/imeplan_white.png";
 import inundaciones from "../assets/imgs/inundaciones_icon.png";
 import loopER from "../assets/videos/loopER.mp4";
 import mapaPvs from "../assets/imgs/mapa_pvs.png";
+import mariaCristina from "../assets/imgs/mariaCristina.png";
 import metroLg from "../assets/imgs/metro_logo.png";
 import metroCLg from "../assets/imgs/metropoliCLogo.png";
 import modelos1 from "../assets/imgs/modelos_1.png";
@@ -73,7 +80,9 @@ import pvInfoIcon1 from "../assets/imgs/pvInfoIcon1.png";
 import pvInfoIcon2 from "../assets/imgs/pvInfoIcon2.png";
 import pvInfoIcon3 from "../assets/imgs/pvInfoIcon3.png";
 import pvLogo from "../assets/imgs/pv_logo.png";
+import pvModeloQuote1 from "../assets/imgs/pvModeloQuote1.jpg";
 import pvModeloQuote2 from "../assets/imgs/pvModeloQuote2.jpg";
+import pvModeloQuote3 from "../assets/imgs/pvModeloQuote3.jpg";
 import pvUbicacion from "../assets/imgs/pvUbicacion.jpg";
 import pvUbicacionVideo from "../assets/videos/pvUbicacionVideo.mp4";
 import ramonTorra from "../assets/imgs/ramon-torra.png";
@@ -106,6 +115,9 @@ export const assets = {
   carrusel7,
   carrusel8,
   carrusel9,
+  congreso1,
+  congreso2,
+  congreso3,
   entrevistas1,
   entrevistas2,
   entrevistas3,
@@ -131,6 +143,9 @@ export const assets = {
   gpConstruccion4,
   gpCover,
   gpLogo,
+  gpQuotes1,
+  gpQuotes2,
+  gpQuotes3,
   iconAccion,
   iconEntrevistas,
   iconGobernanza,
@@ -142,6 +157,7 @@ export const assets = {
   inundaciones,
   loopER,
   mapaPvs,
+  mariaCristina,
   metroLg,
   metroCLg,
   modelos1,
@@ -160,7 +176,9 @@ export const assets = {
   pvInfoIcon2,
   pvInfoIcon3,
   pvLogo,
+  pvModeloQuote1,
   pvModeloQuote2,
+  pvModeloQuote3,
   pvUbicacion,
   pvUbicacionVideo,
   ramonTorra,

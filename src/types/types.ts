@@ -256,9 +256,7 @@ export interface PVInfoIconsProps {
 
 //region GPCongresoCounts
 export interface GPCongresoCountsProps {
-  color: 'customPurpleGP' | 'customPurple' | 'customPurpleDarker',
-  title: string;
-  subtitle: string;
+  img: string;
 }
 
 // region IconRedesProps

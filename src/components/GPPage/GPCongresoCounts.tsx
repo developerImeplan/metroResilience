@@ -1,5 +1,5 @@
+import { assets } from "../../assets";
 import { GPCongresoCountsProps } from "../../types";
-import { CmBoldText } from "../common";
 
 export const GPCongresoCounts = () => {
   return(
@@ -13,33 +13,23 @@ export const GPCongresoCounts = () => {
   );
 }
 
-export const GPCongresoCountsItem = ({
-  color,
-  title,
-  subtitle
-}: GPCongresoCountsProps) => {
+export const GPCongresoCountsItem = ({ img }: GPCongresoCountsProps) => {
   return(
-    <div className={`flex flex-col items-center justify-center p-5 bg-${color} text-white sm:w-1/3 w-full rounded-3xl sm:mt-0 mt-5`}>
-      <CmBoldText className="sm:text-6xl text-5xl">{ title }</CmBoldText>
-      <p>{ subtitle }</p>
-    </div>
+    <img 
+      src={img}
+      className="w-1/3 h-[100px]"
+    />
   );
 }
 
 const GP_CONGRESO_COUNTS: GPCongresoCountsProps[] = [
   {
-    color: 'customPurpleGP',
-    title: '+ 20',
-    subtitle: 'ciudades'
+    img: assets.congreso1
   },
   {
-    color: 'customPurple',
-    title: '5',
-    subtitle: 'continentes'
+    img: assets.congreso2
   },
   {
-    color: 'customPurpleDarker',
-    title: '+ 200',
-    subtitle: 'asistentes'
+    img: assets.congreso3
   },
 ]
