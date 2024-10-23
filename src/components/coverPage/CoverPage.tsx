@@ -9,8 +9,8 @@ export const CoverPage = () => {
       <section className="min-h-screen">
         <CmHeader />
         <div className="container mx-auto px-4">
-          <div className="flex sm:flex-row sm:items-center flex-col sm:mt-20 mt-10">
-            <CmImage src={assets.metroCLg} className="sm:h-[214px] h-[150px] sm:mb-0 mb-10" />
+          <div className="flex sm:flex-row items-center flex-col sm:mt-20 mt-10">
+            <CmImage src={assets.metroCLg} className="sm:h-[214px] h-[120px] sm:w-auto w-[300px] sm:mb-0 mb-10" />
             <CoverTitle />
           </div>
           <div className="flex justify-center">

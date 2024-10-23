@@ -20,9 +20,9 @@ export const GPPage = () => {
       <CmHeader />
       <CmCoverVideo
         footerContent={
-          <div className="flex sm:w-1/2 sm:space-x-20 space-x-5 sm:mr-40 sm:ml-20">
-            <CmImage className="sm:h-[60px] h-[40px]" src={assets.ambW} />
-            <CmImage className="sm:h-[60px] h-[40px]" src={assets.imeplanW} />
+          <div className="flex sm:w-1/2 sm:space-x-20 sm:space-x-5 space-x-2 sm:mr-40 ml-5 sm:ml-20">
+            <CmImage className="sm:h-[60px] h-[15px]" src={assets.ambW} />
+            <CmImage className="sm:h-[60px] h-[15px]" src={assets.imeplanW} />
           </div>
         }
         img={assets.gpCover}
@@ -31,7 +31,7 @@ export const GPPage = () => {
         title="Guía Política de Resiliencia y Gobernanza Metropolitanas"
       />
       <div className="container mx-auto px-4 pb-20">
-        <section id="que-es" className="mt-20 mb-5">
+        <section id="que-es" className="sm:mt-20 sm:mt-5 mb-5">
           <CmBanner text="¿Qué será?" icon={assets.gpLogo} color="customPinkGP" />
           <div className="flex flex-col items-center my-5">
             <span className="font-thin text-justify sm:text-2xl text-xl">Una Guía que <CmBoldText className="text-customTurquoiseGP">recopilará las experiencias y lecciones aprendidas del AMG y el AMB durante el desarrollo de Metrópoli Resiliente.</CmBoldText> Esto con el fin de inspirar a otras metrópolis a replicar y adaptar acciones en materia de resiliencia urbana y gobernanza metropolitana.

@@ -20,7 +20,7 @@ export const PVPage = () => {
       <CmCoverVideo
         footerContent={
           <div className="flex sm:justify-end justify-center sm:mr-20">
-            { ER_COVER_LOGOS.map(i => (<CmImage src={i} className="sm:h-[60px] h-[30px] mx-3" />)) }
+            { ER_COVER_LOGOS.map(i => (<CmImage src={i} className="sm:h-[60px] h-[15px] mx-3" />)) }
           </div>
         }
         img={assets.pvCover}

@@ -6,12 +6,12 @@ import { CM_HEADER_ITEMS } from "../../constants";
 
 export const CmHeader = () => {
   return(
-    <div className="w-full bg-[#31365c] py-3 sm:h-[100px]">
-      <div className="container mx-auto px-1 py-3 flex sm:flex-row flex-col justify-between items-center">
+    <div className="w-full bg-[#31365c] py-3 sm:h-[100px] sm:px-0 px-5">
+      <div className="container mx-auto sm:px-1 py-3 flex flex-row justify-between items-center">
         <Link to="/">
-          <CmImage src={assets.imeplanW} className="sm:h-[40px] w-[150px]" />
+          <CmImage src={assets.imeplanW} className="sm:h-[40px] h-[20px] sm:w-[150px] w-[75px]" />
         </Link>
-        <div className="flex space-x-2">
+        <div className="flex sm:space-x-2">
           {CM_HEADER_ITEMS.map(i => <CmHeaderItem {...i} />)}
         </div>
       </div>
@@ -25,9 +25,9 @@ const CmHeaderItem = ({
   logo
 }: CmHeaderProps) => {
   return (
-    <Link to={link} className="flex items-center sm:w-[180px] w-1/3 cursor-pointer">
-      <CmImage src={logo} className="h-[50px] sm:mr-4 mr-2" />
-      <p className="text-white sm:text-base text-xs font-thin text-start sm:mt-0 mt-3">{text}</p>
+    <Link to={link} className="flex items-center sm:w-[180px] w-[75px] cursor-pointer">
+      <CmImage src={logo} className="sm:h-[50px] h-[20px] sm:mr-4 mr-2" />
+      <p className="text-white sm:text-base text-[8px] font-thin text-start sm:mt-0 mt-3">{text}</p>
     </Link>
   )
 }
