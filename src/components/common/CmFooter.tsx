@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { assets } from "../../assets";
 import { CM_ICONS_SN } from "../../constants";
 import { CmIconSN } from "./CmIconSN";
@@ -9,9 +10,15 @@ export const CmFooter = () => {
       <div className="flex sm:flex-row flex-col sm:items-center sm:space-x-5">
         <div className="space-y-4 sm:w-2/3 sm:border-r-2 border-white">
           <div className="flex sm:flex-row flex-col sm:justify-center sm:space-x-10">
-            <CmImage src={assets.financeEU} className="h-[50px] object-contain sm:mb-0 mb-5" />
-            <CmImage src={assets.ambW} className="h-[50px] object-contain sm:mb-0 mb-5" />
-            <CmImage src={assets.imeplanW} className="h-[50px] object-contain sm:mb-0 mb-5" />
+            <Link to="https://european-union.europa.eu/index_es">
+              <CmImage src={assets.financeEU} className="h-[50px] object-contain sm:mb-0 mb-5" />
+            </Link>
+            <Link to="https://www.amb.cat/s/home.html">
+              <CmImage src={assets.ambW} className="h-[50px] object-contain sm:mb-0 mb-5" />
+            </Link>
+            <Link to="https://www.imeplan.mx/">
+              <CmImage src={assets.imeplanW} className="h-[50px] object-contain sm:mb-0 mb-5" />
+            </Link>
           </div>
         </div>
         <div className="flex justify-around sm:w-1/3 sm:pl-20">

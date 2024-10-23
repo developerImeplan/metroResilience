@@ -26,7 +26,7 @@ export const MENU_PREFIXES: Record<string, string> = {
 export const CM_HEADER_ITEMS: CmHeaderProps[] = [
   {
     link: MENU_PREFIXES.ER,
-    text: "Estrategia de resiliencia",
+    text: "Estrategia de Resiliencia",
     logo: assets.erLogo
   },
   {
@@ -42,7 +42,7 @@ export const CM_HEADER_ITEMS: CmHeaderProps[] = [
 ];
 
 export const COVER_PARTNERS: CoverPartnerProps[] = [
-  { src: assets.financeEUColor, url: 'https://european-union.europa.eu/index_es ' },
+  { src: assets.financeEUColor, url: 'https://european-union.europa.eu/index_es' },
   {
     title: 'Representando al AMB',
     src: assets.ambC,
@@ -51,7 +51,7 @@ export const COVER_PARTNERS: CoverPartnerProps[] = [
   {
     title: 'Representando al AMG',
     src: assets.imeplanC,
-    url: 'https://www.imeplan.mx/ '
+    url: 'https://www.imeplan.mx/'
   },
 ];
 
@@ -121,10 +121,10 @@ export const ER_COUNTS_AND_DESCRIPTIONS: ERCountAndDescriptionProps[] = [
     mr: '5'
   },
   {
-    number: '1987',
+    number: '198',
     title: 'Tensiones crónicas',
     description: 'Situaciones o condiciones que debilitan la estructura de la ciudad de forma diaria o cíclica.',
-    examples: 'Ejemplo: asentamientos irregulares y movilidad.',
+    examples: 'Ejemplo: Asentamientos irregulares y movilidad.',
     bgColor: '[#5f93a5]',
     ml: '5'
   },

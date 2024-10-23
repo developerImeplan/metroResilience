@@ -142,7 +142,7 @@ export const ERPage = () => {
               En suma,
               <p className="text-customPinkN font-black">la  Estrategia</p>
               <p className="text-customPinkN font-black">de Resiliencia</p>
-              Se integra por:
+              se integra por:
             </span>
           </div>
           <ERPills />
@@ -154,7 +154,7 @@ export const ERPage = () => {
             <CmBanner color="customBlueLighter" text="Prosperar" icon={assets.erLogo} />
             <div className="flex flex-col ml-10 text-xl">
               <CmBoldText color="customBlueLighter">La Estrategia es un legado comunitario</CmBoldText>
-              <span>que marca un procedente a escala nacional e internacional.</span>
+              <span>que marca un precedente a escala nacional e internacional.</span>
             </div>
           </div>
           <div className="flex sm:flex-row flex-col mt-10">

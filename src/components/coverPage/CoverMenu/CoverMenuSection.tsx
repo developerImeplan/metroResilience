@@ -16,7 +16,7 @@ export const CoverMenuSection = ({
 }: CoverMenuSectionProps) => {
 
   const navigate = useNavigate();
-  const [isOpen, setIsOpen] = useState<boolean>(true);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return(
     <div className="flex flex-col w-full">

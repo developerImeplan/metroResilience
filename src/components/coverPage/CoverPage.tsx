@@ -15,8 +15,8 @@ export const CoverPage = () => {
           </div>
           <div className="flex justify-center">
             <CmVideo   
-              autoplay={false}
-              muted={false}
+              autoplay={true}
+              muted={true}
               url={assets.videoCover}   
               className="my-3 sm:w-3/4 w-full py-10"
             />
