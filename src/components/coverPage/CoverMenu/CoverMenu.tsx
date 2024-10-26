@@ -4,26 +4,18 @@ import { CoverMenuSection } from "./CoverMenuSection";
 import { COVER_MENU_SECTIONS } from "./CoverMenuSections";
 
 export const CoverMenu = ({ complete = true }: CoverMenuProps) => {
-  return complete ? (
-    <div className="flex sm:flex-row flex-col sm:justify-between sm:space-x-10">
-      {
-        COVER_MENU_SECTIONS.map(s => (
-          <CoverMenuSection { ...s } complete={complete} />
-        ))
-      }
-    </div>
-  ) : (
+  return (
     <div className="flex flex-col items-center">
       <div className="w-full text-center bg-[#d8d8d8] py-2 rounded-tl-3xl rounded-tr-3xl">
         <CmBoldText className="text-[#6193a5] text-2xl">Conoce más</CmBoldText>
       </div>
-      <div className="flex sm:flex-row items-center flex-col bg-[#eaeaea] rounded-bl-3xl rounded-br-3xl">
+      <div className="flex sm:flex-row flex-col rounded-bl-3xl rounded-br-3xl">
         {
-          COVER_MENU_SECTIONS.map(s => (
-            <CoverMenuSection { ...s } complete={complete} />
+          COVER_MENU_SECTIONS.map((s, i) => (
+            <CoverMenuSection { ...s } complete={complete} index={i} />
           ))
         }
       </div>
     </div>
-  )
+  );
 }

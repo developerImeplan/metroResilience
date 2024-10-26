@@ -98,6 +98,7 @@ export interface CmSubtitleProps {
 export interface CoverMenuItemProps {
   text: string;
   link: string;
+  last: boolean;
 }
 
 export interface CoverMenuSectionProps {
@@ -105,6 +106,7 @@ export interface CoverMenuSectionProps {
   title: string;
   icon: string;
   items: CoverMenuItemProps[];
+  index: number;
   mainUrl: string;
   margins?: boolean;
   width?: Sizing;
