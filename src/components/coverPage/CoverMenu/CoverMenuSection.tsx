@@ -20,14 +20,14 @@ export const CoverMenuSection = ({
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return(
-    <div className="flex flex-col w-full">
+    <div className="flex flex-col sm:w-1/3 w-full">
       <div 
         onClick={complete ? () => setIsOpen(c => !c) : () => navigate(mainUrl)}
-        className={`cursor-pointer flex justify-center items-center p-5 h-[85px] bg-[#eaeaea] ${index === 0 ? 'sm:rounded-bl-3xl' : ''} ${index === 2 ? 'rounded-br-3xl rounded-bl-3xl sm:rounded-bl-[0]' : ''}`}
+        className={`w-full cursor-pointer flex justify-center items-center p-5 h-[85px] bg-[#eaeaea] ${index === 0 ? 'sm:rounded-bl-3xl' : ''} ${index === 2 ? 'rounded-br-3xl rounded-bl-3xl sm:rounded-bl-[0]' : ''}`}
       >
         <CmImage src={icon} className="h-[50px] mr-10" />
-        <p className="text-customMain sm:text-3xl text-xl font-semibold mr-2">{ title }</p>
-        { complete ? isOpen ? <IoIosArrowUp /> : <IoIosArrowDown /> : null }
+        <p className="text-customMain sm:text-2xl text-xl font-semibold mr-2 max-w-[167px]">{ title }</p>
+        { complete ? isOpen ? <IoIosArrowUp className="text-3xl" /> : <IoIosArrowDown className="text-3xl" /> : null }
       </div>
       <div className={`mx-3 ${isOpen ? 'p-2' : ''} bg-customMain rounded-bl-3xl rounded-br-3xl`}>
         {

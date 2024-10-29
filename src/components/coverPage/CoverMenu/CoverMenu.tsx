@@ -9,7 +9,7 @@ export const CoverMenu = ({ complete = true }: CoverMenuProps) => {
       <div className="w-full text-center bg-[#d8d8d8] py-2 rounded-tl-3xl rounded-tr-3xl">
         <CmBoldText className="text-[#6193a5] text-2xl">Conoce más</CmBoldText>
       </div>
-      <div className="flex sm:flex-row flex-col rounded-bl-3xl rounded-br-3xl">
+      <div className="w-full flex sm:flex-row flex-col rounded-bl-3xl rounded-br-3xl">
         {
           COVER_MENU_SECTIONS.map((s, i) => (
             <CoverMenuSection { ...s } complete={complete} index={i} />
