@@ -14,6 +14,7 @@ export const CoverMenuSection = ({
   items,
   index,
   mainUrl,
+  img = false,
 }: CoverMenuSectionProps) => {
 
   const navigate = useNavigate();
@@ -26,7 +27,13 @@ export const CoverMenuSection = ({
         className={`w-full cursor-pointer flex justify-center items-center p-5 h-[85px] bg-[#eaeaea] ${index === 0 ? 'sm:rounded-bl-3xl' : ''} ${index === 2 ? 'rounded-br-3xl rounded-bl-3xl sm:rounded-bl-[0]' : ''}`}
       >
         <CmImage src={icon} className="h-[50px] mr-10" />
-        <p className="text-customMain sm:text-2xl text-xl font-semibold mr-2 max-w-[167px]">{ title }</p>
+        {
+          !img ? (
+            <p className="text-customMain sm:text-2xl text-xl font-semibold mr-2 max-w-[167px]">{ title }</p>
+          ) : (
+            <img className="h-[60px]" src={title} />
+          )
+        }
         { complete ? isOpen ? <IoIosArrowUp className="text-3xl" /> : <IoIosArrowDown className="text-3xl" /> : null }
       </div>
       <div className={`mx-3 ${isOpen ? 'p-2' : ''} bg-customMain rounded-bl-3xl rounded-br-3xl`}>

@@ -1,7 +1,7 @@
 import { SlSocialInstagram } from 'react-icons/sl';
 import { assets } from '../assets';
 
-import { CmHeaderProps, CmIconSNProps, CoverPartnerProps, ERAdaptarseIconsTextProps, ERCountAndDescriptionProps, ERPillProps, ERQueEsIconProps } from "../types";
+import { CmHeaderProps, CmIconSNProps, CoverPartnerProps, ERAdaptarseIconsTextProps, ERCountAndDescriptionProps, ERPillProps, ERQueEsIconProps, MenuKey } from "../types";
 import { RiFacebookLine, RiTwitterXLine } from 'react-icons/ri';
 import { FaYoutube } from 'react-icons/fa';
 
@@ -17,11 +17,13 @@ export const CM_PARTNERS_LOGOS: string[] = [
   assets.imeplanW
 ];
 
-export const MENU_PREFIXES: Record<string, string> = {
+export const MENU_PREFIXES: Record<MenuKey, string> = {
+  HOME: '/',
   ER: '/estrategia-de-resiliencia',
   PV: '/puntos-verdes',
   GP: '/guia-politica'
 };
+
 
 export const CM_HEADER_ITEMS: CmHeaderProps[] = [
   {

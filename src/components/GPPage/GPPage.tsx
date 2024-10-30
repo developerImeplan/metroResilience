@@ -131,7 +131,7 @@ export const GPPage = () => {
         </div>
       </section>
       <div className="container mx-auto px-4 pb-20">
-        <CoverMenu complete={false} />
+        <CoverMenu current="GP" complete={false} />
       </div>
       <CmFooter />
       <div className="h-0 bg-customPurpleDarker"></div>

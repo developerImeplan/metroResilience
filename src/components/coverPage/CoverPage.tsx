@@ -68,7 +68,7 @@ export const CoverPage = () => {
           <p className="sm:text-5xl text-3xl text-center font-black text-customPurple">La acción cuenta con tres componentes</p>
           <p className="sm:text-5xl text-2xl text-center font-semibold text-customPurple mt-5 mb-10">¡Conoce cada uno de ellos!</p>
         </div>
-        <CoverMenu />
+        <CoverMenu current="HOME" />
       </section>
       <CmFooter />
       <div className='bg-[#89b4c6] bg-[#424778] bg-customPinkN bg-customGreenN text-[#89b4c6] text-[#424778]'></div>

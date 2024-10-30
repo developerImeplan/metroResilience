@@ -140,7 +140,7 @@ export const PVPage = () => {
       </section>
       <section>
         <div className="container mx-auto px-4 py-10">
-          <CoverMenu complete={false} />
+          <CoverMenu current="PV" complete={false} />
         </div>
       </section>
       <CmFooter />

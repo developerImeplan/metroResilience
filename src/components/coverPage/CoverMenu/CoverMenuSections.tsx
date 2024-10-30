@@ -4,6 +4,15 @@ import { CoverMenuSectionProps } from "../../../types";
 
 export const COVER_MENU_SECTIONS: CoverMenuSectionProps[] = [
   {
+    id: "HOME",
+    icon: '',
+    title: assets.metroCLg,
+    mainUrl: MENU_PREFIXES.HOME,
+    items: [],
+    img: true,
+  },
+  {
+    id: "ER",
     icon: assets.erLogo,
     title: "Estrategia de Resiliencia",
     mainUrl: MENU_PREFIXES.ER,
@@ -35,6 +44,7 @@ export const COVER_MENU_SECTIONS: CoverMenuSectionProps[] = [
     ]
   },
   {
+    id: "PV",
     icon: assets.pvLogo,
     title: "Puntos verdes",
     mainUrl: MENU_PREFIXES.PV,
@@ -62,6 +72,7 @@ export const COVER_MENU_SECTIONS: CoverMenuSectionProps[] = [
     ],
   },
   {
+    id: "GP",
     icon: assets.gpLogo,
     title: "Guía Política de Gobernanza",
     mainUrl: MENU_PREFIXES.GP,

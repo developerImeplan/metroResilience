@@ -210,7 +210,7 @@ export const ERPage = () => {
         </div>
       </section>
       <div className="container mx-auto px-4 py-10">
-        <CoverMenu complete={false} />
+        <CoverMenu current="ER" complete={false} />
       </div>
       <CmFooter />
 

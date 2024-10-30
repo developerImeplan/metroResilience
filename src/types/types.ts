@@ -98,18 +98,20 @@ export interface CmSubtitleProps {
 export interface CoverMenuItemProps {
   text: string;
   link: string;
-  last: boolean;
+  last?: boolean;
 }
 
 export interface CoverMenuSectionProps {
+  id: MenuKey,
   complete?: boolean;
   title: string;
   icon: string;
   items: CoverMenuItemProps[];
-  index: number;
+  index?: number;
   mainUrl: string;
   margins?: boolean;
   width?: Sizing;
+  img?: boolean;
 }
 
 // region CmCoverVideo
@@ -154,8 +156,12 @@ export interface ERInfoItemProps {
 }
 
 // region CoverMenu
+
+export type MenuKey = 'HOME' | 'ER' | 'PV' | 'GP';
+
 export interface CoverMenuProps {
   complete?: boolean;
+  current: MenuKey;
 }
 
 // region CmBanner
