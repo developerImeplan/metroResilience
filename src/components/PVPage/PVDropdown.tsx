@@ -43,26 +43,20 @@ const PV_DROPDOWN_ITEMS: DropdownItemProps[] = [
     )
   },
   {
-    title: '¿Qué tipo de residuos puedo llevar?',
+    title: '¿Cómo nos benefician a nivel metropolitano?',
     children: (
-      <span className="flex flex-col">
-        <span className="mb-5">
-          Valorizables como plástico, PET, papel, cartón, vidrio y metales que estén limpios y sin etiquetas.
-        </span>
-        <a
-          className="font-bold text-customPinkN text-center"
-          href="#"
-        >Consulta la guía paso a paso</a>
+      <span>
+        <CmBoldText color={boldTextColor}>Ayudan a reducir la cantidad de residuos que llegan a los sitios de disposición final.</CmBoldText> Disminuir las emisiones de CO2eq, la contaminación de suelos y cuerpos de agua debido a la infiltración de lixiviados. <CmBoldText color={boldTextColor}>Nos acerca a una visión de economía circular.</CmBoldText>
       </span>
     ),
     margins: true
   },
   {
-    title: '¿Cómo nos benefician a nivel metropolitano?',
+    title: '¿Cómo podemos participar?',
     children: (
       <span>
-        <CmBoldText color={boldTextColor}>Ayudan a reducir la cantidad de residuos que llegan a los sitios de disposición final.</CmBoldText> Disminuir las emisiones de CO2eq, la contaminación de suelos y cuerpos de agua debido a la infiltración de lixiviados. Nos acerca a una visión de economía circular.
+        <CmBoldText color={boldTextColor}>Identificando los residuos</CmBoldText> que generamos, <CmBoldText color={boldTextColor}>diferenciándolos y llevándolos limpios, secos y separados al PVM más cercano. Participando en las actividades comunitarias e invitando a otras personas</CmBoldText> a sumarse.
       </span>
-    )
+    ),
   },
 ]

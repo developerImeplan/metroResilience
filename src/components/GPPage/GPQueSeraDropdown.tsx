@@ -55,9 +55,8 @@ const GP_QUE_SERA_DROPDOWN_ITEMS: DropdownItemProps[] = [
     title: 'Beneficios',
     children: (
       <span className="line-clamp-5 overflow-hidden hover:overflow-auto hover:line-clamp-none transition-all" style={{ maxHeight: `${5 * 1.8}rem` }}>
-        <CmBoldText color={boldTextColor}>1. Fortalecer las capacidades en materia de resiliencia urbana</CmBoldText>, gobernanza metropolitana a partir de la experiencia del AMG y el AMB.<br/>
-        <CmBoldText color={boldTextColor}>2. Contar con un punto de partida</CmBoldText> para la adaptación de la resiliencia urbana en entornos metropolitanos.<br/>
-        <CmBoldText color={boldTextColor}>3. Explorar la acción internacional como herramienta clave</CmBoldText> para el fortalecimiento de la gobernanza metropolitana y la resiliencia urbana.
+        Está centrada en compartir las lecciones aprendidas, así como las mejores prácticas desarrolladas en el marco del proyecto Metro Resilience Guadalajara, en virtud de <CmBoldText color={boldTextColor}>fomentar la colaboración metrópoli-metrópoli alrededor del mundo.</CmBoldText> Es única en su tipo, pues combina la experiencia de dos metrópolis líderes en resiliencia, ofreciendo una perspectiva global y comparativa.
+
       </span>
     )
   },

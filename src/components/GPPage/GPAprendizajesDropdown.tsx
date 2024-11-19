@@ -38,7 +38,7 @@ const GP_APRENDIZAJES_DROPDOWN_ITEMS: DropdownItemProps[] = [
     title: 'Entrevistas con actores clave',
     children: (
       <span>
-        Entrevistamos a personas expertas en temas de gobernanza metropolitana, resiliencia urbana y acción internacional. 
+        Entrevistamos a personas expertas en temas de gobernanza metropolitana y consultamos instrumentos actuales sobre resiliencia urbana y acción internacional. 
       </span>
     )
   },

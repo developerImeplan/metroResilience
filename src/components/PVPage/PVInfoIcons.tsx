@@ -29,11 +29,11 @@ const INFO_ICONS: PVInfoIconsProps[] = [
   },
   {
     icon: assets.pvInfoIcon2,
-    text: "Prioriza la visibilidad, ventilación, iluminación natural y los elementos paisajísticos existentes",
+    text: "Prioriza la visibilidad, ventilación, iluminación natural y  los elementos paisajísticos existentes",
     margins: false
   },
   {
     icon: assets.pvInfoIcon3,
-    text: "Ubicación estratégica cercana a equipamientos, zonas habitacionales o de servicio, garantizando su accesibilidad, consolidación y vigilancia"
+    text: "Ubicación estratégica próxima a equipamientos, zonas habitacionales o de servicio, garantizando su accesibilidad, consolidación y vigilancia"
   },
 ];

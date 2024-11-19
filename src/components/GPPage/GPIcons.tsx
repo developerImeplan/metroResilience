@@ -30,7 +30,7 @@ const GP_ICONS: GpIconsProps[] = [
   },
   {
     icon: assets.iconAccion,
-    text: "Acción Internacional"
+    text: "Colaboración  entre metrópolis"
   },
   {
     icon: assets.iconInspiracion,

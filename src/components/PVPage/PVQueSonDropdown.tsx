@@ -38,7 +38,7 @@ const ERQueSonDropdownItems: DropdownItemProps[] = [
     title: 'Visión',
     children: (
       <span>
-        Consolidar los PVM como espacios clave para <CmBoldText color={boldTextColor}>incentivar dinámicas comunitarias de economía circular en la metrópoli.</CmBoldText>
+        Consolidar los Puntos Verdes Metropolitanos (PVM) como espacios clave para <CmBoldText color={boldTextColor}>incentivar dinámicas comunitarias de economía circular en la metrópoli.</CmBoldText>
       </span>
     )
   },
@@ -55,7 +55,7 @@ const ERQueSonDropdownItems: DropdownItemProps[] = [
     title: 'Beneficios',
     children: (
       <span>
-        <CmBoldText color={boldTextColor}>Contar con espacios inclusivos y abiertos</CmBoldText>, promover prácticas comunitarias y  de economía circular, y permitir un fácil acceso al acopio de residuos para su máxima valorización.
+        <CmBoldText color={boldTextColor}>Contar con espacios inclusivos y abiertos</CmBoldText>, que promuevan prácticas comunitarias y  de economía circular, además de permitir un fácil acceso al acopio de residuos para su máxima valorización.
       </span>
     )
   },

@@ -32,9 +32,9 @@ export const GPPage = () => {
       />
       <div className="container mx-auto px-4 pb-20">
         <section id="que-es" className="sm:mt-20 sm:mt-5 mb-5">
-          <CmBanner text="¿Qué será?" icon={assets.gpLogo} color="customPinkGP" />
+          <CmBanner text="¿Qué es?" icon={assets.gpLogo} color="customPinkGP" />
           <div className="flex flex-col items-center my-5">
-            <span className="font-thin text-justify sm:text-2xl text-xl">Una Guía que <CmBoldText className="text-customTurquoiseGP">recopilará las experiencias y lecciones aprendidas del AMG y el AMB durante el desarrollo de Metrópoli Resiliente.</CmBoldText> Esto con el fin de inspirar a otras metrópolis a replicar y adaptar acciones en materia de resiliencia urbana y gobernanza metropolitana.
+            <span className="font-thin text-justify sm:text-2xl text-xl">Una Guía que <CmBoldText className="text-customTurquoiseGP">recopila las experiencias y lecciones aprendidas del AMG y el AMB durante el desarrollo de Metrópoli Resiliente.</CmBoldText> Esto con el fin de inspirar a otras metrópolis a replicar y adaptar acciones en materia de resiliencia urbana y gobernanza metropolitana.
             </span>
           </div>
         </section>
@@ -51,7 +51,7 @@ export const GPPage = () => {
                 Desde el 2018, a través del Imeplan, el AMG ha impulsado la acción internacional como herramienta para el fortalecimiento de la metrópoli.
               </span><br/><br/>
               <span>
-                Con la puesta en marcha de la acción MRG en 2021, se <CmBoldText color="customTurquoiseGP">han generado experiencias y conocimientos en materia de resiliencia urbana y acción internacional</CmBoldText> que podrás encontrar en la Guía con el fin de inspirar a otras metrópolis.
+                Con la puesta en marcha de la acción MRG en 2021, se <CmBoldText color="customTurquoiseGP">han generado tanto experiencias como conocimientos en materia de resiliencia urbana y gobernanza metropolitana</CmBoldText> que podrás encontrar en la Guía con el fin de inspirar a otras metrópolis.
               </span>
             </div>
             <GPConstruccionImages />

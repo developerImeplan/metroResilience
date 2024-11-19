@@ -31,7 +31,7 @@ export const PVPage = () => {
       <section id="que-son" className="container mx-auto px-4 sm:pt-10 sm:pb-10 pb-0 mt-10">
         <CmBanner text="¿Qué son?" color="customGreenN2" icon={assets.pvLogo} />
         <p className="text-justify my-5 sm:text-xl text-lg font-thin">
-          <CmBoldText className="text-customPinkN">Son espacios donde se reciben, recolectan y valorizan residuos</CmBoldText> en una dinámica de economía circular, propiciando la conexión entre comunidad, naturaleza y territorio. Basados en el modelo de gestión de residuos del AMB a través de su experiencia y apoyo técnico. 
+          <CmBoldText className="text-customPinkN">Son espacios donde se reciben, acopian, y envían los residuos para su valorización</CmBoldText> en una dinámica de economía circular, propiciando la conexión entre comunidad, naturaleza y territorio. Basados en el modelo de gestión de residuos del AMB a través de su experiencia y apoyo técnico. 
         </p>
         <PVQueSonDropdown />
         <div className="flex justify-center">
@@ -51,13 +51,13 @@ export const PVPage = () => {
           <div className="flex sm:flex-row flex-col mt-5 sm:text-2xl text-lg font-thin text-justify sm:space-x-10">
             <div className="sm:w-1/2 w-full sm:space-y-10 space-y-5">
               <CmBoldText className="text-customGreenN sm:text-4xl">“Puntos Verdes de Barrio” del Área       Metropolitana de Barcelona (AMB).</CmBoldText>
-              <p>Se recuperan las buenas prácticas del modelo de gestión de residuos del AMB, particularmente sobre acopio de residuos, el cual se comprende de tres tipologías: Puntos Verdes de Zona, Puntos Verdes Móviles y Puntos Verdes de Barrio. Esta red abarca un total de 142 puntos estratégicamente distribuidos en diez distritos, y en conjunto logran revalorizar un promedio mensual de 120 mil toneladas de residuos. El enfoque replicado para el AMG, son los Puntos Verdes de Barrio, los cuales ofrecen a la ciudadanía actividades como reparaciones, intercambio de artículos y talleres abierto a la comunidad. 
+              <p>Parte de la inspiración para la PVM, fue recuperar las buenas prácticas del modelo de gestión de residuos del AMB, particularmente sobre acopio de residuos, el cual se comprende de tres tipologías: Puntos Verdes de Zona, Puntos Verdes Móviles y Puntos Verdes de Barrio. Esta red abarca un total de 142 puntos estratégicamente distribuidos en diez distritos, y en conjunto logran revalorizar un promedio mensual de 120 mil toneladas de residuos. El enfoque replicado para el AMG, son los Puntos Verdes de Barrio, los cuales ofrecen a la ciudadanía actividades como reparaciones, intercambio de artículos y talleres abierto a la comunidad. 
               </p>
             </div>
             <div className="sm:w-1/2 w-full sm:space-y-10 space-y-5 sm:mt-0 mt-10">
               <CmBoldText className="text-customGreenN sm:text-4xl">Colectivo Vecinal Bosque Urbano Tlaquepaque.</CmBoldText>
               <p>
-                Se toma como inspiración la acción ciudadana del colectivo, quienes autogestionan un centro de acopio comunitario de Residuos, el cual a lo largo de dos años de su implementación y operación, ha logrado un promedio anual de acopio y envío a reciclaje de al menos 5 toneladas. Promoviendo con estas acciones la conciencia ambiental y la participación ciudadana para la correcta separación de residuos en su colonia y visitantes del Bosque Urbano Tlaquepaque.
+                Uno de los impulsos para desarrollar los PVM, fue la acción ciudadana del Colectivo, quienes impulsaron la gestión del Bosque Urbano Tlaquepaque y de un centro de acopio comunitario de residuos. El cual a lo largo de dos años de operación logró un promedio anual de acopio y valorización de al menos 5 toneladas de residuos.  Fomentando la correcta separación de residuos, la conciencia ambiental y la participación activa al rededor del BUT.
               </p>
             </div>
           </div>
@@ -114,7 +114,7 @@ export const PVPage = () => {
               />
             </div>
             <div className="mt-10">
-              <CmBoldText color="customGreenN" className="text-2xl">Cada municipio del AMG tendrá un Punto Verde Metropolitano que podrás visitar, usar y conocer.</CmBoldText>
+              <CmBoldText color="customGreenN" className="text-2xl">Cada municipio del AMG cuenta con un Punto Verde Metropolitano que puedes visitar, ocupar y conocer.</CmBoldText>
               <p className="mt-3">En cada uno de ellos, se realizarán talleres sobre reparación de artículos y su correcta disposición, además de actividades para concientizar sobre el consumo.</p>
             </div>
           </div>
