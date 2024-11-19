@@ -36,7 +36,7 @@ const ERDropdownSaberMasItems: DropdownItemProps[] = [
     title: '¿Por qué es importante pensar en la resiliencia?',
     children: (
       <span>
-        Los impactos repentinos o tensiones crónicas pueden llevar a la ruptura social, al colapso físico o al deterioro económico.
+        Los impactos repentinos o tensiones crónicas pueden llevar a la ruptura social, al colapso físico o al deterioro económico y ambiental.
       </span>
     )
   },
@@ -45,7 +45,7 @@ const ERDropdownSaberMasItems: DropdownItemProps[] = [
     children: (
       <span className="flex flex-col">
         <span className="mb-5">
-          En forma de programa como <CmBoldText className="text-[#5f93a5]">Nidos de Lluvia</CmBoldText> o de proyecto comunitario como <CmBoldText className="text-customGreenN">Puntos Verdes Metropolitanos.</CmBoldText>
+          En forma de política pública o normativa, como el programa Nidos de Lluvia, o de proyecto comunitario como los Puntos Verdes Metropolitanos
         </span>
         <a
           className="font-bold mt-10 text-[#5f93a5] text-center" 
@@ -63,7 +63,7 @@ const ERDropdownSaberMasItems: DropdownItemProps[] = [
           Participando en la <CmBoldText className="text-[#9972af]">Escuela de Resiliencia</CmBoldText>, donde podrás aprender los principales conceptos e interpretar procesos de planeación para la resiliencia urbana.
         </span>
         <a 
-          href="#"
+          href="https://resilientcitiesnetwork.aulasneo.link/courses/course-v1:R-Cities+R-Cities_01+2024_2/about"
           className="font-bold text-[#5f93a5] text-center"
         >
           ¡Quiero inscribirme!
