@@ -34,10 +34,10 @@ export const CoverPage = () => {
           <CmBanner text="¿Qué es?" color="customPinkN" icon={assets.iconReturn} />
           <div className="text-customGrayDarker sm:text-2xl text:xl font-thin text-justify flex sm:space-x-10 sm:space-y-0 space-y-5 sm:mt-10 sm:flex-row flex-col">
             <p>
-              <CmBoldText className="text-customGreenN">Metro Resilience Guadalajara (MRG) o  Metrópoli Resiliente,</CmBoldText> por su adaptación al español, reúne <CmBoldText color="customGreenN">esfuerzos comunitarios, locales e internacionales,</CmBoldText> para fortalecer la gobernanza con el fin de responder, adaptar y prosperar ante los desafíos urbanos en las Áreas Metropolitanas de Guadalajara y Barcelona.
+              <CmBoldText className="text-customGreenN">Metro Resilience Guadalajara (MRG) o  Metrópoli Resiliente,</CmBoldText> por su adaptación al español, reúne <CmBoldText color="customGreenN">esfuerzos comunitarios, locales e internacionales,</CmBoldText> para fortalecer la gobernanza con el fin de responder, adaptar y prosperar ante los desafíos urbanos en las Áreas Metropolitanas de Guadalajara (AMG) y Barcelona (AMB).
             </p>
             <p>
-              <span className="text-customPinkN font-medium">Es una acción de cooperación internacional con duración de 3 años, la cual es posible gracias al financiamiento de la Unión Europea y el programa</span> <span className="italic">Asociación para ciudades sostenibles.</span>
+              <span className="text-customPinkN font-medium">Es una acción de cooperación internacional con duración de 3 años (2022-2025), la cual es posible gracias al financiamiento de la Unión Europea y el programa</span> <span className="italic">Asociación para ciudades sostenibles.</span>
             </p>
           </div>
           <div className="flex justify-center">
@@ -65,7 +65,7 @@ export const CoverPage = () => {
       </section>
       <section className="container mx-auto px-4 py-20">
         <div className="flex flex-col items-center">
-          <p className="sm:text-5xl text-3xl text-center font-black text-customPurple">La acción cuenta con tres componentes</p>
+          <p className="sm:text-5xl text-3xl text-center font-black text-customPurple">La acción cuenta con 3 componentes</p>
           <p className="sm:text-5xl text-2xl text-center font-semibold text-customPurple mt-5 mb-10">¡Conoce cada uno de ellos!</p>
         </div>
         <CoverMenu current="HOME" />
