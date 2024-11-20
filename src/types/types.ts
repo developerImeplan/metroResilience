@@ -224,9 +224,11 @@ export interface ERPillProps {
 // region CmQuote
 export interface CmQuoteProps {
   audio?: string;
+  border?: boolean;
   color?: 'customBlueLighter' | 'customGreen' | 'customPurpleGP';
   fontSize?: string;
   img: string;
+  subtitle: string;
   title: string;
   text: string;
   largeTitle?: boolean;

@@ -182,8 +182,8 @@ export const ERPage = () => {
               className="sm:w-1/4 w-full sm:ml-5 ml-0 sm:mt-0 mt-5 sm:h-auto h-full"
             />
           </div>
-          <div className="flex sm:flex-row flex-col mt-10 sm:pt-0 pt-40">
-            {ERQuotes.map((i, index) => <CmQuote key={index} {...i} minHeaderHeight={80} />)}
+          <div className="flex sm:flex-row flex-col mt-10 sm:pt-0 pt-40 sm:space-x-20 sm:pb-10">
+            {ERQuotes.map((i, index) => <CmQuote key={index} {...i} maxLines={6} />)}
           </div>
         </div>
       </section>
