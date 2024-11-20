@@ -35,6 +35,11 @@ import erm from "../assets/imgs/erm.png";
 import erPresentacionEjecutiva from "../assets/imgs/erPresentacionEjecutiva.jpg";
 import erPresentacionEjecutivaPDF from "../assets/docs/Presentación Resumen-Estrategia de Resiliencia Metropolitana.pdf";
 import erQuote1 from "../assets/imgs/er_quotes1.jpg";
+import erQuote2 from "../assets/imgs/er_quote2.jpg";
+import erQuote3 from "../assets/imgs/er_quote3.jpg";
+import erQuoteAudio1 from "../assets/audios/erQuote1.m4a";
+import erQuoteAudio2 from "../assets/audios/erQuote2.m4a";
+import erQuoteAudio3 from "../assets/audios/erQuote3.m4a";
 import erResumenEjecutivo from "../assets/imgs/erResumenEjecutivo.png";
 import erResumenEjecutivoPDF from "../assets/docs/ERM_RESUMENEJECUTIVO_Imeplan.pdf";
 import erTaller from "../assets/imgs/er_taller.jpg";
@@ -131,6 +136,11 @@ export const assets = {
   erPresentacionEjecutiva,
   erPresentacionEjecutivaPDF,
   erQuote1,
+  erQuote2,
+  erQuote3,
+  erQuoteAudio1,
+  erQuoteAudio2,
+  erQuoteAudio3,
   erResumenEjecutivo,
   erResumenEjecutivoPDF,
   erTaller,
