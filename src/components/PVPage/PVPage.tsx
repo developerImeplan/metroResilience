@@ -37,10 +37,28 @@ export const PVPage = () => {
         <div className="flex justify-center">
           <p className="font-thin sm:text-base text-sm">*(Plan de Acción Climática, PACmetro,  2023)</p>
         </div>
-        <div className="flex justify-center sm:mt-10 my-5">
+        {/*<div className="flex justify-center sm:mt-10 my-5">
           <span className="font-thin sm:text-2xl text-justify">
             <CmBoldText color="customGreenN2">En nuestra metrópoli</CmBoldText>, sabemos que existen iniciativas locales e internacionales con valiosos conocimientos, por lo que la colaboración es clave.
           </span>
+        </div>*/}
+      </section>
+      <section id="centros" className="bg-customSectionBg">
+        <div className="container mx-auto px-4 pb-20 pt-5">
+          <div className="mt-10">
+            <div className="sm:py-5 py-3 flex justify-start items-center sm:space-x-5 space-x-">
+              <p className={`sm:text-6xl text-3xl font-black text-customPinkN sm:w-[65%]`}>9 centros de acopio de residuos metropolitanos</p>
+              <CmImage src={assets.pvLogo} className="sm:h-[60px] h-[35px]" />
+            </div>
+          </div>
+          <div className="mt-10 sm:text-2xl text-lg font-thin text-center sm:space-x-10">
+            <div>
+              <CmBoldText className="text-customGreenN sm:text-4xl">EL AMG cuenta con 9 PVM</CmBoldText>
+              <p>distribuidos y emplazados de manera estratégica en los municipios metropolitanos. En cada uno de ellos, se realiza recepción de residuos valorizables para su correcta disposición y actividades para concientizar sobre el consumo responsable. 
+              </p>
+            </div>
+          </div>
+          <img className="mt-10" src={assets.pv} />
         </div>
       </section>
       <section id="comunidad" className="bg-customSectionBg">
