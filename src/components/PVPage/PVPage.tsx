@@ -11,6 +11,7 @@ import { ER_COVER_LOGOS } from "../../constants";
 import { CoverMenu } from "../coverPage";
 import { useScroll } from "../../hooks/useScroll";
 import { PVCarrousel } from "./PVCarrousel";
+import { PVBullets } from "./PVBullets";
 
 export const PVPage = () => {
   //useScroll();
@@ -65,6 +66,48 @@ export const PVPage = () => {
       <section id="pvs" className="flex">
         <PVCarrousel />
       </section>
+      <section id="ubicacion" className="container mx-auto px-4 pb-20">
+        <CmBanner text="Ubicación" icon={assets.pvLogo} color="customPinkN" />
+        {/*<div className="sm:mt-10 mt-5 mb-5 font-thin sm:text-3xl flex justify-center">
+          <span className="text-center">
+            <CmBoldText color="customGreenN">El primer módulo está en el Bosque Urbano Tlaquepaque</CmBoldText><br /> y su existencia fortalece el trabajo realizado por el Colectivo Vecinal BUT.
+          </span>
+        </div>
+        <div className="flex justify-center">
+          <video
+            autoPlay
+            controls
+            muted
+            loop
+            src={assets.pvUbicacionVideo}             
+            className="mt-3 mb-10"
+          />
+        </div>*/}
+        <div className="flex sm:flex-row flex-col mt-10 sm:min-h-[500px]">
+          <div className="sm:w-1/2">
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1sY66qNbNm4XrswXjGItrOjbQPgQ0KRQ&ehbc=2E312F&noprof=1" className="w-full h-full"></iframe>
+          </div>
+          <div className="sm:w-1/2 bg-customGrayBg2 p-10">
+            <p className="font-semibold text-customGreen text-2xl text-justify">Cada municipio del AMG cuenta con un Punto Verde Metropolitano que puedes visitar, ocupar y conocer.</p>
+
+            <div className="mt-5">
+              <PVBullets />
+            </div>
+          </div>
+          {/*<div className="sm:w-1/3 flex flex-col sm:ml-3 ml-0 sm:text-xl text-justify font-thin">
+            <div className="h-[200px]">
+              <CmImage 
+                src={assets.pvUbicacion} 
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="mt-10">
+              <CmBoldText color="customGreenN" className="text-2xl">Cada municipio del AMG cuenta con un Punto Verde Metropolitano que puedes visitar, ocupar y conocer.</CmBoldText>
+              <p className="mt-3">En cada uno de ellos, se realizarán talleres sobre reparación de artículos y su correcta disposición, además de actividades para concientizar sobre el consumo.</p>
+            </div>
+          </div>*/}
+        </div>
+      </section>
       <section id="comunidad" className="bg-customSectionBg">
         <div className="container mx-auto px-4 pb-20 pt-5">
           <div className="mt-10">
@@ -104,41 +147,6 @@ export const PVPage = () => {
           </div>
           <div className="flex sm:flex-row flex-col mt-10">
             {PV_MODELOS_QUOTES.map((i, index) => <CmQuote key={index} {...i} color="customGreen" maxLines={6} largeTitle minHeaderHeight={80} />)}
-          </div>
-        </div>
-      </section>
-      <section id="ubicacion" className="container mx-auto px-4 pb-20 pt-20">
-        <CmBanner text="Ubicación" icon={assets.pvLogo} color="customPinkN" />
-        <div className="sm:mt-10 mt-5 mb-5 font-thin sm:text-3xl flex justify-center">
-          <span className="text-center">
-            <CmBoldText color="customGreenN">El primer módulo está en el Bosque Urbano Tlaquepaque</CmBoldText><br /> y su existencia fortalece el trabajo realizado por el Colectivo Vecinal BUT.
-          </span>
-        </div>
-        <div className="flex justify-center">
-          <video
-            autoPlay
-            controls
-            muted
-            loop
-            src={assets.pvUbicacionVideo}             
-            className="mt-3 mb-10"
-          />
-        </div>
-        <div className="flex sm:flex-row flex-col mt-3">
-          <div className="sm:w-2/3 sm:mr-3 mr-0">
-            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1sY66qNbNm4XrswXjGItrOjbQPgQ0KRQ&ehbc=2E312F&noprof=1" className="w-full h-full"></iframe>
-          </div>
-          <div className="sm:w-1/3 flex flex-col sm:ml-3 ml-0 sm:text-xl text-justify font-thin">
-            <div className="h-[200px]">
-              <CmImage 
-                src={assets.pvUbicacion} 
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="mt-10">
-              <CmBoldText color="customGreenN" className="text-2xl">Cada municipio del AMG cuenta con un Punto Verde Metropolitano que puedes visitar, ocupar y conocer.</CmBoldText>
-              <p className="mt-3">En cada uno de ellos, se realizarán talleres sobre reparación de artículos y su correcta disposición, además de actividades para concientizar sobre el consumo.</p>
-            </div>
           </div>
         </div>
       </section>

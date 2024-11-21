@@ -31,7 +31,7 @@ export const PVCarrousel = () => {
   };
 
   return (
-    <div className="container mx-auto px-4 pb-[90px] pt-[65px]">
+    <div className="container mx-auto px-4 pt-[65px]">
       {/* Banner dinámico con transición */}
       <div className="pl-5">
         <div
@@ -58,10 +58,10 @@ export const PVCarrousel = () => {
         </button>
 
         {/* Contenido del carrusel */}
-        <div className="flex flex-1 sm:flex-row flex-col items-center bg-customGrayBg2 overflow-hidden rounded-lg relative">
+        <div className="flex flex-1 sm:flex-row flex-col bg-customGrayBg2 overflow-hidden relative">
           {/* Texto con transición */}
           <div
-            className={`sm:w-1/2 p-10 text-justify text-lg transition-opacity duration-500 ease-in-out ${
+            className={`sm:w-1/2 p-10 text-justify flex items-center text-lg transition-opacity duration-500 ease-in-out ${
               isTransitioning ? "opacity-0" : "opacity-100"
             }`}
           >

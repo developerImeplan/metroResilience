@@ -1,3 +1,4 @@
+export * from './PVBullets';
 export * from './PVCarrousel';
 export * from './PVDropdown';
 export * from './PVInfoIcons';
