@@ -280,3 +280,10 @@ export interface GpIconsProps {
   icon: string;
   text: string;
 }
+
+// region PVCarrousel
+export interface PVCarrouselProps {
+  title: string;
+  text: string;
+  img: string;
+}

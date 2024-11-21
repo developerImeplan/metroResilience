@@ -10,9 +10,10 @@ import { PVDropdown } from "./PVDropdown";
 import { ER_COVER_LOGOS } from "../../constants";
 import { CoverMenu } from "../coverPage";
 import { useScroll } from "../../hooks/useScroll";
+import { PVCarrousel } from "./PVCarrousel";
 
 export const PVPage = () => {
-  useScroll();
+  //useScroll();
 
   return(
     <>
@@ -58,8 +59,11 @@ export const PVPage = () => {
               </p>
             </div>
           </div>
-          <img className="mt-10" src={assets.pv} />
+          <img className="mt-10 w-full" src={assets.pv} />
         </div>
+      </section>
+      <section id="pvs" className="flex">
+        <PVCarrousel />
       </section>
       <section id="comunidad" className="bg-customSectionBg">
         <div className="container mx-auto px-4 pb-20 pt-5">

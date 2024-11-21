@@ -81,6 +81,11 @@ import prosperarIcon1 from "../assets/imgs/ER_prosperar_icon1.png";
 import prosperarIcon2 from "../assets/imgs/ER_prosperar_icon2.png";
 import prosperarIcon3 from "../assets/imgs/ER_prosperar_icon3.png";
 import pv from "../assets/imgs/pv.jpg";
+import pv1 from "../assets/imgs/pv1.jpg";
+import pv2 from "../assets/imgs/pv2.jpg";
+import pv3 from "../assets/imgs/pv3.jpg";
+import pv4 from "../assets/imgs/pv4.jpg";
+import pv5 from "../assets/imgs/pv5.jpg";
 import pvCover from "../assets/imgs/pv_cover.jpg";
 import pvInfoIcon1 from "../assets/imgs/pvInfoIcon1.png";
 import pvInfoIcon2 from "../assets/imgs/pvInfoIcon2.png";
@@ -183,6 +188,11 @@ export const assets = {
   prosperarIcon2,
   prosperarIcon3,
   pv,
+  pv1,
+  pv2,
+  pv3,
+  pv4,
+  pv5,
   pvCover,
   pvInfoIcon1,
   pvInfoIcon2,
