@@ -6,8 +6,18 @@ import adaptarsePill1 from "../assets/imgs/adaptarsePill1.png";
 import adaptarsePill2 from "../assets/imgs/adaptarsePill2.png";
 import adaptarsePill3 from "../assets/imgs/adaptarsePill3.png";
 import adaptarsePill4 from "../assets/imgs/adaptarsePill4.png";
+import azul1 from "../assets/imgs/azul1.png";
+import azul2 from "../assets/imgs/azul2.png";
+import azul3 from "../assets/imgs/azul3.png";
+import azul4 from "../assets/imgs/azul4.png";
+import amarillo1 from "../assets/imgs/amarillo1.png";
+import amarillo2 from "../assets/imgs/amarillo2.png";
+import amarillo3 from "../assets/imgs/amarillo3.png";
 import ambC from "../assets/imgs/amb_color.png";
 import ambW from "../assets/imgs/amb_white.png";
+import blanco1 from "../assets/imgs/blanco1.png";
+import blanco2 from "../assets/imgs/blanco2.png";
+import blanco3 from "../assets/imgs/blanco3.png";
 import carrusel1 from "../assets/imgs/carrusel1.jpg";
 import carrusel10 from "../assets/imgs/carrusel10.jpg";
 import carrusel11 from "../assets/imgs/carrusel11.jpg";
@@ -45,6 +55,8 @@ import erResumenEjecutivoPDF from "../assets/docs/ERM_RESUMENEJECUTIVO_Imeplan.p
 import erTaller from "../assets/imgs/er_taller.jpg";
 import financeEU from "../assets/imgs/financeEU.png";
 import financeEUColor from "../assets/imgs/financeEU_color.png";
+import gris1 from "../assets/imgs/gris1.png";
+import gris2 from "../assets/imgs/gris2.png";
 import gpCongresoVideo from "../assets/videos/gpCongresoVideo.mp4";
 import gpConstruccion1 from "../assets/imgs/gpConstruccion1.jpg";
 import gpConstruccion2 from "../assets/imgs/gpConstruccion2.jpg";
@@ -113,6 +125,16 @@ export const assets = {
   adaptarsePill2,
   adaptarsePill3,
   adaptarsePill4,
+  amarillo1,
+  amarillo2,
+  amarillo3,
+  azul1,
+  azul2,
+  azul3,
+  azul4,
+  blanco1,
+  blanco2,
+  blanco3,
   ambC,
   ambW,
   carrusel1,
@@ -152,6 +174,8 @@ export const assets = {
   erTaller,
   financeEU,
   financeEUColor,
+  gris1,
+  gris2,
   gpCongresoVideo,
   gpConstruccion1,
   gpConstruccion2,

@@ -5,3 +5,4 @@ export * from './PVInfoIcons';
 export * from './PVModelosImgs';
 export * from './PVPage';
 export * from './PVQueSonDropdown';
+export * from './PVResiduos';

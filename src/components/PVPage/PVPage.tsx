@@ -12,6 +12,7 @@ import { CoverMenu } from "../coverPage";
 import { useScroll } from "../../hooks/useScroll";
 import { PVCarrousel } from "./PVCarrousel";
 import { PVBullets } from "./PVBullets";
+import { PVResiduos } from "./PVResiduos";
 
 export const PVPage = () => {
   //useScroll();
@@ -108,6 +109,28 @@ export const PVPage = () => {
           </div>*/}
         </div>
       </section>
+      <section id="residuos" className="container mx-auto px-4 pb-20">
+        <CmBanner text="¿Qué residuos se reciben?" icon={assets.pvLogo} color="customPinkN" />
+        <PVResiduos />
+      </section>
+      <section id="disenio-caracteristicas" className="bg-customSectionBg">
+        <div className="container mx-auto px-4 sm:pb-10 pb-0 py-20">
+          <CmBanner text="Diseño y características" icon={assets.pvLogo} color="customPinkN" />
+          <div className="flex flex-col">
+            <span className="font-thin sm:text-2xl text-xl my-5">
+              <CmBoldText color="customGreenN">Los Puntos Verdes Metropolitanos son espacios vecinales,</CmBoldText><br/>
+              por eso su diseño y habilitación integra criterios como:
+            </span>
+            <PVInfoIcons />
+          </div>
+          <div className="flex flex-col">
+            <div className="w-full bg-customGreenN p-5 rounded-2xl text-center">
+              <CmBoldText className="sm:text-3xl text-xl text-white">¡Quiero saber más sobre los Puntos Verdes Metropolitanos!</CmBoldText>
+            </div>
+            <PVDropdown />
+          </div>
+        </div>
+      </section>
       <section id="comunidad" className="bg-customSectionBg">
         <div className="container mx-auto px-4 pb-20 pt-5">
           <div className="mt-10">
@@ -147,24 +170,6 @@ export const PVPage = () => {
           </div>
           <div className="flex sm:flex-row flex-col mt-10">
             {PV_MODELOS_QUOTES.map((i, index) => <CmQuote key={index} {...i} color="customGreen" maxLines={6} largeTitle minHeaderHeight={80} />)}
-          </div>
-        </div>
-      </section>
-      <section id="disenio-caracteristicas" className="bg-customSectionBg">
-        <div className="container mx-auto px-4 sm:pb-10 pb-0 py-20">
-          <CmBanner text="Diseño y características" icon={assets.pvLogo} color="customPinkN" />
-          <div className="flex flex-col">
-            <span className="font-thin sm:text-2xl text-xl my-5">
-              <CmBoldText color="customGreenN">Los Puntos Verdes Metropolitanos son espacios vecinales,</CmBoldText><br/>
-              por eso su diseño y habilitación integra criterios como:
-            </span>
-            <PVInfoIcons />
-          </div>
-          <div className="flex flex-col">
-            <div className="w-full bg-customGreenN p-5 rounded-2xl text-center">
-              <CmBoldText className="sm:text-3xl text-xl text-white">¡Quiero saber más sobre los Puntos Verdes Metropolitanos!</CmBoldText>
-            </div>
-            <PVDropdown />
           </div>
         </div>
       </section>
