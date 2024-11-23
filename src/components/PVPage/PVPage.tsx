@@ -13,9 +13,10 @@ import { useScroll } from "../../hooks/useScroll";
 import { PVCarrousel } from "./PVCarrousel";
 import { PVBullets } from "./PVBullets";
 import { PVResiduos } from "./PVResiduos";
+import { RiArrowDownWideLine } from "react-icons/ri";
 
 export const PVPage = () => {
-  //useScroll();
+  useScroll();
 
   return(
     <>
@@ -130,9 +131,16 @@ export const PVPage = () => {
             <PVDropdown />
           </div>
         </div>
+        <div className="flex flex-col items-center text-customPink">
+          <p className="text-center text-3xl">Sigue bajando y descubre más sobre <br />Metro Resilience Guadalajara</p>
+          <RiArrowDownWideLine className="text-5xl" />
+        </div>  
       </section>
-      <section id="comunidad" className="bg-customSectionBg">
-        <div className="container mx-auto px-4 pb-20 pt-5">
+      <section id="comunidad">
+        <div className="container mx-auto px-4 pb-5 pt-2">
+          <p className="text-2xl mt-10">
+            <CmBoldText color="customGreenN">En nuestra metrópoli,</CmBoldText> sabemos que existen iniciativas locales e internacionales con valiosos conocimientos, por lo que la colaboración es clave.
+          </p>
           <div className="mt-10">
             <CmBanner text="Modelos referentes" icon={assets.pvLogo} color="customPinkN" />
           </div>
@@ -168,8 +176,8 @@ export const PVPage = () => {
               <CmImage src={assets.imeplanC} className="sm:h-[40px] h-[25px]" />
             </div>
           </div>
-          <div className="flex sm:flex-row flex-col mt-10">
-            {PV_MODELOS_QUOTES.map((i, index) => <CmQuote key={index} {...i} color="customGreen" maxLines={6} largeTitle minHeaderHeight={80} />)}
+          <div className="flex sm:flex-row flex-col mt-10 sm:space-x-20">
+            {PV_MODELOS_QUOTES.map((i, index) => <CmQuote key={index} {...i} color="customGreen" maxLines={6} minHeaderHeight={80} />)}
           </div>
         </div>
       </section>
