@@ -1,7 +1,7 @@
 import { assets } from "../../assets";
 import { VIDEOS } from "../../constants";
 
-import { CmBanner, CmBoldText, CmCoverVideo, CmFooter, CmHeader, CmImage, CmQuote } from "../common";
+import { CmBanner, CmBoldText, CmCoverVideo, CmFooter, CmHeader, CmImage } from "../common";
 import { GPQueSeraDropdown } from "./GPQueSeraDropdown";
 import { GPConstruccionImages } from "./GPConstruccionImages";
 
@@ -11,9 +11,10 @@ import { GP_QUOTES } from "./GPQuotes";
 import { GPIcons } from "./GPIcons";
 import { CoverMenu } from "../coverPage";
 import { useScroll } from "../../hooks/useScroll";
+import { CmQuote2 } from "../common/CmQuote2";
 
 export const GPPage = () => {
-  useScroll();
+  //useScroll();
 
   return(
     <>
@@ -59,7 +60,7 @@ export const GPPage = () => {
           <div className="flex flex-col font-thin sm:mt-0 mt-10">
             <div>
               <p className="sm:text-xl text-lg">Para ello,</p>
-              <CmBoldText color="customPurpleGP" className="sm:text-3xl text-xl">
+              <CmBoldText color="customPurpleGP" className="sm:text-3xl text-xl text-customPurpleGP">
                 la Guía considera 4 elementos clave:
               </CmBoldText>
             </div>
@@ -94,8 +95,8 @@ export const GPPage = () => {
             Se tuvo <CmBoldText color="customTurquoiseGP">participación local, nacional e internacional del sector público, privado, academia, sociedad civil y la ciudadanía en general.</CmBoldText> Reconociendo la importancia de la acción colectiva hacia un mundo resiliente.
           </div>
           <GPCongresoCounts />
-          <div className="flex sm:flex-row flex-col">
-            {GP_QUOTES.map((i, index) => <CmQuote key={index} {...i} color="customPurpleGP" maxLines={5} largeTitle minHeaderHeight={120} />)}
+          <div className="flex sm:flex-row flex-col space-x-5">
+            {GP_QUOTES.map((i, index) => <CmQuote2 key={index} {...i} color="customPurpleGP" maxLines={6} largeTitle minHeaderHeight={120} border={false} />)}
           </div>
         </div>
       </section>
