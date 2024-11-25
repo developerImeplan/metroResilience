@@ -7,7 +7,7 @@ export const ERInfoItem = ({
   margins = false
 }: ERInfoItemProps) => {
   return(
-    <div className={`flex flex-col w-full sm:mt-0 sm:mt-10 mt-5 ${ margins ? 'sm:mx-5 mx-0' : '' }`}>
+    <div className={`flex flex-col w-full sm:mt-0 mt-5 ${ margins ? 'sm:mx-5 mx-0' : '' }`}>
       <CmDropdown
         titleComponent={
           <div className="flex justify-center py-5 rounded-2xl bg-customBlueLighter group">

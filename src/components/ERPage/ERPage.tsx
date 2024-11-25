@@ -38,7 +38,7 @@ export const ERPage = () => {
         title="Estrategia de Resiliencia Metropolitana"
         width={false}
       />
-      <section id="que-es" className="container mx-auto px-4 sm:pb-10 pb-0 pt-5">
+      <section id="que-es" className="container mx-auto px-4 sm:pb-10 pb-0 pt-10">
         <CmBanner text="¿Qué es?" color="customPurple" icon={assets.erLogo} />
         <div className="flex sm:flex-row flex-col items-center">
           <span className="font-thin sm:text-2xl text-lg text-justify sm:w-1/2 w-full">

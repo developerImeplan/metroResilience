@@ -10,7 +10,6 @@ export const CmQuote2 = ({
   img,
   fontSize = 'sm:text-xl text-lg',
   title,
-  subtitle,
   text,
   maxLines = 4,
   largeTitle = false,

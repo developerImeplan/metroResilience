@@ -187,7 +187,7 @@ export const PVPage = () => {
         </div>
       </section>
       <CmFooter />
-      <div className="text-customGreenN2"></div>
+      <div className="text-customGreenN2 bg-[#915ea1]"></div>
     </>
   );
 }

@@ -70,9 +70,7 @@ export const PVCarrousel = () => {
 
           {/* Imagen con transición */}
           <img
-            className={`sm:w-1/2 w-full h-full object-cover transition-opacity duration-500 ease-in-out ${
-              isTransitioning ? "opacity-0" : "opacity-100"
-            }`}
+            className={`sm:w-1/2 w-full transition-opacity`}
             src={PV_CARROUSEL[currentIndex].img}
             alt="Imagen carrusel"
           />

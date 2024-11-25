@@ -45,7 +45,7 @@ const ERDropdownSaberMasItems: DropdownItemProps[] = [
     children: (
       <span className="flex flex-col">
         <span className="mb-5">
-          En forma de política pública o normativa, como el programa Nidos de Lluvia, o de proyecto comunitario como los Puntos Verdes Metropolitanos
+          En forma de política pública o normativa, como el programa <CmBoldText className="text-[#207fdd]">Nidos de Lluvia,</CmBoldText> o de proyecto comunitario como los <CmBoldText className="text-[#47ae79]">Puntos Verdes Metropolitanos</CmBoldText>
         </span>
         <a
           className="font-bold mt-10 text-[#5f93a5] text-center" 
