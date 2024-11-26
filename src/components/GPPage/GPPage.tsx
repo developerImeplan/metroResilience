@@ -14,7 +14,7 @@ import { useScroll } from "../../hooks/useScroll";
 import { CmQuote2 } from "../common/CmQuote2";
 
 export const GPPage = () => {
-  useScroll();
+  //useScroll();
 
   return(
     <>

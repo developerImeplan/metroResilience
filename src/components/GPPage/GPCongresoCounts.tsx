@@ -17,7 +17,7 @@ export const GPCongresoCountsItem = ({ img }: GPCongresoCountsProps) => {
   return(
     <img 
       src={img}
-      className="w-1/3 h-[100px]"
+      className="sm:w-1/3 h-[100px]"
     />
   );
 }

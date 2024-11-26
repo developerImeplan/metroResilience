@@ -47,7 +47,7 @@ export const PVPage = () => {
           </span>
         </div>*/}
       </section>
-      <section id="centros" className="bg-customSectionBg">
+      <section id="centros" className="bg-customSectionBg sm:mt-0 mt-10">
         <div className="container mx-auto px-4 pb-20 pt-5">
           <div className="mt-10">
             <div className="sm:py-5 py-3 flex justify-start items-center sm:space-x-5 space-x-">
@@ -68,7 +68,7 @@ export const PVPage = () => {
       <section id="pvs" className="flex">
         <PVCarrousel />
       </section>
-      <section id="ubicacion" className="container mx-auto px-4 pb-20">
+      <section id="ubicacion" className="container mx-auto px-4 pb-20 sm:mt-0 mt-20">
         <CmBanner text="Ubicación" icon={assets.pvLogo} color="customPinkN" />
         {/*<div className="sm:mt-10 mt-5 mb-5 font-thin sm:text-3xl flex justify-center">
           <span className="text-center">
@@ -86,7 +86,7 @@ export const PVPage = () => {
           />
         </div>*/}
         <div className="flex sm:flex-row flex-col mt-10 sm:min-h-[500px]">
-          <div className="sm:w-1/2">
+          <div className="sm:w-1/2 sm:h-auto h-[300px]">
             <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1sY66qNbNm4XrswXjGItrOjbQPgQ0KRQ&ehbc=2E312F&noprof=1" className="w-full h-full"></iframe>
           </div>
           <div className="sm:w-1/2 bg-customGrayBg2 p-10">
@@ -132,7 +132,7 @@ export const PVPage = () => {
           </div>
         </div>
         <div className="flex flex-col items-center text-customPink">
-          <p className="text-center text-3xl">Sigue bajando y descubre más sobre <br />Metro Resilience Guadalajara</p>
+          <p className="text-center sm:text-3xl text-xl sm:py-0 py-5">Sigue bajando y descubre más sobre <br />Metro Resilience Guadalajara</p>
           <RiArrowDownWideLine className="text-5xl" />
         </div>  
       </section>
@@ -176,7 +176,7 @@ export const PVPage = () => {
               <CmImage src={assets.imeplanC} className="sm:h-[40px] h-[25px]" />
             </div>
           </div>
-          <div className="flex sm:flex-row flex-col mt-10 sm:space-x-20">
+          <div className="flex sm:flex-row flex-col mt-10 sm:space-x-20 space-y-5">
             {PV_MODELOS_QUOTES.map((i, index) => <CmQuote key={index} {...i} color="customGreen" maxLines={6} minHeaderHeight={80} />)}
           </div>
         </div>

@@ -33,7 +33,7 @@ export const PVCarrousel = () => {
   return (
     <div className="container mx-auto px-4 pt-[65px]">
       {/* Banner dinámico con transición */}
-      <div className="pl-5">
+      <div className="sm:pl-5">
         <div
           className={`transition-opacity duration-500 ease-in-out ${
             isTransitioning ? "opacity-0" : "opacity-100"
