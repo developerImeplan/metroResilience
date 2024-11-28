@@ -169,6 +169,7 @@ export interface CmBannerProps {
   color?: string;
   icon?: string;
   text: string;
+  textCenter?: boolean;
 }
 
 // region ERCountItem

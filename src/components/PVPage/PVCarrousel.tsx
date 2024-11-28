@@ -43,6 +43,7 @@ export const PVCarrousel = () => {
             text={PV_CARROUSEL[currentIndex].title} // Título dinámico
             icon={assets.pvLogo}
             color="customPinkN"
+            textCenter={false}
           />
         </div>
       </div>

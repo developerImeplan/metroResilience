@@ -22,7 +22,7 @@ const GPIcon = ({ icon, text }: GpIconsProps) => {
 const GP_ICONS: GpIconsProps[] = [
   {
     icon: assets.iconGobernanza,
-    text: "Gobernanza metropolitan"
+    text: "Gobernanza metropolitana"
   },
   {
     icon: assets.iconResiliencia,

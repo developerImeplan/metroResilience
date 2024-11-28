@@ -68,7 +68,7 @@ export const CmQuote2 = ({
       </div>
       <div className={`flex-grow flex justify-center rounded-3xl min-h-[150px]`}>
         <p 
-          className={`${fontSize} line-clamp-${maxLines} overflow-hidden hover:overflow-auto hover:line-clamp-none transition-all text-center text-justify`}
+          className={`${fontSize} line-clamp-${maxLines.toString()} overflow-hidden hover:overflow-auto hover:line-clamp-none transition-all text-center text-justify`}
           style={{ maxHeight: `${maxLines * 1.8}rem` }}
         >
           {text}

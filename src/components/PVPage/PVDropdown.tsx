@@ -16,7 +16,7 @@ const DropdownItem = ({ title, children, margins }: DropdownItemProps) => {
     <div className={`mt-5 sm:w-1/3 w-full ${margins ? 'sm:mx-3 mx-0' : ''}`}>
       <CmDropdown
         titleComponent={
-          <div className="p-5 bg-customPinkN rounded-2xl ">
+          <div className="p-5 bg-customPinkN rounded-2xl min-h-[100px] flex items-center justify-center">
             <p className="sm:text-2xl text-lg font-bold text-white text-center">{ title }</p>
           </div>
         }

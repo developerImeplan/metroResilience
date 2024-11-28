@@ -6,7 +6,7 @@ export const CmDropdown = ({
   children
 }: CmDropdownProps) => {
 
-  const [showContent, setShowContent] = useState(true);
+  const [showContent, setShowContent] = useState(false);
 
   return(
     <div className="flex flex-col h-full">
