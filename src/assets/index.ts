@@ -32,6 +32,9 @@ import carrusel9 from "../assets/imgs/carrusel9.jpg";
 import congreso1 from "../assets/imgs/congresoCount1.png";
 import congreso2 from "../assets/imgs/congresoCount2.png";
 import congreso3 from "../assets/imgs/congresoCount3.png";
+import efrain from "../assets/imgs/efrain.jpg";
+import paul from "../assets/imgs/paul.png";
+import sofia from "../assets/imgs/sofia.jpg";
 import entrevistas1 from "../assets/imgs/entrevistas1.jpg";
 import entrevistas2 from "../assets/imgs/entrevistas2.jpg";
 import entrevistas3 from "../assets/imgs/entrevistas3.jpg";
@@ -151,6 +154,9 @@ export const assets = {
   congreso1,
   congreso2,
   congreso3,
+  efrain,
+  paul,
+  sofia,
   entrevistas1,
   entrevistas2,
   entrevistas3,

@@ -72,11 +72,11 @@ export const CmQuote = ({
           {text}
         </p>
       </div>
-      <div className={`mt-5 text-gray-500`}>
-        <CmBoldText color="customBlueLighter" className="text-xl">{subtitle}</CmBoldText>
-      </div>
-      <div className={`${largeTitle ? 'w-full' : 'sm:w-2/3' } pb-3 text-gray-500 ${minHeaderHeight != 0 ? `h-[${minHeaderHeight}px]` : ''}`}>
+      <div className={`${largeTitle ? 'w-full' : 'sm:w-2/3' } text-gray-500 ${minHeaderHeight != 0 ? `h-[${minHeaderHeight}px]` : ''} mt-5`}>
         <CmBoldText color="customBlueLighter" className={`${largeTitle ? 'sm:text-xl text-lg' : 'sm:text-2xl text-xl'}`}>{title}</CmBoldText>
+      </div>
+      <div className={`text-gray-500`}>
+        <CmBoldText color="customBlueLighter" className="text-xl">{subtitle}</CmBoldText>
       </div>
     </div>
   );
