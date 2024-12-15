@@ -3,6 +3,7 @@ import { IoPauseOutline } from "react-icons/io5";
 import { CmQuoteProps } from "../../types";
 import { CmBoldText } from "./CmBoldText";
 import { FaPlay } from "react-icons/fa";
+import { HiMiniPlayCircle } from "react-icons/hi2";
 
 export const CmQuote = ({
   audio,
@@ -51,13 +52,13 @@ export const CmQuote = ({
         />
         {
           audio && (
-            <div className="absolute inset-0 flex justify-center items-center text-gray-300">
+            <div className="absolute inset-0 flex justify-center items-center text-white">
               <div 
                 className="rounded-full cursor-pointer"
                 onClick={handleAudioClick}
               >
                 {
-                  isPlaying ? <IoPauseOutline className="w-10 h-10" /> : <FaPlay className="w-10 h-10" />
+                  isPlaying ? <IoPauseOutline className="w-10 h-10" /> : <HiMiniPlayCircle className="w-10 h-10" />
                 }
               </div>
             </div>
