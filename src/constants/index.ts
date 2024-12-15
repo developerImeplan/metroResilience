@@ -67,6 +67,12 @@ export const ER_COVER_LOGOS: string[] = [
   assets.resilientCity,
 ];
 
+export const PV_COVER_LOGOS: string[] = [
+  assets.financeEU,
+  assets.ambW,
+  assets.imeplanW,
+];
+
 export const ER_QUE_ES_ICONS: ERQueEsIconProps[] = [
   {
     icon: assets.movilidad,

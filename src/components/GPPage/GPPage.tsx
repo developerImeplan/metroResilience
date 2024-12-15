@@ -1,5 +1,5 @@
 import { assets } from "../../assets";
-import { VIDEOS } from "../../constants";
+import { PV_COVER_LOGOS, VIDEOS } from "../../constants";
 
 import { CmBanner, CmBoldText, CmCoverVideo, CmFooter, CmHeader, CmImage } from "../common";
 import { GPQueSeraDropdown } from "./GPQueSeraDropdown";
@@ -21,15 +21,14 @@ export const GPPage = () => {
       <CmHeader />
       <CmCoverVideo
         footerContent={
-          <div className="flex sm:w-1/2 sm:space-x-20 sm:space-x-5 space-x-2 sm:mr-40 ml-5 sm:ml-20">
-            <CmImage className="sm:h-[60px] h-[15px]" src={assets.ambW} />
-            <CmImage className="sm:h-[60px] h-[15px]" src={assets.imeplanW} />
+          <div className="flex sm:justify-end justify-center sm:mr-5">
+            { PV_COVER_LOGOS.map(i => (<CmImage src={i} className="sm:h-[50px] h-[15px] mx-3" />)) }
           </div>
         }
         img={assets.gpCover}
         icon={assets.gpLogo}
         showFooter
-        title="Guía Política de Resiliencia y Gobernanza Metropolitanas"
+        title="Guía para la Gobernanza y Resiliencia Metropolitana"
       />
       <div className="container mx-auto px-4 pb-20">
         <section id="que-es" className="sm:mt-20 sm:mt-5 mb-5">

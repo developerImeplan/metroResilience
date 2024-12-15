@@ -7,7 +7,7 @@ import { assets } from "../../assets";
 
 import { PVInfoIcons } from "./PVInfoIcons";
 import { PVDropdown } from "./PVDropdown";
-import { ER_COVER_LOGOS } from "../../constants";
+import { PV_COVER_LOGOS } from "../../constants";
 import { CoverMenu } from "../coverPage";
 import { useScroll } from "../../hooks/useScroll";
 import { PVCarrousel } from "./PVCarrousel";
@@ -24,7 +24,7 @@ export const PVPage = () => {
       <CmCoverVideo
         footerContent={
           <div className="flex sm:justify-end justify-center sm:mr-20">
-            { ER_COVER_LOGOS.map(i => (<CmImage src={i} className="sm:h-[60px] h-[15px] mx-3" />)) }
+            { PV_COVER_LOGOS.map(i => (<CmImage src={i} className="sm:h-[50px] h-[15px] mx-3" />)) }
           </div>
         }
         img={assets.pvCover}
