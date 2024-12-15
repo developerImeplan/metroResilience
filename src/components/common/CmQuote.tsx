@@ -2,7 +2,6 @@ import { useState, useRef } from "react";
 import { IoPauseOutline } from "react-icons/io5";
 import { CmQuoteProps } from "../../types";
 import { CmBoldText } from "./CmBoldText";
-import { FaPlay } from "react-icons/fa";
 import { HiMiniPlayCircle } from "react-icons/hi2";
 
 export const CmQuote = ({
