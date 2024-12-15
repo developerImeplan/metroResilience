@@ -176,8 +176,8 @@ export const PVPage = () => {
               <CmImage src={assets.imeplanC} className="sm:h-[40px] h-[25px]" />
             </div>
           </div>
-          <div className="flex sm:flex-row flex-col mt-10 sm:space-x-20 space-y-5">
-            {PV_MODELOS_QUOTES.map((i, index) => <CmQuote key={index} {...i} color="customGreen" maxLines={6} minHeaderHeight={80} />)}
+          <div className="flex sm:flex-row flex-col mt-10 sm:space-x-20 sm:space-y-0 space-y-5">
+            {PV_MODELOS_QUOTES.map((i, index) => <CmQuote key={index} {...i} color="customGreen" maxLines={5} />)}
           </div>
         </div>
       </section>
