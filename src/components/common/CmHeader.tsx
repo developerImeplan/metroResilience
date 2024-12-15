@@ -25,9 +25,9 @@ const CmHeaderItem = ({
   logo
 }: CmHeaderProps) => {
   return (
-    <Link to={link} className="flex items-center sm:w-[180px] w-[75px] cursor-pointer">
-      <CmImage src={logo} className="sm:h-[50px] h-[20px] sm:mr-4 mr-2" />
-      <p className="text-white sm:text-base text-[8px] font-thin text-start sm:mt-0 mt-3">{text}</p>
+    <Link to={link} className="flex items-center sm:w-[188px] w-[75px] cursor-pointer">
+      <CmImage src={logo} className="sm:h-[50px] h-[20px] sm:mr-3 mr-2" />
+      <p className="text-white sm:text-base text-[7px] font-bold text-start sm:mt-0">{text}</p>
     </Link>
   )
 }

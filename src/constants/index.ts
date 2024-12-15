@@ -38,7 +38,7 @@ export const CM_HEADER_ITEMS: CmHeaderProps[] = [
   },
   {
     link: MENU_PREFIXES.GP,
-    text: "Guía Política de Gobernanza",
+    text: "Guía Resiliencia Metropolitana",
     logo: assets.gpLogo
   },
 ];
