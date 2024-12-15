@@ -65,7 +65,7 @@ export const PVPage = () => {
           <img className="mt-10 w-full" src={assets.pv} />
         </div>
       </section>
-      <section id="pvs" className="flex">
+      <section id="pvs" className="flex mb-10">
         <PVCarrousel />
       </section>
       <section id="ubicacion" className="container mx-auto px-4 pb-20 sm:mt-0 mt-20">

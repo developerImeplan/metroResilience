@@ -285,6 +285,7 @@ export interface GpIconsProps {
 // region PVCarrousel
 export interface PVCarrouselProps {
   title: string;
+  subtitle: string;
   text: string;
   img: string;
 }
