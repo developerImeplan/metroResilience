@@ -12,6 +12,7 @@ import { GPIcons } from "./GPIcons";
 import { CoverMenu } from "../coverPage";
 import { useScroll } from "../../hooks/useScroll";
 import { CmQuote2 } from "../common/CmQuote2";
+import { GPEstructuraDropdown } from "./GPEstructuraDropdown";
 
 export const GPPage = () => {
   //useScroll();
@@ -62,6 +63,17 @@ export const GPPage = () => {
           </div>
         </section>
       </div>
+      <section id="estructura" className="py-10 bg-customSectionBg">
+        <div className="container mx-auto px-4">
+          <CmBanner text="Estructura" color="[#aaa3cc]" />
+          <span className="sm:text-2xl">
+            Su enfoque integrador, basado en la <CmBoldText color="[#aaa3cc]">suma de saberes</CmBoldText> y la <CmBoldText color="[#aaa3cc]">articulación de esfuerzos</CmBoldText>, se refleja en los <CmBoldText color="[#aaa3cc]">cuatro apartados</CmBoldText> que la conforman:
+          </span>
+          <div className="mt-10">
+            <GPEstructuraDropdown />
+          </div>
+        </div>
+      </section>
       <section id="construccion" className="py-20 bg-customSectionBg">
         <div className="container mx-auto px-4">
           <CmBanner text="Construcción de la Guía" icon={assets.gpLogo} color="customPinkN" />
