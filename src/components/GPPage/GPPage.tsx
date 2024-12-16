@@ -14,7 +14,7 @@ import { useScroll } from "../../hooks/useScroll";
 import { CmQuote2 } from "../common/CmQuote2";
 
 export const GPPage = () => {
-  useScroll();
+  //useScroll();
 
   return(
     <>
@@ -31,22 +31,35 @@ export const GPPage = () => {
         title="Guía para la Gobernanza y Resiliencia Metropolitana"
       />
       <div className="container mx-auto px-4 pb-20">
-        <section id="que-es" className="sm:mt-20 sm:mt-5 mb-5 flex space-x-5">
+        <section id="que-es" className="sm:mt-10 mb-5 flex space-x-5">
           <div className="sm:w-1/2 flex sm:flex-col sm:justify-center text-justify text-xl">
             <span>
               Desde el 2018, a través del Imeplan, el AMG ha impulsado la acción internacional como herramienta para el fortalecimiento de la metrópoli.
             </span>
             <br />
             <span>
-              Con la puesta en marcha de la <CmBoldText className="text-[#aaa3cc]">Acción MRG</CmBoldText> en 2021, se <CmBoldText className="text-[#bfb8d4]">han generado tanto experiencias como conocimientos en materia de resiliencia urbana y gobernanza metropolitana</CmBoldText> que podrás encontrar en la Guía con el fin de inspirar a otras metrópolis.
+              Con la puesta en marcha de la <CmBoldText className="text-[#aaa3cc]">Acción MRG</CmBoldText> en 2021, se <CmBoldText className="text-[#aaa3cc]">han generado tanto experiencias como conocimientos en materia de resiliencia urbana y gobernanza metropolitana</CmBoldText> que podrás encontrar en la Guía con el fin de inspirar a otras metrópolis.
             </span>
           </div>
           <div className="sm:w-1/2 flex flex-wrap gap-2">
             { GP_PAGE_COVER_IMGS.map((i => (<img className="w-[calc(50%-8px)] object-cover aspect-[16/9]"  src={i} />))) }
           </div>
         </section>
-        <section id="vision-objetivo">
+        <section id="vision-objetivo" className="sm:mt-10">
+          <CmBanner text="¿Qué es?" color="[#aaa3cc]" />
+          <p className="text-justify sm:text-xl mb-5">
+            La Guía es única en su tipo, ya que <CmBoldText color="[#aaa3cc]">recopila y compara de forma innovadora las experiencias y lecciones aprendidas de las áreas metropolitanas de Guadalajara y Barcelona durante el desarrollo de Metrópoli Resiliente.</CmBoldText> Busca inspirar a otras metrópolis a replicar y adaptar acciones en resiliencia y gobernanza metropolitana. Diseñada como un recurso práctico y dinámico, está dirigida a quienes participan en la toma de decisiones y en el diseño y ejecución de políticas públicas. Además, aborda la resiliencia no sólo desde la perspectiva de riesgos, sino centrándose en las personas que habitan y transitan las metrópolis, lo que permite analizar las temáticas de manera integral.
+          </p>
           <GPQueSeraDropdown />
+          <div className="flex flex-col font-thin mt-10">
+            <div>
+              <p className="sm:text-xl text-lg">Para ello,</p>
+              <CmBoldText color="[#aaa3cc]" className="sm:text-3xl text-xl text-customPurpleGP">
+                la Guía considera 4 elementos clave:
+              </CmBoldText>
+            </div>
+            <GPIcons />
+          </div>
         </section>
       </div>
       <section id="construccion" className="py-20 bg-customSectionBg">
@@ -62,15 +75,6 @@ export const GPPage = () => {
               </span>
             </div>
             <GPConstruccionImages />
-          </div>
-          <div className="flex flex-col font-thin sm:mt-0 mt-10">
-            <div>
-              <p className="sm:text-xl text-lg">Para ello,</p>
-              <CmBoldText color="customPurpleGP" className="sm:text-3xl text-xl text-customPurpleGP">
-                la Guía considera 4 elementos clave:
-              </CmBoldText>
-            </div>
-            <GPIcons />
           </div>
         </div>
       </section>

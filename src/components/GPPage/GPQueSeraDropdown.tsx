@@ -3,7 +3,7 @@ import { DropdownItemProps } from "../../types";
 
 export const GPQueSeraDropdown = () => {
   return(
-    <div className={`flex sm:flex-row flex-col w-full sm:mt-0 mt-5`}>
+    <div className={`flex sm:flex-row flex-col w-full sm:mt-0 mt-5 sm:space-x-5`}>
       { GP_QUE_SERA_DROPDOWN_ITEMS.map(i => (
         <DropdownItem {...i} />
       )) }
@@ -16,7 +16,7 @@ const DropdownItem = ({ title, children, margins }: DropdownItemProps) => {
     <div className={`mt-5 sm:w-1/3 w-full ${margins ? 'sm:mx-3 mx-0' : ''}`}>
       <CmDropdown
         titleComponent={
-          <div className="p-5 bg-customPurpleGP rounded-2xl">
+          <div className="p-5 bg-[#aaa3cc] rounded-2xl">
             <p className="sm:text-3xl text-lg font-bold text-white text-center">{ title }</p>
           </div>
         }
@@ -31,7 +31,7 @@ const DropdownItem = ({ title, children, margins }: DropdownItemProps) => {
   )
 }
 
-const boldTextColor = "customPinkGP";
+const boldTextColor = "[#aaa3cc]";
 
 const GP_QUE_SERA_DROPDOWN_ITEMS: DropdownItemProps[] = [
   {
@@ -54,9 +54,8 @@ const GP_QUE_SERA_DROPDOWN_ITEMS: DropdownItemProps[] = [
   {
     title: 'Beneficios',
     children: (
-      <span className="line-clamp-5 overflow-hidden hover:overflow-auto hover:line-clamp-none transition-all" style={{ maxHeight: `${5 * 1.8}rem` }}>
-        Está centrada en compartir las lecciones aprendidas, así como las mejores prácticas desarrolladas en el marco del proyecto Metro Resilience Guadalajara, en virtud de <CmBoldText color={boldTextColor}>fomentar la colaboración metrópoli-metrópoli alrededor del mundo.</CmBoldText> Es única en su tipo, pues combina la experiencia de dos metrópolis líderes en resiliencia, ofreciendo una perspectiva global y comparativa.
-
+      <span>
+        Fomenta la <CmBoldText color={boldTextColor}>colaboración global entre metrópolis</CmBoldText> para fortalecer la resiliencia metropolitana mediante la <CmBoldText color={boldTextColor}>articulación de esfuerzos y la transferencia de conocimientos.</CmBoldText>
       </span>
     )
   },

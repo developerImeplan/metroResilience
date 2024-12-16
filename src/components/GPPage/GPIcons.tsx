@@ -14,7 +14,7 @@ const GPIcon = ({ icon, text }: GpIconsProps) => {
   return (
     <div className="flex flex-col items-center">
       <CmImage src={icon} className="h-[130px] mb-3" />
-      <p className="text-center sm:text-xl text-lg font-semibold w-[120px] text-customTurquoiseGP">{ text }</p>
+      <p className="text-center sm:text-xl text-lg font-semibold sm:w-[160px] text-[#abd7c9]">{ text }</p>
     </div>
   )
 }
@@ -26,7 +26,7 @@ const GP_ICONS: GpIconsProps[] = [
   },
   {
     icon: assets.iconResiliencia,
-    text: "Resiliencia Urbana"
+    text: "Resiliencia urbana"
   },
   {
     icon: assets.iconAccion,
@@ -34,6 +34,6 @@ const GP_ICONS: GpIconsProps[] = [
   },
   {
     icon: assets.iconInspiracion,
-    text: "Inspiración y Replicabilidad"
+    text: "Inspiración y replicabilidad"
   },
 ]
