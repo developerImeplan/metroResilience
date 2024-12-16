@@ -175,3 +175,10 @@ export const CM_ICONS_SN: CmIconSNProps[] = [
     url: ''
   },
 ]
+
+export const GP_PAGE_COVER_IMGS: string[] = [
+  assets.gpCover1,
+  assets.gpCover2,
+  assets.gpCover3,
+  assets.gpCover4,
+];

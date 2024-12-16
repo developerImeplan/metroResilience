@@ -60,6 +60,10 @@ import financeEU from "../assets/imgs/financeEU.png";
 import financeEUColor from "../assets/imgs/financeEU_color.png";
 import gris1 from "../assets/imgs/gris1.png";
 import gris2 from "../assets/imgs/gris2.png";
+import gpCover1 from "../assets/imgs/gpCover1.jpg"
+import gpCover2 from "../assets/imgs/gpCover2.jpg"
+import gpCover3 from "../assets/imgs/gpCover3.jpg"
+import gpCover4 from "../assets/imgs/gpCover4.jpg"
 import gpCongresoVideo from "../assets/videos/gpCongresoVideo.mp4";
 import gpConstruccion1 from "../assets/imgs/gpConstruccion1.jpg";
 import gpConstruccion2 from "../assets/imgs/gpConstruccion2.jpg";
@@ -188,6 +192,10 @@ export const assets = {
   gpConstruccion3,
   gpConstruccion4,
   gpCover,
+  gpCover1,
+  gpCover2,
+  gpCover3,
+  gpCover4,
   gpLogo,
   gpQuotes1,
   gpQuotes2,

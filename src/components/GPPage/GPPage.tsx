@@ -1,5 +1,5 @@
 import { assets } from "../../assets";
-import { PV_COVER_LOGOS, VIDEOS } from "../../constants";
+import { GP_PAGE_COVER_IMGS, PV_COVER_LOGOS, VIDEOS } from "../../constants";
 
 import { CmBanner, CmBoldText, CmCoverVideo, CmFooter, CmHeader, CmImage } from "../common";
 import { GPQueSeraDropdown } from "./GPQueSeraDropdown";
@@ -31,11 +31,18 @@ export const GPPage = () => {
         title="Guía para la Gobernanza y Resiliencia Metropolitana"
       />
       <div className="container mx-auto px-4 pb-20">
-        <section id="que-es" className="sm:mt-20 sm:mt-5 mb-5">
-          <CmBanner text="¿Qué es?" icon={assets.gpLogo} color="customPinkGP" />
-          <div className="flex flex-col items-center my-5">
-            <span className="font-thin text-justify sm:text-2xl text-xl">Una Guía que <CmBoldText className="text-customTurquoiseGP">recopila las experiencias y lecciones aprendidas del AMG y el AMB durante el desarrollo de Metrópoli Resiliente.</CmBoldText> Esto con el fin de inspirar a otras metrópolis a replicar y adaptar acciones en materia de resiliencia urbana y gobernanza metropolitana.
+        <section id="que-es" className="sm:mt-20 sm:mt-5 mb-5 flex space-x-5">
+          <div className="sm:w-1/2 flex sm:flex-col sm:justify-center text-justify text-xl">
+            <span>
+              Desde el 2018, a través del Imeplan, el AMG ha impulsado la acción internacional como herramienta para el fortalecimiento de la metrópoli.
             </span>
+            <br />
+            <span>
+              Con la puesta en marcha de la <CmBoldText className="text-[#aaa3cc]">Acción MRG</CmBoldText> en 2021, se <CmBoldText className="text-[#bfb8d4]">han generado tanto experiencias como conocimientos en materia de resiliencia urbana y gobernanza metropolitana</CmBoldText> que podrás encontrar en la Guía con el fin de inspirar a otras metrópolis.
+            </span>
+          </div>
+          <div className="sm:w-1/2 flex flex-wrap gap-2">
+            { GP_PAGE_COVER_IMGS.map((i => (<img className="w-[calc(50%-8px)] object-cover aspect-[16/9]"  src={i} />))) }
           </div>
         </section>
         <section id="vision-objetivo">
