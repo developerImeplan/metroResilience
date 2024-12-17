@@ -3,7 +3,7 @@ import { DropdownItemProps } from "../../types";
 
 export const GPAprendizajesDropdown = () => {
   return(
-    <div className={`flex sm:flex-row flex-col w-full sm:mt-0 mt-5`}>
+    <div className={`flex sm:flex-row flex-col w-full sm:mt-5 mt-5`}>
       { GP_APRENDIZAJES_DROPDOWN_ITEMS.map((i, index) => (
         <DropdownItem {...i} index={index} />
       )) }
@@ -23,7 +23,7 @@ const DropdownItem = ({ title, children, index }: DropdownItemProps & {
           </div>
         }
       >
-        <div className="flex justify-center items-center mt-[-14px] px-5 py-10 border bg-customGrayBg rounded-2xl h-full">
+        <div className="flex justify-center items-center mt-[-14px] px-5 py-10 border bg-white rounded-2xl h-full">
           <span className="font-thin sm:text-xl text-lg text-md text-justify text-customGrayDarker">
             { children }
           </span>
@@ -35,10 +35,10 @@ const DropdownItem = ({ title, children, index }: DropdownItemProps & {
 
 const GP_APRENDIZAJES_DROPDOWN_ITEMS: DropdownItemProps[] = [
   {
-    title: 'Entrevistas con actores clave',
+    title: 'Información clave',
     children: (
       <span>
-        Entrevistamos a personas expertas en temas de gobernanza metropolitana y consultamos instrumentos actuales sobre resiliencia urbana y acción internacional. 
+        Para complementar el conocimiento generado entre ambas metrópolis, la Guía se apoyó de una revisión bibliográfica, análisis documental y  compilación de referencias internacionales. 
       </span>
     )
   },
@@ -46,7 +46,7 @@ const GP_APRENDIZAJES_DROPDOWN_ITEMS: DropdownItemProps[] = [
     title: 'Congreso Internacional de Resiliencia Metropolitana',
     children: (
       <span>
-        Fue el espacio para abordar los retos urbanos que la resiliencia puede abordar a partir del intercambio de ideas y conocimientos entre diversos contextos.
+        Un espacio clave para analizar los retos urbanos y explorar cómo la resiliencia puede afrontarlos mediante el intercambio de ideas y conocimientos entre distintos contextos. Además, se incluyeron entrevistas a personas expertas, cuyas recomendaciones y experiencias enriquecieron el análisis.
       </span>
     ),
   },

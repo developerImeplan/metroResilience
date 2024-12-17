@@ -86,38 +86,29 @@ export const GPPage = () => {
           <div className="flex sm:flex-row flex-col space-x-2">
             {GP_QUOTES_1.map((i, index) => <CmQuote2 key={index} {...i} color="customPurpleGP" maxLines={6} largeTitle minHeaderHeight={130} fontSize="sm:text-base text-base" border={false} />)}
           </div>
-        </div>
-      </section>
-      <section id="construccion" className="py-20 bg-customSectionBg">
-        <div className="container mx-auto px-4">
-          <CmBanner text="Construcción de la Guía" icon={assets.gpLogo} color="customPinkN" />
-          <div className="flex sm:flex-row flex-col mt-10">
-            <div className="sm:w-1/2 sm:pr-10 sm:mb-0 mb-5 sm-w-full font-thin sm:text-xl text-lg text-justify h-full">
-              <span>
-                Desde el 2018, a través del Imeplan, el AMG ha impulsado la acción internacional como herramienta para el fortalecimiento de la metrópoli.
-              </span><br/><br/>
-              <span>
-                Con la puesta en marcha de la acción MRG en 2021, se <CmBoldText color="customTurquoiseGP">han generado tanto experiencias como conocimientos en materia de resiliencia urbana y gobernanza metropolitana</CmBoldText> que podrás encontrar en la Guía con el fin de inspirar a otras metrópolis.
-              </span>
-            </div>
-            <GPConstruccionImages />
+          <div className="flex justify-center items-center mt-10">
+            <a href="#" className="bg-customPurpleGP text-white sm:text-3xl font-bold px-10 py-5 rounded-3xl">Consulta la Guía</a>
           </div>
         </div>
       </section>
-      <section id="aprendizajes" className="mt-10 container mx-auto px-4">
-        <CmBanner text="Aprendizajes" icon={assets.gpLogo} color="customPinkN" />
-        <p className="sm:text-3xl text-2xl text-customGrayDarker sm:my-10 my-5">
-          Con el fin de integrar diferentes perspectivas,<br /> <CmBoldText color="customTurquoiseGP">la Guía contempla:</CmBoldText>
-        </p>
-        <GPAprendizajesDropdown />
-        <div className="sm:mt-5 flex flex-col items-center">
-          <video className="sm:mt-10 mt-5 sm:w-[85%] w-full" controls>
-            <source src={assets.gpCongresoVideo} type="video/mp4" />
-              Your browser does not support the video tag.
-          </video>
+      <section id="suma-saberes" className="py-10 bg-customSectionBg">
+        <div className="container mx-auto px-4">
+          <CmBanner text="Suma de saberes" color="[#aaa3cc]" />
+          <CmBoldText className="text-xl">Con el fin de integrar diferentes perspectivas, la Guía contempla:</CmBoldText>
+          <GPAprendizajesDropdown />
+          <div className="my-10">
+            <CmBoldText className="text-xl">Echa un vistazo a lo que se vivió durante el Congreso
+            </CmBoldText>
+          </div>
+          <div className="flex flex-col items-center">
+            <video className="sm:w-[85%] w-full" controls>
+              <source src={assets.gpCongresoVideo} type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+          </div>
         </div>
       </section>
-      <section id="congreso-internacional" className="mt-10 mb-5 font-thin sm:text-2xl text-lg bg-customSectionBg py-20">
+      <section id="congreso-internacional" className="mt-10 mb-5 font-thin sm:text-2xl text-lg py-20">
         <div className="container mx-auto px-4">
           <div className="py-5 flex justify-start items-end sm:space-x-10 space-x-3">
             <p className="sm:text-6xl text-start font-black text-customPinkN">Congreso Internacional<br/> de Resiliencia Metropolitana</p>
