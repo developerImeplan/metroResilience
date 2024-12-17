@@ -108,54 +108,59 @@ export const GPPage = () => {
           </div>
         </div>
       </section>
-      <section id="congreso-internacional" className="mt-10 mb-5 font-thin sm:text-2xl text-lg py-20">
+      <section id="congreso-internacional" className="mb-5 font-thin sm:text-2xl text-lg pt-5 pb-20">
         <div className="container mx-auto px-4">
           <div className="py-5 flex justify-start items-end sm:space-x-10 space-x-3">
-            <p className="sm:text-6xl text-start font-black text-customPinkN">Congreso Internacional<br/> de Resiliencia Metropolitana</p>
+            <p className="sm:text-6xl text-start font-black text-[#aaa3cc]">Congreso Internacional<br/> de Resiliencia Metropolitana</p>
             <CmImage src={assets.gpLogo} className="sm:h-[60px] h-[50px]" />
           </div>
           <div className="text-justify mt-5">
-            Durante los tres días del Congreso, <CmBoldText color="customTurquoiseGP">personas expertas</CmBoldText> de diferentes lugares del mundo conversaron sobre sus <CmBoldText color="customTurquoiseGP">principales retos y cómo la resiliencia urbana incide en la mejora</CmBoldText> de nuestras metrópolis. <br />
+            Durante los tres días del Congreso, <CmBoldText color="[#aaa3cc]">personas expertas de diferentes lugares del mundo conversaron sobre sus principales retos y cómo la resiliencia urbana incide en la mejora de nuestras metrópolis.</CmBoldText><br />
             <br />
-            Lo anterior en torno a <CmBoldText color="customTurquoiseGP">8 temáticas centrales:</CmBoldText> Resiliencia Metropolitana, Acción Climática, Ordenamiento Territorial y Gestión de Riesgos, Resiliencia Hídrica, Economía Circular, Movilidad, Gobernanza Energética y Vivienda; y <CmBoldText color="customTurquoiseGP">2 ejes transversales:</CmBoldText> Gobernanza Metropolitana e Igualdad Sustantiva. <br />
+            <CmBoldText color="[#aaa3cc]">Lo anterior en torno a 8 temáticas centrales: </CmBoldText> Resiliencia Metropolitana, Acción Climática, Ordenamiento Territorial y Gestión de Riesgos, Resiliencia Hídrica, Economía Circular, Movilidad, Gobernanza Energética y Vivienda; y <CmBoldText color="[#aaa3cc]">2 ejes transversales:</CmBoldText> Gobernanza Metropolitana e Igualdad Sustantiva. <br />
             <br />
-            Se tuvo <CmBoldText color="customTurquoiseGP">participación local, nacional e internacional del sector público, privado, academia, sociedad civil y la ciudadanía en general.</CmBoldText> Reconociendo la importancia de la acción colectiva hacia un mundo resiliente.
+            Se tuvo participación local, nacional e internacional del sector público, privado, academia, sociedad civil y la ciudadanía en general. <CmBoldText color="[#aaa3cc]">Reconociendo la importancia de la acción colectiva hacia un mundo resiliente.</CmBoldText>
           </div>
           <GPCongresoCounts />
+          <div className="mb-5">
+            <CmBoldText className="text-xl">En voz de algunas de las personas invitadas</CmBoldText>
+          </div>
           <div className="flex sm:flex-row flex-col space-x-5">
             {GP_QUOTES.map((i, index) => <CmQuote2 key={index} {...i} color="customPurpleGP" maxLines={6} largeTitle minHeaderHeight={130} border={false} />)}
           </div>
         </div>
       </section>
-      <section id="entrevistas" className="container mx-auto px-4 py-10">
-        <CmBanner text="Entrevistas con actores internacionales" icon={assets.gpLogo} color="customPinkN" />
-        <p className="py-10 sm:text-2xl text-xl font-thin text-justify">
-          Durante el Congreso, conocimos de primera mano las diversas perspectivas sobre la resiliencia urbana en otras metrópolis del mundo. 
-        </p>
-        <div className="flex flex-col items-center">
-          <div className="sm:w-3/4 w-full">
-            <CmBoldText className="text-[#45ae79] sm:text-2xl text-xl">Un poco de lo que nos compartieron:</CmBoldText>
-            <video className="w-full mt-3" controls>
-              <source src={VIDEOS.coverVideo} type="video/mp4" />
-                Your browser does not support the video tag.
-            </video>
-          </div>
-        </div>
-        <div className="flex sm:flex-row flex-col sm:justify-center sm:items-end items-center w-full my-10">
-          <CmImage src={assets.iconEntrevistas} className="sm:h-[120px] sm:w-auto w-1/2 mr-5" />
-          <div className="flex flex-col items-center text-center">
-            <CmBoldText className="text-customGreenBlue sm:text-2xl text-xl">Somos parte de la metrópoli en acción para</CmBoldText>
-            <div className="sm:text-5xl text-2xl font-bold">
-              <span className="text-customSkyBlue">responder, </span> 
-              <span className="text-customGreenLighter">adaptarse y </span>
-              <span className="text-customPink">prosperar.</span>
+      <section id="entrevistas" className="py-10 bg-customSectionBg">
+        <div className="container mx-auto px-4">
+          <CmBanner text="Entrevistas con actores internacionales" icon={assets.gpLogo} color="customPinkN" />
+          <p className="py-10 sm:text-2xl text-xl font-thin text-justify">
+            Durante el Congreso, conocimos de primera mano las diversas perspectivas sobre la resiliencia urbana en otras metrópolis del mundo. 
+          </p>
+          <CmBoldText className="sm:text-2xl text-xl">Un poco de lo que nos compartieron:</CmBoldText>
+          <div className="flex flex-col items-center mt-5">
+            <div className="sm:w-3/4 w-full">
+              <iframe className="w-full sm:h-[550px]" src="https://www.youtube.com/embed/VhrLylzMbKc?si=FUtIJkZRtOnQw4qG" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
             </div>
           </div>
         </div>
-        <div className="flex sm:flex-row flex-col sm:space-x-2 sm:space-y-0 space-y-3 py-5">
-          <CmImage src={assets.entrevistas1} className="sm:w-1/3 object-cover h-80" />
-          <CmImage src={assets.entrevistas3} className="sm:w-1/3 object-cover h-80"/>
-          <CmImage src={assets.entrevistas2} className="sm:w-1/3 object-cover h-80" />
+      </section>
+      <section className="mb-10">
+        <div className="container mx-auto px-4">
+          <div className="flex sm:flex-row flex-col sm:justify-center sm:items-end items-center w-full my-10">
+            <CmImage src={assets.iconEntrevistas} className="sm:h-[120px] sm:w-auto w-1/2 mr-5" />
+            <div className="flex flex-col">
+              <CmBoldText className="text-customGrayDarker sm:text-3xl text-xl">Somos parte de la metrópoli en acción para</CmBoldText>
+              <div className="sm:text-5xl text-2xl font-bold">
+                <span className="text-[#8ab5c6]">responder, </span> 
+                <span className="text-[#74bd8c]">adaptarse y </span>
+                <span className="text-[#997bb5]">prosperar.</span>
+              </div>
+            </div>
+          </div>
+          <div className="flex sm:flex-row flex-col sm:space-x-2 sm:space-y-0 space-y-3 py-5 h-[450px]">
+            <CmImage src={assets.entrevistas3} className="sm:w-1/2 object-cover"/>
+            <CmImage src={assets.entrevistas2} className="sm:w-1/2 object-cover" />
+          </div>
         </div>
       </section>
       <div className="container mx-auto px-4 pb-20">
