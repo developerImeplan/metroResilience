@@ -84,6 +84,10 @@ import iconReturn from "../assets/imgs/icon_return.png";
 import imeplanC from "../assets/imgs/imeplan_color.png";
 import imeplanW from "../assets/imgs/imeplan_white.png";
 import inundaciones from "../assets/imgs/inundaciones_icon.png";
+import jordanaAudio from "../assets/audios/jordana.mp3";
+import patriciaAudio from "../assets/audios/patricia.mp3";
+import marioAudio from "../assets/audios/mario.mp3";
+import ramonAudio from "../assets/audios/ramon.mp3";
 import jordana from "../assets/imgs/jordana.jpg";
 import ramon from "../assets/imgs/ramon.jpg";
 import mario from "../assets/imgs/mario.jpg";
@@ -206,6 +210,10 @@ export const assets = {
   gpQuotes1,
   gpQuotes2,
   gpQuotes3,
+  jordanaAudio,
+  patriciaAudio,
+  marioAudio,
+  ramonAudio,
   jordana,
   ramon,
   mario,

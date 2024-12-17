@@ -77,7 +77,7 @@ export const GPPage = () => {
       <section className="my-10">
         <div className="container mx-auto px-4">
           <CmBanner text="Presentación de la Guía" color="[#aaa3cc]" />
-          <div className="flex sm:items-center sm:flex-row flex-col sm:space-x-5">
+          <div className="flex sm:items-center sm:flex-row flex-col sm:space-x-5 py-10">
             <div className="text-xl text-justify">
               El <CmBoldText color="[#aaa3cc]">4 de diciembre de 2024</CmBoldText>, se presentó la Guía en la Feria Internacional del Libro de Guadalajara (FIL), con la asistencia de <CmBoldText color="[#aaa3cc]">más de 150 personas</CmBoldText> de diversos sectores. El panel, integrado por <CmBoldText color="[#aaa3cc]">Patricia Martínez</CmBoldText> y <CmBoldText color="[#aaa3cc]">Ramon Torra</CmBoldText> como beneficiarios de MRG, <CmBoldText color="[#aaa3cc]">Mario Silva</CmBoldText> en representación de los gobiernos locales, y <CmBoldText color="[#aaa3cc]">Jordana Vásquez</CmBoldText> para abordar la transversalización de la perspectiva de género, propició un diálogo enriquecedor sobre temas como la cooperación internacional, la articulación de esfuerzos, la perspectiva de género en las acciones resiliencia y el intercambio de conocimientos.
             </div>

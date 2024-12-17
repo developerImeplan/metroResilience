@@ -4,7 +4,7 @@ import { CmQuoteProps } from "../../types";
 
 export const GP_QUOTES_1: CmQuoteProps[] = [
   {
-    audio: assets.gpQuotes1,
+    audio: assets.jordanaAudio,
     color: 'customPurpleGP',
     img: assets.jordana,
     title: 'Jordana Vásquez',
@@ -12,7 +12,7 @@ export const GP_QUOTES_1: CmQuoteProps[] = [
     text: 'Sigamos apostándole a la mujer, porque  sólo así construiremos un futuro más inclusivo, más equitativo, más justo, más resiliente, donde todas las comunidades puedan prosperar ante los desafíos del cambio climático.'
   },
   {
-    audio: assets.gpQuotes1,
+    audio: assets.ramonAudio,
     color: 'customPurpleGP',
     img: assets.ramon,
     title: 'Ramon Torra I. Xicoy',
@@ -20,7 +20,7 @@ export const GP_QUOTES_1: CmQuoteProps[] = [
     text: '[...] Esto facilita el intercambio de experiencias, de conocimientos, incluso la relación personal, entender más al otro para poder afrontar estos retos que tenemos de futuro, estos retos de un mundo cambiando (...)'
   },
   {
-    audio: assets.gpQuotes2,
+    audio: assets.patriciaAudio,
     color: 'customPurpleGP',
     img: assets.patricia,
     title: 'Martha Patricia Martínez Barba',
@@ -28,7 +28,7 @@ export const GP_QUOTES_1: CmQuoteProps[] = [
     text: '[...] Los saberes que se han podido gestionar a lo largo de esta colaboración para que entonces la curva de aprendizaje para quienes lo quieren implementar sea mucho menor y que todo el conocimiento quede capitalizado (...)'
   },
   {
-    audio: assets.gpQuotes3,
+    audio: assets.marioAudio,
     color: 'customBlueLighter',
     img: assets.mario,
     text: 'Esta guía es [...] un testimonio que nos permite tener un referente de manera permanente de lo que la resiliencia significa, a partir de las experiencias de dos áreas metropolitanas (...)',

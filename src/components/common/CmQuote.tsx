@@ -1,8 +1,8 @@
 import { useState, useRef } from "react";
-import { IoPauseOutline } from "react-icons/io5";
 import { CmQuoteProps } from "../../types";
 import { CmBoldText } from "./CmBoldText";
-import { HiMiniPlayCircle } from "react-icons/hi2";
+import { CmPlayIcon } from "./CmPlayIcon";
+import { CmPauseIcon } from "./CmPauseIcon";
 
 export const CmQuote = ({
   audio,
@@ -57,7 +57,7 @@ export const CmQuote = ({
                 onClick={handleAudioClick}
               >
                 {
-                  isPlaying ? <IoPauseOutline className="w-10 h-10" /> : <HiMiniPlayCircle className="w-10 h-10" />
+                  isPlaying ? <CmPauseIcon /> : <CmPlayIcon />
                 }
               </div>
             </div>

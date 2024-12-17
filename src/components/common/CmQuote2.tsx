@@ -1,8 +1,8 @@
 import { useState, useRef } from "react";
-import { IoPauseOutline } from "react-icons/io5";
 import { CmQuoteProps } from "../../types";
 import { CmBoldText } from "./CmBoldText";
-import { FaPlay } from "react-icons/fa";
+import { CmPauseIcon } from "./CmPauseIcon";
+import { CmPlayIcon } from "./CmPlayIcon";
 
 export const CmQuote2 = ({
   audio,
@@ -56,7 +56,7 @@ export const CmQuote2 = ({
                 onClick={handleAudioClick}
               >
                 {
-                  isPlaying ? <IoPauseOutline className="w-10 h-10" /> : <FaPlay className="w-10 h-10" />
+                  isPlaying ? <CmPauseIcon /> : <CmPlayIcon />
                 }
               </div>
             </div>
@@ -66,7 +66,7 @@ export const CmQuote2 = ({
       <div className={`flex-grow flex justify-center rounded-3xl min-h-[150px] mt-5 border-2 p-5 border-[#aaa3cc] text-[#aaa3cc] z-10 bg-white`}>
         <p 
           className={`${fontSize} line-clamp-6 overflow-hidden hover:overflow-auto hover:line-clamp-none transition-all text-center text-justify`}
-          style={{ maxHeight: `${6 * 1.8}rem` }}
+          style={{ maxHeight: `${5 * 1.8}rem` }}
         >
           {text}
         </p>
