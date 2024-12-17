@@ -7,7 +7,7 @@ import { GPConstruccionImages } from "./GPConstruccionImages";
 
 import { GPAprendizajesDropdown } from "./GPAprendizajesDropdown";
 import { GPCongresoCounts } from "./GPCongresoCounts";
-import { GP_QUOTES } from "./GPQuotes";
+import { GP_QUOTES, GP_QUOTES_1 } from "./GPQuotes";
 import { GPIcons } from "./GPIcons";
 import { CoverMenu } from "../coverPage";
 import { useScroll } from "../../hooks/useScroll";
@@ -83,6 +83,9 @@ export const GPPage = () => {
             </div>
             <img className="sm:w-1/2" src={assets.feria} />
           </div>
+          <div className="flex sm:flex-row flex-col space-x-2">
+            {GP_QUOTES_1.map((i, index) => <CmQuote2 key={index} {...i} color="customPurpleGP" maxLines={6} largeTitle minHeaderHeight={130} fontSize="sm:text-base text-base" border={false} />)}
+          </div>
         </div>
       </section>
       <section id="construccion" className="py-20 bg-customSectionBg">
@@ -129,7 +132,7 @@ export const GPPage = () => {
           </div>
           <GPCongresoCounts />
           <div className="flex sm:flex-row flex-col space-x-5">
-            {GP_QUOTES.map((i, index) => <CmQuote2 key={index} {...i} color="customPurpleGP" maxLines={6} largeTitle minHeaderHeight={120} border={false} />)}
+            {GP_QUOTES.map((i, index) => <CmQuote2 key={index} {...i} color="customPurpleGP" maxLines={6} largeTitle minHeaderHeight={130} border={false} />)}
           </div>
         </div>
       </section>

@@ -84,6 +84,10 @@ import iconReturn from "../assets/imgs/icon_return.png";
 import imeplanC from "../assets/imgs/imeplan_color.png";
 import imeplanW from "../assets/imgs/imeplan_white.png";
 import inundaciones from "../assets/imgs/inundaciones_icon.png";
+import jordana from "../assets/imgs/jordana.jpg";
+import ramon from "../assets/imgs/ramon.jpg";
+import mario from "../assets/imgs/mario.jpg";
+import patricia from "../assets/imgs/patricia.jpg";
 import loopER from "../assets/videos/loopER.mp4";
 import mapaPvs from "../assets/imgs/mapa_pvs.png";
 import mariaCristina from "../assets/imgs/mariaCristina.png";
@@ -202,6 +206,10 @@ export const assets = {
   gpQuotes1,
   gpQuotes2,
   gpQuotes3,
+  jordana,
+  ramon,
+  mario,
+  patricia,
   iconAccion,
   iconEntrevistas,
   iconGobernanza,
