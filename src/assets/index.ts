@@ -56,6 +56,7 @@ import erQuoteAudio3 from "../assets/audios/erQuote3.m4a";
 import erResumenEjecutivo from "../assets/imgs/erResumenEjecutivo.png";
 import erResumenEjecutivoPDF from "../assets/docs/ERM_RESUMENEJECUTIVO_Imeplan.pdf";
 import erTaller from "../assets/imgs/er_taller.jpg";
+import feria from "../assets/imgs/feria.jpg";
 import financeEU from "../assets/imgs/financeEU.png";
 import financeEUColor from "../assets/imgs/financeEU_color.png";
 import gris1 from "../assets/imgs/gris1.png";
@@ -182,6 +183,7 @@ export const assets = {
   erResumenEjecutivo,
   erResumenEjecutivoPDF,
   erTaller,
+  feria,
   financeEU,
   financeEUColor,
   gris1,
