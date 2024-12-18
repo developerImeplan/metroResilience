@@ -47,7 +47,7 @@ export const GPPage = () => {
           </div>
         </section>
         <section id="vision-objetivo" className="sm:mt-10">
-          <CmBanner text="¿Qué es?" color="[#aaa3cc]" />
+          <CmBanner text="¿Qué es?" color="[#aaa3cc]" icon={assets.gpLogo} />
           <p className="text-justify sm:text-xl mb-5">
             La Guía es única en su tipo, ya que <CmBoldText color="[#aaa3cc]">recopila y compara de forma innovadora las experiencias y lecciones aprendidas de las áreas metropolitanas de Guadalajara y Barcelona durante el desarrollo de Metrópoli Resiliente.</CmBoldText> Busca inspirar a otras metrópolis a replicar y adaptar acciones en resiliencia y gobernanza metropolitana. Diseñada como un recurso práctico y dinámico, está dirigida a quienes participan en la toma de decisiones y en el diseño y ejecución de políticas públicas. Además, aborda la resiliencia no sólo desde la perspectiva de riesgos, sino centrándose en las personas que habitan y transitan las metrópolis, lo que permite analizar las temáticas de manera integral.
           </p>
@@ -65,7 +65,7 @@ export const GPPage = () => {
       </div>
       <section id="estructura" className="py-10 bg-customSectionBg">
         <div className="container mx-auto px-4">
-          <CmBanner text="Estructura" color="[#aaa3cc]" />
+          <CmBanner text="Estructura" color="[#aaa3cc]" icon={assets.gpLogo} />
           <span className="sm:text-2xl">
             Su enfoque integrador, basado en la <CmBoldText color="[#aaa3cc]">suma de saberes</CmBoldText> y la <CmBoldText color="[#aaa3cc]">articulación de esfuerzos</CmBoldText>, se refleja en los <CmBoldText color="[#aaa3cc]">cuatro apartados</CmBoldText> que la conforman:
           </span>
@@ -76,7 +76,7 @@ export const GPPage = () => {
       </section>
       <section className="my-10">
         <div className="container mx-auto px-4">
-          <CmBanner text="Presentación de la Guía" color="[#aaa3cc]" />
+          <CmBanner text="Presentación de la Guía" color="[#aaa3cc]" icon={assets.gpLogo} />
           <div className="flex sm:items-center sm:flex-row flex-col sm:space-x-5 py-10">
             <div className="text-xl text-justify">
               El <CmBoldText color="[#aaa3cc]">4 de diciembre de 2024</CmBoldText>, se presentó la Guía en la Feria Internacional del Libro de Guadalajara (FIL), con la asistencia de <CmBoldText color="[#aaa3cc]">más de 150 personas</CmBoldText> de diversos sectores. El panel, integrado por <CmBoldText color="[#aaa3cc]">Patricia Martínez</CmBoldText> y <CmBoldText color="[#aaa3cc]">Ramon Torra</CmBoldText> como beneficiarios de MRG, <CmBoldText color="[#aaa3cc]">Mario Silva</CmBoldText> en representación de los gobiernos locales, y <CmBoldText color="[#aaa3cc]">Jordana Vásquez</CmBoldText> para abordar la transversalización de la perspectiva de género, propició un diálogo enriquecedor sobre temas como la cooperación internacional, la articulación de esfuerzos, la perspectiva de género en las acciones resiliencia y el intercambio de conocimientos.
@@ -93,7 +93,7 @@ export const GPPage = () => {
       </section>
       <section id="suma-saberes" className="py-10 bg-customSectionBg">
         <div className="container mx-auto px-4">
-          <CmBanner text="Suma de saberes" color="[#aaa3cc]" />
+          <CmBanner text="Suma de saberes" color="[#aaa3cc]" icon={assets.gpLogo} />
           <CmBoldText className="text-xl">Con el fin de integrar diferentes perspectivas, la Guía contempla:</CmBoldText>
           <GPAprendizajesDropdown />
           <div className="my-10">
