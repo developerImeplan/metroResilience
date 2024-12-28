@@ -146,12 +146,16 @@ export const PVPage = () => {
           </div>
           <div className="flex sm:flex-row flex-col mt-5 sm:text-2xl text-lg font-thin text-justify sm:space-x-10">
             <div className="sm:w-1/2 w-full sm:space-y-10 space-y-5">
-              <CmBoldText className="text-customGreenN sm:text-4xl">“Puntos Verdes de Barrio” del Área       Metropolitana de Barcelona (AMB).</CmBoldText>
+              <a href="https://deixalleries.amb.cat/es/">
+                <CmBoldText className="text-customGreenN sm:text-4xl">“Puntos Verdes de Barrio” del Área       Metropolitana de Barcelona (AMB).</CmBoldText>
+              </a>
               <p>Parte de la inspiración para la PVM, fue recuperar las buenas prácticas del modelo de gestión de residuos del AMB, particularmente sobre acopio de residuos, el cual se comprende de tres tipologías: Puntos Verdes de Zona, Puntos Verdes Móviles y Puntos Verdes de Barrio. Esta red abarca un total de 142 puntos estratégicamente distribuidos en diez distritos, y en conjunto logran revalorizar un promedio mensual de 120 mil toneladas de residuos. El enfoque replicado para el AMG, son los Puntos Verdes de Barrio, los cuales ofrecen a la ciudadanía actividades como reparaciones, intercambio de artículos y talleres abierto a la comunidad. 
               </p>
             </div>
             <div className="sm:w-1/2 w-full sm:space-y-10 space-y-5 sm:mt-0 mt-10">
-              <CmBoldText className="text-customGreenN sm:text-4xl">Colectivo Vecinal Bosque Urbano Tlaquepaque.</CmBoldText>
+              <a href="https://www.facebook.com/colectivo.bosqueurbanotlaquepaque">
+                <CmBoldText className="text-customGreenN sm:text-4xl">Colectivo Vecinal Bosque Urbano Tlaquepaque.</CmBoldText> 
+              </a>
               <p>
                 Uno de los impulsos para desarrollar los PVM, fue la acción ciudadana del Colectivo, quienes impulsaron la gestión del Bosque Urbano Tlaquepaque y de un centro de acopio comunitario de residuos. El cual a lo largo de dos años de operación logró un promedio anual de acopio y valorización de al menos 5 toneladas de residuos.  Fomentando la correcta separación de residuos, la conciencia ambiental y la participación activa al rededor del BUT.
               </p>

@@ -52,7 +52,7 @@ export const CmQuote2 = ({
           audio && (
             <div className="absolute inset-0 flex justify-center items-center text-gray-300">
               <div 
-                className="rounded-full cursor-pointer"
+                className="rounded-full cursor-pointer mt-20"
                 onClick={handleAudioClick}
               >
                 {

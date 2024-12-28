@@ -9,9 +9,9 @@ export const ERDowloads: ERDowloadProps[] = [
     marginR: true
   },
   {
-    img: assets.erPresentacionEjecutiva,
-    title: 'Presentación ejecutiva',
-    doc: assets.erPresentacionEjecutivaPDF,
+    img: assets.executiveSummary,
+    title: 'English versión',
+    doc: assets.resumenIngles,
     marginR: true
   },
   {

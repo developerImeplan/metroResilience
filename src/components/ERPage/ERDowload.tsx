@@ -14,10 +14,10 @@ export const ERDowload = ({
       <a 
         href={doc}
         download
-        className="w-60 py-5 bg-customBlueLighterN rounded-xl font-bold text-white mt-5 flex justify-start items-center px-5" 
+        className="w-60 py-5 bg-customBlueLighterN rounded-xl font-bold text-white mt-5 flex justify-start items-center px-5 min-h-[80px]"
       >
         <GoDownload className="mr-4 text-3xl" />
-        <p className="w-2/3 leading-5">
+        <p className="w-2/3 leading-5 text-center">
           { title }
         </p>
       </a>

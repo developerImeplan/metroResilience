@@ -53,7 +53,7 @@ export const CmQuote = ({
           audio && (
             <div className="absolute inset-0 flex justify-center items-center text-white">
               <div 
-                className="rounded-full cursor-pointer"
+                className="rounded-full cursor-pointer mt-20"
                 onClick={handleAudioClick}
               >
                 {
@@ -76,7 +76,7 @@ export const CmQuote = ({
         <CmBoldText color="customBlueLighter" className={`${largeTitle ? 'sm:text-xl text-lg' : 'sm:text-2xl text-xl'}`}>{title}</CmBoldText>
       </div>
       <div className={`text-gray-500`}>
-        <CmBoldText color="customBlueLighter" className="text-xl">{subtitle}</CmBoldText>
+        <p className="text-xl text-customBlueLighter">{subtitle}</p>
       </div>
     </div>
   );

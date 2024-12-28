@@ -1,21 +1,20 @@
 import { assets } from "../../assets";
-import { GP_PAGE_COVER_IMGS, PV_COVER_LOGOS, VIDEOS } from "../../constants";
+import { GP_PAGE_COVER_IMGS, PV_COVER_LOGOS } from "../../constants";
 
 import { CmBanner, CmBoldText, CmCoverVideo, CmFooter, CmHeader, CmImage } from "../common";
 import { GPQueSeraDropdown } from "./GPQueSeraDropdown";
-import { GPConstruccionImages } from "./GPConstruccionImages";
 
 import { GPAprendizajesDropdown } from "./GPAprendizajesDropdown";
 import { GPCongresoCounts } from "./GPCongresoCounts";
 import { GP_QUOTES, GP_QUOTES_1 } from "./GPQuotes";
 import { GPIcons } from "./GPIcons";
 import { CoverMenu } from "../coverPage";
-import { useScroll } from "../../hooks/useScroll";
 import { CmQuote2 } from "../common/CmQuote2";
 import { GPEstructuraDropdown } from "./GPEstructuraDropdown";
+import { useScroll } from "../../hooks/useScroll";
 
 export const GPPage = () => {
-  //useScroll();
+  useScroll();
 
   return(
     <>
@@ -87,7 +86,7 @@ export const GPPage = () => {
             {GP_QUOTES_1.map((i, index) => <CmQuote2 key={index} {...i} color="customPurpleGP" maxLines={6} largeTitle minHeaderHeight={130} fontSize="sm:text-base text-base" border={false} />)}
           </div>
           <div className="flex justify-center items-center mt-10">
-            <a href="#" className="bg-customPurpleGP text-white sm:text-3xl font-bold px-10 py-5 rounded-3xl">Consulta la Guía</a>
+            <a href={assets.guiaResilenciaPDF} download className="bg-customPurpleGP text-white sm:text-3xl font-bold px-10 py-5 rounded-3xl">Consulta la Guía</a>
           </div>
         </div>
       </section>

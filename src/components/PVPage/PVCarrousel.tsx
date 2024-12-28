@@ -123,25 +123,25 @@ const PV_CARROUSEL: PVCarrouselProps[] = [
     title: "PVM Estación Verde",
     subtitle: "Tlajomulco de Zúñiga",
     text: "Ubicado en el municipio de Tlajomulco de Zúñiga, dentro del CECDS, el cual es un equipamiento dedicado a compartir saberes mediante talleres y actividades comunitarias, como la separación de residuos y huertos urbanos. Su ubicación y antecedentes lo posicionan como un punto estratégico para difundir y fortalecer prácticas de Economía Circular en la comunidad.",
-    img: assets.pv5,
+    img: assets.pv6,
   },
   {
     title: "PVM Jardín Obregón",
     subtitle: "Ixtlahuacán de los Membrillos",
     text: "Situado en un predio municipal a la entrada de Ixtlahuacán de los Membrillos, este PVM se convierte en un punto de alta visibilidad y afluencia, accesible por distintos medios de transporte. Su proximidad a la Casa de la Cultura y al centro de población refuerza su carácter como un espacio socialmente identificable y de fácil acceso para la comunidad.",
-    img: assets.pv5,
+    img: assets.pv8,
   },
   {
     title: "PVM Centro de Atención al Adulto Mayor",
     subtitle: "Guadalajara",
     text: "Localizado en el municipio de Guadalajara, dentro de un equipamiento del DIF con una agenda comunitaria amplia y constante, orientada a un grupo etario clave. Este PVM cuenta con una ubicación de fácil acceso e identificación en un área urbana consolidada que asegura una afluencia continua de visitantes, facilitando así la difusión y el acceso a servicios de Economía Circular.",
-    img: assets.pv5,
+    img: assets.pv9,
   },
   {
     title: "PVM Unidad Administrativa Las Águilas",
     subtitle: "Zapopan",
     text: "Se sitúa en las inmediaciones de un equipamiento administrativo en el municipio de Zapopan, en una de las avenidas más transitadas de la metrópoli. Este PVM se beneficia de una alta afluencia diaria de personas, lo que lo convierte en un espacio estratégico. Además, concentra esfuerzos previos para el acopio de residuos, por lo que su presencia complementa y refuerza estas dinámicas.",
-    img: assets.pv5,
+    img: assets.pvZapopan,
   },
 ];
 

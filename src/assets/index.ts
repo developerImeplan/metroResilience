@@ -39,6 +39,7 @@ import entrevistas1 from "../assets/imgs/entrevistas1.jpg";
 import entrevistas2 from "../assets/imgs/entrevistas2.jpg";
 import entrevistas3 from "../assets/imgs/entrevistas3.jpg";
 import erDocCompletoPDF from "../assets/docs/Estrategia de Resiliencia_Completa.pdf";
+import guiaResilenciaPDF from "../assets/docs/Guía de Resiliencia.pdf";
 import erDocumentoCompleto from "../assets/imgs/erDocumentoCompleto.png";
 import erGuia from "../assets/imgs/er_guia.png";
 import erLibro from "../assets/imgs/er_libro.jpg";
@@ -114,6 +115,11 @@ import pv2 from "../assets/imgs/pv2.jpg";
 import pv3 from "../assets/imgs/pv3.jpg";
 import pv4 from "../assets/imgs/pv4.jpg";
 import pv5 from "../assets/imgs/pv5.jpg";
+import pv6 from "../assets/imgs/pv6.jpg";
+import pv7 from "../assets/imgs/pv7.jpg";
+import pv8 from "../assets/imgs/pv8.png";
+import pv9 from "../assets/imgs/pv9.jpg";
+import pvZapopan from "../assets/imgs/pvZapopan.jpg";
 import pvCover from "../assets/imgs/pv_cover.jpg";
 import pvInfoIcon1 from "../assets/imgs/pvInfoIcon1.png";
 import pvInfoIcon2 from "../assets/imgs/pvInfoIcon2.png";
@@ -130,7 +136,9 @@ import resilientCity from "../assets/imgs/resilient_city_network.png";
 import responderLogos from "../assets/imgs/responder_logos.png";
 import stock from "../assets/imgs/stock.jpg";
 import yolandaBichara from "../assets/imgs/yolanda_bichara.png";
+import executiveSummary from "../assets/imgs/executive_summary.png";
 import videoCover from "../assets/videos/video_inicio-metropoli_resiliente.mp4";
+import resumenIngles from "../assets/docs/Resilience Strategy AMG.pdf"
 
 export const assets = {
   adaptarseIcon1,
@@ -168,6 +176,7 @@ export const assets = {
   congreso2,
   congreso3,
   efrain,
+  guiaResilenciaPDF,
   paul,
   sofia,
   entrevistas1,
@@ -191,6 +200,7 @@ export const assets = {
   erResumenEjecutivo,
   erResumenEjecutivoPDF,
   erTaller,
+  executiveSummary,
   feria,
   financeEU,
   financeEUColor,
@@ -249,6 +259,11 @@ export const assets = {
   pv3,
   pv4,
   pv5,
+  pv6,
+  pv7,
+  pv8,
+  pv9,
+  pvZapopan,
   pvCover,
   pvInfoIcon1,
   pvInfoIcon2,
@@ -260,6 +275,7 @@ export const assets = {
   pvUbicacion,
   pvUbicacionVideo,
   ramonTorra,
+  resumenIngles,
   resilienciaLLamando,
   resilientCity,
   responderLogos,
