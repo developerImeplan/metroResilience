@@ -13,7 +13,7 @@ export const GPEstructuraDropdown = () => {
 
 const Item = ({ title, children }: DropdownItemProps) => {
   return(
-    <div className="w-[calc(50%-10px)]">
+    <div className="sm:w-[calc(50%-10px)] w-full">
       <CmDropdown
         titleComponent={
           <div className="flex justify-center py-5 rounded-2xl bg-[#997bb5] group">

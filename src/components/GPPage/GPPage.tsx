@@ -22,7 +22,7 @@ export const GPPage = () => {
       <CmCoverVideo
         footerContent={
           <div className="flex sm:justify-end justify-center sm:mr-5">
-            { PV_COVER_LOGOS.map(i => (<CmImage src={i} className="sm:h-[50px] h-[15px] mx-3" />)) }
+            { PV_COVER_LOGOS.map(i => (<CmImage src={i} className="sm:h-[50px] h-[10px] sm:mx-3 mx-2" />)) }
           </div>
         }
         img={assets.gpCover}
@@ -31,8 +31,8 @@ export const GPPage = () => {
         title="Guía para la Gobernanza y Resiliencia Metropolitana"
       />
       <div className="container mx-auto px-4 pb-20">
-        <section id="que-es" className="sm:mt-10 mb-5 flex space-x-5">
-          <div className="sm:w-1/2 flex sm:flex-col sm:justify-center text-justify text-xl">
+        <section id="que-es" className="sm:mt-10 mb-5 flex space-x-5 flex sm:flex-row flex-col">
+          <div className="sm:w-1/2 flex flex-col sm:justify-center text-justify text-xl sm:my-0 my-5">
             <span>
               Desde el 2018, a través del Imeplan, el AMG ha impulsado la acción internacional como herramienta para el fortalecimiento de la metrópoli.
             </span>
@@ -82,7 +82,7 @@ export const GPPage = () => {
             </div>
             <img className="sm:w-1/2" src={assets.feria} />
           </div>
-          <div className="flex sm:flex-row flex-col space-x-2">
+          <div className="flex sm:flex-row flex-col sm:space-x-2">
             {GP_QUOTES_1.map((i, index) => <CmQuote2 key={index} {...i} color="customPurpleGP" maxLines={6} largeTitle minHeaderHeight={130} fontSize="sm:text-base text-base" border={false} />)}
           </div>
           <div className="flex justify-center items-center mt-10">
@@ -124,7 +124,7 @@ export const GPPage = () => {
           <div className="mb-5">
             <CmBoldText className="text-xl">En voz de algunas de las personas invitadas</CmBoldText>
           </div>
-          <div className="flex sm:flex-row flex-col space-x-5">
+          <div className="flex sm:flex-row flex-col sm:space-x-5">
             {GP_QUOTES.map((i, index) => <CmQuote2 key={index} {...i} color="customPurpleGP" maxLines={6} largeTitle minHeaderHeight={130} border={false} />)}
           </div>
         </div>
@@ -143,7 +143,7 @@ export const GPPage = () => {
           </div>
         </div>
       </section>
-      <section className="mb-10">
+      <section className="sm:mb-10">
         <div className="container mx-auto px-4">
           <div className="flex sm:flex-row flex-col sm:justify-center sm:items-end items-center w-full my-10">
             <CmImage src={assets.iconEntrevistas} className="sm:h-[120px] sm:w-auto w-1/2 mr-5" />
@@ -162,7 +162,7 @@ export const GPPage = () => {
           </div>
         </div>
       </section>
-      <div className="container mx-auto px-4 pb-20">
+      <div className="container mx-auto px-4 pb-20 sm:mt-0 mt-80">
         <CoverMenu current="GP" complete={false} />
       </div>
       <CmFooter />
