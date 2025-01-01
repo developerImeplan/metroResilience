@@ -59,7 +59,7 @@ export const PVCarrousel = () => {
         <div className="flex flex-1 sm:flex-row flex-col bg-customGrayBg2 overflow-hidden relative">
           {/* Texto con transición */}
           <div
-            className={`sm:w-1/2 p-10 text-justify flex items-center text-lg transition-opacity duration-500 ease-in-out ${
+            className={`sm:w-1/2 p-5 sm:p-10 text-justify flex items-center text-lg transition-opacity duration-500 ease-in-out ${
               isTransitioning ? "opacity-0" : "opacity-100"
             }`}
           >
@@ -151,8 +151,8 @@ const BannerTitle = (
   return(
     <div className="flex flex-col items-center">
       <img className="h-[50px]" src={assets.pvLogo} />
-      <p className="text-5xl text-customPinkN font-extrabold mt-3 text-center">{ title }</p>
-      <p className="text-5xl text-[#b7a3cb] font-normal mt-3">{ subtitle }</p>
+      <p className="sm:text-5xl text-4xl text-customPinkN font-extrabold mt-3 text-center">{ title }</p>
+      <p className="sm:text-5xl text-2xl text-[#b7a3cb] font-normal mt-3">{ subtitle }</p>
     </div>
   )
 }
