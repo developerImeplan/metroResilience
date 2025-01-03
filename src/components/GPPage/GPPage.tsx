@@ -83,7 +83,7 @@ export const GPPage = () => {
             <img className="sm:w-1/2" src={assets.feria} />
           </div>
           <div className="flex sm:flex-row flex-col sm:space-x-2">
-            {GP_QUOTES_1.map((i, index) => <CmQuote2 key={index} {...i} color="customPurpleGP" maxLines={6} largeTitle minHeaderHeight={130} fontSize="sm:text-base text-base" border={false} />)}
+            {GP_QUOTES_1.map((i, index) => <CmQuote2 key={index} {...i} color="customPurpleGP" maxLines={5} largeTitle minHeaderHeight={130} fontSize="sm:text-base text-base" border={false} />)}
           </div>
           <div className="flex justify-center items-center mt-10">
             <a href={assets.guiaResilenciaPDF} download className="bg-customPurpleGP text-white sm:text-3xl font-bold px-10 py-5 rounded-3xl">Consulta la Guía</a>

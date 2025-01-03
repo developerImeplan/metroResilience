@@ -52,7 +52,7 @@ export const GP_QUOTES: CmQuoteProps[] = [
     img: assets.yolandaBichara,
     title: 'Yolanda Bichara',
     subtitle: 'Ex Directora Ejecutiva de la Oficina de Planificación del Área Metropolitana de San Salvador',
-    text: 'Creemos que sin resiliencia muy poco podemos hacer. Desde luego que la resiliencia lleva dentro el tema de coordinación e integración de esfuerzos, esquemas colaborativos. Así que es importante, [...] la sostenibilidad de la resiliencia es un tema asumido pero no consumado, tenemos que seguir sumando.'
+    text: 'Creemos que sin resiliencia muy poco podemos hacer. Desde luego que la resiliencia lleva dentro el tema de coordinación e integración de esfuerzos, esquemas colaborativos. Así que es importante, la sostenibilidad de la resiliencia es un tema asumido pero no consumado, tenemos que seguir sumando.'
   },
   {
     audio: assets.gpQuotes3,

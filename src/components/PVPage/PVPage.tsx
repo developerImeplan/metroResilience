@@ -181,7 +181,7 @@ export const PVPage = () => {
             </div>
           </div>
           <div className="flex sm:flex-row flex-col mt-10 sm:space-x-20 sm:space-y-0 space-y-5">
-            {PV_MODELOS_QUOTES.map((i, index) => <CmQuote key={index} {...i} color="customGreen" maxLines={5} />)}
+            {PV_MODELOS_QUOTES.map((i, index) => <CmQuote key={index} {...i} color="customGreen" maxLines={6} />)}
           </div>
         </div>
       </section>

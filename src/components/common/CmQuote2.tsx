@@ -14,6 +14,7 @@ export const CmQuote2 = ({
   text,
   largeTitle = false,
   minHeaderHeight = 0,
+  maxLines = 6
 }: CmQuoteProps) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
@@ -65,8 +66,8 @@ export const CmQuote2 = ({
       </div>
       <div className={`flex-grow flex justify-center rounded-3xl min-h-[150px] mt-5 border-2 p-5 border-[#aaa3cc] text-[#aaa3cc] z-10 bg-white`}>
         <p 
-          className={`${fontSize} line-clamp-6 overflow-hidden hover:overflow-auto hover:line-clamp-none transition-all text-center text-justify`}
-          style={{ maxHeight: `${5 * 1.8}rem` }}
+          className={`${fontSize} line-clamp-${6} overflow-hidden hover:overflow-auto hover:line-clamp-none transition-all text-center text-justify`}
+          style={{ maxHeight: `${maxLines * 1.8}rem` }}
         >
           {text}
         </p>
