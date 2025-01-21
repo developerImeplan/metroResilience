@@ -72,7 +72,7 @@ import gpConstruccion2 from "../assets/imgs/gpConstruccion2.jpg";
 import gpConstruccion3 from "../assets/imgs/gpConstruccion3.jpg";
 import gpConstruccion4 from "../assets/imgs/gpConstruccion4.jpg";
 import gpCover from "../assets/imgs/gpCover.jpg";
-import gpLogo from "../assets/imgs/gp_logo.png";
+import gpLogo from "../assets/imgs/Recurso 9.png";
 import gpQuotes1 from "../assets/audios/gpQuotes1.mp3";
 import gpQuotes2 from "../assets/audios/gpQuotes2.mp3";
 import gpQuotes3 from "../assets/audios/gpQuotes3.mp3";

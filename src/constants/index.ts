@@ -64,7 +64,6 @@ export const VIDEOS = {
 export const ER_COVER_LOGOS: string[] = [
   assets.ambW,
   assets.imeplanW,
-  assets.resilientCity,
 ];
 
 export const PV_COVER_LOGOS: string[] = [

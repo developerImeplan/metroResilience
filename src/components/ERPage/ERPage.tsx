@@ -29,7 +29,7 @@ export const ERPage = () => {
       <CmHeader />
       <CmCoverVideo
         footerContent={
-          <div className="flex items-center justify-end sm:mt-0 mt-5">
+          <div className="flex items-center justify-end sm:mt-0 mt-5 mr-20">
             { ER_COVER_LOGOS.map(i => (<CmImage src={i} className="sm:h-[60px] h-[15px] sm:mx-3 mx-1" />)) }
           </div>
         }
