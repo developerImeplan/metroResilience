@@ -74,7 +74,7 @@ export const COVER_MENU_SECTIONS: CoverMenuSectionProps[] = [
   {
     id: "GP",
     icon: assets.gpLogo,
-    title: "Guía Política de Gobernanza",
+    title: "Guía Resiliencia Metropolitana",
     mainUrl: MENU_PREFIXES.GP,
     items: [
       {

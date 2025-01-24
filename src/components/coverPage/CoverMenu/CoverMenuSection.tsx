@@ -29,7 +29,7 @@ export const CoverMenuSection = ({
         <CmImage src={icon} className="h-[50px] mr-10" />
         {
           !img ? (
-            <p className="text-customMain sm:text-2xl text-xl font-semibold mr-2 max-w-[167px]">{ title }</p>
+            <p className="text-customMain sm:text-2xl text-xl font-semibold mr-2 max-w-[175px]">{ title }</p>
           ) : (
             <img className="h-[60px]" src={title} />
           )
