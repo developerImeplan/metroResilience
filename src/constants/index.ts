@@ -21,7 +21,7 @@ export const MENU_PREFIXES: Record<MenuKey, string> = {
   HOME: '/',
   ER: '/estrategia-de-resiliencia',
   PV: '/puntos-verdes',
-  GP: '/guia-politica'
+  GP: '/guia-resiliencia-metropolitana'
 };
 
 
@@ -62,6 +62,8 @@ export const VIDEOS = {
 }
 
 export const ER_COVER_LOGOS: string[] = [
+  assets.financeEU,
+  assets.resilientCity,
   assets.ambW,
   assets.imeplanW,
 ];
@@ -159,19 +161,19 @@ export const ER_PILLS: ERPillProps[] = [
 export const CM_ICONS_SN: CmIconSNProps[] = [
   {
     icon: RiFacebookLine,
-    url: ''
+    url: 'https://www.facebook.com/Imeplan/',
   },
   {
     icon: RiTwitterXLine,
-    url: ''
+    url: 'https://x.com/IMEPLAN'
   },
   {
     icon: SlSocialInstagram,
-    url: ''
+    url: 'https://www.instagram.com/imeplan/'
   },
   {
     icon: FaYoutube,
-    url: ''
+    url: 'https://www.youtube.com/user/imeplan'
   },
 ]
 

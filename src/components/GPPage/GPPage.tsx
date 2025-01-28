@@ -22,7 +22,7 @@ export const GPPage = () => {
       <CmCoverVideo
         footerContent={
           <div className="flex sm:justify-end justify-center sm:mr-5">
-            { PV_COVER_LOGOS.map(i => (<CmImage src={i} className="sm:h-[50px] h-[10px] sm:mx-3 mx-2" />)) }
+            { PV_COVER_LOGOS.map(i => (<CmImage src={i} className="sm:h-[55px] h-[10px] sm:mx-3 mx-2" />)) }
           </div>
         }
         img={assets.gpCover}
@@ -73,7 +73,7 @@ export const GPPage = () => {
           </div>
         </div>
       </section>
-      <section className="my-10">
+      <section id="presentacion-guia" className="my-10">
         <div className="container mx-auto px-4">
           <CmBanner text="Presentación de la Guía" color="[#987BB5]" icon={assets.gpLogo} />
           <div className="flex sm:items-center sm:flex-row flex-col sm:space-x-5 py-10">

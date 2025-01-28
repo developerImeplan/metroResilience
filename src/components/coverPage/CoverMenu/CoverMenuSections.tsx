@@ -86,12 +86,16 @@ export const COVER_MENU_SECTIONS: CoverMenuSectionProps[] = [
         link: `${MENU_PREFIXES.GP}#vision-objetivo`
       },
       {
-        text: "Construcción de la Guía", 
-        link: `${MENU_PREFIXES.GP}#construccion`
+        text: "Estructura", 
+        link: `${MENU_PREFIXES.GP}#estructura`
       },
       {
-        text: "Aprendizajes", 
-        link: `${MENU_PREFIXES.GP}#aprendizajes`
+        text: "Presentación de la Guía", 
+        link: `${MENU_PREFIXES.GP}#presentacion-guia`
+      },
+      {
+        text: "Suma de Saberes", 
+        link: `${MENU_PREFIXES.GP}#suma-saberes`
       },
       {
         text: "Congreso Internacional de Resiliencia Metropolitana", 

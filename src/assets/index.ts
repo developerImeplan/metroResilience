@@ -138,7 +138,8 @@ import stock from "../assets/imgs/stock.jpg";
 import yolandaBichara from "../assets/imgs/yolanda_bichara.png";
 import executiveSummary from "../assets/imgs/executive_summary.png";
 import videoCover from "../assets/videos/video_inicio-metropoli_resiliente.mp4";
-import resumenIngles from "../assets/docs/Resilience Strategy AMG.pdf"
+import resumenIngles from "../assets/docs/Resilience Strategy AMG.pdf";
+import guiaLeerEstrategia from "../assets/docs/Guía para leer la Estrategia.pdf"
 
 export const assets = {
   adaptarseIcon1,
@@ -281,5 +282,6 @@ export const assets = {
   responderLogos,
   stock,
   yolandaBichara,
-  videoCover
+  videoCover,
+  guiaLeerEstrategia
 };

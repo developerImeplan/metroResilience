@@ -5,12 +5,12 @@ export const ERDowloads: ERDowloadProps[] = [
   {
     img: assets.erGuia,
     title: 'Guía para leer la Estrategia',
-    doc: '',
+    doc: assets.guiaLeerEstrategia,
     marginR: true
   },
   {
     img: assets.executiveSummary,
-    title: 'English versión',
+    title: 'English version',
     doc: assets.resumenIngles,
     marginR: true
   },

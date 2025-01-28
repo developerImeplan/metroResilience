@@ -10,14 +10,14 @@ export const CmFooter = () => {
       <div className="flex sm:flex-row flex-col items-center sm:space-x-5">
         <div className="space-y-4 sm:w-2/3 sm:border-r-2 border-white">
           <div className="flex sm:flex-row flex-col sm:justify-center sm:space-x-10">
-            <Link to="https://european-union.europa.eu/index_es">
-              <CmImage src={assets.financeEU} className="h-[50px] object-contain sm:mb-0 mb-5" />
+            <Link to="https://european-union.europa.eu/index_es" target="_blank">
+              <CmImage src={assets.financeEU} className="h-[45px] object-contain sm:mb-0 mb-5" />
             </Link>
-            <Link to="https://www.amb.cat/s/home.html">
-              <CmImage src={assets.ambW} className="h-[50px] object-contain sm:mb-0 mb-5" />
+            <Link to="https://www.amb.cat/s/home.html" target="_blank">
+              <CmImage src={assets.ambW} className="h-[45px] object-contain sm:mb-0 mb-5" />
             </Link>
-            <Link to="https://www.imeplan.mx/">
-              <CmImage src={assets.imeplanW} className="h-[50px] object-contain sm:mb-0 mb-5" />
+            <Link to="https://www.imeplan.mx/" target="_blank">
+              <CmImage src={assets.imeplanW} className="h-[45px] object-contain sm:mb-0 mb-5" />
             </Link>
           </div>
         </div>

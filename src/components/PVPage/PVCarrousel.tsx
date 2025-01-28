@@ -122,7 +122,7 @@ const PV_CARROUSEL: PVCarrouselProps[] = [
   {
     title: "PVM Estación Verde",
     subtitle: "Tlajomulco de Zúñiga",
-    text: "Ubicado en el municipio de Tlajomulco de Zúñiga, dentro del CECDS, el cual es un equipamiento dedicado a compartir saberes mediante talleres y actividades comunitarias, como la separación de residuos y huertos urbanos. Su ubicación y antecedentes lo posicionan como un punto estratégico para difundir y fortalecer prácticas de Economía Circular en la comunidad.",
+    text: "Ubicado en el municipio de Tlajomulco de Zúñiga, dentro de la Estación Verde, la cual es un equipamiento dedicado a compartir saberes mediante talleres y actividades comunitarias, como la separación de residuos y huertos urbanos. Su ubicación y antecedentes lo posicionan como un punto estratégico para difundir y fortalecer prácticas de Economía Circular en la comunidad.",
     img: assets.pv6,
   },
   {

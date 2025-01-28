@@ -9,7 +9,7 @@ export const CmHeader = () => {
     <div className="w-full bg-[#31365c] py-3 sm:h-[100px] sm:px-0 px-5">
       <div className="container mx-auto sm:px-1 py-3 flex flex-row justify-between items-center">
         <Link to="/">
-          <CmImage src={assets.imeplanW} className="sm:h-[40px] h-[20px] sm:w-[150px] w-[75px]" />
+          <CmImage src={assets.imeplanW} className="sm:h-[40px] h-[20px] sm:w-[165px] w-[75px]" />
         </Link>
         <div className="flex sm:space-x-2">
           {CM_HEADER_ITEMS.map(i => <CmHeaderItem {...i} />)}

@@ -30,7 +30,7 @@ export const ERPage = () => {
       <CmCoverVideo
         footerContent={
           <div className="flex items-center justify-end sm:mt-0 mt-5 mr-20">
-            { ER_COVER_LOGOS.map(i => (<CmImage src={i} className="sm:h-[60px] h-[15px] sm:mx-3 mx-1" />)) }
+            { ER_COVER_LOGOS.map(i => (<CmImage src={i} className="sm:h-[55px] h-[15px] sm:mx-3 mx-1" />)) }
           </div>
         }
         img={assets.erm}
@@ -112,7 +112,7 @@ export const ERPage = () => {
         <CmBanner color="customBlueLighter" text="Adaptarse" icon={assets.erLogo} />
         <div className="flex flex-col sm:mb-10 mt-5 text-customPurple">
           <CmBoldText className="sm:text-2xl text-xl">A partir de estos resultados, se trabajó bajo</CmBoldText>
-          <p className="sm:text-5xl text-2xl font-black">4 Desafíos Metropolitanos principales</p>
+          <p className="sm:text-5xl text-2xl font-black">4 principales desafíos metropolitanos</p>
         </div>
         <div className="sm:mt-5 w-full flex sm:flex-row flex-col sm:justify-between sm:items-center sm:space-x-20 sm:gap-0 gap-4">
           <ERAdaptarseIconsText />
@@ -120,7 +120,7 @@ export const ERPage = () => {
         </div>
         <div className="flex sm:flex-row flex-col items-center sm:mt-10">
           <div className="flex flex-col font-thin text-customGrayDarker sm:text-2xl text-xl sm:mb-0 mb-5 sm:w-2/3">
-            <p className="sm:text-5xl text-2xl font-black text-customBlueLighter mb-10 sm:mt-0 mt-10">2 Alcances importantes</p>
+            <p className="sm:text-5xl text-2xl font-black text-customBlueLighter mb-10 sm:mt-0 mt-10">y 2 Alcances importantes</p>
             <span className="mb-10 flex space-x-5">
               <CmImage src={assets.erLogo} className="h-[60px]" />
               <span>

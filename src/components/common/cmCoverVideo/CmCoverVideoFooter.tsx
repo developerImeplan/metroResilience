@@ -9,7 +9,7 @@ export const CmCoverVideoFooter = ({ children, title, icon, width = true }: CmCo
       </div>
       <div className="sm:mt-0 mt-5">
         <div className="bg-white/80 sm:px-20 sm:py-10 w-full flex items-center">
-          <CmImage src={icon} className="sm:h-[40px] h-[20px] sm:mr-5 sm:ml-0 ml-3"/>
+          <CmImage src={icon} className="sm:h-[50px] h-[20px] sm:mr-5 sm:ml-0 ml-3"/>
           <p className="sm:text-3xl text-xs text-center text-customMain font-bold">{ title }</p>
         </div>
       </div>
